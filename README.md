@@ -1,223 +1,240 @@
-# Retrieval–Reading Gap in Statutory Question Answering
+<div align="center">
 
-Reproducibility repository for the manuscript:
+# ⚖️ Retrieval and Source Selection in Statutory QA
 
-> **Beyond Answer Extraction: Diagnosing Retrieval and Source Selection Failures in Indian Statutory Question Answering**
+### Beyond Answer Extraction: Diagnosing Retrieval and Source Selection Failures in Indian Statutory Question Answering
 
-## Authors
+[![Python 3.12+](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)](#quick-start)
+[![Task: Statutory QA](https://img.shields.io/badge/Task-Statutory%20Extractive%20QA-2563EB)](#research-at-a-glance)
+[![Domain: Indian IPR law](https://img.shields.io/badge/Domain-Indian%20IPR%20law-7C3AED)](#dataset-and-scope)
+[![Evaluation: Reproducible](https://img.shields.io/badge/Evaluation-Reproducible-059669)](#reproduce-the-reported-results)
+[![Status: Research artifacts](https://img.shields.io/badge/Status-Research%20artifacts-EA580C)](#artifact-policy)
 
-- M. Mohaiminul Islam, Department of Computer Science and Engineering, South Asian University, New Delhi, India
-- Muhammad Abulaish, Department of Computer Science and Engineering, South Asian University, New Delhi, India
+**M. Mohaiminul Islam** · **Muhammad Abulaish**<br>
+Department of Computer Science and Engineering, South Asian University, New Delhi, India
 
-This repository is independent of the companion DAPT study. It contains the
-retrieval manuscript, fixed IndicIPR-QA splits, retrieval and reader-analysis
-code, canonical result artifacts, saved audit outputs, and figure generators.
-Large model checkpoints and regenerable embedding caches are intentionally not
-versioned.
+[Quick start](#quick-start) · [Results](#research-at-a-glance) · [Reproduce](#reproduce-the-reported-results) · [Paper](papers/retrieval_reference/retrieval-reference.pdf) · [Citation](#citation)
 
-## Problem addressed
+</div>
 
-High extractive-QA performance with an annotated statutory paragraph does not
-show that a system can find that paragraph in a corpus. This study measures the
-resulting retrieval–reading gap and separates three annotation-relative failure
-stages:
+---
 
-1. the annotated paragraph is absent from the retrieved candidate set;
-2. it is available, but the fixed reader selects another source; or
-3. it is selected, but the extracted span does not exactly match the annotation.
+## Why this repository exists
 
-The experiments then examine why questions in the zero-residual reference
-pattern group are difficult for paragraph-only retrieval and whether aligning
-query-side section locators with statutory metadata changes candidate access.
-Section matching is evaluated as a controlled diagnostic, not proposed as a
-universal retrieval architecture.
+Strong answer extraction does not guarantee reliable statutory question
+answering. A system may extract an answer well when it is given the annotated
+paragraph, but fail to retrieve that paragraph or select it from several
+plausible candidates.
 
-## Main preserved findings
-
-| Result | Preserved value |
-|---|---:|
-| Annotated-paragraph reader F1 | 87.37 |
-| Paragraph-only BM25 top-5 reader F1 | 31.95 |
-| Paragraph-only BM25 recall@5 | 22.67% |
-| Title-plus-paragraph BM25 recall@5 | 56.98% |
-| Section-filter recall@5 | 86.34% |
-| Section-filter reader F1 | 57.99 |
-| Title-aware neural recall@5 | 83.72% |
-| Title-aware neural F1, reader-logit source selection | 53.12 |
-| Title-aware neural F1, BGE rank-one source selection | 54.62 |
-| Section filter minus title-aware BM25 F1 | +12.92, 95% cluster interval [6.62, 19.44] |
-
-The repository also preserves dense retrieval, RRF, cross-encoder and BGE
-experiments, reference removal/isolation/replacement, collision controls,
-decoder sensitivity, stage-wise outcomes, and the UK retrieval comparison.
-
-## Additional section-pool controls
-
-The release also includes `section_filter_act_extension_v2`, a CPU-only
-retrieval extension that keeps the canonical BM25 definition and tests:
-
-- random ordering inside section-matched pools;
-- same-size random pools sampled from the full corpus;
-- wrong-locator sensitivity without annotated Acts; and
-- a question-only Act prediction filter trained on the training split.
-
-The Act prediction filter is a negative result: it lowers test recall@5 from
-86.34% for section-only BM25 to 75.00%. The run therefore documents a limit of
-this simple pipeline rather than a new recommended model. The protocol,
-per-query rankings, model file, split audit, input hashes, and independent
-metric check are included in the run directory.
-
-## Repository layout
+This repository accompanies a diagnostic study of that gap in IndicIPR-QA,
+an extractive question-answering benchmark over seven Indian intellectual
+property statutes. It separates three annotation-relative pipeline stages:
 
 ```text
-data/processed/indic_ipr_qa/   released paragraph corpus
-data/splits/                   fixed train, validation, and test splits
-docs/                          protocols, provenance, and numerical audits
-outputs/human_validation_report/       verified aggregate and de-identified audit data
-papers/retrieval_reference/    LaTeX manuscript, bibliography, figures, and PDF
-results/experiments/retrieval/ canonical results and item-level diagnostics
-scripts/04_retrieval/          retrieval, reranking, controls, and audits
-scripts/08_figures/            manuscript figure generators
-scripts/qa_evaluation.py       shared EM/F1 and span-evaluation utilities
+Question → candidate retrieval → source selection → answer extraction
+                 ↓                    ↓                   ↓
+          source absent        other source chosen    span mismatch
 ```
 
-## Quick verification
+The study asks how a paragraph-only representation changes retrieval, whether
+query-side statutory locators help recover the annotated source, and which
+errors remain after source recovery improves. Section filtering is a controlled
+diagnostic, not a proposed universal retrieval architecture.
 
-For a results-only reproduction that does not download models, create the
-environment and run:
+## Research at a glance
 
-```bash
-python -m venv .venv
-# Windows: .venv\Scripts\activate
-# Linux/macOS: source .venv/bin/activate
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-python verify_release.py
-python scripts/04_retrieval/audit_retrieval_manuscript.py
-```
+| Diagnostic result | Value |
+|---|---:|
+| Fixed reader F1 with annotated paragraph | **87.37** |
+| Fixed reader F1 after paragraph-only BM25 top-5 | **31.95** |
+| Paragraph-only BM25 recall@5 | **22.67%** |
+| Title-plus-paragraph BM25 recall@5 | **56.98%** |
+| Section-filter recall@5 | **86.34%** |
+| Section-filter end-to-end F1 | **57.99** |
+| Title-aware neural retrieval recall@5 | **83.72%** |
+| Section filter versus title-aware BM25 F1 difference | **+12.92** points, 95% cluster interval **[6.62, 19.44]** |
 
-These commands check the fixed data split, headline retrieval and QA results,
-saved item-level evidence, tables, counts, and reported confidence intervals.
+The preserved experiments include sparse retrieval, zero-shot dense retrieval,
+RRF, cross-encoder reranking, BGE-M3 retrieval, BGE reranking, title-aware
+controls, random-pool controls, reference interventions, decoder sensitivity,
+source-selection analyses, a human legal-adequacy audit, and a UK retrieval
+comparison.
 
-### Human evaluation
+<p align="center">
+  <img src="papers/retrieval_reference/plots/01_retrieval_diagnostic_overview.png" width="920" alt="Overview of the retrieval diagnostic" />
+</p>
 
-The manuscript now includes 80 cases assessed by two law graduate students, sampled
-equally from four section-filter outcomes. Original inter-annotator agreement
-is kept separate from revised labels and final consensus. Aggregate counts,
-agreement coefficients, calculation checks, and input hashes are preserved in
-`outputs/human_validation_report/manuscript_summary.json`. The file
-`anonymized_item_labels.jsonl` contains the de-identified original categorical
-ratings and consensus labels needed for independent reanalysis.
+<p align="center"><em>Operational overview of the retrieval diagnostic. See the paper for the complete protocol and limitations.</em></p>
 
-The named reviewer workbooks, free-text rationales, authority notes, dates, and
-the passage-order decoding key are private and are not copied into this repository.
-Given an authorised local copy of the master, recompute the analysis with:
+## Dataset and scope
 
-```bash
-python scripts/04_retrieval/summarize_human_validation.py --workbook "/path/to/legal_expert_audit_master.xlsx" --verify-manuscript papers/retrieval_reference/retrieval-reference.tex --crosscheck-sklearn
-```
+| Item | Value |
+|---|---:|
+| Question-answer pairs | **4,462** |
+| Paragraph-level statutory contexts | **1,116** |
+| Statutes | **7 Indian IPR Acts** |
+| Train / validation / test questions | **3,710 / 408 / 344** |
+| Human legal-adequacy audit | **80 stratified cases** |
 
-The command does not modify the workbook. The final option additionally checks
-kappa against scikit-learn. The author confirmed that both students agreed to
-the research use of their assessments and did not see AI-generated audit drafts
-during annotation or consensus. The manuscript does not name the students.
-Institutional ethics approval or exemption status still requires author
-confirmation before journal submission.
+The repository contains fixed corpus and split files for exact results-based
+reproduction. The findings are benchmark-specific: they measure recovery of a
+retained annotated source, not unique legal correctness or a universal limit on
+legal retrieval. Questions are generated and curated, so their frequency of
+explicit statutory locators may differ from naturally occurring legal requests.
 
-### Existing retrieval checks
+## Quick start
 
-From the repository root:
+Run the commands from the repository root.
 
-```bash
-python verify_release.py
-python scripts/04_retrieval/audit_retrieval_manuscript.py
-```
-
-The release verifier checks the fixed test size and the principal manuscript
-values, including BM25 recall@5, section-filter recall@5, and end-to-end F1.
-
-The post-hoc title-aware neural end-to-end control can be rerun with the fixed
-reader checkpoint at the path documented in the manuscript:
-
-```bash
-python scripts/04_retrieval/title_neural_end_to_end_control.py --device auto
-```
-
-The script reuses saved title-aware BGE rankings and cached reader outputs,
-decodes only missing question-passage pairs, and writes item-level predictions
-and a summary under
-`results/experiments/retrieval/runs/title_neural_end_to_end_v1/`.
-
-### Reproducibility levels
-
-| Level | Command | Requires models? | Purpose |
-|---|---|---:|---|
-| Release integrity | `python verify_release.py` | No | Checks required files, test size, and headline values |
-| Numerical manuscript audit | `python scripts/04_retrieval/audit_retrieval_manuscript.py` | No | Recomputes manuscript tables, counts, and bootstrap intervals from saved evidence |
-| Figure regeneration | commands below | No | Recreates plots from canonical JSON/CSV artifacts |
-| Retrieval reruns | scripts under `scripts/04_retrieval/` | Yes | Downloads public encoders/rerankers and reruns retrieval |
-| Reader inference | reader-enabled scripts | Yes | Requires the documented fixed reader checkpoint or a regenerated equivalent |
-
-## Environment
-
-Python 3.12 was used for the final runs. Create an isolated environment and
-install the pinned packages:
-
-```bash
-python -m venv .venv
-# Windows: .venv\Scripts\activate
-# Linux/macOS: source .venv/bin/activate
+```powershell
+git clone https://github.com/niloycste/Retrieval-and-Source-Selection-Failures-in-Indian-Statutory-Question-Answering.git
+Set-Location Retrieval-and-Source-Selection-Failures-in-Indian-Statutory-Question-Answering
+py -3.12 -m venv .venv
+.\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-Dense retrieval, reranking, and reader inference download public Hugging Face
-models on first use. GPU acceleration is recommended but not required for the
-results-only audits.
+On Linux or macOS, activate the environment with `source .venv/bin/activate`.
 
-## Reproduce manuscript figures
+## Reproduce the reported results
 
-```bash
+Choose the smallest path that answers your question.
+
+| Reproduction level | Command | Models required? | What it checks or produces |
+|---|---|:---:|---|
+| Release integrity | `python verify_release.py` | No | Fixed test size, required artifacts, headline values |
+| Numerical audit | `python scripts/04_retrieval/audit_retrieval_manuscript.py` | No | Tables, counts, and bootstrap intervals from saved evidence |
+| Figure regeneration | Commands below | No | Paper figures from canonical result files |
+| Retrieval reruns | Scripts in `scripts/04_retrieval/` | Yes | Re-ranks the corpus with public models |
+| Reader inference | Reader-enabled scripts | Yes | Re-runs fixed-reader QA predictions |
+
+### 1. Verify the release and paper numbers
+
+```powershell
+python verify_release.py
+python scripts/04_retrieval/audit_retrieval_manuscript.py
+```
+
+These results-only checks do not download models. They verify the saved
+item-level evidence and the principal manuscript values.
+
+### 2. Regenerate the manuscript figures
+
+```powershell
 python scripts/08_figures/make_retrieval_paper_analysis_figures.py
 python scripts/08_figures/make_retrieval_decoder_diagram.py
 ```
 
-The scripts read the versioned canonical JSON files and write figures under
-`papers/retrieval_reference/plots/`.
+Generated files are written to `papers/retrieval_reference/plots/`.
 
-## Compile the manuscript
+### 3. Re-run retrieval or source-selection controls
 
-```bash
-cd papers/retrieval_reference
-pdflatex retrieval-reference.tex
-bibtex retrieval-reference
-pdflatex retrieval-reference.tex
-pdflatex retrieval-reference.tex
+Dense retrieval, reranking, and reader inference download public Hugging Face
+models on first use. GPU acceleration is recommended for full inference but is
+not needed for the results-only audits.
+
+```powershell
+python scripts/04_retrieval/dense_retrieval_experiment.py
+python scripts/04_retrieval/cross_encoder_rerank_experiment.py
+python scripts/04_retrieval/citation_aware_retrieval_experiment.py --with-reader
+python scripts/04_retrieval/title_neural_end_to_end_control.py --device auto
 ```
 
-## Full experiments
+The externally licensed UK-StatuteCorpus and embedding caches are not
+redistributed. See `scripts/04_retrieval/uk_statutecorpus_external_validation.py`
+and `docs/RETRIEVAL_EXTERNAL_VALIDATION_PROTOCOL.md` for that comparison.
 
-The principal entry points are documented in
-`papers/retrieval_reference/README.md`. Expensive runs may download models or
-the externally licensed UK-StatuteCorpus. The UK corpus and embedding `.npy`
-caches are not redistributed; their provenance and download handling are in
-`scripts/04_retrieval/uk_statutecorpus_external_validation.py`.
+### 4. Compile the paper
 
-Canonical artifact-to-claim mappings are listed in
-`docs/RESULT_PROVENANCE.md`. All retrieval paths listed in that provenance
-table are included in this repository. The expensive UK embedding arrays are
-excluded because they are caches rather than scientific results.
+The manuscript is intentionally anonymous for double-anonymous journal review.
+The public repository README and citation below provide the project attribution.
+
+```powershell
+Push-Location papers/retrieval_reference
+lualatex -interaction=nonstopmode retrieval-reference.tex
+bibtex retrieval-reference
+lualatex -interaction=nonstopmode retrieval-reference.tex
+lualatex -interaction=nonstopmode retrieval-reference.tex
+Pop-Location
+```
+
+## Repository guide
+
+```text
+.
+├── data/
+│   ├── processed/indic_ipr_qa/    # Released paragraph corpus
+│   └── splits/                    # Fixed train, validation, and test splits
+├── docs/                          # Protocols, provenance, and audit notes
+├── outputs/
+│   └── human_validation_report/   # Verified aggregate and de-identified audit data
+├── papers/retrieval_reference/    # LaTeX manuscript, bibliography, figures, PDF
+├── results/experiments/retrieval/ # Canonical results and item-level evidence
+├── scripts/
+│   ├── 04_retrieval/              # Retrieval, reranking, and audit programs
+│   ├── 08_figures/                # Figure generators
+│   └── qa_evaluation.py            # Shared EM/F1 and span evaluation
+├── requirements.txt                # Pinned Python environment
+└── verify_release.py               # Fast integrity check
+```
+
+`docs/RESULT_PROVENANCE.md` maps the paper claims to the saved artifacts.
+`ARTIFACT_MANIFEST.md` records the contents and exclusions of this release.
+
+## Human legal-adequacy assessment
+
+Two law graduate students independently assessed 80 stratified section-filter
+cases. Original agreement, later consensus, and the annotation-relative
+retrieval measures are kept separate.
+
+Publicly available:
+
+- `outputs/human_validation_report/manuscript_summary.json`: verified aggregate
+  results, agreement coefficients, hashes, and calculation checks.
+- `outputs/human_validation_report/anonymized_item_labels.jsonl`: de-identified
+  original categorical ratings and consensus labels for reanalysis.
+- `outputs/retrieval_legal_expert_audit/`: the public codebook and sampling
+  manifest.
+
+Not released: annotator-identifying workbooks, free-text rationales, authority
+notes, dates, and the private passage-order decoding key.
 
 ## Artifact policy
 
-Included: source code, fixed splits, released corpus text, canonical summaries,
-item-level predictions and audits, de-identified human-validation labels,
-manuscript sources, and figures.
+Included: source code, the fixed corpus and splits, saved result summaries,
+item-level predictions, figures, paper source/PDF, audit code, and de-identified
+human-validation data.
 
 Excluded: trained checkpoints, optimizer states, local model downloads,
-UK-StatuteCorpus files, embedding caches, temporary logs, API credentials,
-annotator-identifying workbooks, private notes, and decoding keys.
+embedding caches, temporary logs, API credentials, UK-StatuteCorpus files, and
+private human-review records.
 
-Before publishing publicly, choose a software/data licence and replace any
-anonymous companion-paper citation or repository placeholder required by the
-final journal submission.
+## Citation
+
+If you use this repository, its experiments, or the retrieval-diagnostic
+framework, please cite the accompanying paper:
+
+```bibtex
+@misc{islam_abulaish_2026_retrieval_source_selection,
+  author = {Islam, M. Mohaiminul and Abulaish, Muhammad},
+  title = {Beyond Answer Extraction: Diagnosing Retrieval and Source Selection
+           Failures in Indian Statutory Question Answering},
+  year = {2026},
+  note = {Manuscript and reproducibility artifacts},
+  url = {https://github.com/niloycste/Retrieval-and-Source-Selection-Failures-in-Indian-Statutory-Question-Answering}
+}
+```
+
+For the benchmark itself, cite the separate IndicIPR-QA dataset/resource paper
+once its proceedings record is available. The anonymous citation in the
+double-anonymous manuscript should be replaced only in the de-anonymized final
+version.
+
+---
+
+<div align="center">
+
+**Statutory retrieval · Source selection · Extractive QA · Legal NLP**
+
+</div>
