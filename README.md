@@ -8,7 +8,7 @@
 [![Task: Statutory QA](https://img.shields.io/badge/Task-Statutory%20Extractive%20QA-2563EB)](#research-at-a-glance)
 [![Domain: Indian IPR law](https://img.shields.io/badge/Domain-Indian%20IPR%20law-7C3AED)](#dataset-and-scope)
 [![Evaluation: Reproducible](https://img.shields.io/badge/Evaluation-Reproducible-059669)](#reproduce-the-reported-results)
-[![Status: Research artifacts](https://img.shields.io/badge/Status-Research%20artifacts-EA580C)](#artifact-policy)
+[![Status: Research artifacts](https://img.shields.io/badge/Status-Research%20artifacts-EA580C)](#repository-guide)
 
 **M. Mohaiminul Islam** · **Muhammad Abulaish**<br>
 Department of Computer Science and Engineering, South Asian University, New Delhi, India
@@ -145,20 +145,6 @@ The externally licensed UK-StatuteCorpus and embedding caches are not
 redistributed. See `scripts/04_retrieval/uk_statutecorpus_external_validation.py`
 and `docs/RETRIEVAL_EXTERNAL_VALIDATION_PROTOCOL.md` for that comparison.
 
-### 4. Compile the paper
-
-The manuscript is intentionally anonymous for double-anonymous journal review.
-The public repository README and citation below provide the project attribution.
-
-```powershell
-Push-Location papers/retrieval_reference
-lualatex -interaction=nonstopmode retrieval-reference.tex
-bibtex retrieval-reference
-lualatex -interaction=nonstopmode retrieval-reference.tex
-lualatex -interaction=nonstopmode retrieval-reference.tex
-Pop-Location
-```
-
 ## Repository guide
 
 ```text
@@ -199,16 +185,6 @@ Publicly available:
 
 Not released: annotator-identifying workbooks, free-text rationales, authority
 notes, dates, and the private passage-order decoding key.
-
-## Artifact policy
-
-Included: source code, the fixed corpus and splits, saved result summaries,
-item-level predictions, figures, paper source/PDF, audit code, and de-identified
-human-validation data.
-
-Excluded: trained checkpoints, optimizer states, local model downloads,
-embedding caches, temporary logs, API credentials, UK-StatuteCorpus files, and
-private human-review records.
 
 ## Citation
 
