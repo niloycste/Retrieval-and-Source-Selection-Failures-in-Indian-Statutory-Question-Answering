@@ -76,6 +76,8 @@ comparison.
 | Train / validation / test questions | **3,710 / 408 / 344** |
 | Human legal-adequacy audit | **80 stratified cases** |
 
+**Dataset:** [IndicIPRExtractiveQA on Hugging Face](https://huggingface.co/datasets/niloycste68/IndicIPRExtractiveQA) (`niloycste68/IndicIPRExtractiveQA`).
+
 The repository contains fixed corpus and split files for exact results-based
 reproduction. The findings are benchmark-specific: they measure recovery of a
 retained annotated source, not unique legal correctness or a universal limit on
