@@ -1,0 +1,26 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.log
+*.aux
+*.blg
+*.out
+*.toc
+*.synctex.gz
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.env
+.hf_token
+/models/
+checkpoints/
+**/cache/
+*.npy
+*.npz
+*.pt
+*.bin
+*.safetensors
+*PRIVATE*
+*CONFIDENTIAL*
+outputs/human validation/
+outputs/legal_expert_audit_refined_*/

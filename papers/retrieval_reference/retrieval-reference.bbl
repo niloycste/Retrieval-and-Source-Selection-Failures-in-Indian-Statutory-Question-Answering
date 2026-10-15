@@ -1,0 +1,323 @@
+\begin{thebibliography}{41}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{\url{https://doi.org/#1}}
+\providecommand{\eprint}[2][]{\url{#2}}
+ \bibcommenthead
+
+\bibitem[{Afane et~al.(2026)Afane, Hariri, Ouyang, and
+  Ho}]{afaneBenchmarkingLegalRAG2026}
+Afane M, Hariri E, Ouyang D, et~al (2026) Benchmarking {Legal} {RAG}: {The}
+  {Promise} and {Limits} of {AI} {Statutory} {Surveys}. In: Proceedings of the
+  2026 {Symposium} on {Computer} {Science} and {Law} ({CSLAW} '26). Association
+  for Computing Machinery, \doi{10.1145/3788646.3789533}
+
+\bibitem[{Akarajaradwong et~al.(2025)Akarajaradwong, Pothavorn,
+  Chaksangchaichot, Tasawong, Nopparatbundit, Pratai, and
+  Nutanong}]{akarajaradwongNitiBench2025}
+Akarajaradwong P, Pothavorn P, Chaksangchaichot C, et~al (2025) {NitiBench}:
+  Benchmarking {LLM} frameworks on {Thai} legal question answering
+  capabilities. In: Proceedings of the 2025 Conference on Empirical Methods in
+  Natural Language Processing. Association for Computational Linguistics, pp
+  34304--34327, \doi{10.18653/v1/2025.emnlp-main.1739},
+  \urlprefix\url{https://aclanthology.org/2025.emnlp-main.1739/}
+
+\bibitem[{Alshehri et~al.(2026)Alshehri, Eken, Bencomo, and
+  Atapour-Abarghouei}]{alshehri2026neural}
+Alshehri AS, Eken C, Bencomo N, et~al (2026) Neural reranking for {UK}
+  statutory retrieval: Provision-level evaluation and an open distilled model.
+  Artificial Intelligence and Law pp 1--31. \doi{10.1007/s10506-025-09501-6}
+
+\bibitem[{Anonymous(2026)}]{anonymous2026indiciprqa}
+Anonymous (2026) {IndicIPR-QA}: A benchmark for extractive question answering
+  on indian {IPR} laws. In: Proceedings of {IEEE DSAA} 2026, accepted;
+  forthcoming. Author details withheld for double-anonymous review
+
+\bibitem[{Chae et~al.(2026)Chae, Yeom, Park, Bae, Jang, Jin, Jang, and
+  Kim}]{chaeStructureAwareStatuteQA2026}
+Chae K, Yeom J, Park J, et~al (2026) Evaluating structure-aware retrieval and
+  safety in statute-centric legal {QA}. In: Proceedings of the 64th Annual
+  Meeting of the Association for Computational Linguistics (Volume 1: Long
+  Papers). Association for Computational Linguistics, pp 45553--45573,
+  \doi{10.18653/v1/2026.acl-long.2112},
+  \urlprefix\url{https://aclanthology.org/2026.acl-long.2112/}
+
+\bibitem[{Chalkidis et~al.(2020)Chalkidis, Fergadiotis, Malakasiotis, Aletras,
+  and Androutsopoulos}]{chalkidis2020legalbert}
+Chalkidis I, Fergadiotis M, Malakasiotis P, et~al (2020) {LEGAL-BERT}: The
+  muppets straight out of law school. In: Findings of the Association for
+  Computational Linguistics: EMNLP 2020. Association for Computational
+  Linguistics, pp 2898--2904, \doi{10.18653/v1/2020.findings-emnlp.261},
+  \urlprefix\url{https://aclanthology.org/2020.findings-emnlp.261/}
+
+\bibitem[{Chalkidis et~al.(2022)Chalkidis, Jana, Hartung, Bommarito,
+  Androutsopoulos, Katz, and Aletras}]{chalkidisLexGLUEBenchmarkDataset2022}
+Chalkidis I, Jana A, Hartung D, et~al (2022) {LexGLUE}: {A} {Benchmark}
+  {Dataset} for {Legal} {Language} {Understanding} in {English}. In: Muresan S,
+  Nakov P, Villavicencio A (eds) Proceedings of the 60th {Annual} {Meeting} of
+  the {Association} for {Computational} {Linguistics} ({Volume} 1: {Long}
+  {Papers}). Association for Computational Linguistics, pp 4310--4330,
+  \doi{10.18653/v1/2022.acl-long.297},
+  \urlprefix\url{https://aclanthology.org/2022.acl-long.297/}
+
+\bibitem[{Chen et~al.(2023)Chen, Yao, Zhao, Zhang, Sun, Liu, and
+  Shen}]{chen2023equals}
+Chen A, Yao F, Zhao X, et~al (2023) {EQUALS}: A real-world dataset for legal
+  question answering via reading {Chinese} laws. In: Proceedings of the
+  Nineteenth International Conference on Artificial Intelligence and Law.
+  Association for Computing Machinery, pp 71--80, \doi{10.1145/3594536.3595159}
+
+\bibitem[{Chen et~al.(2024)Chen, Xiao, Zhang, Luo, Lian, and
+  Liu}]{chenM3Embedding2024}
+Chen J, Xiao S, Zhang P, et~al (2024) {M3-Embedding}: Multi-linguality,
+  multi-functionality, multi-granularity text embeddings through self-knowledge
+  distillation. In: Findings of the Association for Computational Linguistics:
+  ACL 2024. Association for Computational Linguistics, pp 2318--2335,
+  \doi{10.18653/v1/2024.findings-acl.137},
+  \urlprefix\url{https://aclanthology.org/2024.findings-acl.137/}
+
+\bibitem[{Cohen(1960)}]{cohen1960agreement}
+Cohen J (1960) A coefficient of agreement for nominal scales. Educational and
+  Psychological Measurement 20(1):37--46. \doi{10.1177/001316446002000104}
+
+\bibitem[{Cohen(1968)}]{cohen1968weighted}
+Cohen J (1968) Weighted kappa: Nominal scale agreement with provision for
+  scaled disagreement or partial credit. Psychological Bulletin 70(4):213--220.
+  \doi{10.1037/h0026256}
+
+\bibitem[{Cormack et~al.(2009)Cormack, Clarke, and
+  B{\"u}ttcher}]{cormack2009rrf}
+Cormack GV, Clarke CLA, B{\"u}ttcher S (2009) Reciprocal rank fusion
+  outperforms condorcet and individual rank learning methods. In: Proceedings
+  of the 32nd International ACM SIGIR Conference on Research and Development in
+  Information Retrieval. Association for Computing Machinery, pp 758--759,
+  \doi{10.1145/1571941.1572114}
+
+\bibitem[{Fei et~al.(2024)Fei, Shen, Zhu
+  et~al.}]{feiLawBenchBenchmarkingLegal2024}
+Fei Z, Shen X, Zhu D, et~al (2024) {LawBench}: {Benchmarking} {Legal}
+  {Knowledge} of {Large} {Language} {Models}. In: Al-Onaizan Y, Bansal M, Chen
+  YN (eds) Proceedings of the 2024 {Conference} on {Empirical} {Methods} in
+  {Natural} {Language} {Processing}. Association for Computational Linguistics,
+  pp 7933--7962, \doi{10.18653/v1/2024.emnlp-main.452},
+  \urlprefix\url{https://aclanthology.org/2024.emnlp-main.452/}
+
+\bibitem[{Gao et~al.(2021)Gao, Dai, and Callan}]{gao2021rethinkbert}
+Gao L, Dai Z, Callan J (2021) Rethink training of {BERT} rerankers in
+  multi-stage retrieval pipeline. In: Advances in Information Retrieval: 43rd
+  European Conference on IR Research, vol 12657. Springer, pp 280--286,
+  \doi{10.1007/978-3-030-72240-1_26}
+
+\bibitem[{Guha et~al.(2023)Guha, Nyarko, Ho et~al.}]{guha2023legalbench}
+Guha N, Nyarko J, Ho DE, et~al (2023) {LegalBench}: A collaboratively built
+  benchmark for measuring legal reasoning in large language models. In:
+  Advances in Neural Information Processing Systems 36 (NeurIPS 2023), pp
+  44123--44279, \doi{10.52202/075280-1915},
+  \urlprefix\url{https://proceedings.neurips.cc/paper_files/paper/2023/hash/89e44582fd28ddfea1ea4dcb0ebbf4b0-Abstract-Datasets_and_Benchmarks.html}
+
+\bibitem[{Gwet(2008)}]{gwet2008agreement}
+Gwet KL (2008) Computing inter-rater reliability and its variance in the
+  presence of high agreement. British Journal of Mathematical and Statistical
+  Psychology 61(1):29--48. \doi{10.1348/000711006X126600}
+
+\bibitem[{Han et~al.(2026)Han, Burgess, and Shareghi}]{han2026legal}
+Han J, Burgess P, Shareghi E (2026) Legal citation prediction with {LLM}s: a
+  comparative evaluation of instruction tuning, retrieval, and
+  jurisdiction-specific pre-training on the {AusLaw} citation benchmark.
+  Artificial Intelligence and Law pp 1--35. \doi{10.1007/s10506-026-09506-9}
+
+\bibitem[{Hendrycks et~al.(2021)Hendrycks, Burns, Chen, and
+  Ball}]{hendrycksCUADExpertAnnotatedNLP2021}
+Hendrycks D, Burns C, Chen A, et~al (2021) {CUAD}: {An} {Expert}-{Annotated}
+  {NLP} {Dataset} for {Legal} {Contract} {Review}. In: Advances in Neural
+  Information Processing Systems,
+  \urlprefix\url{https://openreview.net/forum?id=7l1Ygs3Bamw}
+
+\bibitem[{Joshi et~al.(2024)Joshi, Paul, Sharma, Goyal, Ghosh, and
+  Modi}]{joshiILTUR2024}
+Joshi A, Paul S, Sharma A, et~al (2024) {IL-TUR}: Benchmark for {Indian} legal
+  text understanding and reasoning. In: Proceedings of the 62nd Annual Meeting
+  of the Association for Computational Linguistics (Volume 1: Long Papers).
+  Association for Computational Linguistics, Bangkok, Thailand, pp
+  11460--11499, \doi{10.18653/v1/2024.acl-long.618},
+  \urlprefix\url{https://aclanthology.org/2024.acl-long.618/}
+
+\bibitem[{Joshi et~al.(2017)Joshi, Choi, Weld, and
+  Zettlemoyer}]{joshiTriviaQALargeScale2017}
+Joshi M, Choi E, Weld D, et~al (2017) {TriviaQA}: {A} {Large} {Scale}
+  {Distantly} {Supervised} {Challenge} {Dataset} for {Reading} {Comprehension}.
+  In: Barzilay R, Kan MY (eds) Proceedings of the 55th {Annual} {Meeting} of
+  the {Association} for {Computational} {Linguistics} ({Volume} 1: {Long}
+  {Papers}). Association for Computational Linguistics, pp 1601--1611,
+  \doi{10.18653/v1/P17-1147},
+  \urlprefix\url{https://aclanthology.org/P17-1147/}
+
+\bibitem[{Karpukhin et~al.(2020)Karpukhin, Oguz, Min, Lewis, Wu, Edunov, Chen,
+  and Yih}]{karpukhinDensePassageRetrieval2020}
+Karpukhin V, Oguz B, Min S, et~al (2020) Dense {Passage} {Retrieval} for
+  {Open}-{Domain} {Question} {Answering}. In: Webber B, Cohn T, He Y, et~al
+  (eds) Proceedings of the 2020 {Conference} on {Empirical} {Methods} in
+  {Natural} {Language} {Processing} ({EMNLP}). Association for Computational
+  Linguistics, pp 6769--6781, \doi{10.18653/v1/2020.emnlp-main.550},
+  \urlprefix\url{https://aclanthology.org/2020.emnlp-main.550/}
+
+\bibitem[{Kwiatkowski et~al.(2019)Kwiatkowski, Palomaki, Redfield, Collins
+  et~al.}]{kwiatkowskiNaturalQuestionsBenchmark2019}
+Kwiatkowski T, Palomaki J, Redfield O, et~al (2019) Natural {Questions}: {A}
+  {Benchmark} for {Question} {Answering} {Research}. Transactions of the
+  Association for Computational Linguistics 7:452--466.
+  \doi{10.1162/tacl_a_00276},
+  \urlprefix\url{https://aclanthology.org/Q19-1026/}
+
+\bibitem[{Lai et~al.(2017)Lai, Xie, Liu, Yang, and
+  Hovy}]{laiRACELargescaleReAding2017}
+Lai G, Xie Q, Liu H, et~al (2017) {RACE}: {Large}-scale {ReAding}
+  {Comprehension} {Dataset} {From} {Examinations}. In: Palmer M, Hwa R, Riedel
+  S (eds) Proceedings of the 2017 {Conference} on {Empirical} {Methods} in
+  {Natural} {Language} {Processing}. Association for Computational Linguistics,
+  pp 785--794, \doi{10.18653/v1/D17-1082},
+  \urlprefix\url{https://aclanthology.org/D17-1082/}
+
+\bibitem[{Lewis et~al.(2020)Lewis, Perez, Piktus
+  et~al.}]{lewisRetrievalAugmentedGenerationKnowledgeIntensive2020}
+Lewis P, Perez E, Piktus A, et~al (2020) Retrieval-{Augmented} {Generation} for
+  {Knowledge}-{Intensive} {NLP} {Tasks}. In: Advances in Neural Information
+  Processing Systems, vol~33. Curran Associates, Inc., pp 9459--9474,
+  \urlprefix\url{https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html}
+
+\bibitem[{Louis and Spanakis(2022)}]{louisSpanakisBSARD2022}
+Louis A, Spanakis G (2022) A statutory article retrieval dataset in {French}.
+  In: Proceedings of the 60th Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers). Association for
+  Computational Linguistics, pp 6789--6803,
+  \doi{10.18653/v1/2022.acl-long.468},
+  \urlprefix\url{https://aclanthology.org/2022.acl-long.468/}
+
+\bibitem[{Louis et~al.(2023)Louis, van Dijck, and
+  Spanakis}]{louisFindingLaw2023}
+Louis A, van Dijck G, Spanakis G (2023) Finding the law: Enhancing statutory
+  article retrieval via graph neural networks. In: Proceedings of the 17th
+  Conference of the European Chapter of the Association for Computational
+  Linguistics. Association for Computational Linguistics, pp 2761--2776,
+  \doi{10.18653/v1/2023.eacl-main.203},
+  \urlprefix\url{https://aclanthology.org/2023.eacl-main.203/}
+
+\bibitem[{Malik et~al.(2021)Malik, Sanjay, Nigam
+  et~al.}]{malikILDCCJPEIndian2021}
+Malik V, Sanjay R, Nigam SK, et~al (2021) {ILDC} for {CJPE}: {Indian} {Legal}
+  {Documents} {Corpus} for {Court} {Judgment} {Prediction} and {Explanation}.
+  In: Zong C, Xia F, Li W, et~al (eds) Proceedings of the 59th {Annual}
+  {Meeting} of the {Association} for {Computational} {Linguistics} and the 11th
+  {International} {Joint} {Conference} on {Natural} {Language} {Processing}
+  ({Volume} 1: {Long} {Papers}). Association for Computational Linguistics, pp
+  4046--4062, \doi{10.18653/v1/2021.acl-long.313},
+  \urlprefix\url{https://aclanthology.org/2021.acl-long.313/}
+
+\bibitem[{Nigam et~al.(2025)Nigam, Balaramamahanthi, Mishra
+  et~al.}]{nigamNyayaAnumanaINLegalLlamaLargest2025}
+Nigam SK, Balaramamahanthi DP, Mishra S, et~al (2025) {NyayaAnumana} and
+  {INLegalLlama}: {The} {Largest} {Indian} {Legal} {Judgment} {Prediction}
+  {Dataset} and {Specialized} {Language} {Model} for {Enhanced} {Decision}
+  {Analysis}. In: Rambow O, Wanner L, Apidianaki M, et~al (eds) Proceedings of
+  the 31st {International} {Conference} on {Computational} {Linguistics}.
+  Association for Computational Linguistics, pp 11135--11160,
+  \urlprefix\url{https://aclanthology.org/2025.coling-main.738/}
+
+\bibitem[{Nigam et~al.(2026)Nigam, Mishra, Shallum, Ghosh, and
+  Bhattacharya}]{nigam2026ailqa}
+Nigam SK, Mishra SK, Shallum N, et~al (2026) {AILQA}: Evaluating {AI}-driven
+  legal question answering systems for the {Indian} legal system. Artificial
+  Intelligence and Law pp 1--33. \doi{10.1007/s10506-026-09537-2}, published
+  online 24 August 2026
+
+\bibitem[{Noce et~al.(2026)Noce, Colla, Doust, De~Mattei, and
+  Bacciu}]{noceJuriFindITItalian2026}
+Noce ND, Colla D, Doust SF, et~al (2026) {JuriFindIT}: an {Italian} legal
+  retrieval dataset. In: Findings of the Association for Computational
+  Linguistics: EACL 2026. Association for Computational Linguistics, pp
+  4223--4241, \doi{10.18653/v1/2026.findings-eacl.221},
+  \urlprefix\url{https://aclanthology.org/2026.findings-eacl.221/}
+
+\bibitem[{van Opijnen and Santos(2017)}]{van2017concept}
+van Opijnen M, Santos C (2017) On the concept of relevance in legal information
+  retrieval. Artificial Intelligence and Law 25(1):65--87.
+  \doi{10.1007/s10506-017-9195-8}
+
+\bibitem[{Paul et~al.(2023)Paul, Mandal, Goyal, and Ghosh}]{paul2023pre}
+Paul S, Mandal A, Goyal P, et~al (2023) Pre-trained language models for the
+  legal domain: A case study on indian law. In: Proceedings of the Nineteenth
+  International Conference on Artificial Intelligence and Law. Association for
+  Computing Machinery, New York, NY, USA, ICAIL '23, pp 187--196,
+  \doi{10.1145/3594536.3595165}
+
+\bibitem[{Rajpurkar et~al.(2016)Rajpurkar, Zhang, Lopyrev, and
+  Liang}]{rajpurkarSQuAD100000Questions2016}
+Rajpurkar P, Zhang J, Lopyrev K, et~al (2016) {SQuAD}: 100,000+ {Questions} for
+  {Machine} {Comprehension} of {Text}. In: Su J, Duh K, Carreras X (eds)
+  Proceedings of the 2016 {Conference} on {Empirical} {Methods} in {Natural}
+  {Language} {Processing}. Association for Computational Linguistics, pp
+  2383--2392, \doi{10.18653/v1/D16-1264},
+  \urlprefix\url{https://aclanthology.org/D16-1264/}
+
+\bibitem[{Rajpurkar et~al.(2018)Rajpurkar, Jia, and
+  Liang}]{rajpurkarKnowWhatYou2018}
+Rajpurkar P, Jia R, Liang P (2018) Know {What} {You} {Don}'t {Know}:
+  {Unanswerable} {Questions} for {SQuAD}. In: Gurevych I, Miyao Y (eds)
+  Proceedings of the 56th {Annual} {Meeting} of the {Association} for
+  {Computational} {Linguistics} ({Volume} 2: {Short} {Papers}). Association for
+  Computational Linguistics, pp 784--789, \doi{10.18653/v1/P18-2124},
+  \urlprefix\url{https://aclanthology.org/P18-2124/}
+
+\bibitem[{Robertson and
+  Zaragoza(2009)}]{robertsonProbabilisticRelevanceFramework2009}
+Robertson S, Zaragoza H (2009) The {Probabilistic} {Relevance} {Framework}:
+  {BM25} and {Beyond}. Foundations and Trends in Information Retrieval
+  3(4):333--389. \doi{10.1561/1500000019}
+
+\bibitem[{{\v S}avelka and Ashley(2022)}]{vsavelka2022legal}
+{\v S}avelka J, Ashley KD (2022) Legal information retrieval for understanding
+  statutory terms. Artificial Intelligence and Law 30(2):245--289.
+  \doi{10.1007/s10506-021-09293-5}
+
+\bibitem[{Sovrano et~al.(2025)Sovrano, Palmirani, Sapienza, and
+  Pistone}]{sovrano2025discolqa}
+Sovrano F, Palmirani M, Sapienza S, et~al (2025) {DiscoLQA}: zero-shot
+  discourse-based legal question answering on {European} legislation.
+  Artificial Intelligence and Law 33(2):323--359.
+  \doi{10.1007/s10506-023-09387-2}
+
+\bibitem[{Wang et~al.(2026)Wang, Chen, Wang
+  et~al.}]{wangIPBenchBenchmarkingKnowledge2025}
+Wang Q, Chen G, Wang H, et~al (2026) Towards {IP} intelligence: Benchmarking
+  large language models on intellectual property knowledge and practice. In:
+  Findings of the Association for Computational Linguistics: ACL 2026.
+  Association for Computational Linguistics, pp 20007--20052,
+  \doi{10.18653/v1/2026.findings-acl.1000},
+  \urlprefix\url{https://aclanthology.org/2026.findings-acl.1000/}
+
+\bibitem[{Yang et~al.(2018)Yang, Qi, Zhang
+  et~al.}]{yangHotpotQADatasetDiverse2018}
+Yang Z, Qi P, Zhang S, et~al (2018) {HotpotQA}: {A} {Dataset} for {Diverse},
+  {Explainable} {Multi}-hop {Question} {Answering}. In: Riloff E, Chiang D,
+  Hockenmaier J, et~al (eds) Proceedings of the 2018 {Conference} on
+  {Empirical} {Methods} in {Natural} {Language} {Processing}. Association for
+  Computational Linguistics, pp 2369--2380, \doi{10.18653/v1/D18-1259},
+  \urlprefix\url{https://aclanthology.org/D18-1259/}
+
+\bibitem[{Zheng et~al.(2025)Zheng, Guha, Arifov
+  et~al.}]{zhengReasoningFocusedLegalRetrieval2025}
+Zheng L, Guha N, Arifov J, et~al (2025) A {Reasoning}-{Focused} {Legal}
+  {Retrieval} {Benchmark}. In: Proceedings of the 2025 {Symposium} on
+  {Computer} {Science} and {Law}. Association for Computing Machinery, {CSLAW}
+  '25, pp 169--193, \doi{10.1145/3709025.3712219},
+  \urlprefix\url{https://dl.acm.org/doi/10.1145/3709025.3712219}
+
+\bibitem[{Zhong et~al.(2020)Zhong, Xiao, Tu
+  et~al.}]{zhongJECQALegalDomainQuestion2020}
+Zhong H, Xiao C, Tu C, et~al (2020) {JEC}-{QA}: {A} {Legal}-{Domain} {Question}
+  {Answering} {Dataset}. Proceedings of the AAAI Conference on Artificial
+  Intelligence 34:9701--9708. \doi{10.1609/aaai.v34i05.6519},
+  \urlprefix\url{https://ojs.aaai.org/index.php/AAAI/article/view/6519}
+
+\end{thebibliography}

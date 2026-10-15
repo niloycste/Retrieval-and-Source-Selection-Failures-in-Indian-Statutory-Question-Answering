@@ -1,0 +1,327 @@
+{
+  "status": "complete exploratory follow-up; canonical UK run unchanged",
+  "created_at": "2026-09-06T05:48:36+05:30",
+  "G1_reference_coverage": {
+    "queries": 100,
+    "parser_status_counts": {
+      "multiple_references_resolved": 1,
+      "no_recognised_reference": 76,
+      "parsed_resolved": 23
+    },
+    "queries_with_title_year_reclassified_from_provision_to_instrument": 10,
+    "comparison_with_old_regex_audit": {
+      "old_regex_flagged_queries": 13,
+      "old_regex_title_year_false_locator_matches": 8,
+      "note": "These are instrument names/years, not provision locators; they remain represented as instrument identifiers where supported."
+    },
+    "parsed_query_count": 24,
+    "provision_locator_query_count": 5,
+    "instrument_identifier_query_count": 20,
+    "queries_with_relevant_passage_in_text_resolved_set": 24,
+    "parser_accuracy": "not established; no human or gold reference annotation used",
+    "item_file": "uk_reference_audit_items.jsonl"
+  },
+  "G2_existing_ranking_subgroups": {
+    "supported_resolved_reference": {
+      "bm25": {
+        "n": 24,
+        "recall@5_pct": 29.1667,
+        "recall@10_pct": 34.7222,
+        "mrr@10_pct": 46.3591,
+        "ndcg@10_pct": 27.6738,
+        "grade3_recall@5_pct": 37.5,
+        "grade3_recall@10_pct": 45.8333
+      },
+      "e5_small_v2": {
+        "n": 24,
+        "recall@5_pct": 18.0556,
+        "recall@10_pct": 27.7778,
+        "mrr@10_pct": 28.8542,
+        "ndcg@10_pct": 19.3354,
+        "grade3_recall@5_pct": 25.0,
+        "grade3_recall@10_pct": 33.3333
+      },
+      "rrf_bm25_e5": {
+        "n": 24,
+        "recall@5_pct": 30.5556,
+        "recall@10_pct": 38.8889,
+        "mrr@10_pct": 44.2411,
+        "ndcg@10_pct": 32.8497,
+        "grade3_recall@5_pct": 45.8333,
+        "grade3_recall@10_pct": 58.3333
+      },
+      "bm25_ce": {
+        "n": 24,
+        "recall@5_pct": 20.8333,
+        "recall@10_pct": 30.5556,
+        "mrr@10_pct": 36.4401,
+        "ndcg@10_pct": 27.7444,
+        "grade3_recall@5_pct": 33.3333,
+        "grade3_recall@10_pct": 45.8333
+      },
+      "rrf_bm25_e5_ce": {
+        "n": 24,
+        "recall@5_pct": 19.4444,
+        "recall@10_pct": 27.7778,
+        "mrr@10_pct": 35.2827,
+        "ndcg@10_pct": 25.9122,
+        "grade3_recall@5_pct": 33.3333,
+        "grade3_recall@10_pct": 41.6667
+      }
+    },
+    "parsed_unresolved_reference": {
+      "bm25": {
+        "n": 0
+      },
+      "e5_small_v2": {
+        "n": 0
+      },
+      "rrf_bm25_e5": {
+        "n": 0
+      },
+      "bm25_ce": {
+        "n": 0
+      },
+      "rrf_bm25_e5_ce": {
+        "n": 0
+      }
+    },
+    "no_recognised_reference": {
+      "bm25": {
+        "n": 76,
+        "recall@5_pct": 24.5614,
+        "recall@10_pct": 33.3333,
+        "mrr@10_pct": 39.0789,
+        "ndcg@10_pct": 26.9584,
+        "grade3_recall@5_pct": 34.2105,
+        "grade3_recall@10_pct": 44.7368
+      },
+      "e5_small_v2": {
+        "n": 76,
+        "recall@5_pct": 21.4912,
+        "recall@10_pct": 32.8947,
+        "mrr@10_pct": 35.0251,
+        "ndcg@10_pct": 31.0956,
+        "grade3_recall@5_pct": 43.4211,
+        "grade3_recall@10_pct": 59.2105
+      },
+      "rrf_bm25_e5": {
+        "n": 76,
+        "recall@5_pct": 26.3158,
+        "recall@10_pct": 40.7895,
+        "mrr@10_pct": 43.4148,
+        "ndcg@10_pct": 33.8448,
+        "grade3_recall@5_pct": 40.7895,
+        "grade3_recall@10_pct": 60.5263
+      },
+      "bm25_ce": {
+        "n": 76,
+        "recall@5_pct": 29.386,
+        "recall@10_pct": 39.4737,
+        "mrr@10_pct": 46.628,
+        "ndcg@10_pct": 35.5274,
+        "grade3_recall@5_pct": 48.6842,
+        "grade3_recall@10_pct": 60.5263
+      },
+      "rrf_bm25_e5_ce": {
+        "n": 76,
+        "recall@5_pct": 27.6316,
+        "recall@10_pct": 39.4737,
+        "mrr@10_pct": 46.0798,
+        "ndcg@10_pct": 35.5905,
+        "grade3_recall@5_pct": 47.3684,
+        "grade3_recall@10_pct": 60.5263
+      }
+    }
+  },
+  "G3_bm25_reference_removal": {
+    "eligible_query_count": 24,
+    "low_information_after_removal_count": 11,
+    "syntactic_artifact_after_removal_count": 12,
+    "quality_flag_union_count": 16,
+    "flagged_query_ids": [
+      "Q0002",
+      "Q0004",
+      "Q0021",
+      "Q0029",
+      "Q0031",
+      "Q0039",
+      "Q0049",
+      "Q0078",
+      "Q0081",
+      "Q0084",
+      "Q0087",
+      "Q0095",
+      "Q0096",
+      "Q0097",
+      "Q0098",
+      "Q0099"
+    ],
+    "automatic_quality_audit": {
+      "human_assessment_used": false,
+      "input_field": "reference_removed_query",
+      "tokenizer": "[A-Za-z0-9]+ lowercased",
+      "low_information_rule": {
+        "condition": "residual non-frame token count <= threshold",
+        "threshold": 2,
+        "query_frame_tokens": [
+          "a",
+          "amend",
+          "amended",
+          "amendment",
+          "amendments",
+          "an",
+          "and",
+          "are",
+          "as",
+          "be",
+          "by",
+          "does",
+          "draft",
+          "for",
+          "from",
+          "how",
+          "in",
+          "instruments",
+          "ireland",
+          "is",
+          "made",
+          "modification",
+          "modifications",
+          "northern",
+          "of",
+          "parliament",
+          "rules",
+          "scotland",
+          "scottish",
+          "statutory",
+          "the",
+          "to",
+          "uk",
+          "under",
+          "wales",
+          "what",
+          "with"
+        ],
+        "flagged_query_ids": [
+          "Q0002",
+          "Q0004",
+          "Q0029",
+          "Q0031",
+          "Q0039",
+          "Q0049",
+          "Q0081",
+          "Q0084",
+          "Q0095",
+          "Q0096",
+          "Q0097"
+        ]
+      },
+      "dangling_syntactic_frame_rule": {
+        "regex": "\\b(?:the|under|by|to|of|concerning|regarding)\\s*(?:[?.,;:]|$)|\\b(?:under|by|to)\\s+(?:for|of|regarding|concerning)\\b",
+        "regex_flags": [
+          "IGNORECASE"
+        ],
+        "flagged_query_ids": [
+          "Q0004",
+          "Q0021",
+          "Q0029",
+          "Q0031",
+          "Q0039",
+          "Q0049",
+          "Q0078",
+          "Q0081",
+          "Q0087",
+          "Q0095",
+          "Q0098",
+          "Q0099"
+        ]
+      },
+      "union_query_ids": [
+        "Q0002",
+        "Q0004",
+        "Q0021",
+        "Q0029",
+        "Q0031",
+        "Q0039",
+        "Q0049",
+        "Q0078",
+        "Q0081",
+        "Q0084",
+        "Q0087",
+        "Q0095",
+        "Q0096",
+        "Q0097",
+        "Q0098",
+        "Q0099"
+      ],
+      "per_query_flag_file": "uk_reference_removal_items.jsonl",
+      "per_query_flag_fields": [
+        "reference_removed_residual_content_tokens",
+        "low_information_after_removal",
+        "syntactic_artifact_after_removal"
+      ]
+    },
+    "original": {
+      "n": 24,
+      "recall@5_pct": 29.1667,
+      "recall@10_pct": 34.7222,
+      "mrr@10_pct": 46.3591,
+      "ndcg@10_pct": 27.6738,
+      "grade3_recall@5_pct": 37.5,
+      "grade3_recall@10_pct": 45.8333
+    },
+    "reference_removed": {
+      "n": 24,
+      "recall@5_pct": 9.7222,
+      "recall@10_pct": 12.5,
+      "mrr@10_pct": 13.8889,
+      "ndcg@10_pct": 9.5794,
+      "grade3_recall@5_pct": 12.5,
+      "grade3_recall@10_pct": 16.6667
+    },
+    "change_points": {
+      "recall@5_pct": -19.4445,
+      "recall@10_pct": -22.2222,
+      "mrr@10_pct": -32.4702,
+      "ndcg@10_pct": -18.0944,
+      "grade3_recall@5_pct": -25.0,
+      "grade3_recall@10_pct": -29.1666
+    },
+    "item_file": "uk_reference_removal_items.jsonl",
+    "ranking_file": "rankings_bm25_reference_removed.jsonl",
+    "bm25_elapsed_seconds": 30.946,
+    "interpretation": "Sensitivity to removal relative to original qrels; semantic equivalence of the modified query is not assumed."
+  },
+  "G4_reference_aware_retrieval_decision": {
+    "run": false,
+    "reason": "Only five natural provision-locator queries are available, and source-URL provision matching does not reliably represent references to provisions cited inside the target instrument.",
+    "parsed_query_count": 24,
+    "provision_locator_query_count": 5,
+    "text_resolved_query_count": 24,
+    "queries_with_relevant_passage_in_source_url_match": 0,
+    "note": "No UK structural-retrieval result is manufactured from content-reference matching."
+  },
+  "provenance": {
+    "protocol": "docs/RETRIEVAL_FOLLOWUP_CONTROLS_PROTOCOL.md",
+    "script": "scripts/04_retrieval/uk_reference_followup_controls.py",
+    "inputs_sha256": {
+      "E:\\Dataset on IPR\\data\\external\\uk_statutecorpus\\extracted\\uk-statutecorpus_v1.0\\corpus\\uk-statutecorpus_passages_2020-2024_v1.0.jsonl.gz": "a2db0bbc41c3ecd002e68a46c799252d9cc887d120dc64ff2b70932254364e63",
+      "E:\\Dataset on IPR\\data\\external\\uk_statutecorpus\\extracted\\uk-statutecorpus_v1.0\\evaluation_dataset\\uk-statutecorpus_eval100_2020-2024_v1.0.jsonl": "8f0d641f899ddc5cd4ec0deea8329e5de7604843125f206dea432c1729e95286",
+      "results/experiments/retrieval/runs/uk_statutecorpus_external_v1/cache/rankings_bm25.jsonl": "ab8c1de6a0a6c055afb034689433743488067227e3caf5cc1c0a0151ff5264f5",
+      "results/experiments/retrieval/runs/uk_statutecorpus_external_v1/cache/rankings_e5_small_v2.jsonl": "fdc38f7029409e113b9ea44a5cbe8f6c2a6f562026d4fdd55cfe3fc9e15e4b4c",
+      "results/experiments/retrieval/runs/uk_statutecorpus_external_v1/cache/rankings_rrf_bm25_e5.jsonl": "adbfa6b39421a9d5416c79d3b16c97b21f9614bd9bf82932c41ab0055c5f3257",
+      "results/experiments/retrieval/runs/uk_statutecorpus_external_v1/cache/rankings_bm25_ce.jsonl": "0913fb0d9fac4e97948301cc605c640d691d03fa3b22410536dabe1b819a45ce",
+      "results/experiments/retrieval/runs/uk_statutecorpus_external_v1/cache/rankings_rrf_bm25_e5_ce.jsonl": "b095e01071587d5994b133dec7edde1b887ad44b70d77377276dc18028bec461"
+    },
+    "bm25": {
+      "k1": 1.5,
+      "b": 0.75,
+      "tokenizer": "[A-Za-z0-9]+ lowercased"
+    },
+    "ranking_depth": 100,
+    "seed": 42,
+    "python": "3.13.7",
+    "elapsed_seconds": 159.659
+  }
+}

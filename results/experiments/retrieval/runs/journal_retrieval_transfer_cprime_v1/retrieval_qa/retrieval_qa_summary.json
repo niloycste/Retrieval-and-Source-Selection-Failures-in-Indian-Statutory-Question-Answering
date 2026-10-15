@@ -1,0 +1,38 @@
+[
+  {
+    "n": 344,
+    "em": 48.2558,
+    "f1": 82.3282,
+    "char_f1": 87.2746,
+    "setting": "Gold paragraph + QA",
+    "retrieval_recall": 100.0,
+    "qa_model": "C': MLM+SQuAD+IPR InLegalBERT"
+  },
+  {
+    "n": 344,
+    "em": 8.7209,
+    "f1": 24.0837,
+    "char_f1": 43.7465,
+    "setting": "BM25 top-1 + QA",
+    "retrieval_recall": 13.6628,
+    "qa_model": "C': MLM+SQuAD+IPR InLegalBERT"
+  },
+  {
+    "n": 344,
+    "em": 9.8837,
+    "f1": 29.2173,
+    "char_f1": 56.6549,
+    "setting": "BM25 top-3 + QA",
+    "retrieval_recall": 20.0581,
+    "qa_model": "C': MLM+SQuAD+IPR InLegalBERT"
+  },
+  {
+    "n": 344,
+    "em": 9.8837,
+    "f1": 29.9987,
+    "char_f1": 59.9076,
+    "setting": "BM25 top-5 + QA",
+    "retrieval_recall": 22.9651,
+    "qa_model": "C': MLM+SQuAD+IPR InLegalBERT"
+  }
+]

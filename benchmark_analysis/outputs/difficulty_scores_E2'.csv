@@ -1,0 +1,8 @@
+Model code,Model name,Act,n,Avg ans len (wds),Max ans len (wds),Multi-clause %,Q-Ctx overlap,Ans vocab TTR %,Avg ans position,Avg ctx density,Test F1
+E2',SQuAD+IPR LegalBERT-US,Copyright,349,62.3,375,53.9,0.447,9.1,0.355,50.4,74.5683
+E2',SQuAD+IPR LegalBERT-US,Designs,173,43.4,283,46.2,0.32,13.8,0.156,41.2,98.9741
+E2',SQuAD+IPR LegalBERT-US,GI,551,51.8,303,26.0,0.458,5.5,0.348,46.8,83.6235
+E2',SQuAD+IPR LegalBERT-US,Patents,1143,35.8,192,13.7,0.429,4.9,0.376,47.4,96.3376
+E2',SQuAD+IPR LegalBERT-US,Plant Var.,555,21.9,63,2.2,0.636,8.9,0.32,37.3,72.2618
+E2',SQuAD+IPR LegalBERT-US,Semicond.,585,22.1,47,43.2,0.418,6.0,0.349,32.6,94.0027
+E2',SQuAD+IPR LegalBERT-US,Trade Marks,1106,31.9,65,21.7,0.416,4.8,0.406,50.3,86.3152

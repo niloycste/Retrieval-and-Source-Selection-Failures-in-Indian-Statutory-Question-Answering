@@ -1,0 +1,69 @@
+{
+  "status": "complete post-hoc title-aware neural end-to-end control",
+  "created_at": "2026-10-15T15:04:05+05:30",
+  "scope": {
+    "questions": 344,
+    "passages": 1116,
+    "top_k": 5
+  },
+  "retrieval": "title+paragraph BM25--BGE-M3 RRF, reranked by BGE-reranker-v2-m3",
+  "reader_selector_over_top5": {
+    "n": 344,
+    "retrieval_recall@5_pct": 83.7209,
+    "selected_annotated_source_pct": 37.7907,
+    "conditional_source_selection_pct": 45.1389,
+    "em_pct": 30.2326,
+    "f1_pct": 53.1218,
+    "annotation_grounded_em_pct": 29.0698,
+    "annotation_grounded_f1_pct": 35.4099,
+    "stage_counts": {
+      "gold_absent_from_top5": 56,
+      "gold_available_reader_selected_other": 158,
+      "gold_selected_non_em_extraction": 30,
+      "gold_selected_normalized_em": 100
+    }
+  },
+  "reranker_rank1_selector": {
+    "n": 344,
+    "retrieval_recall@5_pct": 83.7209,
+    "selected_annotated_source_pct": 51.7442,
+    "conditional_source_selection_pct": 61.8056,
+    "em_pct": 33.1395,
+    "f1_pct": 54.6158,
+    "annotation_grounded_em_pct": 33.1395,
+    "annotation_grounded_f1_pct": 44.3785,
+    "stage_counts": {
+      "gold_absent_from_top5": 56,
+      "gold_available_reader_selected_other": 110,
+      "gold_selected_non_em_extraction": 64,
+      "gold_selected_normalized_em": 114
+    }
+  },
+  "provenance": {
+    "script": "scripts/04_retrieval/title_neural_end_to_end_control.py",
+    "ranking_file": "results/experiments/retrieval/runs/metadata_neural_selector_v1/rankings_title_paragraph_rrf_bm25_bge_m3_bge_reranker_v2_m3.jsonl",
+    "reader_cache": "results/experiments/retrieval/review_robustness_20260920/reader_candidates.jsonl",
+    "reader_pairs_total": 1720,
+    "reader_pairs_reused": 1219,
+    "reader_pairs_newly_decoded": 501,
+    "qa_model": "artifacts/models/squad_v1/baseline_e2_squadv1/final",
+    "decoder": {
+      "input_format": "[CLS] question [SEP] context [SEP]",
+      "max_seq_length": 384,
+      "doc_stride": 128,
+      "batch_size": 16,
+      "max_answer_tokens": null,
+      "truncation": "only_second",
+      "span_decoding": "exhaustive constrained start<=end",
+      "window_selection": "maximum summed start/end logit",
+      "prediction_text": "literal source-context character slice"
+    },
+    "input_sha256": {
+      "data/processed/indic_ipr_qa/unique_contexts.jsonl": "aa2fb370362082319d7b6c754070e3b154a0b4e338535730ef5803399383fe7e",
+      "data/splits/test.jsonl": "851b3c0130fd21bd3da2c961a4d06e1f84f69ced3fa5487e780884b811734082",
+      "results/experiments/retrieval/runs/metadata_neural_selector_v1/rankings_title_paragraph_rrf_bm25_bge_m3_bge_reranker_v2_m3.jsonl": "19d0851c47fd5013eca8e9af920e6da8cbd873e2852909ecba01cc99086b4ca4",
+      "results/experiments/retrieval/review_robustness_20260920/reader_candidates.jsonl": "81168f494396e0bbdd20bc8d2a7e786c6af9f8cf65bbd8381bfe90d321c015d4"
+    },
+    "elapsed_seconds": 98.449
+  }
+}

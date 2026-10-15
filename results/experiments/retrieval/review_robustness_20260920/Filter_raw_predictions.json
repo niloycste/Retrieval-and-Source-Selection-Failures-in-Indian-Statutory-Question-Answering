@@ -1,0 +1,3442 @@
+[
+  {
+    "id": "cop_000041",
+    "prediction": "Except in relation to infringement of copyright, a work shall not be deemed to be published or performed in public, if published, or performed in public, without the licence of the owner of the copyright.",
+    "selected_context_index": 8,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "cop_000063",
+    "prediction": "to make a copy of the film, including— (A) a photograph of any image forming part thereof; or (B) storing of it in any medium by electronic or other means",
+    "selected_context_index": 20,
+    "em": 0.0,
+    "f1": 0.2745098039215686,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "cop_000064",
+    "prediction": "which is an extant variety",
+    "selected_context_index": 705,
+    "em": 0.0,
+    "f1": 0.028169014084507046,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "cop_000065",
+    "prediction": "of such genera and species as specified under sub-section (2) of section 29",
+    "selected_context_index": 705,
+    "em": 0.0,
+    "f1": 0.06557377049180328,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "cop_000066",
+    "prediction": "in the case of a cinematograph film,—",
+    "selected_context_index": 20,
+    "em": 0.0,
+    "f1": 0.18918918918918917,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "cop_000067",
+    "prediction": "to reproduce the work in any material form including—",
+    "selected_context_index": 19,
+    "em": 0.0,
+    "f1": 0.08791208791208792,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 2
+  },
+  {
+    "id": "cop_000068",
+    "prediction": "Where the proprietor of a trade mark claims to be entitled to the exclusive use of any part thereof separately, he may apply to register the whole and the part as separate trade marks.",
+    "selected_context_index": 931,
+    "em": 0.0,
+    "f1": 0.10909090909090909,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "cop_000069",
+    "prediction": "Notwithstanding anything contained in sub-section (1), an extant variety shall be registered under this Act within a specified period if it conforms to such criteria of distinctiveness, uniformity and stability as shall be specified under the regulations",
+    "selected_context_index": 706,
+    "em": 0.0,
+    "f1": 0.198019801980198,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "cop_000079",
+    "prediction": "Any person claiming to be the proprietor of a trade mark used or proposed to be use d by him, who is desirous of registering it, shall apply in writing to the Registrar in the prescribed manner for the registration of his trade mark.",
+    "selected_context_index": 935,
+    "em": 0.0,
+    "f1": 0.12607449856733524,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "cop_000080",
+    "prediction": "shall apply thereto in the same manner as they apply to a specification published on or after the date of filing of the applicant's complete specification",
+    "selected_context_index": 447,
+    "em": 0.0,
+    "f1": 0.24390243902439027,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "cop_000081",
+    "prediction": "Every application under sub -section (1) shall be filed in the office of the Trade Marks Registry within whose territorial limits the principal place of busine ss in India of the applicant or in the case of joint applicants the principal place of business in India of the applicant whose name is first mentioned in the application as having a place of business in India, is situate:",
+    "selected_context_index": 935,
+    "em": 0.0,
+    "f1": 0.25490196078431376,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "cop_000109",
+    "prediction": "In the case of a work, where a public undertaking is the first owner of the copyright therein, copyright shall subsist until sixty years from the beginning of the calendar year next following the year in which the work is first published.",
+    "selected_context_index": 39,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "cop_000112",
+    "prediction": "The p rovisions of sections 19 and 19 A shal l, with any necessary adaptations and modifications, apply in relation to a licence under section 30 as they apply in relation to assignment of copyright in a work.",
+    "selected_context_index": 42,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "cop_000125",
+    "prediction": "Any person desirous of making a cover version, being a sound recording in respect of any literary, dramatic or musical work, where sound reco rdings of that work have been made by or with the licence or consent of the owner of the right in the work, may do so subject to the provisions of this section:",
+    "selected_context_index": 47,
+    "em": 0.0,
+    "f1": 0.7862068965517242,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "cop_000126",
+    "prediction": "The person making the sound recordings shall give prior notice of his intention to make the sound recordings in the manner as may be prescribed, and provide in advance copies of all covers or labels with which the sound recordings are to be sold, and pay in advance, to the owner of rights in each work royalties in respect of all copies to be made by him, at the rate fixed by the Appellate Board in this behalf:",
+    "selected_context_index": 47,
+    "em": 0.0,
+    "f1": 0.6419753086419753,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "cop_000127",
+    "prediction": "The person making such sound reco rdings shall not make any alteration in the literary or musical work which has not been made previously by or with the consent of the owner of rights, or which is not technically necessary for the purpose of making the sound recordings:",
+    "selected_context_index": 48,
+    "em": 0.0,
+    "f1": 0.7441860465116279,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "cop_000128",
+    "prediction": "One royalty in respect of such sound recordings shall be paid for a minimum of fifty thou sand copies of each work during each calendar year in which copies of it are made:",
+    "selected_context_index": 48,
+    "em": 0.0,
+    "f1": 0.673469387755102,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "cop_000129",
+    "prediction": "The person making such sound recordings shall maintain such registers and books of account in respect thereof, including full details of existing stock as may be prescribed and shall allow the owner of rights or his duly authorised agent or representative to inspect all records and books of account relating to such sound recording:",
+    "selected_context_index": 49,
+    "em": 0.0,
+    "f1": 0.4821428571428571,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "cop_000265",
+    "prediction": "Subject to the provisions of this Act, the term of every patent granted, after the commencement of the Patents (Amendment) Act, 2002, and the term of every patent which has not expired and has not ceased to have effect, on the date of such commencement, under this Act, shall be twenty years from the date of filing of the application for the patent",
+    "selected_context_index": 501,
+    "em": 0.0,
+    "f1": 0.31521739130434784,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "cop_000266",
+    "prediction": "A patent shall cease to have effect notwithstanding anything therein or in this Act on the expiration of the period prescribed for the payment of any renewal fee, if that fee is not paid within the prescribed period 6or within such extended period as may be prescribed",
+    "selected_context_index": 501,
+    "em": 0.0,
+    "f1": 0.23703703703703705,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "cop_000267",
+    "prediction": "When any goods treated as prohibited under sub -section ( 2) have been detained, the Customs Officer detaining them shall inform the importer as well as the person who gave notice under sub-section (1) of the such goods within forty-eight hours of their detention.",
+    "selected_context_index": 105,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 2
+  },
+  {
+    "id": "cop_000268",
+    "prediction": "The Customs Officer shall release the goods, and they shall not longer be treated as prohibited goods, if the person who gave notice under sub -section ( 1) does not produce any order from a court having jurisdiction as to the temporary or permanent disposal of such goods within fourteen days from the date of their detention.",
+    "selected_context_index": 105,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 2
+  },
+  {
+    "id": "cop_000292",
+    "prediction": "Whoever having already been convicted of an offence under section 63 is again convicted of any such offence shall be punishable for the second and for every subsequent offence, with imprison ment for a term which shall not be less than one year but which may extend to three years and with fine which shall not be less than one lakh rupees but which may extend to two lakh rupees:",
+    "selected_context_index": 117,
+    "em": 0.0,
+    "f1": 0.6222222222222222,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "cop_000299",
+    "prediction": "Any person, who knowingly, — (i) removes or alters any rights management information without authority, or (ii) distributes, imports for distribution, broadcasts or communicates to the public, without authority, copies of any work, or performance knowing that electronic rights management information has been removed or altered without authority, shall be punishable with imprisonment which may extend to two years and shall also be liable to fine: Provided that if the rights management information has been tampered with in any work, the owner of copyright in such work may also avail of civil remedies provided u nder Chapter XII against the persons indulging in such acts.",
+    "selected_context_index": 122,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "cop_000312",
+    "prediction": "When an application has been accepted, the Registrar shall, as soon as may be thereafter, cause the application as accepted to be advertised in the prescribed man ner, and the provisions of section 21 shall apply in relation to the registration of the mark as they apply in relation to an application under section 18",
+    "selected_context_index": 1025,
+    "em": 0.0,
+    "f1": 0.2891566265060241,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000406",
+    "prediction": "If it appears to the Central Government that a foreign country does not give or has not undertaken to give ade quate protection to the works of Indian authors, the Central Government may, by order published in the Official Gazette, direct that such of the provisions of this Act as confer copyright on works first published in India shall not apply to works, publishe d after the date specified in the order, the authors whereof are subjects or citizens of such foreign country and are not domiciled in India, and thereupon those provisions shall not apply to such works.",
+    "selected_context_index": 82,
+    "em": 0.0,
+    "f1": 0.28402366863905326,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000407",
+    "prediction": "Any person aggrieved by an order or decision of the Registrar under this Act, or the rules made thereunder may prefer an appeal to the Appellate Board within three months from the date on which the order or decision sought to be appealed against is communicated to such person preferring the appeal",
+    "selected_context_index": 859,
+    "em": 0.0,
+    "f1": 0.34426229508196726,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000408",
+    "prediction": "held to prevent the disclosure by the Controller of information concerning an application for a patent or a specification filed in pursuance thereof to the Central Government for the purpose of the application or specification being examined for considering whether an order under this Chapter should be made or whether an order so made should be revoked",
+    "selected_context_index": 487,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000409",
+    "prediction": "All applications and communications to the Controller under this Act may be signed by, and all attendances upon the Controller may be made by or through a legal practitioner or by or through an agent whose name and address ha d been entered in the register of patent agents maintained under section 125 of the Patents Act, 1970 (39 of 1970)",
+    "selected_context_index": 242,
+    "em": 0.0,
+    "f1": 0.24691358024691357,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000410",
+    "prediction": "the application has not been refused by the Controller by virtue of any power vested in him by this Act",
+    "selected_context_index": 488,
+    "em": 0.0,
+    "f1": 0.975609756097561,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000411",
+    "prediction": "any person not residing in India to employ an agent residing in India",
+    "selected_context_index": 243,
+    "em": 0.0,
+    "f1": 0.12987012987012986,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000412",
+    "prediction": "granted as expeditiously as possible to the applicant or, in the case of a joint application, to the applicants jointly, with the seal of the patent office and the date on which the patent is granted shall be entered in the register",
+    "selected_context_index": 488,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000413",
+    "prediction": "On the grant of patent, the Controller shall publish the fact that the patent has been granted and thereupon the application, specification and other documents related thereto shall be open for public inspection",
+    "selected_context_index": 488,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000414",
+    "prediction": "open for public inspection",
+    "selected_context_index": 488,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000527",
+    "prediction": "A patentee may, at any time by giving notice in the prescribed manner to the Controller, offer to surrender his patent",
+    "selected_context_index": 514,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000528",
+    "prediction": "Where such an offer is made, the Controller shall 2publish the offer in the prescribed manner, and also notify every person other than the patentee whose name appears in the register as having an interest in the patent",
+    "selected_context_index": 514,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000529",
+    "prediction": "Any person interested may, within the prescribed period after 3such publication give notice to the Controller of opposition to the surrender, and where any such notice is given the Controller shall notify the patentee",
+    "selected_context_index": 514,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000530",
+    "prediction": "If the Controller is satisfied after hearing the patentee and any opponent, if desirous of being heard, that the patent may properly be surrendered, he may accept the offer and, by order revoke the patent",
+    "selected_context_index": 514,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000563",
+    "prediction": "The Court trying any offence under this Act may, whether the alleged offender is convicted or not, order that all copies of the work or all plates in the possession of the alleged offender, which appear to it to be infringing copies, or plates for the purpose of making infringing copies, be delivered up to the owner of the copyright or may make such order as it may deem fit regarding the disposal of such copies of plates",
+    "selected_context_index": 123,
+    "em": 0.0,
+    "f1": 0.3404255319148936,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000564",
+    "prediction": "The relief which a court may grant in any suit for infringement referred to in section 65 includes an injunction and at the option of the plaintiff, either damages or a share of the profits",
+    "selected_context_index": 783,
+    "em": 0.0,
+    "f1": 0.326530612244898,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000565",
+    "prediction": "deemed to be revoked",
+    "selected_context_index": 523,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000618",
+    "prediction": "The Controller General of Patents, Designs and Trade Marks appointed under sub-section (1) of 4section 3 of the Trade Marks Act, 1999 (4 of 1999), shall be the Controller of Patents for the purposes of this Act",
+    "selected_context_index": 535,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000619",
+    "prediction": "the Controller of Patents for the purposes of this Act",
+    "selected_context_index": 535,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000620",
+    "prediction": "For the purposes of this Act, the Central Government may appoint as many examiners and other officers and with such designations as it thinks fit",
+    "selected_context_index": 535,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000621",
+    "prediction": "Subject to the provisions of this Act, the officers appointed under sub-section (2) shall discharge under the superintendence and directions of the Controller such functions of the Controller under this Act as he may, from time to time by general or special order in writing, authorise them to discharge",
+    "selected_context_index": 535,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000622",
+    "prediction": "A suit under sub-section (1) shall not be instituted in any court inferior to a district court",
+    "selected_context_index": 375,
+    "em": 0.0,
+    "f1": 0.11214953271028037,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000637",
+    "prediction": "If the person committing an offence under this Act is a company, the company as well as every person in charge of, and responsible to, the company for the conduct of its business at the time of the commission of the offence shall be deemed to be guilty of the offence and shall be liable to be proceeded against and punished accordingly:",
+    "selected_context_index": 796,
+    "em": 0.0,
+    "f1": 0.27522935779816515,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000638",
+    "prediction": "summoning and enforcing the attendance of any person and examining him on oath",
+    "selected_context_index": 539,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000639",
+    "prediction": "requiring the discovery and production of any document",
+    "selected_context_index": 539,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000640",
+    "prediction": "receiving evidence on affidavits",
+    "selected_context_index": 539,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000641",
+    "prediction": "issuing commissions for the examination of witnesses or documents",
+    "selected_context_index": 540,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000642",
+    "prediction": "awarding costs",
+    "selected_context_index": 540,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000643",
+    "prediction": "reviewing his own decision on application made within the prescribed time and in the prescribed manner",
+    "selected_context_index": 540,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000644",
+    "prediction": "setting aside an order passed ex parte on application made within the prescribed time and in the prescribed manner",
+    "selected_context_index": 540,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000645",
+    "prediction": "any other matter which may be prescribed",
+    "selected_context_index": 541,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000646",
+    "prediction": "prescribed",
+    "selected_context_index": 541,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000647",
+    "prediction": "Any order for costs awarded by the Controller in exercise of the powers conferred upon him under sub-section (1) shall be executable as a decree of a civil court",
+    "selected_context_index": 541,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000648",
+    "prediction": "executable as a decree of a civil court",
+    "selected_context_index": 541,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000749",
+    "prediction": "Notwithstanding anything contained in the other provisions of this Chapter, at any time after the sealing of a patent, any person who has the right to work any other patented invention either as patentee or as licensee thereof, exclusive or otherwise, may apply to the Controller for the grant of a licence of the first-mentioned patent on the ground that he is prevented or hindered without such licence from working the other invention efficiently or to the best advantage possible",
+    "selected_context_index": 567,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000750",
+    "prediction": "No appeal shall be admitted if it is preferred aft er the expiry of the period specified under sub-section (1):",
+    "selected_context_index": 1032,
+    "em": 0.0,
+    "f1": 0.4848484848484849,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000751",
+    "prediction": "made unless the Controller is satisfied— (i) that the applicant is able and willing to grant, or procure the grant to the patentee and his licensees if they so desire, of a licence in respect of the other invention on reasonable terms",
+    "selected_context_index": 567,
+    "em": 0.0,
+    "f1": 0.25,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000752",
+    "prediction": "that the applicant is able and willing to grant, or procure the grant to the patentee and his licensees if they so desire, of a licence in respect of the other invention on reasonable terms",
+    "selected_context_index": 567,
+    "em": 0.0,
+    "f1": 0.9859154929577464,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000753",
+    "prediction": "that the other invention has made a substantial contribution to the establishment or development of commercial or industrial activities in the territory of India",
+    "selected_context_index": 567,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000754",
+    "prediction": "When the Controller is satisfied that the conditions mentioned in sub-section (1) have been established by the applicant, he may make an order on such terms as he thinks fit granting a licence under the first-mentioned patent and a similar order under the other patent if so requested by the proprietor of the first-mentioned patent or his licensee:",
+    "selected_context_index": 568,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000755",
+    "prediction": "Provided that the licence granted by the Controller shall be non-assignable except with the assignment of the respective patents",
+    "selected_context_index": 568,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000756",
+    "prediction": "non-assignable except with the assignment of the respective patents",
+    "selected_context_index": 568,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000757",
+    "prediction": "The provisions of sections 87, 88, 8 and 90 shall apply to licences granted under this section as they apply to licences granted under section 84",
+    "selected_context_index": 568,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000851",
+    "prediction": "In any suit for infringement of a patent, every ground on which it may be revoked under section 64 shall be available as a ground for defence",
+    "selected_context_index": 594,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000852",
+    "prediction": "available as a ground for defence",
+    "selected_context_index": 594,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000853",
+    "prediction": "In any suit for infringement of a patent by the making, using or importation of any machine, apparatus or other article or by the using of any process or by the importation, use or distribution of any medicine or drug, it shall be a ground for defence that such making, using, importation or distribution is in accordance with any one or more of the conditions specified in section 47",
+    "selected_context_index": 594,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000854",
+    "prediction": "a ground for defence that such making, using, importation or distribution is in accordance with any one or more of the conditions specified in section 47",
+    "selected_context_index": 594,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000891",
+    "prediction": "If any person fails to comply with any direction given under section 35 2or makes or causes to be made an application for the grant of a patent in contravention of section 39, he shall be punishable with imprisonment for a term which may extend to two years, or with fine, or with both",
+    "selected_context_index": 605,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000892",
+    "prediction": "If any person fails to comply with any direction given under section 35 2or makes or causes to be made an application for the grant of a patent in contravention of section 39, he shall be punishable with imprisonment for a term which may extend to two years, or with fine, or with both",
+    "selected_context_index": 605,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000893",
+    "prediction": "punishable with imprisonment for a term which may extend to two years, or with fine, or with both",
+    "selected_context_index": 605,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000894",
+    "prediction": "If any person makes, or causes to be made, a false entry in any register kept under this Act, or a writing falsely purporting to be a copy of an entry in such a register, or produces or tenders, or causes to be produced or tendered, in evidence any such writing knowing the entry or writing to be false, he shall be punishable with imprisonment for a term which may extend to two years, or with fine or with both",
+    "selected_context_index": 606,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000895",
+    "prediction": "If any person makes, or causes to be made, a false entry in any register kept under this Act, or a writing falsely purporting to be a copy of an entry in such a register, or produces or tenders, or causes to be produced or tendered, in evidence any such writing knowing the entry or writing to be false, he shall be punishable with imprisonment for a term which may extend to two years, or with fine or with both",
+    "selected_context_index": 606,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000896",
+    "prediction": "punishable with imprisonment for a term which may extend to two years, or with fine or with both",
+    "selected_context_index": 606,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000937",
+    "prediction": "The Controller shall maintain a register to be called the register of patent agents in which shall be entered the names, addresses and other relevant particulars, as may be prescribed, of all persons qualified to have their names so entered under section 126",
+    "selected_context_index": 616,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000938",
+    "prediction": "entered the names, addresses and other relevant particulars, as may be prescribed, of all persons qualified to have their names so entered under section 126",
+    "selected_context_index": 616,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000939",
+    "prediction": "Subject to the provisions of sub-section (1), where an application for rectification of the register is made to the Registrar under section 47 or section 57, the Registrar may, if he thinks fit, refer the application at any stage of the proceedings to the High Court",
+    "selected_context_index": 1065,
+    "em": 0.0,
+    "f1": 0.3132530120481928,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000940",
+    "prediction": "lawful for the Controller to keep the register of patent agents in computer floppies, diskettes or any other electronic form subject to such safeguards as may be prescribed",
+    "selected_context_index": 616,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000957",
+    "prediction": "all applications and communications to the Controller under this Act may be signed by a patent agent authorised in writing in this behalf by the person concerned.",
+    "selected_context_index": 620,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000958",
+    "prediction": "signed by a patent agent authorised in writing in this behalf by the person concerned",
+    "selected_context_index": 620,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000980",
+    "prediction": "The Registrar may, on application made to him in the prescribed manner b y any person who proposes to apply for the registration of a trade mark, give advice as to whether the trade mark appears to him prima facie to be distinctive.",
+    "selected_context_index": 1072,
+    "em": 0.0,
+    "f1": 0.2112676056338028,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_000981",
+    "prediction": "a convention country or convention countries for the purposes of this Act",
+    "selected_context_index": 627,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_001046",
+    "prediction": "An address for service stated in an application or notice of opposition shall for the purposes of the application or notice of opposition be deemed to be the address of the applicant or opponent, as the case may be, and all documents in relatio n to the application or notice of opposition may be served by leaving them at or sending them by post to the address for service of the applicant or opponent, as the case may be",
+    "selected_context_index": 1087,
+    "em": 0.0,
+    "f1": 0.37241379310344824,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_001047",
+    "prediction": "of section 11A or before the same is open to public inspection in pursuance of sub-section (3) of section 11A or section 43",
+    "selected_context_index": 643,
+    "em": 0.0,
+    "f1": 0.5168539325842696,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_001079",
+    "prediction": "If a patent is lost or destroyed, or its non-production is accounted for to the satisfaction of the Controller, the Controller may at any time, on application made in",
+    "selected_context_index": 653,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_001080",
+    "prediction": "If a patent is lost or destroyed, or its non-production is accounted for to the satisfaction of the Controller, the Controller may at any time, on application made in",
+    "selected_context_index": 653,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_001139",
+    "prediction": "The Indian Patents and Designs Act, 1911, in so far as it relates to patents, is hereby repealed, that is to say, the said Act shall be amended in the manner specified in the Schedule",
+    "selected_context_index": 667,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_001140",
+    "prediction": "amended in the manner specified in the Schedule",
+    "selected_context_index": 667,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_001141",
+    "prediction": "The mention of particular matters in this section shall not prejudice the general application of the General Clauses Act, 1897 (1 of 1897), with respect to repeals",
+    "selected_context_index": 667,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_001142",
+    "prediction": "Notwithstanding anything contained in this Act, any suit for infringement of a patent or any proceeding for revocation of a patent, pending in any court at the commencement of this Act, may be continued and disposed of, as if this Act had not been passed",
+    "selected_context_index": 667,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "pat_v2_001143",
+    "prediction": "continued and disposed of, as if this Act had not been passed",
+    "selected_context_index": 667,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000249",
+    "prediction": "statement of the goods or services in relation to which they are respectively used or proposed to be used",
+    "selected_context_index": 931,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000250",
+    "prediction": "statement of the goods or services in relation to which they are respectively used or proposed to be used",
+    "selected_context_index": 931,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000251",
+    "prediction": "statement of number, price, quality or names of places",
+    "selected_context_index": 931,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000252",
+    "prediction": "statement of number, price, quality or names of places",
+    "selected_context_index": 931,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000253",
+    "prediction": "uniform, if subject to the variation that may be expected from the particular features of its propagation it is sufficiently uniform in its essential characteristics",
+    "selected_context_index": 707,
+    "em": 0.0,
+    "f1": 0.13953488372093023,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 2
+  },
+  {
+    "id": "tm_000254",
+    "prediction": "uniform, if subject to the variation that may be expected from the particular features of its propagation it is sufficiently uniform in its essential characteristics",
+    "selected_context_index": 707,
+    "em": 0.0,
+    "f1": 0.13953488372093023,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 2
+  },
+  {
+    "id": "tm_000255",
+    "prediction": "stable, if its essential characteristics remain unchanged after repeated propagation or, in the case of a particular cycle of propagation, at the end of each such cycle",
+    "selected_context_index": 707,
+    "em": 0.0,
+    "f1": 0.0909090909090909,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 2
+  },
+  {
+    "id": "tm_000256",
+    "prediction": "stable, if its essential characteristics remain unchanged after repeated propagation or, in the case of a particular cycle of propagation, at the end of each such cycle",
+    "selected_context_index": 707,
+    "em": 0.0,
+    "f1": 0.0909090909090909,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 2
+  },
+  {
+    "id": "tm_000269",
+    "prediction": "the filing and examination of the application",
+    "selected_context_index": 293,
+    "em": 0.0,
+    "f1": 0.0,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000270",
+    "prediction": "the filing and examination of the application",
+    "selected_context_index": 293,
+    "em": 0.0,
+    "f1": 0.0,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000271",
+    "prediction": "which is not the subject of a separate application by the proprietor for r egistration as a trade mark",
+    "selected_context_index": 934,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000272",
+    "prediction": "which is not the subject of a separate application by the proprietor for r egistration as a trade mark",
+    "selected_context_index": 934,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000273",
+    "prediction": "a Government company as defined in Section 617 of the Companies Act, 1956 ( 1 of 1956)",
+    "selected_context_index": 24,
+    "em": 0.0,
+    "f1": 0.21428571428571427,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 2
+  },
+  {
+    "id": "tm_000274",
+    "prediction": "a Government company as defined in Section 617 of the Companies Act, 1956 ( 1 of 1956)",
+    "selected_context_index": 24,
+    "em": 0.0,
+    "f1": 0.21428571428571427,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 2
+  },
+  {
+    "id": "tm_000275",
+    "prediction": "the refusal and acceptance of registration",
+    "selected_context_index": 293,
+    "em": 0.0,
+    "f1": 0.12244897959183673,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000276",
+    "prediction": "the refusal and acceptance of registration",
+    "selected_context_index": 293,
+    "em": 0.0,
+    "f1": 0.12244897959183673,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000337",
+    "prediction": "Where a trade mark has been removed from the register for failure to pay the fee for renewal, it shall nevertheless, for the purpose of any application for the registration of another trade mark during one year, next after the date of the removal, be deemed to be a trade mark already on the register, unless the Registrar or the High Court, as the case may be is satisfied either— (a) that there has been no bona fide trade use of the trade mark which has been removed during the two years immediately preceding its removal",
+    "selected_context_index": 947,
+    "em": 0.0,
+    "f1": 0.7450980392156863,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000338",
+    "prediction": "Where a trade mark has been removed from the register for failure to pay the fee for renewal, it shall nevertheless, for the purpose of any application for the registration of another trade mark during one year, next after the date of the removal, be deemed to be a trade mark already on the register, unless the Registrar or the High Court, as the case may be is satisfied either— (a) that there has been no bona fide trade use of the trade mark which has been removed during the two years immediately preceding its removal",
+    "selected_context_index": 947,
+    "em": 0.0,
+    "f1": 0.7450980392156863,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000339",
+    "prediction": "On application made in the prescribed manner to the High Court or to the Registrar by any person aggrieved, the Registrar or the High Court, as the case may be, may make such order as it may think fit for cancelling or varying the registration of a geographical indication or authorised user on the ground of any contravention, or failure to observe the condition entered on the register in relation thereto",
+    "selected_context_index": 310,
+    "em": 0.0,
+    "f1": 0.2127659574468085,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000340",
+    "prediction": "On application made in the prescribed manner to the High Court or to the Registrar by any person aggrieved, the Registrar or the High Court, as the case may be, may make such order as it may think fit for cancelling or varying the registration of a geographical indication or authorised user on the ground of any contravention, or failure to observe the condition entered on the register in relation thereto",
+    "selected_context_index": 310,
+    "em": 0.0,
+    "f1": 0.2127659574468085,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000341",
+    "prediction": "The seeds or propagating material or parental line seeds to be deposited under sub-section (1) shall be deposited to the National Gene Bank specified by the Authority.",
+    "selected_context_index": 734,
+    "em": 0.0,
+    "f1": 0.20289855072463767,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000342",
+    "prediction": "The seeds or propagating material or parental line seeds to be deposited under sub-section (1) shall be deposited to the National Gene Bank specified by the Authority",
+    "selected_context_index": 734,
+    "em": 0.0,
+    "f1": 0.20289855072463767,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000405",
+    "prediction": "Where the proprietor of an earlier trade mark has acquiesced for a continuous period of five years in the use of a registered trade mark, being aware of that use, he shall no longer be entitled on the basis of that earlier trade mark—",
+    "selected_context_index": 962,
+    "em": 0.0,
+    "f1": 0.8543689320388349,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000406",
+    "prediction": "Where the proprietor of an earlier trade mark has acquiesced for a continuous period of five years in the use of a registered trade mark, being aware of that use, he shall no longer be entitled on the basis of that earlier trade mark—",
+    "selected_context_index": 962,
+    "em": 0.0,
+    "f1": 0.8543689320388349,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000407",
+    "prediction": "Any association of persons who fulfils such conditions as may be prescribed may apply for permission to do the business specified in sub-section (1) to the Registrar of Copyrights who shall submit the application to the Central Government.",
+    "selected_context_index": 63,
+    "em": 0.0,
+    "f1": 0.05,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "tm_000408",
+    "prediction": "Any association of persons who fulfils such conditions as may be prescribed may apply for permission to do the business specified in sub-section (1) to the Registrar of Copyrights who shall submit the application to the Central Government.",
+    "selected_context_index": 63,
+    "em": 0.0,
+    "f1": 0.05,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000409",
+    "prediction": "The Appellate Board shall consist of a Chairperson, Vice-Chairperson, and such other Members as the Central Government may deem fit and, subject to the other provisions of this Act, the jurisdiction, powers and authority of the Appellate Board may be exercised by a Bench thereof",
+    "selected_context_index": 848,
+    "em": 0.0,
+    "f1": 0.2795698924731182,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000410",
+    "prediction": "The Appellate Board shall consist of a Chairperson, Vice-Chairperson, and such other Members as the Central Government may deem fit and, subject to the other provisions of this Act, the jurisdiction, powers and authority of the Appellate Board may be exercised by a Bench thereof.",
+    "selected_context_index": 848,
+    "em": 0.0,
+    "f1": 0.2795698924731182,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000783",
+    "prediction": "Whoever having already been convicted of an offence under section 103 or section 104 is again convicted of any such offence shall be punishable for the second and for every subsequent offence, with imprisonment for a term which shall not be less than one year but which may extend to three years and with fine which shall not be less than one lakh rupees but which may extend to two lakh rupees:",
+    "selected_context_index": 1042,
+    "em": 0.0,
+    "f1": 0.8750000000000001,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000784",
+    "prediction": "Whoever having already been convicted of an offence under section 103 or section 104 is again convicted of any such offence shall be punishable for the second and for every subsequent offence, with imprisonment for a term which shall not be less than one year but which may extend to three years and with fine which shall not be less than one lakh rupees but which may extend to two lakh rupees: Provided that the court may, for adequate and special reason to be mentioned in the judgement, impose a sentence of imprisonment for a term of less than one year or a fine of less than one lakh rupees: Provided further that for the purposes of this section, no cognizance shall be taken of any conviction made before the commencement of this Act.",
+    "selected_context_index": 1042,
+    "em": 0.0,
+    "f1": 0.5894736842105264,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000785",
+    "prediction": "a declaration to the effect that the threats are unjustifiable",
+    "selected_context_index": 592,
+    "em": 0.0,
+    "f1": 0.14285714285714285,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000786",
+    "prediction": ", contrary to section 81 .—Omitted by The Jan Vishwas (Amendment of Provisions) Act, 2023 (18 of 2023), s. 2 and Schedule (w.e.f. 1-8-2024).",
+    "selected_context_index": 1043,
+    "em": 0.0,
+    "f1": 0.878048780487805,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000801",
+    "prediction": "The provision s of sections 102, 103, 104 and 105 shall, in relation to a registered trade mark or proprietor of such mark, be subject to the rights created or recognised by this Act and no act or omission shall be deemed to be an offence under the aforesaid sections if,— (a) the alleged offence relates to a registered trade mark and the act or omiss ion is permitted under this Act",
+    "selected_context_index": 1046,
+    "em": 0.0,
+    "f1": 0.8923076923076924,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000802",
+    "prediction": "The provision s of sections 102, 103, 104 and 105 shall, in relation to a registered trade mark or proprietor of such mark, be subject to the rights created or recognised by this Act and no act or omission shall be deemed to be an offence under the aforesaid sections if,— (a) the alleged offence relates to a registered trade mark and the act or omiss ion is permitted under this Act",
+    "selected_context_index": 1046,
+    "em": 0.0,
+    "f1": 0.8923076923076924,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000803",
+    "prediction": "Where a person is convicted of an offence under section 103 or section 104 or section 105 or is acquitted of an offence under section 103 or section 104 on proof that he acted without intent to def raud, or under section 104 on proof of the matters specified in clause ( a), clause (b) or clause ( c) of that section, the court convicting or acquitting him may direct the forfeiture to Government of all goods and things by means of, or in relation to, which the offence has been committed, or but for such proof as aforesaid would have been committed",
+    "selected_context_index": 1047,
+    "em": 0.0,
+    "f1": 0.7453416149068323,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000804",
+    "prediction": "Where a person is convicted of an offence under section 103 or section 104 or section 105 or is acquitted of an offence under section 103 or section 104 on proof that he acted without intent to def raud, or under section 104 on proof of the matters specified in clause ( a), clause (b) or clause ( c) of that section, the court convicting or acquitting him may direct the forfeiture to Government of all goods and things by means of, or in relation to, which the offence has been committed, or but for such proof as aforesaid would have been committed.",
+    "selected_context_index": 1047,
+    "em": 0.0,
+    "f1": 0.7453416149068323,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000805",
+    "prediction": "When a forfeiture is directed on a conviction and an appeal lies against the conviction, an appeal shall lie against the forfeiture also.",
+    "selected_context_index": 1047,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000806",
+    "prediction": "When a forfeiture is directed on a conviction and an appeal lies against the conviction, an appeal shall lie against the forfeiture also",
+    "selected_context_index": 1047,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000807",
+    "prediction": "When a forfeiture is directed on acquittal and the goods or things to which the direction relates are of value exceeding fifty rupees, an appeal against the forfeiture may be preferred, within thirty days from the date of the direction, to the court to which in appe alable cases appeals lie from sentences of the court which directed the forfeiture.",
+    "selected_context_index": 1047,
+    "em": 0.0,
+    "f1": 0.9655172413793104,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000808",
+    "prediction": "When a forfeiture is directed on acquittal and the goods or things to which the direction relates are of value exceeding fifty rupees, an appeal against the forfeiture may be preferred, within thirty days from the date of the direction, to the court to which in appe alable cases appeals lie from sentences of the court which directed the forfeiture.",
+    "selected_context_index": 1047,
+    "em": 0.0,
+    "f1": 0.9655172413793104,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000809",
+    "prediction": "When a forfeiture is directed on a conviction, the court, before whom the person is convicted, may order any forfeited articles to be destroyed or otherwise disposed of as the court thinks fit.",
+    "selected_context_index": 1047,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000810",
+    "prediction": "When a forfeiture is directed on a conviction, the court, before whom the person is convicted, may order any forfeited articles to be destroyed or otherwise disposed of as the court thinks fit.",
+    "selected_context_index": 1047,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000867",
+    "prediction": "the defendant pleads that registration of the plaintiff’s trade mark is invalid",
+    "selected_context_index": 1062,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000868",
+    "prediction": "the defendant pleads that registration of the plaintiff’s trade mark is invalid",
+    "selected_context_index": 1062,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000869",
+    "prediction": "the defendant raises a defence under clause ( e) of sub -section ( 2) of section 30 and the plaintiff pleads the invalidity of registration of the defendant’s trade mark, the court trying the suit (hereinafter referred to as the court), shall,—",
+    "selected_context_index": 1062,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000870",
+    "prediction": "the defendant raises a defence under clause",
+    "selected_context_index": 1062,
+    "em": 0.0,
+    "f1": 0.2978723404255319,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000871",
+    "prediction": "if any proceedings for rectification of the register in relation to the plaintiff’s or defendant’s trade mark are pending before the Registrar or the High Court , stay the suit pending the final disposal of such proceedings",
+    "selected_context_index": 1062,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000872",
+    "prediction": "if any proceedings for rectification of the register in relation to the plaintiff’s or defendant’s trade mark are pending before the Registrar or the High Court , stay the suit pending the final disposal of such proceedings;",
+    "selected_context_index": 1062,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000873",
+    "prediction": "of sub -section ( 1) within the time specified therein or within such extended time as the court may for sufficient cause allow, the tria l of the suit shall stand stayed until the final disposal of the rectification proceedings.",
+    "selected_context_index": 1064,
+    "em": 0.0,
+    "f1": 0.2916666666666667,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000874",
+    "prediction": "of sub -section ( 1) within the time specified therein or within such extended time as the court may for sufficient cause allow, the tria l of the suit shall stand stayed until the final disposal of the rectification proceedings.",
+    "selected_context_index": 1064,
+    "em": 0.0,
+    "f1": 0.2916666666666667,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000875",
+    "prediction": "of sub -section ( 1) within the time specified therein or within such extended time as the court may for sufficient cause allow, the tria l of the suit shall stand stayed until the final disposal of the rectification proceedings.",
+    "selected_context_index": 1064,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000876",
+    "prediction": "of sub -section ( 1) within the time specified therein or within such extended time as the court may for sufficient cause allow, the tria l of the suit shall stand stayed until the final disposal of the rectification proceedings.",
+    "selected_context_index": 1064,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000881",
+    "prediction": "Where a mark or a trade mark or trade description has been applied to the goods on sale or in the contract for sale of any goods or in relation to any service, the seller shall be deemed to warrant that the mark is a genuine mark and not falsely applied, or t hat the trade description is not a false trade description within the meaning of this Act unless the contrary is expressed in writing signed by or on behalf of the seller and delivered at the time of the sale of goods or providing of services on contract to and accepted by the buyer",
+    "selected_context_index": 1066,
+    "em": 0.0,
+    "f1": 0.7455621301775148,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000882",
+    "prediction": "Where a mark or a trade mark or trade description has been applied to the goods on sale or in the contract for sale of any goods or in relation to any service, the seller shall be deemed to warrant that the mark is a genuine mark and not falsely applied, or t hat the trade description is not a false trade description within the meaning of this Act unless the contrary is expressed in writing signed by or on behalf of the seller and delivered at the time of the sale of goods or providing of services on contract to and accepted by the buyer.",
+    "selected_context_index": 1066,
+    "em": 0.0,
+    "f1": 0.7455621301775148,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000895",
+    "prediction": "If the Registrar is satisfied, on application made to him in the prescribed manner and accompanied by the prescribed fee, that there is sufficient cause for extending the time for doing any act (not being a time expressly provided in this Act), whether the time so specified has expired or not, he may, subject to such conditions as he may think fit to impose, extend the time and inform the parties accordingly",
+    "selected_context_index": 1070,
+    "em": 0.0,
+    "f1": 0.8750000000000001,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000896",
+    "prediction": "If the Registrar is satisfied, on application made to him in the prescribed manner and accompanied by the prescribed fee, that there is sufficient cause for extending the time for doing any act (not being a time expressly provided in this Act), whether the time so specified has expired or not, he may, subject to such conditions as he may think fit to impose, extend the time and inform the parties accordingly. (2) Nothing in sub -section ( 1) shall be deemed to require the Registrar to hear the parties before disposing of an application for extension of time, and no appeal shall lie from any order of the Registrar under this section",
+    "selected_context_index": 1070,
+    "em": 0.0,
+    "f1": 0.6666666666666666,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000897",
+    "prediction": "The Controller shall refuse to recognise as agent in respect of any business under this Act any person who neither resides nor has a place of business in India.",
+    "selected_context_index": 625,
+    "em": 0.0,
+    "f1": 0.2647058823529412,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000898",
+    "prediction": "The Controller shall refuse to recognise as agent in respect of any business under this Act any person who neither resides nor has a place of business in India",
+    "selected_context_index": 625,
+    "em": 0.0,
+    "f1": 0.2647058823529412,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000949",
+    "prediction": "The proprietor or a licensee of a registered trade mark may give notice in writing to the Collector of Customs to prohibit the importation of any go ods if the import of the said goods constitute infringement under clause (c) of sub-section (6) of section 29.",
+    "selected_context_index": 1082,
+    "em": 0.0,
+    "f1": 0.9545454545454545,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000950",
+    "prediction": "The proprietor or a licensee of a registered trade mark may give notice in writing to the Collector of Customs to prohibit the importation of any go ods if the import of the said goods constitute infringement under clause (c) of sub-section (6) of section 29.",
+    "selected_context_index": 1082,
+    "em": 0.0,
+    "f1": 0.9545454545454545,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000951",
+    "prediction": "of section 29",
+    "selected_context_index": 1082,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000952",
+    "prediction": "(4) Any information obtained from the importer of the go ods or his agent under this section may be communicated by the Commissioner of Customs to the registered proprietor or registered user of the trade mark which is alleged to have been used as a false trade mark",
+    "selected_context_index": 1083,
+    "em": 0.0,
+    "f1": 0.0784313725490196,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000953",
+    "prediction": "A condition of the nature referred to in clause (a) or clause (b) or clause (c) of sub-section (1) shall not cease to be a condition falling within that sub-section merely by reason of the fact that the agreement containing it has been entered into separately, whether before or after the contract relating to the sale, lease or licence of the patented article or process",
+    "selected_context_index": 639,
+    "em": 0.0,
+    "f1": 0.20930232558139533,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000954",
+    "prediction": "A condition of the nature referred to in clause (a) or clause (b) or clause (c) of sub-section (1) shall not cease to be a condition falling within that sub-section merely by reason of the fact that the agreement containing it has been entered into separately, whether before or after the contract relating to the sale, lease or licence of the patented article or process.",
+    "selected_context_index": 639,
+    "em": 0.0,
+    "f1": 0.20930232558139533,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000955",
+    "prediction": "A condition of the nature referred to in clause (a) or clause (b) or clause (c) of sub-section (1) shall not cease to be a condition falling within that sub-section merely by reason of the fact that the agreement containing it has been entered into separately, whether before or after the contract relating to the sale, lease or licence of the patented article or process.",
+    "selected_context_index": 639,
+    "em": 0.0,
+    "f1": 0.2926829268292683,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000956",
+    "prediction": "A condition of the nature referred to in clause (a) or clause (b) or clause (c) of sub-section (1) shall not cease to be a condition falling within that sub-section merely by reason of the fact that the agreement containing it has been entered into separately, whether before or after the contract relating to the sale, lease or licence of the patented article or process",
+    "selected_context_index": 639,
+    "em": 0.0,
+    "f1": 0.2926829268292683,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000957",
+    "prediction": "The importer or his agent shall, within fourteen days, comply with the requirement as aforesaid, and if he fails to do so, he shall be liable to penalty of ten thousand rupees:",
+    "selected_context_index": 1082,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000958",
+    "prediction": "The importer or his agent shall, within fourteen days, comply with the requirement as aforesaid, and if he fails to do so, he shall be liable to penalty of ten thousand rupees:",
+    "selected_context_index": 1082,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000959",
+    "prediction": "Any information obtained from the importer of the go ods or his agent under this section may be communicated by the Commissioner of Customs to the registered proprietor or registered user of the trade mark which is alleged to have been used as a false trade mark.",
+    "selected_context_index": 1083,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_000960",
+    "prediction": "Any information obtained from the importer of the go ods or his agent under this section may be communicated by the Commissioner of Customs to the registered proprietor or registered user of the trade mark which is alleged to have been used as a false trade mark",
+    "selected_context_index": 1083,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_001025",
+    "prediction": "Where a person has mad e an application for the registration of a trade mark in a convention country or country which is a member of a group of countries or union of countries or Inter-Governmental Organisation and that person, or his legal representative or assignee, makes an a pplication for the registration of the trade mark in India within six months after the date on which the application was made in the convention country or country which is a member of a group of countries or union of countries or Inter-Governmental Organisations, the trade mark shall, if registered under this Act, be registered as of the date on which the application was made in the convention country or country which is a member of a group of countries or union of countries or Inter -Governmental Organi sation and that date shall be deemed for the purposes of this Act to be the date of registration.",
+    "selected_context_index": 1097,
+    "em": 0.0,
+    "f1": 0.5213270142180095,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_001026",
+    "prediction": "Where a person has mad e an application for the registration of a trade mark in a convention country or country which is a member of a group of countries or union of countries or Inter-Governmental Organisation and that person, or his legal representative or assignee, makes an a pplication for the registration of the trade mark in India within six months after the date on which the application was made in the convention country or country which is a member of a group of countries or union of countries or Inter-Governmental Organisations, the trade mark shall, if registered under this Act, be registered as of the date on which the application was made in the convention country or country which is a member of a group of countries or union of countries or Inter -Governmental Organi sation and that date shall be deemed for the purposes of this Act to be the date of registration.",
+    "selected_context_index": 1097,
+    "em": 0.0,
+    "f1": 0.5213270142180095,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_001027",
+    "prediction": "Where applications have been made for the registration of a trade mark in two or more convention countries or country which are members of group of countries or union of countries or Inter-Governmental Organisation, the period of six months referred to in the last preceding sub -section shall be reckoned from the date on which the earlier or earliest of those applications was made.",
+    "selected_context_index": 1098,
+    "em": 0.0,
+    "f1": 0.905982905982906,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_001028",
+    "prediction": "Where applications have been made for the registration of a trade mark in two or more convention countries or country which are members of group of countries or union of countries or Inter-Governmental Organisation, the period of six months referred to in the last preceding sub -section shall be reckoned from the date on which the earlier or earliest of those applications was made",
+    "selected_context_index": 1098,
+    "em": 0.0,
+    "f1": 0.905982905982906,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_001029",
+    "prediction": "Nothing in this Act shall entitle the proprietor of a trade mark to recover damages for infringement which took place prior to the date of application for registration under this Act.",
+    "selected_context_index": 1098,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_001030",
+    "prediction": "Nothing in this Act shall entitle the proprietor of a trade mark to recover damages for infringement which took place prior to the date of application for registration under this Act.",
+    "selected_context_index": 1098,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_001095",
+    "prediction": "the form and manner in which any application for a patent, any specifications or drawings and any other application or document may be filed in the patent office",
+    "selected_context_index": 659,
+    "em": 0.0,
+    "f1": 0.24390243902439027,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_001096",
+    "prediction": "the name by which a company in existence has been previously registered, or",
+    "selected_context_index": 1110,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 2
+  },
+  {
+    "id": "tm_001097",
+    "prediction": "on an application by a registered proprietor of a trade mark, is in the opinion of the Central Government identical with, or too nearly resembles, a registered trade mark of such proprietor under the Trade Marks Act, 1999, such company,—”",
+    "selected_context_index": 1114,
+    "em": 0.0,
+    "f1": 0.6097560975609756,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 2
+  },
+  {
+    "id": "tm_001098",
+    "prediction": "a registered trade mark, or a trade mark which is subject of an application for registration, of any other person under the Trade Marks Act, 1999, may be deemed to be undesirable by the Central Government within the meaning of sub-section (1).",
+    "selected_context_index": 1111,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 2
+  },
+  {
+    "id": "tm_001099",
+    "prediction": "the form and manner in which any application for a patent, any specifications or drawings and any other application or document may be filed in the patent office",
+    "selected_context_index": 659,
+    "em": 0.0,
+    "f1": 0.2222222222222222,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "tm_001100",
+    "prediction": "the form and manner in which any application for a patent, any specifications or drawings and any other application or document may be filed in the patent office",
+    "selected_context_index": 659,
+    "em": 0.0,
+    "f1": 0.2222222222222222,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "tm_001101",
+    "prediction": "the form and manner in which any application for a patent, any specifications or drawings and any other application or document may be filed in the patent office",
+    "selected_context_index": 659,
+    "em": 0.0,
+    "f1": 0.2647058823529412,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "tm_001102",
+    "prediction": "the form and manner in which any application for a patent, any specifications or drawings and any other application or document may be filed in the patent office",
+    "selected_context_index": 659,
+    "em": 0.0,
+    "f1": 0.2647058823529412,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "tm_001103",
+    "prediction": "the time within which any act or thing may be done under this Act, including the manner in which and the time within which any matter may be 1published under this Act",
+    "selected_context_index": 661,
+    "em": 0.0,
+    "f1": 0.19444444444444442,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "tm_001104",
+    "prediction": "on an application by a registered proprietor of a trade mark, is in the opinion of the Central Government identical with, or too nearly resembles, a registered trade mark of such proprietor under the Trade Marks Act, 1999, such company,—”",
+    "selected_context_index": 1114,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 2
+  },
+  {
+    "id": "tm_001105",
+    "prediction": "on an application by a registered proprietor of a trade mark, is in the opinion of the Central Government identical with, or too nearly resembles, a registered trade mark of such proprietor under the Trade Marks Act, 1999, such company,—”",
+    "selected_context_index": 1114,
+    "em": 0.0,
+    "f1": 0.3902439024390244,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 2
+  },
+  {
+    "id": "tm_001106",
+    "prediction": "a registered trade mark, or a trade mark which is subject of an application for registration, of any other person under the Trade Marks Act, 1999, may be deemed to be undesirable by the Central Government within the meaning of sub-section (1).",
+    "selected_context_index": 1111,
+    "em": 0.0,
+    "f1": 0.4523809523809524,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 2
+  },
+  {
+    "id": "des_000035",
+    "prediction": "The Controller shall, as soon as may be after the registration of a design, cause publication of the prescribed particulars of the design to be published in such manner as may be prescribed and thereafter the design shall be open to public inspection.",
+    "selected_context_index": 169,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "des_000036",
+    "prediction": "It shall be the duty of the Authority to promote, by such measures as it thinks fit, the encouragement for the development of new varieties of plants and to protect the rights of the farmers and breeders.",
+    "selected_context_index": 695,
+    "em": 0.0,
+    "f1": 0.21686746987951808,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "des_000037",
+    "prediction": "The Registrar shall classify the goods under sub -section (1), as far as may be, in accordance with the International classification of goods for the purposes of registration of geographical indications.",
+    "selected_context_index": 275,
+    "em": 0.0,
+    "f1": 0.3098591549295775,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "des_000038",
+    "prediction": "Subject to the provisions of this Act, the Registrar may refuse the application or may accept it absolutely or subject to such amendments or modifications, as he may think fit.",
+    "selected_context_index": 826,
+    "em": 0.0,
+    "f1": 0.2916666666666667,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "des_000039",
+    "prediction": "developing characterisation and documentation of varieties registered under this Act",
+    "selected_context_index": 695,
+    "em": 0.0,
+    "f1": 0.041666666666666664,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "des_000040",
+    "prediction": "the rights of the claimant in respect of the design have been finally established by the decision of a court",
+    "selected_context_index": 172,
+    "em": 0.0,
+    "f1": 0.975609756097561,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "des_000041",
+    "prediction": "compulsory cataloguing facilities for all varieties of plants",
+    "selected_context_index": 695,
+    "em": 0.0,
+    "f1": 0.058823529411764705,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "des_000042",
+    "prediction": "Any question arising as to the class within which any goods fall or the definite area as referred to in sub-section (1) in respect of which the geographical indication is to be registered or where any goods are not specified in the alphabetical index of goods published under sub-section (3) shall be determined by the Registrar whose decision in the matter shall be final.",
+    "selected_context_index": 275,
+    "em": 0.0,
+    "f1": 0.24806201550387597,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "des_000043",
+    "prediction": "If any dispute arises between joint applicants for registration of a design whether or in what manner the application should be proceeded with, the Controller may, upon application made to him in the prescribed manner by any of the parties, and after giving to all parties concerned an opportunity to be heard, give such directions as he thinks fit for enabling the application to proceed in the name of one or more of the parties alone or for regulating the manner in which it should be proceeded with, or for both those purposes, as the case may require.",
+    "selected_context_index": 174,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "des_000046",
+    "prediction": "When an application for registration of a layout-design has been accepted, the Registrar shall, within fourteen days after the date of acceptance, cause the application as accepted to be advertised in the prescribed manner.",
+    "selected_context_index": 827,
+    "em": 0.0,
+    "f1": 0.21782178217821785,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "des_000047",
+    "prediction": "So far as a trade mark is registered without limitation of colour, it shall be deemed to be registered for all colours.",
+    "selected_context_index": 923,
+    "em": 0.0,
+    "f1": 0.18461538461538457,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "des_000048",
+    "prediction": "If, in any particular case, the Controller considers that an application should be further supplemented by a model or sample of anything illustrating the invention or alleged to constitute an invention, such model or sample as he may require shall be furnished 4before the application is found in order for grant of a patent, but such model or sample shall not be deemed to form part of the specification",
+    "selected_context_index": 423,
+    "em": 0.0,
+    "f1": 0.2105263157894737,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "des_000049",
+    "prediction": "The register of designs shall be prima facie evidence of any matter by this Act directed or authorized to be entered therein.",
+    "selected_context_index": 180,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "des_000064",
+    "prediction": "On the request of any person fu rnishing such information as may enable the Controller to identify the design, and on payment of the prescribed fee, the Controller shall inform such person whether the registration still exists in respect of the design, and, if so, in respect of what classes of articles, and shall state the date of registration, and the name and address of the registered proprietor",
+    "selected_context_index": 194,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "des_000065",
+    "prediction": "the applicant shows to the satisfaction of the Controller that there are reasonable grounds for contesting the validity of the said claim of the other patent",
+    "selected_context_index": 448,
+    "em": 0.0,
+    "f1": 0.1111111111111111,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "des_000066",
+    "prediction": "the complete specification is amended to the satisfaction of the Controller",
+    "selected_context_index": 448,
+    "em": 0.0,
+    "f1": 0.19999999999999998,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "des_000067",
+    "prediction": "that the design is not a new or original design",
+    "selected_context_index": 195,
+    "em": 0.0,
+    "f1": 0.9523809523809523,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "des_000068",
+    "prediction": "that the design is not registrable under this Act",
+    "selected_context_index": 195,
+    "em": 0.0,
+    "f1": 0.9473684210526316,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "des_000069",
+    "prediction": "that it is not a design as defined under clause (d) of section 2",
+    "selected_context_index": 195,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "des_000070",
+    "prediction": "The applicant shall deposit such fees as may be prescribed for conducting tests referred to in sub-section (1).",
+    "selected_context_index": 713,
+    "em": 0.0,
+    "f1": 0.19672131147540986,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "des_000105",
+    "prediction": "first became well known and established or at the expiration of the period of two years mentioned in clause (b) of the said proviso",
+    "selected_context_index": 967,
+    "em": 0.0,
+    "f1": 0.1694915254237288,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "des_000106",
+    "prediction": "The result of every re-consideration under sub-section (1), shall be communicated to the applicant within such time and in such manner as may be prescribed.",
+    "selected_context_index": 479,
+    "em": 0.0,
+    "f1": 0.28,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "des_000107",
+    "prediction": "The Registrar may, in any proceeding under this section, decide any question that may be necessary or expedient to decide in connection with the rectification of the Register.",
+    "selected_context_index": 753,
+    "em": 0.0,
+    "f1": 0.25,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "des_000108",
+    "prediction": "The Registrar on his own motion may, after giving notice in the prescribed manner to the parties concerned and after giving them an opportunity of being heard, make any order referred to in sub-section (1) or sub-section (2).",
+    "selected_context_index": 753,
+    "em": 0.0,
+    "f1": 0.1935483870967742,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "gi_000097",
+    "prediction": "The Registrar may, on such terms, as he thinks just, at any time, whether before or after acceptance of an application for registration under section 11, permit the correction of any error or in connection with the application or permit an amendment of the application: Provided that if an amendment is made to a single application referred to in sub -section ( 3) of section 11 involving division of such application into two or m ore applications, the date of making of the initial application shall be deemed to be the date of making of the divided applications so divided",
+    "selected_context_index": 290,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000098",
+    "prediction": "Provided that the registrar may register a variety, the denomination of which comprises solely or partly of a geographical name, if he considers that the use of such denomination in respect of such variety is an honest use under the circumstances of the case",
+    "selected_context_index": 708,
+    "em": 0.0,
+    "f1": 0.33333333333333337,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000099",
+    "prediction": "The Registrar may, on such terms, as he thinks just, at any time, whether before or after acceptance of an application for registration under section 11, permit the correction of any error or in connection with the application or permit an amendment of the application: Provided that if an amendment is made to a single application referred to in sub -section ( 3) of section 11 involving division of such application into two or m ore applications, the date of making of the initial application shall be deemed to be the date of making of the divided applications so divided",
+    "selected_context_index": 290,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000129",
+    "prediction": "Any person may, within four months from the date of the advertisement or re -advertisement of an application for registration, give notice in writing in the prescribed manner and on payment of such fee as may be prescribed, to the Registrar, of opposition to the registration.",
+    "selected_context_index": 939,
+    "em": 0.0,
+    "f1": 0.25563909774436094,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000130",
+    "prediction": "to the registered proprietor of the geographical indication and the authorised user or users thereof the right to obtain relief in respect of infringement of the ge ographical indication in t he manner provided by this Act",
+    "selected_context_index": 300,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000131",
+    "prediction": "to the authorised user thereof the exclusive right to the use of the geographical indication in relation to the goods in respect of which the geographical indication is registered.",
+    "selected_context_index": 300,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000132",
+    "prediction": "The exclu sive right to the use of a geographical indication given under clause ( b) of sub-section (1) shall be subject to any condition and limitation to which the registration is subject.",
+    "selected_context_index": 300,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000133",
+    "prediction": "If the applicant sends such counter -statement, the Registrar shall serve a copy thereof on the person giving notice of opposition.",
+    "selected_context_index": 939,
+    "em": 0.0,
+    "f1": 0.1129032258064516,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000134",
+    "prediction": "The Registrar shall, after hearing the parties, if so required, and considering the evidence, decide whether and subject to what conditions or limitations, if any, the registration is to be permitted and may take into account a ground of objection whether relied upon by the opponent or not",
+    "selected_context_index": 719,
+    "em": 0.0,
+    "f1": 0.1904761904761905,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000166",
+    "prediction": "The Registrar ma y, on application made in the prescribed manner by the registered proprietor or the authorised user,— (a) correct any error in the name, address or description of the registered proprietor or the authorised user, as the case may be, of a geographical indication, or any other entry relating to the geographical indication on the register",
+    "selected_context_index": 314,
+    "em": 0.0,
+    "f1": 0.7916666666666666,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000167",
+    "prediction": "The Registrar ma y, on application made in the prescribed manner by the registered proprietor or the authorised user,— (a) correct any error in the name, address or description of the registered proprietor or the authorised user, as the case may be, of a geographical indication, or any other entry relating to the geographical indication on the register",
+    "selected_context_index": 314,
+    "em": 0.0,
+    "f1": 0.5567010309278351,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000168",
+    "prediction": "correct any error in the name, address or description of the registered proprietor or the authorised user, as the case may be, of a geographical indication, or any other entry relating to the geographical indication on the register",
+    "selected_context_index": 312,
+    "em": 0.0,
+    "f1": 0.375,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000169",
+    "prediction": "The Registrar ma y, on application made in the prescribed manner by the registered proprietor or the authorised user,— (a) correct any error in the name, address or description of the registered proprietor or the authorised user, as the case may be, of a geographical indication, or any other entry relating to the geographical indication on the register",
+    "selected_context_index": 314,
+    "em": 0.0,
+    "f1": 0.3636363636363637,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000170",
+    "prediction": "The Registrar ma y, on application made in the prescribed manner by the registered proprietor or the authorised user,— (a) correct any error in the name, address or description of the registered proprietor or the authorised user, as the case may be, of a geographical indication, or any other entry relating to the geographical indication on the register",
+    "selected_context_index": 314,
+    "em": 0.0,
+    "f1": 0.5272727272727272,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000183",
+    "prediction": "An application for rectification of the register made to the High Court under section 27 shall be in such form as may be prescribed.",
+    "selected_context_index": 318,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000184",
+    "prediction": "A certified copy of every order or judgment of the High Court relating to a registered geographical indication under this Act shall be communicated to the Registrar by the High Court and the Registrar shall give effect to the order of the Board and shall, when so directed, amend the entries in, or rectify, the register in accordance with such order.",
+    "selected_context_index": 318,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000185",
+    "prediction": "that the breeder has failed to comply with the directions of the Authority issued under this Act",
+    "selected_context_index": 749,
+    "em": 0.0,
+    "f1": 0.17307692307692307,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000186",
+    "prediction": "The Registrar shall have the right to appear and be heard—",
+    "selected_context_index": 319,
+    "em": 0.0,
+    "f1": 0.1517241379310345,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000187",
+    "prediction": "obtain the approval of such owners of rights for its procedures of collection and distribution of fees",
+    "selected_context_index": 68,
+    "em": 0.0,
+    "f1": 0.11111111111111113,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "gi_000188",
+    "prediction": "obtain their approval for the utilisation of any amounts collected as fees for any purpose other than distribution to the owner of rights",
+    "selected_context_index": 68,
+    "em": 0.0,
+    "f1": 0.2978723404255319,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "gi_000189",
+    "prediction": "Where, in respect of an application made before or after the commencement of this Act for a patent, it appears to the Controller that the invention is one of a class notified to him by the Central Government as relevant for defence purposes, or, where otherwise the invention appears to him to be so relevant, he may give directions for prohibiting or restricting the publication of information with respect to the invention or the communication of such information",
+    "selected_context_index": 477,
+    "em": 0.0,
+    "f1": 0.19047619047619047,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "gi_000190",
+    "prediction": "which has been opposed and the Registrar considers that his appearance is necessary in the public interest, and the Registrar shall appear in any case if so directed by the Board",
+    "selected_context_index": 319,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000191",
+    "prediction": "All fees distributed among the author and other owners of right shall, as far as may be, be distributed in proportion to the actual use of their works.",
+    "selected_context_index": 68,
+    "em": 0.0,
+    "f1": 0.22608695652173916,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000192",
+    "prediction": "provide to such owners regular, full and detailed information concern ing all its activities, in relation to the administration of their rights",
+    "selected_context_index": 68,
+    "em": 0.0,
+    "f1": 0.05714285714285715,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000271",
+    "prediction": "Without prejudice to the provisions of section 57, the registration of a person as registered user—",
+    "selected_context_index": 1000,
+    "em": 0.0,
+    "f1": 0.16363636363636364,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000272",
+    "prediction": "Where a patent is granted to two or more persons, each of those persons shall, unless an agreement to the contrary is in force, be entitled to an equal undivided share in the patent.",
+    "selected_context_index": 496,
+    "em": 0.0,
+    "f1": 0.2391304347826087,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000273",
+    "prediction": "The Registrar shall issue notice in the prescribed manner in respect of every application under this section to the registered proprietor and each registered user (not being the applicant) of the trade mark.",
+    "selected_context_index": 1001,
+    "em": 0.0,
+    "f1": 0.25,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000274",
+    "prediction": "The offences under section 39 or section 40 or section 41 shall be cognizable.",
+    "selected_context_index": 346,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000275",
+    "prediction": "Where a patented article is sold by one of two or more persons registered as grantee or proprietor of a patent, the purchaser and any person claiming through him shall be entitled to deal with the article in the same manner as if the article had been sold by a sole patentee.",
+    "selected_context_index": 496,
+    "em": 0.0,
+    "f1": 0.21978021978021975,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000276",
+    "prediction": "Where a patented article is sold by one of two or more persons registered as grantee or proprietor of a patent, the purchaser and any person claiming through him shall be entitled to deal with the article in the same manner as if the article had been sold by a sole patentee.",
+    "selected_context_index": 496,
+    "em": 0.0,
+    "f1": 0.25,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000277",
+    "prediction": "Any person having an interest in any article seized under sub -section (4), may, within fifteen days of such seizure, make an application to the Judicial Magistrate of the first class or Metropolitan Magistrate, as the case may be, for such arti cle being restored to him and the Magistrate, after hearing the application and the prosecution, shall make such order on the application as he may deem fit.",
+    "selected_context_index": 347,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000290",
+    "prediction": "Where in any suit for infringement of a geographical indication the defendant pleads that registration of the geographical indication relating to plaintiff is invalid, the court trying the suit (hereinafter referred to as the court), shall,—",
+    "selected_context_index": 354,
+    "em": 0.0,
+    "f1": 0.3870967741935484,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000291",
+    "prediction": "to claim authorship of the work",
+    "selected_context_index": 110,
+    "em": 0.0,
+    "f1": 0.14285714285714285,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000292",
+    "prediction": "to restrain or claim damages in respect of any distortion, mutilation, modi fication or other act in relation to the said work if such distortion, mutilation, modi fication or other act would be prejudicial to his honour or reputation:",
+    "selected_context_index": 110,
+    "em": 0.0,
+    "f1": 0.1565217391304348,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000293",
+    "prediction": "If the party concerned proves to the court that he has made any such application as is referred to in clause (b) of sub -section (1) within the time specified therein or within such extended time as the court may for sufficient cause allow, the trial of the suit shall stand stayed until the final d isposal of the rectification proceedings.",
+    "selected_context_index": 354,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000294",
+    "prediction": "If no such application as aforesaid has been made within the time so specified or within such extended time as the court may allow, the issue as to the validity of the registration of the geographical indication concerned shall be deemed to have been abandoned and the court shall proceed with the suit in regard to the other issues in the case",
+    "selected_context_index": 355,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000295",
+    "prediction": "The final order made in any rectification proceedings referred to in sub -section ( 1) or sub-section (2) shall be binding upon the parties and the court shall dispose of the suit conformably to such order in so far as it relates to the issue as to the validity of the registration of the geographical indication.",
+    "selected_context_index": 355,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000296",
+    "prediction": "The stay of a suit for the infrin gement of a geographical indication under this section shall not preclude the court from making any interlocutory order (including any order granting an injunction, directing account to be kept, appointing a receiver or attaching any property), during the period of the stay of the suit.",
+    "selected_context_index": 355,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000360",
+    "prediction": "No suit or other legal proceeding shall lie against any person in respect of anything which is in good faith done or intended to be done in pursuance of this Act.",
+    "selected_context_index": 133,
+    "em": 0.0,
+    "f1": 0.1142857142857143,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "gi_000361",
+    "prediction": "An officer or employee in the patent office shall not, except when required or authorised by this Act or under a direction in writing of the 2Central Government or the Controller or by order of a court,— (a) furnish information on a matter which is being, or has been, or dealt with under this Act",
+    "selected_context_index": 538,
+    "em": 0.0,
+    "f1": 0.14705882352941177,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "gi_000362",
+    "prediction": "Where, by or under this Act, any act, other than the making of an affidavit, is required to be done before the Registrar by any person, the act may, subject to the rules made in this behalf, be done instead of by that person himself, by a person duly authorised in the prescribed manner, who is,— (a) a legal practitioner, or (b) a person registered in the prescribed manner as a geographical indications agent, or (c) a person in the sole and regular employment of the principal.",
+    "selected_context_index": 379,
+    "em": 0.0,
+    "f1": 0.22448979591836737,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "gi_000363",
+    "prediction": "(1) Where the offence charged under this Act is in relation to a variety or its propagating material or essentially derived variety or its propagating material registered under this Act and the accused pleads that the registration of such variety or its propagating material or essentially derived variety or its propagating material, as the case may be, is invalid and the court is satisfied that such offence is prima facie not tenable, it shall not proceed with the charge but shall adjourn the proceedings for three months from the date on which the plea of the accused is recorded to enable the accused to file an application before the Registrar under this Act for the rectification of the Register on the ground that the registration is invalid",
+    "selected_context_index": 794,
+    "em": 0.0,
+    "f1": 0.3271028037383178,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "gi_000473",
+    "prediction": "to the registered proprietor of the geographical indication and the authorised user or users thereof the right to obtain relief in respect of infringement of the ge ographical indication in t he manner provided by this Act",
+    "selected_context_index": 300,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000474",
+    "prediction": "that the variety is not registrable under this Act",
+    "selected_context_index": 717,
+    "em": 0.0,
+    "f1": 0.10526315789473684,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000483",
+    "prediction": "obtain the approval of such owners of rights for its procedures of collection and distribution of fees",
+    "selected_context_index": 68,
+    "em": 0.0,
+    "f1": 0.11111111111111113,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "gi_000484",
+    "prediction": "obtain their approval for the utilisation of any amounts collected as fees for any purpose other than distribution to the owner of rights",
+    "selected_context_index": 68,
+    "em": 0.0,
+    "f1": 0.2978723404255319,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000485",
+    "prediction": "which is not opposed, and the application is either refused by the Registrar or is accepted by him subject to any amendments, modifications, conditions or limitations, or",
+    "selected_context_index": 319,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000486",
+    "prediction": "which has been opposed and the Registrar considers that his appearance is necessary in the public interest, and the Registrar shall appear in any case if so directed by the Board.",
+    "selected_context_index": 319,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000509",
+    "prediction": "if any proceedings for rectification of the register to the geographical indication relating to plaintiff or defendant are pending before the Registrar or the High Court, stay the suit pending the final disposal of such proceedings",
+    "selected_context_index": 354,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000510",
+    "prediction": "to restrain or claim damages in respect of any distortion, mutilation, modi fication or other act in relation to the said work if such distortion, mutilation, modi fication or other act would be prejudicial to his honour or reputation:",
+    "selected_context_index": 110,
+    "em": 0.0,
+    "f1": 0.1565217391304348,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "gi_000551",
+    "prediction": "If any question arises— (a) whether a work has been published or as to the date on which a work was published for the purposes of Chapter V, or (b) whether the term of copyright for any work is shorter in any other country than that provided in respect of that work under this Act, it shall be referred to the Appellate Board constituted under section 11 whose decision thereon shall be final: Provided that if in the opinion of the Appellate Board, the issue of copies or communication to the public referred to in section 3 was of an insignificant nature, it shall not be deemed to be publication for the purposes of that section.",
+    "selected_context_index": 10,
+    "em": 0.0,
+    "f1": 0.29015544041450775,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000149",
+    "prediction": "In the case of literary, dramatic, musical or artistic work (other than a photograph), which is published anonymously or pseudonymously, copyright shall subsist until sixty years from the beginning of the calendar ye ar next following the year in which the work is first published:",
+    "selected_context_index": 33,
+    "em": 0.0,
+    "f1": 0.26966292134831465,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000150",
+    "prediction": "In all legal proceedings relating to a geographical indication, the certificate of registration granted in this regard by the Registrar under this Act, being a copy of the entry in the register under the seal of the Geographical Indications Registry, shall be prima facie evidence of the validity thereof and be admissible in all courts before whom without further proof or production of the original.",
+    "selected_context_index": 304,
+    "em": 0.0,
+    "f1": 0.3486238532110092,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000310",
+    "prediction": "not disclose any information relating to the registration of a design or any application relating to the registration of a design under this Act, which he considers prejudicial to the interest of the security of India",
+    "selected_context_index": 248,
+    "em": 0.0,
+    "f1": 0.2318840579710145,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000311",
+    "prediction": "a company is about to be formed and registered under the Companies Act, 1956 (1 of 1956) and that the applicant intends to assign the trade mark to that company with a view to the use thereof in relation to those goods or services by the company, or",
+    "selected_context_index": 990,
+    "em": 0.0,
+    "f1": 0.2469135802469136,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "sem_000312",
+    "prediction": "the registration of the claims for the purposes of section 41 under the scheme and all matters connected with such registration",
+    "selected_context_index": 766,
+    "em": 0.0,
+    "f1": 0.2962962962962963,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "sem_000313",
+    "prediction": "the processing of such claims for securing their enforcement and matters connected therewith",
+    "selected_context_index": 766,
+    "em": 0.0,
+    "f1": 0.16,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "sem_000314",
+    "prediction": "the processing of such claims for securing their enforcement and matters connected therewith",
+    "selected_context_index": 766,
+    "em": 0.0,
+    "f1": 0.16,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000315",
+    "prediction": "Subject to the other provisions contained in this Act and the conditions specified in section 47, a patent granted under this Act shall confer upon the patentee— (a) where the subject matter of the patent is a product, the exclusive right to prevent third parties, who do not have his consent, from the act of making, using, offering for sale, selling or importing for those purposes that product in India",
+    "selected_context_index": 494,
+    "em": 0.0,
+    "f1": 0.19148936170212766,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000316",
+    "prediction": "The Designs Act, 1911 (2 of 1911) is hereby repealed.",
+    "selected_context_index": 259,
+    "em": 0.0,
+    "f1": 0.11764705882352941,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "sem_000317",
+    "prediction": "An application for rectification of the register made to the Appellate Board under section 30 shall be in such form as may be prescribed.",
+    "selected_context_index": 864,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000318",
+    "prediction": "(1) If the breeder of a variety registered under this Act in respect of which any application has been pending before the Authority under section 47 makes a written request to the Authority on the ground that due to any reasonable factor, such breeder has been unable to produce seed or other propagating material of the variety on a commercial scale to an adequate extent till the date of making such request, the Authority may, on being satisfied that the said ground is reasonable, adjourn the hearing of such application for such period not exceeding twelve months in aggregate as it may consider sufficient for optimum production of the seed or propagating material of such variety, as the case may be, by such breeder. (2) No adjournment of the application under sub-section (1) shall be granted unless the Authority is satisfied that the breeder of the variety registered under this Act in respect of which such application is made, has taken immediate measures to meet the reasonable requirements of the public for the seed or other propagating material of such variety",
+    "selected_context_index": 769,
+    "em": 0.0,
+    "f1": 0.052083333333333336,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000319",
+    "prediction": "If the person committing an offence under this Act is a company, the company as well as every person in charge of, and responsible to, the company for the conduct of its business at the time of the commission of the offence shall be deemed to be guilty of the offence and shall be liable to be proceeded against and punished accordingly:",
+    "selected_context_index": 345,
+    "em": 0.0,
+    "f1": 0.1643835616438356,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000320",
+    "prediction": "If the person committing an offence under this Act is a company, the company as well as every person in charge of, and responsible to, the company for the conduct of its business at the time of the commission of the offence shall be deemed to be guilty of the offence and shall be liable to be proceeded against and punished accordingly:",
+    "selected_context_index": 345,
+    "em": 0.0,
+    "f1": 0.1643835616438356,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000321",
+    "prediction": "in any legal proceedings before the Appellate Board in which the relief sought includes alteration or rectification of the register or in which any question relating to the practice of the Semiconductor Integrated Circuit Layout-Design Registry is raised;",
+    "selected_context_index": 865,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000322",
+    "prediction": "in any legal proceedings before the Appellate Board in which the relief sought includes alteration or rectification of the register or in which any question relating to the practice of the Semiconductor Integrated Circuit Layout-Design Registry is raised;",
+    "selected_context_index": 865,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000323",
+    "prediction": "alteration or rectification of the register or in which any question relating to the practice of the Semiconductor Integrated Circuit Layout-Design Registry is raised",
+    "selected_context_index": 865,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000324",
+    "prediction": "correcting any other error which may have arisen therein by accidental slip or omission.",
+    "selected_context_index": 90,
+    "em": 0.0,
+    "f1": 0.058823529411764705,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000325",
+    "prediction": "“director”, in relation to a firm, means a partner in the firm.",
+    "selected_context_index": 345,
+    "em": 0.0,
+    "f1": 0.25,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000326",
+    "prediction": "which is not opposed, and the application is either refused by the Registrar or is accepted by him subject to any amendments or modifications, or",
+    "selected_context_index": 865,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000327",
+    "prediction": "which is not opposed, and the application is either refused by the Registrar or is accepted by him subject to any amendments or modifications, or",
+    "selected_context_index": 865,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000328",
+    "prediction": "stating the goods or services in respect of which registration is proposed;",
+    "selected_context_index": 997,
+    "em": 0.0,
+    "f1": 0.18604651162790697,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000329",
+    "prediction": "stating the goods or services in respect of which registration is proposed;",
+    "selected_context_index": 997,
+    "em": 0.0,
+    "f1": 0.18604651162790697,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000340",
+    "prediction": "In all proceedings under this Act before the Appellate Board the costs of the Registrar shall be in the discretion of the Board, but the Registrar shall not be ordered to pay the costs of any of the parties.",
+    "selected_context_index": 868,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000341",
+    "prediction": "the performance of a literary, dramatic or musical work or the communi cation to the public of such work or of a sound recording in the course of any bona fide religious ceremony or an official ceremony held by the Central Government or the State Government or any local authority",
+    "selected_context_index": 101,
+    "em": 0.0,
+    "f1": 0.2921348314606742,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "sem_000342",
+    "prediction": "(1) The Authority, on its own motion or on application from an aggrieved person made to it in the prescribed form, if it is satisfied that a compulsory licensee registered under this Chapter has violated any terms or conditions of his licence or it is not appropriate to continue further such licence in public interest, may, after giving such licensee an opportunity to file opposition and of being heard, make order to revoke such licence",
+    "selected_context_index": 772,
+    "em": 0.0,
+    "f1": 0.19298245614035087,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "sem_000380",
+    "prediction": "Where such an offer is made, the Controller shall 2publish the offer in the prescribed manner, and also notify every person other than the patentee whose name appears in the register as having an interest in the patent",
+    "selected_context_index": 514,
+    "em": 0.0,
+    "f1": 0.07692307692307693,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000381",
+    "prediction": "the copyright in a work, or",
+    "selected_context_index": 116,
+    "em": 0.0,
+    "f1": 0.2,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000382",
+    "prediction": "any body corporate and includes a firm or other association or individuals",
+    "selected_context_index": 879,
+    "em": 0.0,
+    "f1": 0.9600000000000001,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000383",
+    "prediction": "“director”, in relation to a firm, means a partner in the firm.",
+    "selected_context_index": 880,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000384",
+    "prediction": "“director”, in relation to a firm, means a partner in the firm.",
+    "selected_context_index": 880,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000385",
+    "prediction": "a partner in the firm",
+    "selected_context_index": 612,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000386",
+    "prediction": "(1) Any police officer, not below the rank of a sub-inspector, may, if he is satisfied that an offence under section 63 in respect of the infringement of copyright in any work has been, is being, or is likely to be, committed, seize without warrant, all copies of the work, and all the plates used for the purposes of making infringing copies of the work, wherever found, and all copies and plates so seized shall, as soon as practicable be produced before a Magistrate",
+    "selected_context_index": 119,
+    "em": 0.0,
+    "f1": 0.31666666666666665,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000387",
+    "prediction": "no account shall be taken of 2personal document or secret trial or secret use",
+    "selected_context_index": 519,
+    "em": 0.0,
+    "f1": 0.12,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000388",
+    "prediction": "no account shall be taken of 2personal document or secret trial or secret use",
+    "selected_context_index": 519,
+    "em": 0.0,
+    "f1": 0.12,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000389",
+    "prediction": "where the patent is for a process or for a product as made by a process described or claimed the importation into India of the product made abroad by that process shall constitute knowledge or use in India of the invention on the date of the importation, except where such importation has been for the purpose of reasonable trial or experiment only. (3) For the purpose of clause (l) of sub-section (1), no account shall be taken of any use of the invention— (a) for the purpose of reasonable trial or experiment only; or (b) by the Government or by any person authorised by the Government or by a Government undertaking, in consequence of the applicant for the patent or any person from whom he derives title having communicated or disclosed the invention directly or indirectly to the Government or person authorised as aforesaid or to the Government undertaking",
+    "selected_context_index": 520,
+    "em": 0.0,
+    "f1": 0.14857142857142858,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000390",
+    "prediction": "where the patent is for a process or for a product as made by a process described or claimed the importation into India of the product made abroad by that process shall constitute knowledge or use in India of the invention on the date of the importation, except where such importation has been for the purpose of reasonable trial or experiment only.",
+    "selected_context_index": 520,
+    "em": 0.0,
+    "f1": 0.22727272727272727,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000444",
+    "prediction": "All proceedings before the Authority or the Registrar, as the case may be, relating to registration of variety or essentially derived variety, registration of agent, registration of licence or registration of compulsory licensing under this Act shall be deemed to be judicial proceedings within the meaning of sections 193 and 228, and for the purpose of section 196 of the Indian Penal Code (45 of 1860) and the Authority or the Registrar, as the case may be, shall be deemed to be a civil court for the purposes of section 195 and Chapter XXVI of the Code of Criminal Procedure, 1973 (2 of 1974)",
+    "selected_context_index": 805,
+    "em": 0.0,
+    "f1": 0.052631578947368425,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000445",
+    "prediction": "Where the Controller is satisfied, upon consideration of an application under section 8 or section 85, that a prima facie case has been made out for the making of an order, he shall direct the applicant to serve copies of the application upon the patentee and any other person appearing from the register to be interested in the patent in respect of which the application is made, and 1shall publish the application in the official journal",
+    "selected_context_index": 560,
+    "em": 0.0,
+    "f1": 0.0697674418604651,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000446",
+    "prediction": "Where the Controller is satisfied, upon consideration of an application under section 8 or section 85, that a prima facie case has been made out for the making of an order, he shall direct the applicant to serve copies of the application upon the patentee and any other person appearing from the register to be interested in the patent in respect of which the application is made, and 1shall publish the application in the official journal.",
+    "selected_context_index": 560,
+    "em": 0.0,
+    "f1": 0.0697674418604651,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000447",
+    "prediction": "the register and any document upon which any entry in the register is based;",
+    "selected_context_index": 893,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000448",
+    "prediction": "the register and any document upon which any entry in the register is based;",
+    "selected_context_index": 893,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000449",
+    "prediction": "every notice of opposition to the registration of a layout-design application for rectification before the Registrar, counter-statement thereto, and any affidavit or document filed by the parties in any proceedings before the Registrar;",
+    "selected_context_index": 893,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000450",
+    "prediction": "every notice of opposition to the registration of a layout-design application for rectification before the Registrar, counter-statement thereto, and any affidavit or document filed by the parties in any proceedings before the Registrar;",
+    "selected_context_index": 893,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000451",
+    "prediction": "the indexes mentioned in section 86 and such other documents as the Central Government may, by notification in the Official Gazette, specify; shall, subject to such conditions as may be prescribed, be open to public inspection at the Semiconductor Integrated Circuits Layout-Design Registry.",
+    "selected_context_index": 893,
+    "em": 0.0,
+    "f1": 0.676923076923077,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000452",
+    "prediction": "the classification of goods and the manner of publication of the alphabetical index of classification of goods and the definite territory or locality or region for the purpose of registration of geographical indications under sub-section (1) of section 8",
+    "selected_context_index": 395,
+    "em": 0.0,
+    "f1": 0.16393442622950816,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 4
+  },
+  {
+    "id": "sem_000453",
+    "prediction": "The patentee or any other person desiring to oppose the application may, within such time as may be prescribed or within such further time as the Controller may on application (made either before or after the expiration of the prescribed time) allow, give to the Controller notice of opposition.",
+    "selected_context_index": 560,
+    "em": 0.0,
+    "f1": 0.3953488372093023,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "sem_000454",
+    "prediction": "The patentee or any other person desiring to oppose the application may, within such time as may be prescribed or within such further time as the Controller may on application (made either before or after the expiration of the prescribed time) allow, give to the Controller notice of opposition.",
+    "selected_context_index": 560,
+    "em": 0.0,
+    "f1": 0.3953488372093023,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000079",
+    "prediction": "the Chairperson of the Appellate Board",
+    "selected_context_index": 819,
+    "em": 0.0,
+    "f1": 0.23076923076923075,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000080",
+    "prediction": "The Chairperson shall be the Chief Executive of the Authority and shall exercise such powers and perform such duties as may be prescribed",
+    "selected_context_index": 694,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000133",
+    "prediction": "Explanation.— For the purposes of this Act, the further application and the complete specification accompanying it shall be deemed to have been filed on the date on which the first mentioned application had been filed, and the further application shall be proceeded with as a substantive application and be examined when the request for examination is filed within the prescribed period",
+    "selected_context_index": 443,
+    "em": 0.0,
+    "f1": 0.14084507042253522,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000134",
+    "prediction": "Explanation.— For the purposes of this Act, the further application and the complete specification accompanying it shall be deemed to have been filed on the date on which the first mentioned application had been filed, and the further application shall be proceeded with as a substantive application and be examined when the request for examination is filed within the prescribed period",
+    "selected_context_index": 443,
+    "em": 0.0,
+    "f1": 0.08695652173913043,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000135",
+    "prediction": "Explanation.— For the purposes of this Act, the further application and the complete specification accompanying it shall be deemed to have been filed on the date on which the first mentioned application had been filed, and the further application shall be proceeded with as a substantive application and be examined when the request for examination is filed within the prescribed period",
+    "selected_context_index": 443,
+    "em": 0.0,
+    "f1": 0.1728395061728395,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000136",
+    "prediction": "Explanation.— For the purposes of this Act, the further application and the complete specification accompanying it shall be deemed to have been filed on the date on which the first mentioned application had been filed, and the further application shall be proceeded with as a substantive application and be examined when the request for examination is filed within the prescribed period",
+    "selected_context_index": 443,
+    "em": 0.0,
+    "f1": 0.12658227848101267,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000137",
+    "prediction": "Explanation.— For the purposes of this Act, the further application and the complete specification accompanying it shall be deemed to have been filed on the date on which the first mentioned application had been filed, and the further application shall be proceeded with as a substantive application and be examined when the request for examination is filed within the prescribed period",
+    "selected_context_index": 443,
+    "em": 0.0,
+    "f1": 0.14457831325301204,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000138",
+    "prediction": "Explanation.— For the purposes of this Act, the further application and the complete specification accompanying it shall be deemed to have been filed on the date on which the first mentioned application had been filed, and the further application shall be proceeded with as a substantive application and be examined when the request for examination is filed within the prescribed period",
+    "selected_context_index": 443,
+    "em": 0.0,
+    "f1": 0.13157894736842105,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000139",
+    "prediction": "Any person specified in section 16 may make an application to the Registrar for registration of any variety— (a) of such genera and species as specified under sub-section (2) of section 29",
+    "selected_context_index": 705,
+    "em": 0.0,
+    "f1": 0.26086956521739124,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000140",
+    "prediction": "Where two or more persons are registered as grantee or proprietor of a patent, the Controller may, upon application made to him in the prescribed manner by any of those persons, give such directions in accordance with the application as to the sale or lease of the patent or any interest therein, the grant of licences under the patent, or the exercise of any right under section 5 in relation thereto, as he thinks fit",
+    "selected_context_index": 498,
+    "em": 0.0,
+    "f1": 0.23913043478260873,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000141",
+    "prediction": "A person who has made an application for a patent under this Act may, at any time 1before the grant of the patent, if he so desires, or with a view to remedy the objection raised by the Controller on the ground that the claims of the complete specification relate to more than one invention, file a further application in respect of an invention disclosed in the provisional or complete specification already filed in respect of the first mentioned application",
+    "selected_context_index": 442,
+    "em": 0.0,
+    "f1": 0.23300970873786406,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000142",
+    "prediction": "A person who has made an application for a patent under this Act may, at any time 1before the grant of the patent, if he so desires, or with a view to remedy the objection raised by the Controller on the ground that the claims of the complete specification relate to more than one invention, file a further application in respect of an invention disclosed in the provisional or complete specification already filed in respect of the first mentioned application",
+    "selected_context_index": 442,
+    "em": 0.0,
+    "f1": 0.13333333333333333,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000149",
+    "prediction": "who, not being the breeder of a variety registered under this Act or a registered agent or a registered licensee of that variety, sells, exports, imports or produces such variety without the permission of its breeder or within the scope of a registered licence or registered agency without permission of the registered licensee or registered agent, as the case may be",
+    "selected_context_index": 781,
+    "em": 0.0,
+    "f1": 0.029411764705882356,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000150",
+    "prediction": "Any person specified in section 16 may make an application to the Registrar for registration of any variety— (a) of such genera and species as specified under sub-section (2) of section 29",
+    "selected_context_index": 705,
+    "em": 0.0,
+    "f1": 0.1,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000151",
+    "prediction": "enable the Controller to identify the design, and on payment of the prescribed fee, the Controller shall inform such person whether the registration still exists in respect of the design, and, if so, in respect of what classes of articles, and shall state the date of registration, and the name and address of the registered proprietor",
+    "selected_context_index": 194,
+    "em": 0.0,
+    "f1": 0.0,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000152",
+    "prediction": "prescribed for the registration of the geographical indication",
+    "selected_context_index": 280,
+    "em": 0.0,
+    "f1": 0.2,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000153",
+    "prediction": "be for one invention only and shall be made in the prescribed form and filed in the patent office",
+    "selected_context_index": 417,
+    "em": 0.0,
+    "f1": 0.44444444444444436,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000154",
+    "prediction": "When any direction given under section 35 is revoked by the Controller, then, notwithstanding any provision of this Act specifying the time within which any step should be taken or any act done in connection with an application for the patent, the Controller may, subject to such conditions, if any, as he thinks fit to impose, extend the time for doing anything required or authorised to be done by or under this Act in connection with the application, whether or not that time has previously expired",
+    "selected_context_index": 482,
+    "em": 0.0,
+    "f1": 0.022727272727272724,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000155",
+    "prediction": "On the request of any person fu rnishing such information as may enable the Controller to identify the design, and on payment of the prescribed fee, the Controller shall inform such person whether the registration still exists in respect of the design, and, if so, in respect of what classes of articles, and shall state the date of registration, and the name and address of the registered proprietor",
+    "selected_context_index": 194,
+    "em": 0.0,
+    "f1": 0.07142857142857142,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000156",
+    "prediction": "On the request of any person fu rnishing such information as may enable the Controller to identify the design, and on payment of the prescribed fee, the Controller shall inform such person whether the registration still exists in respect of the design, and, if so, in respect of what classes of articles, and shall state the date of registration, and the name and address of the registered proprietor",
+    "selected_context_index": 194,
+    "em": 0.0,
+    "f1": 0.12658227848101267,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000189",
+    "prediction": "When the Registrar is satisfied that the requirements of sub-section (1) have been complied with to his satisfaction, he",
+    "selected_context_index": 722,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000190",
+    "prediction": "forward the application with his report and all the relevant document to the Authority",
+    "selected_context_index": 722,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000191",
+    "prediction": "On receipt of an application under sub-section (2), the Authority",
+    "selected_context_index": 723,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000192",
+    "prediction": "get examined such essentially derived variety to determine as to whether the essentially derived variety is a variety derived from the initial variety by conducting such tests and following such procedure as may be prescribed",
+    "selected_context_index": 723,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000193",
+    "prediction": "The rights of the breeder of a variety contained in section 28",
+    "selected_context_index": 724,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000194",
+    "prediction": "not confer or derogate from any rights under the patent",
+    "selected_context_index": 466,
+    "em": 0.0,
+    "f1": 0.06896551724137931,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000195",
+    "prediction": "A new variety",
+    "selected_context_index": 708,
+    "em": 0.0,
+    "f1": 0.28571428571428575,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000196",
+    "prediction": "not be registered under this section unless it satisfies the requirements of section 15 as if for the word \"variety\", the words \"essentially derived variety\" have been substituted therein",
+    "selected_context_index": 725,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000197",
+    "prediction": "Provided that the authorisation by the breeder of the initial variety to the breeder of essentially derived variety under sub-section (2) of section 28 may be subject to such terms and conditions as both the parties may mutually agree upon",
+    "selected_context_index": 724,
+    "em": 0.0,
+    "f1": 0.32,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000198",
+    "prediction": "(1) An application for the registration of an essentially derived variety of the genera or species specified under sub-section (2) of section 29 by the Central Government shall be made to the Registrar by or on behalf of any person referred to in section 14 and in the manner specified in section 18 as if for the word \"variety\", the words \"essentially derived variety\" have been substituted therein and shall be accompanied by such documents and fees as may be prescribed",
+    "selected_context_index": 722,
+    "em": 0.0,
+    "f1": 0.4375,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000258",
+    "prediction": "no national of such country",
+    "selected_context_index": 628,
+    "em": 0.0,
+    "f1": 0.5882352941176471,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000259",
+    "prediction": "be entitled, either solely or jointly with any other person, to apply for the registration of a variety or be entitled to get a variety registered under this Act",
+    "selected_context_index": 746,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000406",
+    "prediction": "The Chairperson",
+    "selected_context_index": 780,
+    "em": 1.0,
+    "f1": 1.0,
+    "selected_context_is_gold": true,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000407",
+    "prediction": "that the invention, so far as claimed in any claim of the complete specification, was claimed in a valid claim of earlier priority date contained in the complete specification of another patent granted in India",
+    "selected_context_index": 515,
+    "em": 0.0,
+    "f1": 0.25882352941176473,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000440",
+    "prediction": "the denomination of such variety or its propagating material or essentially derived variety or its propagating material, as the case may be, expressed by means of letters or a combination of letters and figures written in any language",
+    "selected_context_index": 672,
+    "em": 0.0,
+    "f1": 0.125,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": false,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000441",
+    "prediction": "Any person aggrieved by an order made under sub-section (2) of section 64 or section 66 may, within thirty days of the date of such order appeal to the Court to which appeals from the court making the order ordinarily lie, and such appellate court may direct that execution of the order be stayed pending disposal of the appeal",
+    "selected_context_index": 128,
+    "em": 0.0,
+    "f1": 0.24719101123595508,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000447",
+    "prediction": "Where, by or under this Act, any act, other than the making of an affidavit, is required to be done before the Registrar by any person, the act may, subject to the rules made in this behalf, be done instead of by that person himself, by a person duly authorised in the prescribed manner, who is,— (a) a legal practitioner, or (b) a person registered in the prescribed manner as a geographical indications agent, or (c) a person in the sole and regular employment of the principal.",
+    "selected_context_index": 379,
+    "em": 0.0,
+    "f1": 0.2074074074074074,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000448",
+    "prediction": "Where, by or under this Act, any act, other than the making of an affidavit, is required to be done before the Registrar by any person, the act may, subject to the rules made in this behalf, be done instead of by that person himself, by a person duly authorised in the prescribed manner, who is,—",
+    "selected_context_index": 379,
+    "em": 0.0,
+    "f1": 0.29411764705882354,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000485",
+    "prediction": "as soon as may be after it is made, be laid be fore each House of Parliament",
+    "selected_context_index": 393,
+    "em": 0.0,
+    "f1": 0.5,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  },
+  {
+    "id": "ppvfr_000486",
+    "prediction": "Provided that the holder of the compulsory licence shall have the right to object to such termination",
+    "selected_context_index": 574,
+    "em": 0.0,
+    "f1": 0.125,
+    "selected_context_is_gold": false,
+    "retrieval_hit_at_k": true,
+    "windows": 1
+  }
+]

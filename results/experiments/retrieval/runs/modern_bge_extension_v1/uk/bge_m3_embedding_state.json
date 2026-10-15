@@ -1,0 +1,12 @@
+{
+  "model": "BAAI/bge-m3",
+  "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "corpus_fingerprint": "a2db0bbc41c3ecd002e68a46c799252d9cc887d120dc64ff2b70932254364e63",
+  "n_passages": 124796,
+  "dimension": 1024,
+  "max_seq_length": 512,
+  "normalised": true,
+  "candidate_text": "paragraph only",
+  "completed": 124796,
+  "updated_at": "2026-09-29T15:11:27+05:30"
+}

@@ -1,0 +1,829 @@
+{
+  "workbook_sha256": "7cd895126be40018ed81f88fd904b17ccd072bff8d3cdd7b8d09857c1de85151",
+  "predictions_sha256": "b64684507c5c2747151751457c064265fc1c6adc5a995ac1504944447d8eda8e",
+  "sampling_seed": 42,
+  "population_n": 344,
+  "sample_n": 80,
+  "primary_agreement": {
+    "Question uniquely identifies annotated source": {
+      "Paired cases": 79,
+      "Exact agreements": 49,
+      "Disagreements": 30,
+      "Raw agreement": 0.620253164556962,
+      "Expected agreement": 0.5260374939913476,
+      "Cohen kappa (nominal)": 0.19878296146044613,
+      "Gwet AC1": 0.5024144446777241,
+      "categories": [
+        "Yes",
+        "No",
+        "Unclear"
+      ],
+      "left_counts": {
+        "No": 29,
+        "Yes": 50
+      },
+      "right_counts": {
+        "No": 27,
+        "Yes": 50,
+        "Unclear": 2
+      }
+    },
+    "Question uniquely identifies selected source": {
+      "Paired cases": 79,
+      "Exact agreements": 50,
+      "Disagreements": 29,
+      "Raw agreement": 0.6329113924050633,
+      "Expected agreement": 0.47219996795385355,
+      "Cohen kappa (nominal)": 0.3044930176077718,
+      "Gwet AC1": 0.5163350398479971,
+      "categories": [
+        "Yes",
+        "No",
+        "Unclear"
+      ],
+      "left_counts": {
+        "No": 39,
+        "Yes": 40
+      },
+      "right_counts": {
+        "Yes": 61,
+        "No": 13,
+        "Unclear": 5
+      }
+    },
+    "Annotated source legally relevant": {
+      "Paired cases": 80,
+      "Exact agreements": 80,
+      "Disagreements": 0,
+      "Raw agreement": 1.0,
+      "Expected agreement": 0.8815625,
+      "Cohen kappa (nominal)": 1.0,
+      "Gwet AC1": 1.0,
+      "categories": [
+        "Yes",
+        "Partly",
+        "No",
+        "Unclear"
+      ],
+      "left_counts": {
+        "Yes": 75,
+        "No": 4,
+        "Partly": 1
+      },
+      "right_counts": {
+        "Yes": 75,
+        "No": 4,
+        "Partly": 1
+      }
+    },
+    "Selected source legally relevant": {
+      "Paired cases": 80,
+      "Exact agreements": 72,
+      "Disagreements": 8,
+      "Raw agreement": 0.9,
+      "Expected agreement": 0.59125,
+      "Cohen kappa (nominal)": 0.7553516819571866,
+      "Gwet AC1": 0.8842920420646639,
+      "categories": [
+        "Yes",
+        "Partly",
+        "No",
+        "Unclear"
+      ],
+      "left_counts": {
+        "Yes": 61,
+        "No": 17,
+        "Partly": 2
+      },
+      "right_counts": {
+        "Yes": 58,
+        "Unclear": 4,
+        "No": 14,
+        "Partly": 4
+      }
+    },
+    "Sources legally equivalent": {
+      "Paired cases": 80,
+      "Exact agreements": 80,
+      "Disagreements": 0,
+      "Raw agreement": 1.0,
+      "Expected agreement": 0.5528125,
+      "Cohen kappa (nominal)": 1.0,
+      "Gwet AC1": 1.0,
+      "categories": [
+        "Yes",
+        "Partly",
+        "No",
+        "Not applicable",
+        "Unclear"
+      ],
+      "left_counts": {
+        "No": 53,
+        "Yes": 27
+      },
+      "right_counts": {
+        "No": 53,
+        "Yes": 27
+      }
+    },
+    "Annotated answer legally correct": {
+      "Paired cases": 79,
+      "Exact agreements": 76,
+      "Disagreements": 3,
+      "Raw agreement": 0.9620253164556962,
+      "Expected agreement": 0.6720076910751482,
+      "Cohen kappa (nominal)": 0.8842208109428432,
+      "Gwet AC1": 0.9573728229263467,
+      "categories": [
+        "Yes",
+        "Partly",
+        "No",
+        "Unclear"
+      ],
+      "left_counts": {
+        "Yes": 62,
+        "No": 13,
+        "Partly": 4
+      },
+      "right_counts": {
+        "Yes": 65,
+        "No": 12,
+        "Partly": 2
+      }
+    },
+    "Predicted answer legally correct": {
+      "Paired cases": 79,
+      "Exact agreements": 63,
+      "Disagreements": 16,
+      "Raw agreement": 0.7974683544303798,
+      "Expected agreement": 0.4122736740906906,
+      "Cohen kappa (nominal)": 0.6553980370774264,
+      "Gwet AC1": 0.7492229349910721,
+      "categories": [
+        "Yes",
+        "Partly",
+        "No",
+        "Unclear"
+      ],
+      "left_counts": {
+        "Yes": 46,
+        "Partly": 4,
+        "No": 29
+      },
+      "right_counts": {
+        "Yes": 44,
+        "Unclear": 4,
+        "No": 17,
+        "Partly": 14
+      }
+    },
+    "Predicted-answer error materiality": {
+      "Paired cases": 78,
+      "Exact agreements": 65,
+      "Disagreements": 13,
+      "Raw agreement": 0.8333333333333334,
+      "Expected agreement": 0.3915187376725838,
+      "Cohen kappa (nominal)": 0.7260940032414911,
+      "Gwet AC1": 0.8104602041197803,
+      "Quadratic weighted kappa": 0.9545872967167844,
+      "Weighted-kappa paired cases": 74,
+      "Excluded from weighted kappa": 4,
+      "categories": [
+        "None",
+        "Low",
+        "Moderate",
+        "High",
+        "Not applicable",
+        "Unclear"
+      ],
+      "left_counts": {
+        "None": 45,
+        "Moderate": 6,
+        "High": 24,
+        "Low": 3
+      },
+      "right_counts": {
+        "None": 42,
+        "Unclear": 4,
+        "Moderate": 13,
+        "High": 17,
+        "Low": 2
+      }
+    },
+    "Annotated-answer error materiality": {
+      "Paired cases": 78,
+      "Exact agreements": 74,
+      "Disagreements": 4,
+      "Raw agreement": 0.9487179487179487,
+      "Expected agreement": 0.6190006574621959,
+      "Cohen kappa (nominal)": 0.8654012079378773,
+      "Gwet AC1": 0.9444968245779446,
+      "Quadratic weighted kappa": 0.9536423841059608,
+      "Weighted-kappa paired cases": 78,
+      "Excluded from weighted kappa": 0,
+      "categories": [
+        "None",
+        "Low",
+        "Moderate",
+        "High",
+        "Not applicable",
+        "Unclear"
+      ],
+      "left_counts": {
+        "None": 59,
+        "High": 8,
+        "Low": 7,
+        "Moderate": 4
+      },
+      "right_counts": {
+        "None": 62,
+        "High": 8,
+        "Moderate": 4,
+        "Low": 4
+      }
+    },
+    "Text quality issue": {
+      "Paired cases": 80,
+      "Exact agreements": 58,
+      "Disagreements": 22,
+      "Raw agreement": 0.725,
+      "Expected agreement": 0.68,
+      "Cohen kappa (nominal)": 0.1406249999999998,
+      "Gwet AC1": 0.6925585186910445,
+      "categories": [
+        "None",
+        "Minor",
+        "Material",
+        "Unclear"
+      ],
+      "left_counts": {
+        "None": 66,
+        "Minor": 8,
+        "Unclear": 2,
+        "Material": 4
+      },
+      "right_counts": {
+        "None": 64,
+        "Minor": 16
+      }
+    }
+  },
+  "revised_agreement_not_primary": {
+    "Question uniquely identifies annotated source": {
+      "Paired cases": 80,
+      "Exact agreements": 50,
+      "Disagreements": 30,
+      "Raw agreement": 0.625,
+      "Expected agreement": 0.52875,
+      "Cohen kappa (nominal)": 0.20424403183023865,
+      "Gwet AC1": 0.5095033721643164,
+      "categories": [
+        "Yes",
+        "No",
+        "Unclear"
+      ],
+      "left_counts": {
+        "No": 29,
+        "Yes": 51
+      },
+      "right_counts": {
+        "No": 27,
+        "Yes": 51,
+        "Unclear": 2
+      }
+    },
+    "Question uniquely identifies selected source": {
+      "Paired cases": 80,
+      "Exact agreements": 51,
+      "Disagreements": 29,
+      "Raw agreement": 0.6375,
+      "Expected agreement": 0.47640625,
+      "Cohen kappa (nominal)": 0.30766935243210974,
+      "Gwet AC1": 0.5233448045610971,
+      "categories": [
+        "Yes",
+        "No",
+        "Unclear"
+      ],
+      "left_counts": {
+        "No": 39,
+        "Yes": 41
+      },
+      "right_counts": {
+        "Yes": 62,
+        "No": 13,
+        "Unclear": 5
+      }
+    },
+    "Annotated source legally relevant": {
+      "Paired cases": 80,
+      "Exact agreements": 80,
+      "Disagreements": 0,
+      "Raw agreement": 1.0,
+      "Expected agreement": 0.8815625,
+      "Cohen kappa (nominal)": 1.0,
+      "Gwet AC1": 1.0,
+      "categories": [
+        "Yes",
+        "Partly",
+        "No",
+        "Unclear"
+      ],
+      "left_counts": {
+        "Yes": 75,
+        "No": 4,
+        "Partly": 1
+      },
+      "right_counts": {
+        "Yes": 75,
+        "No": 4,
+        "Partly": 1
+      }
+    },
+    "Selected source legally relevant": {
+      "Paired cases": 80,
+      "Exact agreements": 72,
+      "Disagreements": 8,
+      "Raw agreement": 0.9,
+      "Expected agreement": 0.59125,
+      "Cohen kappa (nominal)": 0.7553516819571866,
+      "Gwet AC1": 0.8842920420646639,
+      "categories": [
+        "Yes",
+        "Partly",
+        "No",
+        "Unclear"
+      ],
+      "left_counts": {
+        "Yes": 61,
+        "No": 17,
+        "Partly": 2
+      },
+      "right_counts": {
+        "Yes": 58,
+        "Unclear": 4,
+        "No": 14,
+        "Partly": 4
+      }
+    },
+    "Sources legally equivalent": {
+      "Paired cases": 80,
+      "Exact agreements": 80,
+      "Disagreements": 0,
+      "Raw agreement": 1.0,
+      "Expected agreement": 0.5528125,
+      "Cohen kappa (nominal)": 1.0,
+      "Gwet AC1": 1.0,
+      "categories": [
+        "Yes",
+        "Partly",
+        "No",
+        "Not applicable",
+        "Unclear"
+      ],
+      "left_counts": {
+        "No": 53,
+        "Yes": 27
+      },
+      "right_counts": {
+        "No": 53,
+        "Yes": 27
+      }
+    },
+    "Annotated answer legally correct": {
+      "Paired cases": 80,
+      "Exact agreements": 77,
+      "Disagreements": 3,
+      "Raw agreement": 0.9625,
+      "Expected agreement": 0.659375,
+      "Cohen kappa (nominal)": 0.889908256880734,
+      "Gwet AC1": 0.957705524715834,
+      "categories": [
+        "Yes",
+        "Partly",
+        "No",
+        "Unclear"
+      ],
+      "left_counts": {
+        "Yes": 62,
+        "No": 14,
+        "Partly": 4
+      },
+      "right_counts": {
+        "Yes": 65,
+        "No": 13,
+        "Partly": 2
+      }
+    },
+    "Predicted answer legally correct": {
+      "Paired cases": 80,
+      "Exact agreements": 64,
+      "Disagreements": 16,
+      "Raw agreement": 0.8,
+      "Expected agreement": 0.4159375,
+      "Cohen kappa (nominal)": 0.6575708935259499,
+      "Gwet AC1": 0.7526171686261879,
+      "categories": [
+        "Yes",
+        "Partly",
+        "No",
+        "Unclear"
+      ],
+      "left_counts": {
+        "Yes": 46,
+        "Partly": 4,
+        "No": 30
+      },
+      "right_counts": {
+        "Yes": 45,
+        "Unclear": 4,
+        "No": 18,
+        "Partly": 13
+      }
+    },
+    "Predicted-answer error materiality": {
+      "Paired cases": 80,
+      "Exact agreements": 66,
+      "Disagreements": 14,
+      "Raw agreement": 0.825,
+      "Expected agreement": 0.385,
+      "Cohen kappa (nominal)": 0.7154471544715446,
+      "Gwet AC1": 0.8006940119227689,
+      "Quadratic weighted kappa": 0.9224791140470178,
+      "Weighted-kappa paired cases": 76,
+      "Excluded from weighted kappa": 4,
+      "categories": [
+        "None",
+        "Low",
+        "Moderate",
+        "High",
+        "Not applicable",
+        "Unclear"
+      ],
+      "left_counts": {
+        "None": 45,
+        "Moderate": 7,
+        "High": 25,
+        "Low": 3
+      },
+      "right_counts": {
+        "None": 43,
+        "Unclear": 4,
+        "Moderate": 14,
+        "High": 17,
+        "Low": 2
+      }
+    },
+    "Annotated-answer error materiality": {
+      "Paired cases": 80,
+      "Exact agreements": 76,
+      "Disagreements": 4,
+      "Raw agreement": 0.95,
+      "Expected agreement": 0.5925,
+      "Cohen kappa (nominal)": 0.8773006134969324,
+      "Gwet AC1": 0.9455717517391525,
+      "Quadratic weighted kappa": 0.9583085169743897,
+      "Weighted-kappa paired cases": 80,
+      "Excluded from weighted kappa": 0,
+      "categories": [
+        "None",
+        "Low",
+        "Moderate",
+        "High",
+        "Not applicable",
+        "Unclear"
+      ],
+      "left_counts": {
+        "None": 59,
+        "High": 9,
+        "Low": 7,
+        "Moderate": 5
+      },
+      "right_counts": {
+        "None": 62,
+        "High": 9,
+        "Moderate": 5,
+        "Low": 4
+      }
+    },
+    "Text quality issue": {
+      "Paired cases": 80,
+      "Exact agreements": 58,
+      "Disagreements": 22,
+      "Raw agreement": 0.725,
+      "Expected agreement": 0.68,
+      "Cohen kappa (nominal)": 0.1406249999999998,
+      "Gwet AC1": 0.6925585186910445,
+      "categories": [
+        "None",
+        "Minor",
+        "Material",
+        "Unclear"
+      ],
+      "left_counts": {
+        "None": 66,
+        "Minor": 8,
+        "Unclear": 2,
+        "Material": 4
+      },
+      "right_counts": {
+        "None": 64,
+        "Minor": 16
+      }
+    }
+  },
+  "consensus": {
+    "All sampled cases": {
+      "sample_n": 80,
+      "population_n": 344,
+      "counts": {
+        "Question uniquely identifies annotated source": {
+          "No": 28,
+          "Yes": 48,
+          "Unclear": 4
+        },
+        "Question uniquely identifies selected source": {
+          "No": 39,
+          "Unclear": 6,
+          "Yes": 35
+        },
+        "Annotated source legally relevant": {
+          "Yes": 72,
+          "No": 7,
+          "Partly": 1
+        },
+        "Selected source legally relevant": {
+          "Yes": 54,
+          "Partly": 7,
+          "No": 19
+        },
+        "Sources legally equivalent": {
+          "No": 39,
+          "Partly": 1,
+          "Yes": 40
+        },
+        "Annotated answer legally correct": {
+          "Yes": 53,
+          "Partly": 14,
+          "No": 11,
+          "Unclear": 2
+        },
+        "Predicted answer legally correct": {
+          "Partly": 11,
+          "Yes": 42,
+          "No": 22,
+          "Unclear": 5
+        },
+        "Predicted-answer error materiality": {
+          "Moderate": 11,
+          "None": 41,
+          "High": 22,
+          "Unclear": 5,
+          "Low": 1
+        },
+        "Annotated-answer error materiality": {
+          "None": 51,
+          "Moderate": 11,
+          "High": 13,
+          "Unclear": 2,
+          "Low": 3
+        },
+        "Text quality issue": {
+          "None": 49,
+          "Unclear": 11,
+          "Material": 12,
+          "Minor": 8
+        }
+      }
+    },
+    "Annotated source absent from top 5": {
+      "sample_n": 20,
+      "population_n": 47,
+      "counts": {
+        "Question uniquely identifies annotated source": {
+          "No": 12,
+          "Yes": 5,
+          "Unclear": 3
+        },
+        "Question uniquely identifies selected source": {
+          "No": 15,
+          "Unclear": 5
+        },
+        "Annotated source legally relevant": {
+          "Yes": 18,
+          "No": 2
+        },
+        "Selected source legally relevant": {
+          "Yes": 8,
+          "Partly": 6,
+          "No": 6
+        },
+        "Sources legally equivalent": {
+          "No": 20
+        },
+        "Annotated answer legally correct": {
+          "Yes": 13,
+          "Partly": 3,
+          "No": 3,
+          "Unclear": 1
+        },
+        "Predicted answer legally correct": {
+          "Partly": 2,
+          "Yes": 7,
+          "No": 7,
+          "Unclear": 4
+        },
+        "Predicted-answer error materiality": {
+          "Moderate": 3,
+          "None": 7,
+          "High": 6,
+          "Unclear": 4
+        },
+        "Annotated-answer error materiality": {
+          "None": 13,
+          "Moderate": 3,
+          "High": 3,
+          "Unclear": 1
+        },
+        "Text quality issue": {
+          "None": 12,
+          "Unclear": 3,
+          "Material": 5
+        }
+      }
+    },
+    "Annotated source available; other source selected": {
+      "sample_n": 20,
+      "population_n": 122,
+      "counts": {
+        "Question uniquely identifies annotated source": {
+          "Yes": 9,
+          "No": 11
+        },
+        "Question uniquely identifies selected source": {
+          "No": 19,
+          "Yes": 1
+        },
+        "Annotated source legally relevant": {
+          "Yes": 19,
+          "No": 1
+        },
+        "Selected source legally relevant": {
+          "No": 9,
+          "Yes": 11
+        },
+        "Sources legally equivalent": {
+          "No": 19,
+          "Partly": 1
+        },
+        "Annotated answer legally correct": {
+          "Yes": 15,
+          "Partly": 4,
+          "No": 1
+        },
+        "Predicted answer legally correct": {
+          "No": 9,
+          "Yes": 10,
+          "Partly": 1
+        },
+        "Predicted-answer error materiality": {
+          "High": 9,
+          "None": 10,
+          "Moderate": 1
+        },
+        "Annotated-answer error materiality": {
+          "None": 15,
+          "Moderate": 4,
+          "High": 1
+        },
+        "Text quality issue": {
+          "None": 13,
+          "Unclear": 4,
+          "Minor": 2,
+          "Material": 1
+        }
+      }
+    },
+    "Annotated source selected; exact answer": {
+      "sample_n": 20,
+      "population_n": 131,
+      "counts": {
+        "Question uniquely identifies annotated source": {
+          "Yes": 16,
+          "Unclear": 1,
+          "No": 3
+        },
+        "Question uniquely identifies selected source": {
+          "Yes": 16,
+          "Unclear": 1,
+          "No": 3
+        },
+        "Annotated source legally relevant": {
+          "Yes": 17,
+          "No": 2,
+          "Partly": 1
+        },
+        "Selected source legally relevant": {
+          "Yes": 17,
+          "No": 2,
+          "Partly": 1
+        },
+        "Sources legally equivalent": {
+          "Yes": 20
+        },
+        "Annotated answer legally correct": {
+          "Yes": 16,
+          "Unclear": 1,
+          "No": 3
+        },
+        "Predicted answer legally correct": {
+          "Yes": 16,
+          "Unclear": 1,
+          "No": 3
+        },
+        "Predicted-answer error materiality": {
+          "None": 16,
+          "Unclear": 1,
+          "High": 3
+        },
+        "Annotated-answer error materiality": {
+          "None": 16,
+          "Unclear": 1,
+          "High": 3
+        },
+        "Text quality issue": {
+          "None": 10,
+          "Minor": 6,
+          "Material": 4
+        }
+      }
+    },
+    "Annotated source selected; non-exact answer": {
+      "sample_n": 20,
+      "population_n": 44,
+      "counts": {
+        "Question uniquely identifies annotated source": {
+          "Yes": 18,
+          "No": 2
+        },
+        "Question uniquely identifies selected source": {
+          "Yes": 18,
+          "No": 2
+        },
+        "Annotated source legally relevant": {
+          "Yes": 18,
+          "No": 2
+        },
+        "Selected source legally relevant": {
+          "Yes": 18,
+          "No": 2
+        },
+        "Sources legally equivalent": {
+          "Yes": 20
+        },
+        "Annotated answer legally correct": {
+          "Yes": 9,
+          "No": 4,
+          "Partly": 7
+        },
+        "Predicted answer legally correct": {
+          "Partly": 8,
+          "Yes": 9,
+          "No": 3
+        },
+        "Predicted-answer error materiality": {
+          "Moderate": 7,
+          "None": 8,
+          "High": 4,
+          "Low": 1
+        },
+        "Annotated-answer error materiality": {
+          "None": 7,
+          "Low": 3,
+          "High": 6,
+          "Moderate": 4
+        },
+        "Text quality issue": {
+          "None": 14,
+          "Unclear": 4,
+          "Material": 2
+        }
+      }
+    }
+  },
+  "verification": {
+    "original_and_revised_agreement_rows_recomputed": 100,
+    "all_three_snapshots_evidence_matched": true,
+    "sample_matches_seed_42": true,
+    "workbook_unchanged": true,
+    "manuscript_tables": {
+      "reliability_rows": 10,
+      "consensus_rows": 4
+    },
+    "independent_sklearn_checks": {
+      "nominal": 100,
+      "weighted": 20
+    }
+  },
+  "interpretation": "Descriptive audit of a balanced diagnostic sample, not a population prevalence estimate. Original ratings measure agreement; consensus labels are a separate outcome. Completion records do not independently certify review conduct or legal correctness."
+}

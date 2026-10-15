@@ -1,0 +1,8 @@
+# Keep generated and source binary artifacts out of textual diffs.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.zip binary
+*.xlsx binary
+*.docx binary

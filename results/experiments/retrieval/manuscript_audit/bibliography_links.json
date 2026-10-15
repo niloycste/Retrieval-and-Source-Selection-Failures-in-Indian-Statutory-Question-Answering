@@ -1,0 +1,461 @@
+{
+  "scope": "Local structural and PDF-link integrity only; not metadata verification",
+  "bibliography_entries": 41,
+  "cited_keys": 41,
+  "doi_fields": 37,
+  "url_fields": 25,
+  "pdf_pages": 47,
+  "pdf_uri_annotations": 96,
+  "unique_pdf_uri_targets": 65,
+  "problems": [],
+  "bibliography_targets": [
+    "https://aclanthology.org/2020.emnlp-main.550/",
+    "https://aclanthology.org/2020.findings-emnlp.261/",
+    "https://aclanthology.org/2021.acl-long.313/",
+    "https://aclanthology.org/2022.acl-long.297/",
+    "https://aclanthology.org/2022.acl-long.468/",
+    "https://aclanthology.org/2023.eacl-main.203/",
+    "https://aclanthology.org/2024.acl-long.618/",
+    "https://aclanthology.org/2024.emnlp-main.452/",
+    "https://aclanthology.org/2024.findings-acl.137/",
+    "https://aclanthology.org/2025.coling-main.738/",
+    "https://aclanthology.org/2025.emnlp-main.1739/",
+    "https://aclanthology.org/2026.acl-long.2112/",
+    "https://aclanthology.org/2026.findings-acl.1000/",
+    "https://aclanthology.org/2026.findings-eacl.221/",
+    "https://aclanthology.org/D16-1264/",
+    "https://aclanthology.org/D17-1082/",
+    "https://aclanthology.org/D18-1259/",
+    "https://aclanthology.org/P17-1147/",
+    "https://aclanthology.org/P18-2124/",
+    "https://aclanthology.org/Q19-1026/",
+    "https://dl.acm.org/doi/10.1145/3709025.3712219",
+    "https://doi.org/10.1007/978-3-030-72240-1_26",
+    "https://doi.org/10.1007/s10506-017-9195-8",
+    "https://doi.org/10.1007/s10506-021-09293-5",
+    "https://doi.org/10.1007/s10506-023-09387-2",
+    "https://doi.org/10.1007/s10506-025-09501-6",
+    "https://doi.org/10.1007/s10506-026-09506-9",
+    "https://doi.org/10.1007/s10506-026-09537-2",
+    "https://doi.org/10.1037/h0026256",
+    "https://doi.org/10.1145/1571941.1572114",
+    "https://doi.org/10.1145/3594536.3595159",
+    "https://doi.org/10.1145/3594536.3595165",
+    "https://doi.org/10.1145/3709025.3712219",
+    "https://doi.org/10.1145/3788646.3789533",
+    "https://doi.org/10.1162/tacl_a_00276",
+    "https://doi.org/10.1177/001316446002000104",
+    "https://doi.org/10.1348/000711006X126600",
+    "https://doi.org/10.1561/1500000019",
+    "https://doi.org/10.1609/aaai.v34i05.6519",
+    "https://doi.org/10.18653/v1/2020.emnlp-main.550",
+    "https://doi.org/10.18653/v1/2020.findings-emnlp.261",
+    "https://doi.org/10.18653/v1/2021.acl-long.313",
+    "https://doi.org/10.18653/v1/2022.acl-long.297",
+    "https://doi.org/10.18653/v1/2022.acl-long.468",
+    "https://doi.org/10.18653/v1/2023.eacl-main.203",
+    "https://doi.org/10.18653/v1/2024.acl-long.618",
+    "https://doi.org/10.18653/v1/2024.emnlp-main.452",
+    "https://doi.org/10.18653/v1/2024.findings-acl.137",
+    "https://doi.org/10.18653/v1/2025.emnlp-main.1739",
+    "https://doi.org/10.18653/v1/2026.acl-long.2112",
+    "https://doi.org/10.18653/v1/2026.findings-acl.1000",
+    "https://doi.org/10.18653/v1/2026.findings-eacl.221",
+    "https://doi.org/10.18653/v1/D16-1264",
+    "https://doi.org/10.18653/v1/D17-1082",
+    "https://doi.org/10.18653/v1/D18-1259",
+    "https://doi.org/10.18653/v1/P17-1147",
+    "https://doi.org/10.18653/v1/P18-2124",
+    "https://doi.org/10.52202/075280-1915",
+    "https://ojs.aaai.org/index.php/AAAI/article/view/6519",
+    "https://openreview.net/forum?id=7l1Ygs3Bamw",
+    "https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html",
+    "https://proceedings.neurips.cc/paper_files/paper/2023/hash/89e44582fd28ddfea1ea4dcb0ebbf4b0-Abstract-Datasets_and_Benchmarks.html"
+  ],
+  "pdf_links": [
+    {
+      "page": 14,
+      "uri": "https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2"
+    },
+    {
+      "page": 14,
+      "uri": "https://huggingface.co/BAAI/bge-reranker-v2-m3"
+    },
+    {
+      "page": 37,
+      "uri": "https://www.incometaxindia.gov.in/w/section-15-217"
+    },
+    {
+      "page": 43,
+      "uri": "https://doi.org/10.1145/3788646.3789533"
+    },
+    {
+      "page": 43,
+      "uri": "https://doi.org/10.18653/v1/2025.emnlp-main.1739"
+    },
+    {
+      "page": 43,
+      "uri": "https://aclanthology.org/2025.emnlp-main.1739/"
+    },
+    {
+      "page": 43,
+      "uri": "https://aclanthology.org/2025.emnlp-main.1739/"
+    },
+    {
+      "page": 43,
+      "uri": "https://doi.org/10.1007/s10506-025-09501-6"
+    },
+    {
+      "page": 44,
+      "uri": "https://doi.org/10.18653/v1/2026.acl-long.2112"
+    },
+    {
+      "page": 44,
+      "uri": "https://doi.org/10.18653/v1/2026.acl-long.2112"
+    },
+    {
+      "page": 44,
+      "uri": "https://aclanthology.org/2026.acl-long.2112/"
+    },
+    {
+      "page": 44,
+      "uri": "https://doi.org/10.18653/v1/2020.findings-emnlp.261"
+    },
+    {
+      "page": 44,
+      "uri": "https://aclanthology.org/2020.findings-emnlp.261/"
+    },
+    {
+      "page": 44,
+      "uri": "https://aclanthology.org/2020.findings-emnlp.261/"
+    },
+    {
+      "page": 44,
+      "uri": "https://doi.org/10.18653/v1/2022.acl-long.297"
+    },
+    {
+      "page": 44,
+      "uri": "https://aclanthology.org/2022.acl-long.297/"
+    },
+    {
+      "page": 44,
+      "uri": "https://aclanthology.org/2022.acl-long.297/"
+    },
+    {
+      "page": 44,
+      "uri": "https://doi.org/10.1145/3594536.3595159"
+    },
+    {
+      "page": 44,
+      "uri": "https://doi.org/10.18653/v1/2024.findings-acl.137"
+    },
+    {
+      "page": 44,
+      "uri": "https://doi.org/10.18653/v1/2024.findings-acl.137"
+    },
+    {
+      "page": 44,
+      "uri": "https://aclanthology.org/2024.findings-acl.137/"
+    },
+    {
+      "page": 44,
+      "uri": "https://doi.org/10.1177/001316446002000104"
+    },
+    {
+      "page": 44,
+      "uri": "https://doi.org/10.1177/001316446002000104"
+    },
+    {
+      "page": 44,
+      "uri": "https://doi.org/10.1037/h0026256"
+    },
+    {
+      "page": 44,
+      "uri": "https://doi.org/10.1037/h0026256"
+    },
+    {
+      "page": 44,
+      "uri": "https://doi.org/10.1145/1571941.1572114"
+    },
+    {
+      "page": 44,
+      "uri": "https://doi.org/10.1145/1571941.1572114"
+    },
+    {
+      "page": 44,
+      "uri": "https://doi.org/10.18653/v1/2024.emnlp-main.452"
+    },
+    {
+      "page": 44,
+      "uri": "https://doi.org/10.18653/v1/2024.emnlp-main.452"
+    },
+    {
+      "page": 44,
+      "uri": "https://aclanthology.org/2024.emnlp-main.452/"
+    },
+    {
+      "page": 45,
+      "uri": "https://doi.org/10.1007/978-3-030-72240-1_26"
+    },
+    {
+      "page": 45,
+      "uri": "https://doi.org/10.1007/978-3-030-72240-1_26"
+    },
+    {
+      "page": 45,
+      "uri": "https://doi.org/10.52202/075280-1915"
+    },
+    {
+      "page": 45,
+      "uri": "https://doi.org/10.52202/075280-1915"
+    },
+    {
+      "page": 45,
+      "uri": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/89e44582fd28ddfea1ea4dcb0ebbf4b0-Abstract-Datasets_and_Benchmarks.html"
+    },
+    {
+      "page": 45,
+      "uri": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/89e44582fd28ddfea1ea4dcb0ebbf4b0-Abstract-Datasets_and_Benchmarks.html"
+    },
+    {
+      "page": 45,
+      "uri": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/89e44582fd28ddfea1ea4dcb0ebbf4b0-Abstract-Datasets_and_Benchmarks.html"
+    },
+    {
+      "page": 45,
+      "uri": "https://doi.org/10.1348/000711006X126600"
+    },
+    {
+      "page": 45,
+      "uri": "https://doi.org/10.1007/s10506-026-09506-9"
+    },
+    {
+      "page": 45,
+      "uri": "https://doi.org/10.1007/s10506-026-09506-9"
+    },
+    {
+      "page": 45,
+      "uri": "https://openreview.net/forum?id=7l1Ygs3Bamw"
+    },
+    {
+      "page": 45,
+      "uri": "https://doi.org/10.18653/v1/2024.acl-long.618"
+    },
+    {
+      "page": 45,
+      "uri": "https://doi.org/10.18653/v1/2024.acl-long.618"
+    },
+    {
+      "page": 45,
+      "uri": "https://aclanthology.org/2024.acl-long.618/"
+    },
+    {
+      "page": 45,
+      "uri": "https://doi.org/10.18653/v1/P17-1147"
+    },
+    {
+      "page": 45,
+      "uri": "https://aclanthology.org/P17-1147/"
+    },
+    {
+      "page": 45,
+      "uri": "https://aclanthology.org/P17-1147/"
+    },
+    {
+      "page": 45,
+      "uri": "https://doi.org/10.18653/v1/2020.emnlp-main.550"
+    },
+    {
+      "page": 45,
+      "uri": "https://doi.org/10.18653/v1/2020.emnlp-main.550"
+    },
+    {
+      "page": 45,
+      "uri": "https://aclanthology.org/2020.emnlp-main.550/"
+    },
+    {
+      "page": 45,
+      "uri": "https://doi.org/10.1162/tacl_a_00276"
+    },
+    {
+      "page": 45,
+      "uri": "https://aclanthology.org/Q19-1026/"
+    },
+    {
+      "page": 46,
+      "uri": "https://doi.org/10.18653/v1/D17-1082"
+    },
+    {
+      "page": 46,
+      "uri": "https://aclanthology.org/D17-1082/"
+    },
+    {
+      "page": 46,
+      "uri": "https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html"
+    },
+    {
+      "page": 46,
+      "uri": "https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html"
+    },
+    {
+      "page": 46,
+      "uri": "https://doi.org/10.18653/v1/2022.acl-long.468"
+    },
+    {
+      "page": 46,
+      "uri": "https://aclanthology.org/2022.acl-long.468/"
+    },
+    {
+      "page": 46,
+      "uri": "https://aclanthology.org/2022.acl-long.468/"
+    },
+    {
+      "page": 46,
+      "uri": "https://doi.org/10.18653/v1/2023.eacl-main.203"
+    },
+    {
+      "page": 46,
+      "uri": "https://doi.org/10.18653/v1/2023.eacl-main.203"
+    },
+    {
+      "page": 46,
+      "uri": "https://aclanthology.org/2023.eacl-main.203/"
+    },
+    {
+      "page": 46,
+      "uri": "https://doi.org/10.18653/v1/2021.acl-long.313"
+    },
+    {
+      "page": 46,
+      "uri": "https://aclanthology.org/2021.acl-long.313/"
+    },
+    {
+      "page": 46,
+      "uri": "https://aclanthology.org/2025.coling-main.738/"
+    },
+    {
+      "page": 46,
+      "uri": "https://doi.org/10.1007/s10506-026-09537-2"
+    },
+    {
+      "page": 46,
+      "uri": "https://doi.org/10.18653/v1/2026.findings-eacl.221"
+    },
+    {
+      "page": 46,
+      "uri": "https://doi.org/10.18653/v1/2026.findings-eacl.221"
+    },
+    {
+      "page": 46,
+      "uri": "https://aclanthology.org/2026.findings-eacl.221/"
+    },
+    {
+      "page": 46,
+      "uri": "https://doi.org/10.1007/s10506-017-9195-8"
+    },
+    {
+      "page": 46,
+      "uri": "https://doi.org/10.1007/s10506-017-9195-8"
+    },
+    {
+      "page": 47,
+      "uri": "https://doi.org/10.1145/3594536.3595165"
+    },
+    {
+      "page": 47,
+      "uri": "https://doi.org/10.1145/3594536.3595165"
+    },
+    {
+      "page": 47,
+      "uri": "https://doi.org/10.18653/v1/D16-1264"
+    },
+    {
+      "page": 47,
+      "uri": "https://doi.org/10.18653/v1/D16-1264"
+    },
+    {
+      "page": 47,
+      "uri": "https://aclanthology.org/D16-1264/"
+    },
+    {
+      "page": 47,
+      "uri": "https://doi.org/10.18653/v1/P18-2124"
+    },
+    {
+      "page": 47,
+      "uri": "https://doi.org/10.18653/v1/P18-2124"
+    },
+    {
+      "page": 47,
+      "uri": "https://aclanthology.org/P18-2124/"
+    },
+    {
+      "page": 47,
+      "uri": "https://doi.org/10.1561/1500000019"
+    },
+    {
+      "page": 47,
+      "uri": "https://doi.org/10.1561/1500000019"
+    },
+    {
+      "page": 47,
+      "uri": "https://doi.org/10.1007/s10506-021-09293-5"
+    },
+    {
+      "page": 47,
+      "uri": "https://doi.org/10.1007/s10506-021-09293-5"
+    },
+    {
+      "page": 47,
+      "uri": "https://doi.org/10.1007/s10506-023-09387-2"
+    },
+    {
+      "page": 47,
+      "uri": "https://doi.org/10.18653/v1/2026.findings-acl.1000"
+    },
+    {
+      "page": 47,
+      "uri": "https://doi.org/10.18653/v1/2026.findings-acl.1000"
+    },
+    {
+      "page": 47,
+      "uri": "https://aclanthology.org/2026.findings-acl.1000/"
+    },
+    {
+      "page": 47,
+      "uri": "https://doi.org/10.18653/v1/D18-1259"
+    },
+    {
+      "page": 47,
+      "uri": "https://doi.org/10.18653/v1/D18-1259"
+    },
+    {
+      "page": 47,
+      "uri": "https://aclanthology.org/D18-1259/"
+    },
+    {
+      "page": 47,
+      "uri": "https://doi.org/10.1145/3709025.3712219"
+    },
+    {
+      "page": 47,
+      "uri": "https://doi.org/10.1145/3709025.3712219"
+    },
+    {
+      "page": 47,
+      "uri": "https://dl.acm.org/doi/10.1145/3709025.3712219"
+    },
+    {
+      "page": 47,
+      "uri": "https://doi.org/10.1609/aaai.v34i05.6519"
+    },
+    {
+      "page": 47,
+      "uri": "https://ojs.aaai.org/index.php/AAAI/article/view/6519"
+    },
+    {
+      "page": 47,
+      "uri": "https://ojs.aaai.org/index.php/AAAI/article/view/6519"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "seed": 42,
+  "source_predictions": "results\\experiments\\retrieval\\runs\\citation_aware_v1\\bm25_section_filter_top5_e2_predictions.jsonl",
+  "per_stage_requested": 20,
+  "sample_counts": {
+    "Annotated source absent from top 5": 20,
+    "Annotated source available; other source selected": 20,
+    "Annotated source selected; exact answer": 20,
+    "Annotated source selected; non-exact answer": 20
+  },
+  "population_counts": {
+    "Annotated source selected; exact answer": 131,
+    "Annotated source available; other source selected": 122,
+    "Annotated source selected; non-exact answer": 44,
+    "Annotated source absent from top 5": 47
+  },
+  "n_cases": 80,
+  "source_order_blinded": true,
+  "two_independent_annotator_packets": true,
+  "legal_labels_prepopulated": false
+}

@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "completed_at": "2026-09-28T19:39:50+05:30",
+  "device": "cpu",
+  "dense_shape": [
+    2,
+    1024
+  ],
+  "dense_norms": [
+    1.0,
+    1.0
+  ],
+  "reranker_scores": [
+    0.9910175800323486,
+    1.832904490584042e-05
+  ]
+}

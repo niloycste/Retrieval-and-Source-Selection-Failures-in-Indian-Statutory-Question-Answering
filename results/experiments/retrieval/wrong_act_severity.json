@@ -1,0 +1,53 @@
+{
+  "n_questions": 344,
+  "k": 5,
+  "metric_definition": "For each recall@5 miss, compare the Act label of the top-ranked passage with the annotated gold-source Act label.",
+  "systems": {
+    "BM25": {
+      "hit_at_5": 78,
+      "miss": 266,
+      "top1_wrong_act": 188,
+      "top1_same_act": 78,
+      "hit_pct": 22.67,
+      "top1_wrong_act_pct_of_all": 54.65,
+      "top1_wrong_act_pct_of_misses": 70.68,
+      "by_reference_status": {
+        "parsable_section_reference": {
+          "miss": 259,
+          "top1_wrong_act": 183,
+          "top1_same_act": 76,
+          "top1_wrong_act_pct_of_misses": 70.66
+        },
+        "no_parsable_section_reference": {
+          "miss": 7,
+          "top1_wrong_act": 5,
+          "top1_same_act": 2,
+          "top1_wrong_act_pct_of_misses": 71.43
+        }
+      }
+    },
+    "BM25 + section index": {
+      "hit_at_5": 297,
+      "miss": 47,
+      "top1_wrong_act": 40,
+      "top1_same_act": 7,
+      "hit_pct": 86.34,
+      "top1_wrong_act_pct_of_all": 11.63,
+      "top1_wrong_act_pct_of_misses": 85.11,
+      "by_reference_status": {
+        "parsable_section_reference": {
+          "miss": 40,
+          "top1_wrong_act": 35,
+          "top1_same_act": 5,
+          "top1_wrong_act_pct_of_misses": 87.5
+        },
+        "no_parsable_section_reference": {
+          "miss": 7,
+          "top1_wrong_act": 5,
+          "top1_same_act": 2,
+          "top1_wrong_act_pct_of_misses": 71.43
+        }
+      }
+    }
+  }
+}

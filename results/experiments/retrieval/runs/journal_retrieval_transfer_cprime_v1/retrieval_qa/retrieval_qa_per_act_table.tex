@@ -1,0 +1,40 @@
+\begin{table}[htbp]
+\centering
+\caption{Per-Act retrieval plus QA breakdown on IndicIPR-QA.}
+\label{tab:retrieval_qa_per_act}
+\scriptsize
+\begin{tabular}{llrrrrr}
+\toprule
+Setting & Act & N & Retr. R@k & EM & F1 & Char-F1 \\
+\midrule
+Gold paragraph + QA & copyright\_act & 25 & 100.00 & 48.00 & 80.90 & 82.76 \\
+Gold paragraph + QA & design\_act & 24 & 100.00 & 87.50 & 99.42 & 99.89 \\
+Gold paragraph + QA & gi\_act & 51 & 100.00 & 56.86 & 82.33 & 85.05 \\
+Gold paragraph + QA & patent\_act & 69 & 100.00 & 65.22 & 97.54 & 99.22 \\
+Gold paragraph + QA & plant\_varieties\_farmers\_rights\_act & 40 & 100.00 & 32.50 & 63.27 & 75.16 \\
+Gold paragraph + QA & semiconductor\_layout\_design\_act & 47 & 100.00 & 34.04 & 88.59 & 93.59 \\
+Gold paragraph + QA & trademark\_act & 88 & 100.00 & 34.09 & 71.45 & 79.17 \\
+BM25 top-1 + QA & copyright\_act & 25 & 24.00 & 8.00 & 24.05 & 35.15 \\
+BM25 top-1 + QA & design\_act & 24 & 0.00 & 0.00 & 14.79 & 38.93 \\
+BM25 top-1 + QA & gi\_act & 51 & 0.00 & 1.96 & 24.48 & 46.63 \\
+BM25 top-1 + QA & patent\_act & 69 & 21.74 & 20.29 & 33.60 & 61.46 \\
+BM25 top-1 + QA & plant\_varieties\_farmers\_rights\_act & 40 & 30.00 & 17.50 & 37.21 & 56.15 \\
+BM25 top-1 + QA & semiconductor\_layout\_design\_act & 47 & 10.64 & 4.26 & 19.46 & 36.45 \\
+BM25 top-1 + QA & trademark\_act & 88 & 10.23 & 4.55 & 15.44 & 30.20 \\
+BM25 top-3 + QA & copyright\_act & 25 & 28.00 & 12.00 & 28.67 & 47.36 \\
+BM25 top-3 + QA & design\_act & 24 & 0.00 & 0.00 & 13.44 & 40.45 \\
+BM25 top-3 + QA & gi\_act & 51 & 17.65 & 7.84 & 30.63 & 51.14 \\
+BM25 top-3 + QA & patent\_act & 69 & 23.19 & 17.39 & 35.00 & 69.62 \\
+BM25 top-3 + QA & plant\_varieties\_farmers\_rights\_act & 40 & 45.00 & 22.50 & 43.85 & 62.05 \\
+BM25 top-3 + QA & semiconductor\_layout\_design\_act & 47 & 10.64 & 4.26 & 22.98 & 51.60 \\
+BM25 top-3 + QA & trademark\_act & 88 & 15.91 & 4.55 & 25.00 & 57.00 \\
+BM25 top-5 + QA & copyright\_act & 25 & 32.00 & 12.00 & 29.33 & 50.37 \\
+BM25 top-5 + QA & design\_act & 24 & 0.00 & 0.00 & 14.95 & 44.21 \\
+BM25 top-5 + QA & gi\_act & 51 & 25.49 & 9.80 & 35.21 & 57.12 \\
+BM25 top-5 + QA & patent\_act & 69 & 24.64 & 17.39 & 34.68 & 72.00 \\
+BM25 top-5 + QA & plant\_varieties\_farmers\_rights\_act & 40 & 45.00 & 22.50 & 41.36 & 60.73 \\
+BM25 top-5 + QA & semiconductor\_layout\_design\_act & 47 & 14.89 & 4.26 & 25.70 & 57.87 \\
+BM25 top-5 + QA & trademark\_act & 88 & 18.18 & 3.41 & 24.74 & 59.74 \\
+\bottomrule
+\end{tabular}
+\end{table}

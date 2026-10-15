@@ -1,0 +1,5 @@
+setting,qa_model,n,retrieval_recall,em,f1,char_f1
+Gold paragraph + QA,E2': LegalBERT-US → SQuAD v1 → IPR,344,100.0,66.8605,87.3721,89.4719
+BM25 top-1 + QA,E2': LegalBERT-US → SQuAD v1 → IPR,344,13.6628,11.0465,29.4776,58.9208
+BM25 top-3 + QA,E2': LegalBERT-US → SQuAD v1 → IPR,344,20.0581,11.3372,31.0413,60.4165
+BM25 top-5 + QA,E2': LegalBERT-US → SQuAD v1 → IPR,344,22.9651,10.4651,31.9544,63.0529

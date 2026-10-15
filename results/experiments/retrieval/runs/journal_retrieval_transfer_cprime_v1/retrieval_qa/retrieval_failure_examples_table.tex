@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\centering
+\caption{Representative retrieval failure examples.}
+\label{tab:retrieval_failure_examples}
+\scriptsize
+\begin{tabular}{llllll}
+\toprule
+ID & Act & Error & Gold answer & Prediction & Explanation \\
+\midrule
+cop\_000068 & copyright\_act & Wrong Act retrieval & Copyright shall not subsist under this Act in any design which is registered under the Desig... & [CLS] & The gold paragraph is absent from the retrieved set and the selected paragraph comes from a different Act. \\
+des\_000035 & design\_act & Wrong Act retrieval & The Controller shall, as soon as may be after the registration of a design, cause publicatio... & anticipation & The gold paragraph is absent from the retrieved set and the selected paragraph comes from a different Act. \\
+des\_000048 & design\_act & Wrong Act retrieval & The register of designs existing at the commencement of this Act shall be incorporated with... & [CLS] & The gold paragraph is absent from the retrieved set and the selected paragraph comes from a different Act. \\
+des\_000107 & design\_act & Wrong Act retrieval & The High Court may, if it thinks fit, obtain the assistance of an expert in deciding such ap... & every application under sub - section & The gold paragraph is absent from the retrieved set and the selected paragraph comes from a different Act. \\
+gi\_000131 & gi\_act & Wrong Act retrieval & to the authorised user thereof the exclusive right to the use of the geographical indication... & sections 18, 20 and 21, except as expressly applied by this chapter & The gold paragraph is absent from the retrieved set and the selected paragraph comes from a different Act. \\
+\bottomrule
+\end{tabular}
+\end{table}

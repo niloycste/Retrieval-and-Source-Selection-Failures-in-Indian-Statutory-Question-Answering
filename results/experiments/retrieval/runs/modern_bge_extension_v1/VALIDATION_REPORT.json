@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "run_dir": "E:\\Dataset on IPR\\results\\experiments\\retrieval\\runs\\modern_bge_extension_v1",
+  "datasets": [
+    "indic",
+    "uk"
+  ],
+  "systems": [
+    "bm25",
+    "bge_m3",
+    "rrf_bm25_bge_m3",
+    "bm25_bge_reranker_v2_m3",
+    "rrf_bm25_bge_m3_bge_reranker_v2_m3"
+  ],
+  "per_query_rows": {
+    "indic": 1720,
+    "uk": 500
+  },
+  "ranking_rows": {
+    "indic": 1720,
+    "uk": 500
+  },
+  "embedding_shapes": {
+    "indic": [
+      1116,
+      1024
+    ],
+    "uk": [
+      124796,
+      1024
+    ]
+  }
+}

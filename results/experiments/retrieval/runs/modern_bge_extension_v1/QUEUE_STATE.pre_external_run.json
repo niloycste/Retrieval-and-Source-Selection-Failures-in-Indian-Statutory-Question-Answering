@@ -1,0 +1,5 @@
+﻿{
+    "status":  "CANCELLED_FOR_EXTERNAL_RUN",
+    "updated_at":  "2026-09-27T01:46:20.1217961+05:30",
+    "reason":  "Portable external-system bundle prepared; prevents duplicate CPU run after DAPT."
+}

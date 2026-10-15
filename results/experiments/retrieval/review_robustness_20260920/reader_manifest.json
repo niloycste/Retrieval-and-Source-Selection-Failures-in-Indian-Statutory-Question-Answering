@@ -1,0 +1,20 @@
+{
+  "model": "artifacts\\models\\squad_v1\\baseline_e2_squadv1\\final",
+  "max_tokens": 384,
+  "stride": 128,
+  "cap_tokens": 128,
+  "cap_basis": "Fixed post-review sensitivity choice, not tuned to test scores",
+  "softmax": "Separate start/end log_softmax over valid context positions within each window; sum; max across windows",
+  "pairs": 3509,
+  "threads": 4,
+  "model_files": {
+    "config.json": "a8712fc9388b4909dbf941e40e7d75b66e38e85cf930995cd00132c237d20565",
+    "model.safetensors": "57b9ede4be3f9f812b5cbe7d28a044d67528aa519e900a4a134b71841fa4c3d8",
+    "tokenizer.json": "1a92dd6f8948778d5726effe4bb3caf36dd32da7396aad5c139fa5b228a351af",
+    "tokenizer_config.json": "7fea6e9cd9711214d0eb2ca81e20405d945b6b61e993a925a425ecc84a46e400"
+  },
+  "input_sha256": {
+    "data\\processed\\indic_ipr_qa\\unique_contexts.jsonl": "aa2fb370362082319d7b6c754070e3b154a0b4e338535730ef5803399383fe7e",
+    "data\\splits\\test.jsonl": "851b3c0130fd21bd3da2c961a4d06e1f84f69ced3fa5487e780884b811734082"
+  }
+}

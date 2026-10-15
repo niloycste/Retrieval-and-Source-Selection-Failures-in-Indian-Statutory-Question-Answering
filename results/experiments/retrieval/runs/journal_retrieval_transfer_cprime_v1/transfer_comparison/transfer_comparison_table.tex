@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\caption{Transfer and zero-shot comparison between SQuAD and IndicIPR-QA.}
+\label{tab:transfer_comparison}
+\scriptsize
+\begin{tabular}{llrrr}
+\toprule
+Experiment & Model & EM & F1 & Char-F1 \\
+\midrule
+SQuAD -> IndicIPR-QA & SQuAD-only: InLegalBERT & 3.20 & 25.57 & 36.61 \\
+SQuAD -> IndicIPR-QA & SQuAD-only: BERT-base & 6.98 & 34.85 & 43.72 \\
+SQuAD -> IndicIPR-QA & SQuAD-only: LegalBERT-US & 3.78 & 24.93 & 34.35 \\
+SQuAD -> IndicIPR-QA & SQuAD-only: InCaseLawBERT & 5.52 & 33.10 & 41.10 \\
+IndicIPR-QA -> IndicIPR-QA & A: IPR direct InLegalBERT & 46.80 & 80.56 & 84.92 \\
+SQuAD+IndicIPR-QA -> IndicIPR-QA & SQuAD+IPR: InLegalBERT & 47.38 & 81.45 & 85.70 \\
+SQuAD+IndicIPR-QA -> IndicIPR-QA & SQuAD+IPR: BERT-base & 47.97 & 78.68 & 83.60 \\
+SQuAD+IndicIPR-QA -> IndicIPR-QA & SQuAD+IPR: LegalBERT-US & 47.38 & 81.10 & 84.82 \\
+SQuAD+IndicIPR-QA -> IndicIPR-QA & SQuAD+IPR: InCaseLawBERT & 48.84 & 79.99 & 83.78 \\
+DAPT+SQuAD+IndicIPR-QA -> IndicIPR-QA & C': MLM+SQuAD+IPR InLegalBERT & 48.26 & 82.33 & 87.27 \\
+DAPT+SQuAD+IndicIPR-QA -> IndicIPR-QA & MLM+SQuAD+IPR: Orig-only InLegalBERT & 47.97 & 81.43 & 85.50 \\
+DAPT+SQuAD+IndicIPR-QA -> IndicIPR-QA & MLM+SQuAD+IPR: Synth-only InLegalBERT & 47.09 & 81.86 & 86.96 \\
+\bottomrule
+\end{tabular}
+\end{table}

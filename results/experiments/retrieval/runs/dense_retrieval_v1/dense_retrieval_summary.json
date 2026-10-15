@@ -1,0 +1,105 @@
+{
+  "corpus_passages": 1116,
+  "test_queries": 344,
+  "bm25_params": {
+    "k1": 1.5,
+    "b": 0.75,
+    "tokenizer": "[A-Za-z0-9]+ lowercased"
+  },
+  "bm25_reproduction_check": {
+    "published": {
+      "1": 13.66,
+      "3": 20.06,
+      "5": 22.97
+    },
+    "reproduced": {
+      "1": 13.08,
+      "3": 20.06,
+      "5": 22.67
+    },
+    "validated": true
+  },
+  "rrf_k": 60,
+  "ranking_depth": 10,
+  "hybrid_specification": {
+    "components": [
+      "BM25",
+      "e5-small-v2"
+    ],
+    "input_depth_per_component": 10,
+    "output_depth": 10,
+    "candidate_text": "paragraph only"
+  },
+  "results": {
+    "BM25": {
+      "recall@1": 13.08,
+      "recall@3": 20.06,
+      "recall@5": 22.67,
+      "recall@10": 27.03,
+      "mrr@10": 17.34
+    },
+    "all-MiniLM-L6-v2": {
+      "recall@1": 10.17,
+      "recall@3": 16.28,
+      "recall@5": 20.93,
+      "recall@10": 28.2,
+      "mrr@10": 14.7
+    },
+    "multi-qa-MiniLM-L6-cos-v1": {
+      "recall@1": 8.43,
+      "recall@3": 16.28,
+      "recall@5": 17.73,
+      "recall@10": 24.13,
+      "mrr@10": 12.66
+    },
+    "bge-small-en-v1.5": {
+      "recall@1": 10.17,
+      "recall@3": 18.31,
+      "recall@5": 22.38,
+      "recall@10": 30.23,
+      "mrr@10": 15.8
+    },
+    "e5-small-v2": {
+      "recall@1": 9.88,
+      "recall@3": 18.31,
+      "recall@5": 23.26,
+      "recall@10": 29.94,
+      "mrr@10": 15.6
+    },
+    "Hybrid RRF (BM25 + e5-small-v2)": {
+      "recall@1": 11.92,
+      "recall@3": 19.77,
+      "recall@5": 26.16,
+      "recall@10": 31.4,
+      "mrr@10": 17.47
+    }
+  },
+  "timings_sec": {
+    "BM25": 0.8,
+    "all-MiniLM-L6-v2": 28.3,
+    "multi-qa-MiniLM-L6-cos-v1": 29.8,
+    "bge-small-en-v1.5": 50.3,
+    "e5-small-v2": 50.4
+  },
+  "best_overall": "Hybrid RRF (BM25 + e5-small-v2)",
+  "per_act_recall_at_5": {
+    "BM25": {
+      "copyright_act": 32.0,
+      "design_act": 0.0,
+      "gi_act": 25.49,
+      "patent_act": 24.64,
+      "plant_varieties_farmers_rights_act": 45.0,
+      "semiconductor_layout_design_act": 14.89,
+      "trademark_act": 17.05
+    },
+    "Hybrid RRF (BM25 + e5-small-v2)": {
+      "copyright_act": 36.0,
+      "design_act": 0.0,
+      "gi_act": 31.37,
+      "patent_act": 23.19,
+      "plant_varieties_farmers_rights_act": 50.0,
+      "semiconductor_layout_design_act": 19.15,
+      "trademark_act": 22.73
+    }
+  }
+}

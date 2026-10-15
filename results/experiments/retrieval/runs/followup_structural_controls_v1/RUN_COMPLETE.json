@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "completed_at": "2026-09-06T04:05:18+05:30",
+  "summary": "summary.json",
+  "outputs": [
+    "summary.json",
+    "indian_reference_collision_items.jsonl",
+    "indian_reference_collision_items.csv",
+    "passage_input_audit.jsonl",
+    "tie_audit_items.jsonl",
+    "boost_filter_trace.jsonl"
+  ]
+}

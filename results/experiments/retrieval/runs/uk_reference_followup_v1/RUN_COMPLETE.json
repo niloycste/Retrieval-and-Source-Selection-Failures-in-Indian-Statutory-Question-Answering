@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "completed_at": "2026-09-06T05:48:36+05:30",
+  "summary": "summary.json",
+  "outputs": [
+    "summary.json",
+    "uk_reference_audit_items.jsonl",
+    "uk_reference_removed_queries.jsonl",
+    "uk_reference_removal_items.jsonl",
+    "rankings_bm25_reference_removed.jsonl"
+  ]
+}

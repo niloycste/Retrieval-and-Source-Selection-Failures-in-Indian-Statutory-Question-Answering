@@ -1,0 +1,7 @@
+﻿{
+    "status": "IMPORTED_AND_VALIDATED",
+    "updated_at": "2026-09-28T13:46:00+05:30",
+    "source": "external modern_retrieval_bge_v1 run",
+    "validation": "PASS",
+    "note": "The previous cancellation record is preserved as QUEUE_STATE.pre_external_run.json."
+}

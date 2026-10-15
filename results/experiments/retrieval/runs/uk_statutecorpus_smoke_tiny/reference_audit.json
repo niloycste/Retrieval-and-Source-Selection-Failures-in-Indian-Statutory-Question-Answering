@@ -1,0 +1,27 @@
+{
+  "n_queries": 3,
+  "n_with_explicit_locator": 0,
+  "share_with_explicit_locator": 0.0,
+  "regex": "\\b(?:section|sections|regulation|regulations|article|articles|rule|rules|paragraph|paragraphs|schedule|schedules)\\s+(?:\\d+[A-Za-z]?(?:\\s*\\([A-Za-z0-9ivxlcdm]+\\))*|[IVXLCDM]+)\\b",
+  "note": "Text-only audit; no gold-derived citations were inserted.",
+  "rows": [
+    {
+      "qid": "Q0001",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Statutory Instruments, what are the consequences for contravening a direction given by a local authority?"
+    },
+    {
+      "qid": "Q0002",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Northern Ireland Statutory Rules, how are the Landfill Regulations (Northern Ireland) 2003 amended?"
+    },
+    {
+      "qid": "Q0003",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Draft Statutory Instruments, what regulations are laid before the Scottish Parliament for approval?"
+    }
+  ]
+}

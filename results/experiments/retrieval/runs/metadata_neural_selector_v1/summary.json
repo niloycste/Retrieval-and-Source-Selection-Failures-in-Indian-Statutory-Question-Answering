@@ -1,0 +1,75 @@
+{
+  "created_at": "2026-10-11T20:52:52+05:30",
+  "dataset": "IndicIPR-QA test",
+  "n_queries": 344,
+  "n_passages": 1116,
+  "candidate_text": "section title plus paragraph",
+  "models": {
+    "dense": {
+      "name": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181"
+    },
+    "reranker": {
+      "name": "BAAI/bge-reranker-v2-m3",
+      "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+    }
+  },
+  "retrieval_results": {
+    "title_paragraph_bm25": {
+      "recall@1": 34.88,
+      "recall@3": 47.97,
+      "recall@5": 56.98,
+      "recall@10": 69.77,
+      "recall@50": 94.77,
+      "mrr@10": 44.56,
+      "ndcg@10": 50.48
+    },
+    "title_paragraph_bge_m3": {
+      "recall@1": 34.01,
+      "recall@3": 46.22,
+      "recall@5": 52.03,
+      "recall@10": 60.76,
+      "recall@50": 81.4,
+      "mrr@10": 42.17,
+      "ndcg@10": 46.59
+    },
+    "title_paragraph_rrf_bm25_bge_m3": {
+      "recall@1": 45.35,
+      "recall@3": 61.05,
+      "recall@5": 70.64,
+      "recall@10": 77.91,
+      "recall@50": 94.48,
+      "mrr@10": 55.21,
+      "ndcg@10": 60.66
+    },
+    "title_paragraph_rrf_bm25_bge_m3_bge_reranker_v2_m3": {
+      "recall@1": 51.74,
+      "recall@3": 75.29,
+      "recall@5": 83.72,
+      "recall@10": 91.28,
+      "recall@50": 94.48,
+      "mrr@10": 65.46,
+      "ndcg@10": 71.72
+    }
+  },
+  "independent_source_selector": {
+    "n": 344,
+    "retrieval_recall@5": 86.34,
+    "selected_annotated_source_pct": 56.4,
+    "conditional_source_selection_pct": 65.32,
+    "em": 35.76,
+    "f1": 58.47,
+    "annotation_grounded_f1": 48.62,
+    "stage_counts": {
+      "source_absent": 47,
+      "available_other_selected": 103,
+      "annotated_source_selected_non_em": 71,
+      "annotated_source_selected_em": 123.0
+    }
+  },
+  "notes": [
+    "The source selector reranks only the unchanged section-filter top-five pool.",
+    "The fixed QA reader extracts from the independently selected passage; its span logits do not select the passage.",
+    "All outcomes remain relative to the retained annotated source and answer."
+  ]
+}

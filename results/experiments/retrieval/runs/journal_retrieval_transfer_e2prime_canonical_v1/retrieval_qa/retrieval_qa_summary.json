@@ -1,0 +1,38 @@
+[
+  {
+    "n": 344,
+    "em": 66.8605,
+    "f1": 87.3721,
+    "char_f1": 89.4719,
+    "setting": "Gold paragraph + QA",
+    "retrieval_recall": 100.0,
+    "qa_model": "E2': LegalBERT-US → SQuAD v1 → IPR"
+  },
+  {
+    "n": 344,
+    "em": 11.0465,
+    "f1": 29.4776,
+    "char_f1": 58.9208,
+    "setting": "BM25 top-1 + QA",
+    "retrieval_recall": 13.6628,
+    "qa_model": "E2': LegalBERT-US → SQuAD v1 → IPR"
+  },
+  {
+    "n": 344,
+    "em": 11.3372,
+    "f1": 31.0413,
+    "char_f1": 60.4165,
+    "setting": "BM25 top-3 + QA",
+    "retrieval_recall": 20.0581,
+    "qa_model": "E2': LegalBERT-US → SQuAD v1 → IPR"
+  },
+  {
+    "n": 344,
+    "em": 10.4651,
+    "f1": 31.9544,
+    "char_f1": 63.0529,
+    "setting": "BM25 top-5 + QA",
+    "retrieval_recall": 22.9651,
+    "qa_model": "E2': LegalBERT-US → SQuAD v1 → IPR"
+  }
+]

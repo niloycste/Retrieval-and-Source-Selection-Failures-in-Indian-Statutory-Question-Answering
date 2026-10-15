@@ -1,0 +1,27 @@
+{
+  "mode": "retrieval",
+  "output_dir": "E:\\Dataset on IPR\\results\\experiments\\retrieval\\runs\\journal_retrieval_transfer_e2prime_canonical_v1",
+  "ipr_test_file": "E:\\Dataset on IPR\\data\\splits\\test.jsonl",
+  "limit": null,
+  "qa_model": "E:\\Dataset on IPR\\artifacts\\models\\squad_v1\\baseline_e2_squadv1\\final",
+  "qa_label": "E2': LegalBERT-US → SQuAD v1 → IPR",
+  "corpus_file": "E:\\Dataset on IPR\\data\\processed\\indic_ipr_qa\\merged_ip_qa.jsonl",
+  "allow_split_corpus_fallback": false,
+  "top_k": [
+    1,
+    3,
+    5
+  ],
+  "squad_file": null,
+  "download_squad": false,
+  "squad_limit": 2000,
+  "include_adapted": true,
+  "all_default_models": true,
+  "postprocess_only": false,
+  "reuse_complete_predictions": true,
+  "device": "cpu",
+  "max_seq_length": 384,
+  "doc_stride": 128,
+  "max_answer_tokens": null,
+  "n_best": 20
+}

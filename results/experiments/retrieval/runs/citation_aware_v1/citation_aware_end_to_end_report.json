@@ -1,0 +1,153 @@
+{
+  "date": "2026-08-28T01:33:40+05:30",
+  "status": "canonical",
+  "qa_model": {
+    "code": "E2'",
+    "label": "LegalBERT(US) -> SQuAD v1 -> IndicIPR-QA",
+    "model_path": "artifacts/models/squad_v1/baseline_e2_squadv1/final"
+  },
+  "evaluation": {
+    "test_file": "data/splits/test.jsonl",
+    "retrieval_corpus": "data/processed/indic_ipr_qa/unique_contexts.jsonl",
+    "test_questions": 344,
+    "retrieval_contexts": 1116,
+    "reader_top_k": 5,
+    "input_format": "[CLS] question [SEP] context [SEP]",
+    "max_seq_length": 384,
+    "doc_stride": 128,
+    "batch_size": 32,
+    "max_answer_tokens": null,
+    "truncation": "only_second",
+    "span_decoding": "exhaustive constrained start<=end",
+    "window_selection": "maximum summed start/end logit",
+    "prediction_text": "literal source-context character slice"
+  },
+  "results": [
+    {
+      "n": 344,
+      "em_pct": 66.8605,
+      "f1_pct": 87.3721,
+      "char_f1_pct": 89.4719,
+      "setting": "Gold paragraph + E2'",
+      "retrieval_recall_pct": 100.0,
+      "reader_selected_gold_context_pct": 100.0
+    },
+    {
+      "n": 344,
+      "em_pct": 10.4651,
+      "f1_pct": 31.9544,
+      "char_f1_pct": 63.0529,
+      "setting": "BM25 top-5 + E2'",
+      "retrieval_recall_pct": 22.6744,
+      "reader_selected_gold_context_pct": 11.9186
+    },
+    {
+      "n": 344,
+      "em_pct": 36.3372,
+      "f1_pct": 55.216,
+      "char_f1_pct": 74.6929,
+      "setting": "BM25 + section boost top-5 + E2'",
+      "retrieval_recall_pct": 86.3372,
+      "reader_selected_gold_context_pct": 45.3488
+    },
+    {
+      "n": 344,
+      "em_pct": 38.3721,
+      "f1_pct": 57.9875,
+      "char_f1_pct": 75.4812,
+      "setting": "BM25 + section filter top-5 + E2'",
+      "retrieval_recall_pct": 86.3372,
+      "reader_selected_gold_context_pct": 50.8721
+    }
+  ],
+  "question_type_results": {
+    "citation-specified": {
+      "n": 177,
+      "results": {
+        "Gold paragraph": {
+          "n": 177,
+          "em_pct": 74.0113,
+          "f1_pct": 91.5522,
+          "char_f1_pct": 92.813
+        },
+        "BM25": {
+          "n": 177,
+          "em_pct": 0.0,
+          "f1_pct": 17.5943,
+          "char_f1_pct": 57.5028
+        },
+        "BM25 + section boost": {
+          "n": 177,
+          "em_pct": 36.1582,
+          "f1_pct": 55.5537,
+          "char_f1_pct": 77.3224
+        },
+        "BM25 + section filter": {
+          "n": 177,
+          "em_pct": 38.9831,
+          "f1_pct": 58.4261,
+          "char_f1_pct": 78.3433
+        }
+      }
+    },
+    "content-bearing": {
+      "n": 167,
+      "results": {
+        "Gold paragraph": {
+          "n": 167,
+          "em_pct": 59.2814,
+          "f1_pct": 82.9417,
+          "char_f1_pct": 85.9306
+        },
+        "BM25": {
+          "n": 167,
+          "em_pct": 21.5569,
+          "f1_pct": 47.1743,
+          "char_f1_pct": 68.9353
+        },
+        "BM25 + section boost": {
+          "n": 167,
+          "em_pct": 36.5269,
+          "f1_pct": 54.8581,
+          "char_f1_pct": 71.9059
+        },
+        "BM25 + section filter": {
+          "n": 167,
+          "em_pct": 37.7246,
+          "f1_pct": 57.5226,
+          "char_f1_pct": 72.4477
+        }
+      }
+    }
+  },
+  "prediction_files": {
+    "Gold paragraph": "results/experiments/retrieval/runs/citation_aware_v1/gold_paragraph_top5_e2_predictions.jsonl",
+    "BM25": "results/experiments/retrieval/runs/citation_aware_v1/bm25_top5_e2_predictions.jsonl",
+    "BM25 + section boost": "results/experiments/retrieval/runs/citation_aware_v1/bm25_section_boost_top5_e2_predictions.jsonl",
+    "BM25 + section filter": "results/experiments/retrieval/runs/citation_aware_v1/bm25_section_filter_top5_e2_predictions.jsonl"
+  },
+  "paired_comparisons": {
+    "method": "paired nonparametric bootstrap over test questions",
+    "iterations": 10000,
+    "seed": 42,
+    "multiplicity_adjustment": "none",
+    "comparisons": [
+      {
+        "comparison": "BM25 + section boost top-5 + E2' minus BM25 top-5 + E2'",
+        "f1_difference_points": 23.2616,
+        "pointwise_unadjusted_95_ci": [
+          19.1422,
+          27.5714
+        ]
+      },
+      {
+        "comparison": "BM25 + section filter top-5 + E2' minus BM25 top-5 + E2'",
+        "f1_difference_points": 26.0331,
+        "pointwise_unadjusted_95_ci": [
+          21.8587,
+          30.285
+        ]
+      }
+    ]
+  }
+}

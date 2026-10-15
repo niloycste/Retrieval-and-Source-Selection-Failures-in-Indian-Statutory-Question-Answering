@@ -1,0 +1,59 @@
+{
+  "dataset": "IndicIPR-QA test",
+  "n_queries": 344,
+  "n_passages": 1116,
+  "candidate_text": "paragraph only",
+  "retrieval_depth": 50,
+  "rerank_depth": 50,
+  "candidate_ceilings": {
+    "bm25_recall@50": 41.86,
+    "rrf_bm25_bge_m3_recall@50": 45.06
+  },
+  "results": {
+    "bm25": {
+      "recall@1": 13.08,
+      "recall@3": 20.06,
+      "recall@5": 22.67,
+      "recall@10": 27.03,
+      "recall@50": 41.86,
+      "mrr@10": 17.34,
+      "ndcg@10": 19.66
+    },
+    "bge_m3": {
+      "recall@1": 14.24,
+      "recall@3": 20.93,
+      "recall@5": 29.94,
+      "recall@10": 33.72,
+      "recall@50": 46.22,
+      "mrr@10": 19.51,
+      "ndcg@10": 22.87
+    },
+    "rrf_bm25_bge_m3": {
+      "recall@1": 14.24,
+      "recall@3": 24.71,
+      "recall@5": 30.81,
+      "recall@10": 36.05,
+      "recall@50": 45.06,
+      "mrr@10": 20.72,
+      "ndcg@10": 24.39
+    },
+    "bm25_bge_reranker_v2_m3": {
+      "recall@1": 18.02,
+      "recall@3": 25.58,
+      "recall@5": 29.07,
+      "recall@10": 33.72,
+      "recall@50": 41.86,
+      "mrr@10": 22.69,
+      "ndcg@10": 25.33
+    },
+    "rrf_bm25_bge_m3_bge_reranker_v2_m3": {
+      "recall@1": 17.73,
+      "recall@3": 25.58,
+      "recall@5": 29.36,
+      "recall@10": 34.01,
+      "recall@50": 45.06,
+      "mrr@10": 22.76,
+      "ndcg@10": 25.46
+    }
+  }
+}

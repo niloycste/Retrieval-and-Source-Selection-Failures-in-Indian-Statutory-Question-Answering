@@ -1,0 +1,78 @@
+{
+  "n_passages": 1116,
+  "n_queries": 344,
+  "citation_parsed_pct": 94.48,
+  "results": {
+    "BM25": {
+      "recall@1": 13.08,
+      "recall@3": 20.06,
+      "recall@5": 22.67,
+      "recall@10": 27.03,
+      "mrr@10": 17.34
+    },
+    "BM25 + section boost": {
+      "recall@1": 50.29,
+      "recall@3": 73.26,
+      "recall@5": 86.34,
+      "recall@10": 95.64,
+      "mrr@10": 64.84
+    },
+    "BM25 + section filter": {
+      "recall@1": 50.29,
+      "recall@3": 73.26,
+      "recall@5": 86.34,
+      "recall@10": 95.35,
+      "mrr@10": 64.81
+    }
+  },
+  "per_act_recall5": {
+    "copyright_act": {
+      "BM25": 32.0,
+      "BM25 + section boost": 84.0,
+      "BM25 + section filter": 84.0
+    },
+    "design_act": {
+      "BM25": 0.0,
+      "BM25 + section boost": 58.33,
+      "BM25 + section filter": 58.33
+    },
+    "gi_act": {
+      "BM25": 25.49,
+      "BM25 + section boost": 84.31,
+      "BM25 + section filter": 84.31
+    },
+    "patent_act": {
+      "BM25": 24.64,
+      "BM25 + section boost": 97.1,
+      "BM25 + section filter": 97.1
+    },
+    "plant_varieties_farmers_rights_act": {
+      "BM25": 45.0,
+      "BM25 + section boost": 70.0,
+      "BM25 + section filter": 70.0
+    },
+    "semiconductor_layout_design_act": {
+      "BM25": 14.89,
+      "BM25 + section boost": 87.23,
+      "BM25 + section filter": 87.23
+    },
+    "trademark_act": {
+      "BM25": 17.05,
+      "BM25 + section boost": 94.32,
+      "BM25 + section filter": 94.32
+    }
+  },
+  "by_question_type_recall5": {
+    "citation-template-only": {
+      "BM25": 0.0,
+      "BM25 + section boost": 83.62,
+      "BM25 + section filter": 83.62
+    },
+    "lexically-content-bearing": {
+      "BM25": 46.71,
+      "BM25 + section boost": 89.22,
+      "BM25 + section filter": 89.22
+    }
+  },
+  "boost": 1000.0
+}

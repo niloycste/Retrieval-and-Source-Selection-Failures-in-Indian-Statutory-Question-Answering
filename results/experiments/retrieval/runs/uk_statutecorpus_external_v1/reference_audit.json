@@ -1,0 +1,635 @@
+{
+  "n_queries": 100,
+  "n_with_explicit_locator": 13,
+  "share_with_explicit_locator": 0.13,
+  "regex": "\\b(?:section|sections|regulation|regulations|article|articles|rule|rules|paragraph|paragraphs|schedule|schedules)\\s+(?:\\d+[A-Za-z]?(?:\\s*\\([A-Za-z0-9ivxlcdm]+\\))*|[IVXLCDM]+)\\b",
+  "note": "Text-only audit; no gold-derived citations were inserted.",
+  "rows": [
+    {
+      "qid": "Q0001",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Statutory Instruments, what are the consequences for contravening a direction given by a local authority?"
+    },
+    {
+      "qid": "Q0002",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Northern Ireland Statutory Rules, how are the Landfill Regulations (Northern Ireland) 2003 amended?"
+    },
+    {
+      "qid": "Q0003",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Draft Statutory Instruments, what regulations are laid before the Scottish Parliament for approval?"
+    },
+    {
+      "qid": "Q0004",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Northern Ireland Statutory Rules, what are the amendments made to the Animal Feed (Composition, Marketing and Use) Regulations (Northern Ireland) 2016?"
+    },
+    {
+      "qid": "Q0005",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Draft Statutory Instruments, what are the designated constituencies and regions as per the Local Government Boundary Commission for Scotland's recommendations?"
+    },
+    {
+      "qid": "Q0006",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Acts of the Scottish Parliament, what are the modifications made to the Social Security (Scotland) Act 2018 regarding diagnosis and terminal illness?"
+    },
+    {
+      "qid": "Q0007",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Acts of the Scottish Parliament, how are civil partnerships between persons of different sexes recognized and registered?"
+    },
+    {
+      "qid": "Q0008",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Statutory Instruments, what are the obligations for producers in relation to scheme packaging and deposits?"
+    },
+    {
+      "qid": "Q0009",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Draft Statutory Instruments, what are the obligations of a registered producer?"
+    },
+    {
+      "qid": "Q0010",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Statutory Instruments, what changes are made to enforcement authorities and appointment of inspectors in Scotland?"
+    },
+    {
+      "qid": "Q0011",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Statutory Instruments, what details must appear on election material for Scottish local government and Scottish Parliament elections?"
+    },
+    {
+      "qid": "Q0012",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Draft Statutory Instruments, how do Food Standards Scotland's functions for enforcing Part IV of the Agriculture Act 1970 in relation to feed and Local Authorities' functions in relation to fertiliser change?"
+    },
+    {
+      "qid": "Q0013",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Statutory Instruments, what modifications were made to the Public Procurement etc. (EU Exit) Regulations in relation to procurement processes?"
+    },
+    {
+      "qid": "Q0014",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Statutory Instruments, what are the requirements for local authorities operating a scheme regarding accounts and financial statements?"
+    },
+    {
+      "qid": "Q0015",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Statutory Instruments, what regulations apply to pleasure craft within a harbour?"
+    },
+    {
+      "qid": "Q0016",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Northern Ireland Statutory Rules, what are the amendments made to occupational pension schemes in relation to administration, investment and charges?"
+    },
+    {
+      "qid": "Q0017",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Statutory Instruments, what are the procedural requirements for an appeal against a decision of a sheriff in civil proceedings?"
+    },
+    {
+      "qid": "Q0018",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Acts of the Scottish Parliament, what provisions of the Coronavirus (Scotland) Act 2020 are set to expire at the end of September 2021?"
+    },
+    {
+      "qid": "Q0019",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Northern Ireland Statutory Rules, what are the requirements for trustees of occupational pension schemes regarding climate change governance and reporting?"
+    },
+    {
+      "qid": "Q0020",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Northern Ireland Statutory Rules, what are the provisions for imposing and assessing the Industrial Training Levy in the construction industry?"
+    },
+    {
+      "qid": "Q0021",
+      "has_explicit_locator": true,
+      "matches": [
+        "paragraph 80"
+      ],
+      "query": "Under the Northern Ireland Statutory Rules, what are the requirements for an application to court under paragraph 80 for an order ending a postal administration?"
+    },
+    {
+      "qid": "Q0022",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Northern Ireland Statutory Rules, what are the eligibility criteria for student support post-Brexit?"
+    },
+    {
+      "qid": "Q0023",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Acts of the Northern Ireland Assembly, what are the requirements for operating a Master Trust scheme?"
+    },
+    {
+      "qid": "Q0024",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Northern Ireland Statutory Rules, what are the amendments made to student support regulations in relation to the United Kingdom’s exit from the European Union?"
+    },
+    {
+      "qid": "Q0025",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Acts of the Scottish Parliament, what are the conditions for heat networks licences and their enforcement?"
+    },
+    {
+      "qid": "Q0026",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Acts of the Scottish Parliament, what provisions are made for redress payments to survivors of historical child abuse in care settings?"
+    },
+    {
+      "qid": "Q0027",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Northern Ireland Statutory Rules, what amendments are made to income-related benefit legislation?"
+    },
+    {
+      "qid": "Q0028",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Acts of the Northern Ireland Assembly, what regulations can be made regarding carbon units and their impact on the net Northern Ireland emissions account?"
+    },
+    {
+      "qid": "Q0029",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Northern Ireland Statutory Rules, what amendments are made to the Firefighters’ Pension Scheme Order (Northern Ireland) 2007?"
+    },
+    {
+      "qid": "Q0030",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Statutory Instruments, how are individuals who receive Disability Living Allowance transferred to Adult Disability Payment?"
+    },
+    {
+      "qid": "Q0031",
+      "has_explicit_locator": true,
+      "matches": [
+        "Regulations 1989"
+      ],
+      "query": "Under the Scottish Statutory Instruments, what amendments are made to the Civil Legal Aid (Scotland) (Fees) Regulations 1989?"
+    },
+    {
+      "qid": "Q0032",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Acts of the Northern Ireland Assembly, what are the conditions for making an interim stalking protection order?"
+    },
+    {
+      "qid": "Q0033",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Draft Statutory Instruments, what are the conditions for an individual to be entitled to Adult Disability Payment after reaching a certain age?"
+    },
+    {
+      "qid": "Q0034",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Statutory Instruments, what are the conditions for payment of an allowance?"
+    },
+    {
+      "qid": "Q0035",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Statutory Instruments, what are the conditions for repeat applications following a withdrawal or decision on an earlier application?"
+    },
+    {
+      "qid": "Q0036",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Northern Ireland Statutory Rules, what are the conditions for an employer to apply to HMRC for funds to pay statutory parental bereavement pay?"
+    },
+    {
+      "qid": "Q0037",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Acts of the Northern Ireland Assembly, what are the requirements for landlords regarding notice to tenants and prescribed particulars?"
+    },
+    {
+      "qid": "Q0038",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Statutory Instruments, what regulations are made to enable digital registration of documents in the Land Register of Scotland?"
+    },
+    {
+      "qid": "Q0039",
+      "has_explicit_locator": true,
+      "matches": [
+        "Regulations 2014"
+      ],
+      "query": "Under the Scottish Statutory Instruments, what amendments are made to the Public Water Supplies (Scotland) Regulations 2014?"
+    },
+    {
+      "qid": "Q0040",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Statutory Instruments, what provisions are made for remote submission of birth or death registration?"
+    },
+    {
+      "qid": "Q0041",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Northern Ireland Statutory Rules, how are regulations amended to include parental bereavement leave?"
+    },
+    {
+      "qid": "Q0042",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Northern Ireland Statutory Rules, what are the requirements for trustees or managers of a pension scheme with over 100 relevant members to connect their scheme to the Money and Pensions Service?"
+    },
+    {
+      "qid": "Q0043",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Statutory Instruments, what are the provisions for treating owners of lands and heritages as liable to pay non-domestic rates?"
+    },
+    {
+      "qid": "Q0044",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Statutory Instruments, what are the regulations concerning transitional limits for rateable values?"
+    },
+    {
+      "qid": "Q0045",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Statutory Instruments, what are the conditions for an individual to be eligible for Carer Support Payment?"
+    },
+    {
+      "qid": "Q0046",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Statutory Instruments, how does the Colleges of Further Education and Regional Strategic Bodies (Membership of Boards) (Scotland) Order 2023 amend the constitution and proceedings of boards?"
+    },
+    {
+      "qid": "Q0047",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Acts of the Scottish Parliament, how are disqualifications for charity trustees specified?"
+    },
+    {
+      "qid": "Q0048",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Statutory Instruments, how are disability and carer’s benefit legislation amended for individuals arriving from Sudan?"
+    },
+    {
+      "qid": "Q0049",
+      "has_explicit_locator": true,
+      "matches": [
+        "Regulations 1989"
+      ],
+      "query": "Under the Scottish Statutory Instruments, what are the amendments made to the Civil Legal Aid (Scotland) (Fees) Regulations 1989?"
+    },
+    {
+      "qid": "Q0050",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Northern Ireland Statutory Rules, what are the requirements for providing remediable service statements to remedy members?"
+    },
+    {
+      "qid": "Q0051",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Northern Ireland Statutory Rules, what provisions enable certain persons to access income-related benefits upon arrival in Northern Ireland from Sudan?"
+    },
+    {
+      "qid": "Q0052",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Draft Statutory Instruments, what changes are made to the membership of boards in regional colleges and non-regional colleges?"
+    },
+    {
+      "qid": "Q0053",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Statutory Instruments, what amendments are made to regulations concerning carer support payments?"
+    },
+    {
+      "qid": "Q0054",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Northern Ireland Statutory Rules, what are the requirements for applying and obtaining a certificate of exemption for dogs?"
+    },
+    {
+      "qid": "Q0055",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Acts of the Scottish Parliament, what are the requirements for preparing a circular economy strategy?"
+    },
+    {
+      "qid": "Q0056",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Acts of the Scottish Parliament, what powers do the Scottish Ministers have regarding evacuation and remediation work in relation to external wall cladding systems?"
+    },
+    {
+      "qid": "Q0057",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Acts of the Scottish Parliament, what are the requirements for public authorities to act in a manner compatible with the UNCRC?"
+    },
+    {
+      "qid": "Q0058",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Northern Ireland Statutory Rules, what are the conditions for a person to be entitled to a Winter Fuel Payment?"
+    },
+    {
+      "qid": "Q0059",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Northern Ireland Statutory Rules, what are the duties of landlords regarding electrical safety standards in private tenancies?"
+    },
+    {
+      "qid": "Q0060",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the UK Statutory Instruments, what modifications are made to Commission Implementing Regulation (EU) 2016/897 concerning Bacillus subtilis C-3102?"
+    },
+    {
+      "qid": "Q0061",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Statutory Instruments, what are the requirements for a relevant pelagic boat in case of technical failure or non-functioning of REM systems?"
+    },
+    {
+      "qid": "Q0062",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Northern Ireland Statutory Rules, what are the requirements for trustees to notify employers and relevant former employers of triggering events?"
+    },
+    {
+      "qid": "Q0063",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Statutory Instruments, what are the amendments made to existing regulations concerning pension age disability payment?"
+    },
+    {
+      "qid": "Q0064",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Northern Ireland Statutory Rules, what are the requirements for scheme funders in relation to Master Trust schemes?"
+    },
+    {
+      "qid": "Q0065",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Northern Ireland Statutory Rules, what amendments are made to the definition of 'person granted indefinite leave to remain' in relation to bereaved partners and their children?"
+    },
+    {
+      "qid": "Q0066",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Scottish Draft Statutory Instruments, what are the eligibility criteria for Pension Age Disability Payment?"
+    },
+    {
+      "qid": "Q0067",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the UK Statutory Instruments, what amendments are made to Regulation (EU) No 1306/2013 in relation to direct payments for claim year 2020?"
+    },
+    {
+      "qid": "Q0068",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the UK Draft Statutory Instruments, what are the requirements for notice and evidence to be provided for statutory parental bereavement pay?"
+    },
+    {
+      "qid": "Q0069",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Wales Statutory Instruments, what are the requirements for Local Health Boards when making a pharmaceutical needs assessment?"
+    },
+    {
+      "qid": "Q0070",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the UK Statutory Instruments, what are the provisions for plants and plant products moving within Great Britain or being introduced from a CD territory?"
+    },
+    {
+      "qid": "Q0071",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the UK Draft Statutory Instruments, what are the consequences for operators who fail to surrender sufficient allowances?"
+    },
+    {
+      "qid": "Q0072",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the UK Draft Statutory Instruments, what provisions are made for parent financial holding companies and mixed financial holding companies?"
+    },
+    {
+      "qid": "Q0073",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the UK Draft Statutory Instruments, what are the duties of private landlords regarding electrical safety standards in residential premises?"
+    },
+    {
+      "qid": "Q0074",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the UK Statutory Instruments, what provisions are made for eligible employers to reclaim Statutory Sick Pay (SSP) costs from HMRC?"
+    },
+    {
+      "qid": "Q0075",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the UK Draft Statutory Instruments, how are references to the Publications Office of the European Union amended?"
+    },
+    {
+      "qid": "Q0076",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the UK Public General Acts, what are the requirements for a local authority to grant or reject an application for a pavement licence?"
+    },
+    {
+      "qid": "Q0077",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the UK Statutory Instruments, what are the requirements for notice and evidence in relation to statutory parental bereavement pay?"
+    },
+    {
+      "qid": "Q0078",
+      "has_explicit_locator": true,
+      "matches": [
+        "Article 4"
+      ],
+      "query": "Under the UK Draft Statutory Instruments, what amendments are made to Article 4 regarding imports into Great Britain?"
+    },
+    {
+      "qid": "Q0079",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the UK Statutory Instruments, what rights does an officer have regarding legal representation at misconduct hearings?"
+    },
+    {
+      "qid": "Q0080",
+      "has_explicit_locator": true,
+      "matches": [
+        "regulation 15B"
+      ],
+      "query": "Under the Wales Statutory Instruments, how does regulation 15B concerning administrative cooperation under the EEA EFTA citizens’ rights agreement apply?"
+    },
+    {
+      "qid": "Q0081",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the UK Draft Statutory Instruments, what are the specific amendments made to the Bank Recovery and Resolution (No.2) Order 2014?"
+    },
+    {
+      "qid": "Q0082",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the UK Draft Statutory Instruments, what particulars must be stated in census returns for England and Wales?"
+    },
+    {
+      "qid": "Q0083",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the UK Draft Statutory Instruments, what amendments are made to address deficiencies in retained EU law regarding animal welfare?"
+    },
+    {
+      "qid": "Q0084",
+      "has_explicit_locator": true,
+      "matches": [
+        "Regulations 2019"
+      ],
+      "query": "Under the UK Draft Statutory Instruments, how are the ISIL (Da’esh) and Al-Qaida (United Nations Sanctions) (EU Exit) Regulations 2019 amended?"
+    },
+    {
+      "qid": "Q0085",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the UK Statutory Instruments, how are goods treated when the EU Customs Code ceases to apply?"
+    },
+    {
+      "qid": "Q0086",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the UK Statutory Instruments, how are references to member states and other specific terms amended in relation to Northern Ireland?"
+    },
+    {
+      "qid": "Q0087",
+      "has_explicit_locator": true,
+      "matches": [
+        "sections 104"
+      ],
+      "query": "Under the UK Draft Statutory Instruments, what are the specific functions of the Combined Authority as conferred by sections 104(1)(a), 105(1) and (3), 107D(1), 107E(1) to (4), 113D, 114(1) and (3), and 117(5) of the Local Democracy, Economic Development and Construction Act 2009?"
+    },
+    {
+      "qid": "Q0088",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the UK Statutory Instruments, what amendments are made to the Education (Student Support) Regulations regarding ordinary residence requirements for persons granted stateless leave and their family members?"
+    },
+    {
+      "qid": "Q0089",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the UK Statutory Instruments, what are the requirements for issuing and varying Treasury licences?"
+    },
+    {
+      "qid": "Q0090",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the UK Draft Statutory Instruments, how are various regulations amended?"
+    },
+    {
+      "qid": "Q0091",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the UK Statutory Instruments, what provisions are made for the incorporation of Railway Clauses Acts?"
+    },
+    {
+      "qid": "Q0092",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the UK Statutory Instruments, what provisions are made for financial holding companies and mixed financial holding companies in relation to their approval and capital requirements?"
+    },
+    {
+      "qid": "Q0093",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the UK Statutory Instruments, what are the requirements for cargo transfers in United Kingdom waters?"
+    },
+    {
+      "qid": "Q0094",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the Wales Statutory Instruments, what are the requirements for enforcement officers to enter premises during normal working hours?"
+    },
+    {
+      "qid": "Q0095",
+      "has_explicit_locator": true,
+      "matches": [
+        "Regulations 2018"
+      ],
+      "query": "Under the UK Draft Statutory Instruments, what amendments are made to the Consumer Protection (Amendment etc.) (EU Exit) Regulations 2018?"
+    },
+    {
+      "qid": "Q0096",
+      "has_explicit_locator": true,
+      "matches": [
+        "Regulations 2019"
+      ],
+      "query": "Under the UK Statutory Instruments, how are The Food (Amendment) (England) (EU Exit) Regulations 2019 amended?"
+    },
+    {
+      "qid": "Q0097",
+      "has_explicit_locator": true,
+      "matches": [
+        "Regulations 2019"
+      ],
+      "query": "Under the UK Statutory Instruments, how are the Agriculture (Legislative Functions) (EU Exit) Regulations 2019 amended?"
+    },
+    {
+      "qid": "Q0098",
+      "has_explicit_locator": true,
+      "matches": [
+        "Regulations 2020"
+      ],
+      "query": "Under the UK Statutory Instruments, what are the powers of an authorised person in enforcing The Official Controls (Plant Protection Products) Regulations 2020?"
+    },
+    {
+      "qid": "Q0099",
+      "has_explicit_locator": true,
+      "matches": [
+        "section 40A"
+      ],
+      "query": "Under the UK Statutory Instruments, what are the conditions for relief from duty charged under section 40A of the Act?"
+    },
+    {
+      "qid": "Q0100",
+      "has_explicit_locator": false,
+      "matches": [],
+      "query": "Under the UK Statutory Instruments, how is the Aliens' Employment Act 1955 amended in relation to leave granted by virtue of residence scheme immigration rules?"
+    }
+  ]
+}

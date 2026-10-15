@@ -1,0 +1,22 @@
+{
+  "pid": 8200,
+  "status": "COMPLETE",
+  "started_at": "2026-09-03T12:59:24+05:30",
+  "priority": "below_normal",
+  "threads": 4,
+  "command": [
+    "C:\\Program Files\\Python313\\python.exe",
+    "E:\\Dataset on IPR\\scripts\\04_retrieval\\uk_statutecorpus_external_validation.py",
+    "--threads",
+    "4",
+    "--dense-batch-size",
+    "32",
+    "--rerank-batch-size",
+    "16",
+    "--output-dir",
+    "E:\\Dataset on IPR\\results\\experiments\\retrieval\\runs\\uk_statutecorpus_external_v1"
+  ],
+  "log": "E:\\Dataset on IPR\\results\\experiments\\retrieval\\runs\\uk_statutecorpus_external_v1\\run.log",
+  "completed_at": "2026-09-03T16:23:56+05:30",
+  "completion_sentinel": "RUN_COMPLETE.json"
+}

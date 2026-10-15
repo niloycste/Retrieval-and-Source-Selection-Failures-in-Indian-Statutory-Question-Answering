@@ -1,0 +1,171 @@
+{
+  "status": "canonical",
+  "analysis_scope": "344-question IndicIPR-QA test split",
+  "method": {
+    "description": "Deterministic operational partition, not a human-validated semantic annotation. Recognized citations are removed, tokens in the published interrogative-frame lexicon are filtered, and the primary class boundary is zero residual tokens.",
+    "primary_labels": [
+      "citation-template-only",
+      "lexically-content-bearing"
+    ],
+    "citation_patterns": [
+      "sub-?sections?\\s*\\(?\\s*[0-9ivxlc]+[a-z]?\\s*\\)?",
+      "clauses?\\s*\\(?\\s*[0-9a-z]+\\s*\\)?",
+      "items?\\s*\\(?\\s*[0-9a-z]+\\s*\\)?",
+      "paragraphs?\\s*\\(?\\s*[0-9a-z]+\\s*\\)?",
+      "sections?\\s*[0-9]+[a-z]*(\\s*\\([0-9a-z]+\\))*",
+      "\\([0-9a-z]{1,3}\\)"
+    ],
+    "interrogative_frame_lexicon": [
+      "a",
+      "about",
+      "according",
+      "an",
+      "and",
+      "are",
+      "as",
+      "be",
+      "been",
+      "being",
+      "do",
+      "does",
+      "down",
+      "for",
+      "here",
+      "in",
+      "is",
+      "it",
+      "its",
+      "laid",
+      "lay",
+      "lays",
+      "mean",
+      "means",
+      "meant",
+      "of",
+      "or",
+      "out",
+      "per",
+      "provide",
+      "provided",
+      "provides",
+      "regarding",
+      "respect",
+      "said",
+      "say",
+      "says",
+      "set",
+      "sets",
+      "specified",
+      "specifies",
+      "specify",
+      "state",
+      "stated",
+      "states",
+      "that",
+      "the",
+      "there",
+      "this",
+      "to",
+      "under",
+      "what",
+      "which",
+      "with"
+    ]
+  },
+  "threshold_sensitivity": [
+    {
+      "max_residual_tokens_for_citation_template_only": 0,
+      "groups": {
+        "citation-template-only": {
+          "n": 177,
+          "gold_paragraph_f1_pct": 91.5522,
+          "bm25_recall_at_5_pct": 0.0,
+          "bm25_end_to_end_f1_pct": 17.5943
+        },
+        "lexically-content-bearing": {
+          "n": 167,
+          "gold_paragraph_f1_pct": 82.9417,
+          "bm25_recall_at_5_pct": 47.3054,
+          "bm25_end_to_end_f1_pct": 47.1743
+        }
+      }
+    },
+    {
+      "max_residual_tokens_for_citation_template_only": 1,
+      "groups": {
+        "citation-template-only": {
+          "n": 187,
+          "gold_paragraph_f1_pct": 90.0452,
+          "bm25_recall_at_5_pct": 0.5348,
+          "bm25_end_to_end_f1_pct": 18.3625
+        },
+        "lexically-content-bearing": {
+          "n": 157,
+          "gold_paragraph_f1_pct": 84.1883,
+          "bm25_recall_at_5_pct": 49.6815,
+          "bm25_end_to_end_f1_pct": 48.1435
+        }
+      }
+    },
+    {
+      "max_residual_tokens_for_citation_template_only": 2,
+      "groups": {
+        "citation-template-only": {
+          "n": 219,
+          "gold_paragraph_f1_pct": 88.8663,
+          "bm25_recall_at_5_pct": 3.1963,
+          "bm25_end_to_end_f1_pct": 20.0746
+        },
+        "lexically-content-bearing": {
+          "n": 125,
+          "gold_paragraph_f1_pct": 84.7543,
+          "bm25_recall_at_5_pct": 57.6,
+          "bm25_end_to_end_f1_pct": 52.7678
+        }
+      }
+    }
+  ],
+  "continuous_residual_token_analysis": [
+    {
+      "residual_token_bin": "0",
+      "n": 177,
+      "bm25_recall_at_5_pct": 0.0,
+      "bm25_end_to_end_f1_pct": 17.5943
+    },
+    {
+      "residual_token_bin": "1",
+      "n": 10,
+      "bm25_recall_at_5_pct": 10.0,
+      "bm25_end_to_end_f1_pct": 31.9587
+    },
+    {
+      "residual_token_bin": "2",
+      "n": 32,
+      "bm25_recall_at_5_pct": 18.75,
+      "bm25_end_to_end_f1_pct": 30.0799
+    },
+    {
+      "residual_token_bin": "3-4",
+      "n": 37,
+      "bm25_recall_at_5_pct": 35.1351,
+      "bm25_end_to_end_f1_pct": 32.9046
+    },
+    {
+      "residual_token_bin": "5+",
+      "n": 88,
+      "bm25_recall_at_5_pct": 67.0455,
+      "bm25_end_to_end_f1_pct": 61.1193
+    }
+  ],
+  "spearman_correlations": {
+    "residual_count_vs_bm25_recall_at_5_hit": {
+      "rho": 0.6712,
+      "p_value": 2.15677384460256e-46
+    },
+    "residual_count_vs_bm25_end_to_end_f1": {
+      "rho": 0.5063,
+      "p_value": 8.5493041842054e-24
+    },
+    "interpretation": "Item-level correlations are descriptive; the manuscript treats the threshold and binned analyses as robustness checks rather than human construct validation."
+  }
+}

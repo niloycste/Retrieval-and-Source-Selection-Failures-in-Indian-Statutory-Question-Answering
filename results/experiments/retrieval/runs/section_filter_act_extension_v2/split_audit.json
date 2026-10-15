@@ -1,0 +1,17 @@
+{
+  "train_val": {
+    "section_overlap": 0,
+    "context_overlap": 0,
+    "exact_question_overlap_n": 9
+  },
+  "train_test": {
+    "section_overlap": 0,
+    "context_overlap": 0,
+    "exact_question_overlap_n": 3
+  },
+  "val_test": {
+    "section_overlap": 0,
+    "context_overlap": 0,
+    "exact_question_overlap_n": 5
+  }
+}

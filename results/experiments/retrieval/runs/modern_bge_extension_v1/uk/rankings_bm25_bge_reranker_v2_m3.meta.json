@@ -1,0 +1,12 @@
+{
+  "model": "BAAI/bge-reranker-v2-m3",
+  "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+  "base_ranking_fingerprint": "f920e4eb0707cd3811a6e3e9cfd81468136d2f4ad3b8482c2169d04514ebae0d",
+  "query_fingerprint": "56dd823f03ceaf7a67b411b49d017f416071ed31af12d46c84f87c89f788dccb",
+  "n_queries": 100,
+  "rerank_depth": 50,
+  "max_seq_length": 512,
+  "candidate_text": "paragraph only",
+  "completed": 100,
+  "updated_at": "2026-09-29T16:11:21+05:30"
+}

@@ -1,0 +1,5128 @@
+[
+  {
+    "id": "cop_000041",
+    "question": "What does Section 4 provide regarding when work not deemed to be published or performed in p ublic?",
+    "parsed_first": "4",
+    "all_regex_matches": [
+      "4"
+    ],
+    "annotated_section": "4",
+    "agrees_with_annotation": true,
+    "matching_passages": 8,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "cop_000063",
+    "question": "Under Section 14, what does 'in the case of a literary, dramatic or musical work, not being a computer programme,— (i) to reproduce the work in any material form including the storing of it in any medium by electronic' mean?",
+    "parsed_first": "14",
+    "all_regex_matches": [
+      "14"
+    ],
+    "annotated_section": "14",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "cop_000064",
+    "question": "Under Section 14, what is stated in clause (b)?",
+    "parsed_first": "14",
+    "all_regex_matches": [
+      "14"
+    ],
+    "annotated_section": "14",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "cop_000065",
+    "question": "In Section 14, what is meant by 'in the case of an artistic work,— (i) to reproduce the work in any material form including— (A) the storing of it in any medium by electronic or other'?",
+    "parsed_first": "14",
+    "all_regex_matches": [
+      "14"
+    ],
+    "annotated_section": "14",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "cop_000066",
+    "question": "What does clause (d) of Section 14 provide?",
+    "parsed_first": "14",
+    "all_regex_matches": [
+      "14"
+    ],
+    "annotated_section": "14",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "cop_000067",
+    "question": "Under Section 14, what does 'in the case of a sound recording,— (i) to make any other sound recording embodying it including storing of it in any medium by electronic or other' mean?",
+    "parsed_first": "14",
+    "all_regex_matches": [
+      "14"
+    ],
+    "annotated_section": "14",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "cop_000068",
+    "question": "What does sub-section (1) of Section 15 provide?",
+    "parsed_first": "15",
+    "all_regex_matches": [
+      "15"
+    ],
+    "annotated_section": "15",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "cop_000069",
+    "question": "Under Section 15, what is stated in sub-section (2)?",
+    "parsed_first": "15",
+    "all_regex_matches": [
+      "15"
+    ],
+    "annotated_section": "15",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "cop_000079",
+    "question": "What does sub-section (1) of Section 18 provide?",
+    "parsed_first": "18",
+    "all_regex_matches": [
+      "18"
+    ],
+    "annotated_section": "18",
+    "agrees_with_annotation": true,
+    "matching_passages": 14,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "cop_000080",
+    "question": "Under Section 18, what is stated in sub-section (2)?",
+    "parsed_first": "18",
+    "all_regex_matches": [
+      "18"
+    ],
+    "annotated_section": "18",
+    "agrees_with_annotation": true,
+    "matching_passages": 14,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "cop_000081",
+    "question": "What does Section 18(3) say?",
+    "parsed_first": "18",
+    "all_regex_matches": [
+      "18"
+    ],
+    "annotated_section": "18",
+    "agrees_with_annotation": true,
+    "matching_passages": 14,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "cop_000109",
+    "question": "What does Section 28A provide regarding term of copyright in works of public undertakings?",
+    "parsed_first": "28A",
+    "all_regex_matches": [
+      "28A"
+    ],
+    "annotated_section": "28A",
+    "agrees_with_annotation": true,
+    "matching_passages": 1,
+    "matching_acts": 1,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "cop_000112",
+    "question": "What does Section 30A provide regarding application of section 19?",
+    "parsed_first": "30A",
+    "all_regex_matches": [
+      "30A",
+      "19"
+    ],
+    "annotated_section": "30A",
+    "agrees_with_annotation": true,
+    "matching_passages": 1,
+    "matching_acts": 1,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "cop_000125",
+    "question": "What does sub-section (1) of Section 31C provide?",
+    "parsed_first": "31C",
+    "all_regex_matches": [
+      "31C"
+    ],
+    "annotated_section": "31C",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 1,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "cop_000126",
+    "question": "Under Section 31C, what is stated in sub-section (2)?",
+    "parsed_first": "31C",
+    "all_regex_matches": [
+      "31C"
+    ],
+    "annotated_section": "31C",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 1,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "cop_000127",
+    "question": "What does Section 31C(3) say?",
+    "parsed_first": "31C",
+    "all_regex_matches": [
+      "31C"
+    ],
+    "annotated_section": "31C",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 1,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "cop_000128",
+    "question": "What does sub-section (4) of Section 31C provide?",
+    "parsed_first": "31C",
+    "all_regex_matches": [
+      "31C"
+    ],
+    "annotated_section": "31C",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 1,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "cop_000129",
+    "question": "Under Section 31C, what is stated in sub-section (5)?",
+    "parsed_first": "31C",
+    "all_regex_matches": [
+      "31C"
+    ],
+    "annotated_section": "31C",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 1,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "cop_000265",
+    "question": "What does sub-section (1) of Section 53 provide?",
+    "parsed_first": "53",
+    "all_regex_matches": [
+      "53"
+    ],
+    "annotated_section": "53",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "cop_000266",
+    "question": "Under Section 53, what is stated in sub-section (2)?",
+    "parsed_first": "53",
+    "all_regex_matches": [
+      "53"
+    ],
+    "annotated_section": "53",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "cop_000267",
+    "question": "What does Section 53(3) say?",
+    "parsed_first": "53",
+    "all_regex_matches": [
+      "53"
+    ],
+    "annotated_section": "53",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "cop_000268",
+    "question": "What does sub-section (4) of Section 53 provide?",
+    "parsed_first": "53",
+    "all_regex_matches": [
+      "53"
+    ],
+    "annotated_section": "53",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "cop_000292",
+    "question": "What does Section 63A provide regarding enhanced penalty on second and subsequent convictions?",
+    "parsed_first": "63A",
+    "all_regex_matches": [
+      "63A"
+    ],
+    "annotated_section": "63A",
+    "agrees_with_annotation": true,
+    "matching_passages": 1,
+    "matching_acts": 1,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "cop_000299",
+    "question": "What does Section 65B provide regarding protection of rights management information?",
+    "parsed_first": "65B",
+    "all_regex_matches": [
+      "65B"
+    ],
+    "annotated_section": "65B",
+    "agrees_with_annotation": true,
+    "matching_passages": 1,
+    "matching_acts": 1,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "cop_000312",
+    "question": "What does Section 73 provide regarding procedure for appeals?",
+    "parsed_first": "73",
+    "all_regex_matches": [
+      "73"
+    ],
+    "annotated_section": "73",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000406",
+    "question": "What does Section 42 provide?",
+    "parsed_first": "42",
+    "all_regex_matches": [
+      "42"
+    ],
+    "annotated_section": "42",
+    "agrees_with_annotation": true,
+    "matching_passages": 12,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000407",
+    "question": "What is stated in subsection (1) of Section 42?",
+    "parsed_first": "42",
+    "all_regex_matches": [
+      "42"
+    ],
+    "annotated_section": "42",
+    "agrees_with_annotation": true,
+    "matching_passages": 12,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000408",
+    "question": "According to Section 42, what shall nothing in this act be?",
+    "parsed_first": "42",
+    "all_regex_matches": [
+      "42"
+    ],
+    "annotated_section": "42",
+    "agrees_with_annotation": true,
+    "matching_passages": 12,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000409",
+    "question": "What does subsection (1) of Section 43 provide?",
+    "parsed_first": "43",
+    "all_regex_matches": [
+      "43"
+    ],
+    "annotated_section": "43",
+    "agrees_with_annotation": true,
+    "matching_passages": 7,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000410",
+    "question": "According to clause (a) of Section 43, what is provided?",
+    "parsed_first": "43",
+    "all_regex_matches": [
+      "43"
+    ],
+    "annotated_section": "43",
+    "agrees_with_annotation": true,
+    "matching_passages": 7,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000411",
+    "question": "What is laid down in clause (b) of Section 43?",
+    "parsed_first": "43",
+    "all_regex_matches": [
+      "43"
+    ],
+    "annotated_section": "43",
+    "agrees_with_annotation": true,
+    "matching_passages": 7,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000412",
+    "question": "Under Section 43, what shall the application has not been found to be in contravention of any of the provisions of this act, the patent be?",
+    "parsed_first": "43",
+    "all_regex_matches": [
+      "43"
+    ],
+    "annotated_section": "43",
+    "agrees_with_annotation": true,
+    "matching_passages": 7,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000413",
+    "question": "What is stated in subsection (2) of Section 43?",
+    "parsed_first": "43",
+    "all_regex_matches": [
+      "43"
+    ],
+    "annotated_section": "43",
+    "agrees_with_annotation": true,
+    "matching_passages": 7,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000414",
+    "question": "According to Section 43, what shall on the grant of patent, the controller shall publish the fact that the patent has been granted and thereupon the application, specification and other documents related thereto be?",
+    "parsed_first": "43",
+    "all_regex_matches": [
+      "43"
+    ],
+    "annotated_section": "43",
+    "agrees_with_annotation": true,
+    "matching_passages": 7,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000527",
+    "question": "What is stated in subsection (1) of Section 63?",
+    "parsed_first": "63",
+    "all_regex_matches": [
+      "63"
+    ],
+    "annotated_section": "63",
+    "agrees_with_annotation": true,
+    "matching_passages": 7,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000528",
+    "question": "According to subsection (2) of Section 63, what is provided?",
+    "parsed_first": "63",
+    "all_regex_matches": [
+      "63"
+    ],
+    "annotated_section": "63",
+    "agrees_with_annotation": true,
+    "matching_passages": 7,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000529",
+    "question": "What does subsection (3) of Section 63 provide?",
+    "parsed_first": "63",
+    "all_regex_matches": [
+      "63"
+    ],
+    "annotated_section": "63",
+    "agrees_with_annotation": true,
+    "matching_passages": 7,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000530",
+    "question": "What is stated in subsection (4) of Section 63?",
+    "parsed_first": "63",
+    "all_regex_matches": [
+      "63"
+    ],
+    "annotated_section": "63",
+    "agrees_with_annotation": true,
+    "matching_passages": 7,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000563",
+    "question": "What does Section 66 provide?",
+    "parsed_first": "66",
+    "all_regex_matches": [
+      "66"
+    ],
+    "annotated_section": "66",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000564",
+    "question": "What is stated in subsection (1) of Section 66?",
+    "parsed_first": "66",
+    "all_regex_matches": [
+      "66"
+    ],
+    "annotated_section": "66",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000565",
+    "question": "According to Section 66, what shall where the central government is of opinion that a patent or the mode in which it is exercised is mischievous to the state or generally prejudicial to the public, it may, after giving the patentee an opportunity to be heard, make a declaration to that effect in the official gazette and thereupon the patent be?",
+    "parsed_first": "66",
+    "all_regex_matches": [
+      "66"
+    ],
+    "annotated_section": "66",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000618",
+    "question": "What does subsection (1) of Section 73 provide?",
+    "parsed_first": "73",
+    "all_regex_matches": [
+      "73"
+    ],
+    "annotated_section": "73",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000619",
+    "question": "In Section 73, what is the controller general of patents, designs and trade marks appointed under sub-section (1) of 4section 3 of the trade marks act, 1999 (4 of 1999) to be?",
+    "parsed_first": "73",
+    "all_regex_matches": [
+      "73"
+    ],
+    "annotated_section": "73",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000620",
+    "question": "According to subsection (2) of Section 73, what is provided?",
+    "parsed_first": "73",
+    "all_regex_matches": [
+      "73"
+    ],
+    "annotated_section": "73",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000621",
+    "question": "What does subsection (3) of Section 73 provide?",
+    "parsed_first": "73",
+    "all_regex_matches": [
+      "73"
+    ],
+    "annotated_section": "73",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000622",
+    "question": "What is stated in subsection (4) of Section 73?",
+    "parsed_first": "73",
+    "all_regex_matches": [
+      "73"
+    ],
+    "annotated_section": "73",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000637",
+    "question": "What does subsection (1) of Section 77 provide?",
+    "parsed_first": "77",
+    "all_regex_matches": [
+      "77"
+    ],
+    "annotated_section": "77",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000638",
+    "question": "According to clause (a) of Section 77, what is provided?",
+    "parsed_first": "77",
+    "all_regex_matches": [
+      "77"
+    ],
+    "annotated_section": "77",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000639",
+    "question": "What is laid down in clause (b) of Section 77?",
+    "parsed_first": "77",
+    "all_regex_matches": [
+      "77"
+    ],
+    "annotated_section": "77",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000640",
+    "question": "What does clause (c) of Section 77 state?",
+    "parsed_first": "77",
+    "all_regex_matches": [
+      "77"
+    ],
+    "annotated_section": "77",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000641",
+    "question": "According to clause (d) of Section 77, what is provided?",
+    "parsed_first": "77",
+    "all_regex_matches": [
+      "77"
+    ],
+    "annotated_section": "77",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000642",
+    "question": "What is laid down in clause (e) of Section 77?",
+    "parsed_first": "77",
+    "all_regex_matches": [
+      "77"
+    ],
+    "annotated_section": "77",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000643",
+    "question": "What does clause (f) of Section 77 state?",
+    "parsed_first": "77",
+    "all_regex_matches": [
+      "77"
+    ],
+    "annotated_section": "77",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000644",
+    "question": "According to clause (g) of Section 77, what is provided?",
+    "parsed_first": "77",
+    "all_regex_matches": [
+      "77"
+    ],
+    "annotated_section": "77",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000645",
+    "question": "What is laid down in clause (h) of Section 77?",
+    "parsed_first": "77",
+    "all_regex_matches": [
+      "77"
+    ],
+    "annotated_section": "77",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000646",
+    "question": "Under Section 77, what shall any other matter which be?",
+    "parsed_first": "77",
+    "all_regex_matches": [
+      "77"
+    ],
+    "annotated_section": "77",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000647",
+    "question": "What is stated in subsection (2) of Section 77?",
+    "parsed_first": "77",
+    "all_regex_matches": [
+      "77"
+    ],
+    "annotated_section": "77",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000648",
+    "question": "According to Section 77, what shall any order for costs awarded by the controller in exercise of the powers conferred upon him under sub-section (1) be?",
+    "parsed_first": "77",
+    "all_regex_matches": [
+      "77"
+    ],
+    "annotated_section": "77",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000749",
+    "question": "According to subsection (1) of Section 91, what is provided?",
+    "parsed_first": "91",
+    "all_regex_matches": [
+      "91"
+    ],
+    "annotated_section": "91",
+    "agrees_with_annotation": true,
+    "matching_passages": 5,
+    "matching_acts": 4,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000750",
+    "question": "What does subsection (2) of Section 91 provide?",
+    "parsed_first": "91",
+    "all_regex_matches": [
+      "91"
+    ],
+    "annotated_section": "91",
+    "agrees_with_annotation": true,
+    "matching_passages": 5,
+    "matching_acts": 4,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000751",
+    "question": "In Section 91, what is no order under sub-section (1) to be?",
+    "parsed_first": "91",
+    "all_regex_matches": [
+      "91"
+    ],
+    "annotated_section": "91",
+    "agrees_with_annotation": true,
+    "matching_passages": 5,
+    "matching_acts": 4,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000752",
+    "question": "What is laid down in clause (i) of Section 91?",
+    "parsed_first": "91",
+    "all_regex_matches": [
+      "91"
+    ],
+    "annotated_section": "91",
+    "agrees_with_annotation": true,
+    "matching_passages": 5,
+    "matching_acts": 4,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000753",
+    "question": "What does clause (ii) of Section 91 state?",
+    "parsed_first": "91",
+    "all_regex_matches": [
+      "91"
+    ],
+    "annotated_section": "91",
+    "agrees_with_annotation": true,
+    "matching_passages": 5,
+    "matching_acts": 4,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000754",
+    "question": "What is stated in subsection (3) of Section 91?",
+    "parsed_first": "91",
+    "all_regex_matches": [
+      "91"
+    ],
+    "annotated_section": "91",
+    "agrees_with_annotation": true,
+    "matching_passages": 5,
+    "matching_acts": 4,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000755",
+    "question": "What is stated in the proviso to Section 91?",
+    "parsed_first": "91",
+    "all_regex_matches": [
+      "91"
+    ],
+    "annotated_section": "91",
+    "agrees_with_annotation": true,
+    "matching_passages": 5,
+    "matching_acts": 4,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000756",
+    "question": "Under Section 91, what shall the licence granted by the controller be?",
+    "parsed_first": "91",
+    "all_regex_matches": [
+      "91"
+    ],
+    "annotated_section": "91",
+    "agrees_with_annotation": true,
+    "matching_passages": 5,
+    "matching_acts": 4,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000757",
+    "question": "What is stated in subsection (4) of Section 91?",
+    "parsed_first": "91",
+    "all_regex_matches": [
+      "91"
+    ],
+    "annotated_section": "91",
+    "agrees_with_annotation": true,
+    "matching_passages": 5,
+    "matching_acts": 4,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000851",
+    "question": "What does subsection (1) of Section 107 provide?",
+    "parsed_first": "107",
+    "all_regex_matches": [
+      "107"
+    ],
+    "annotated_section": "107",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000852",
+    "question": "In Section 107, what is in any suit for infringement of a patent, every ground on which it may be revoked under section 64 to be?",
+    "parsed_first": "107",
+    "all_regex_matches": [
+      "107",
+      "64"
+    ],
+    "annotated_section": "107",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000853",
+    "question": "According to subsection (2) of Section 107, what is provided?",
+    "parsed_first": "107",
+    "all_regex_matches": [
+      "107"
+    ],
+    "annotated_section": "107",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000854",
+    "question": "Under Section 107, what shall in any suit for infringement of a patent by the making, using or importation of any machine, apparatus or other article or by the using of any process or by the importation, use or distribution of any medicine or drug, it be?",
+    "parsed_first": "107",
+    "all_regex_matches": [
+      "107"
+    ],
+    "annotated_section": "107",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000891",
+    "question": "What does Section 118 provide?",
+    "parsed_first": "118",
+    "all_regex_matches": [
+      "118"
+    ],
+    "annotated_section": "118",
+    "agrees_with_annotation": true,
+    "matching_passages": 2,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000892",
+    "question": "What is stated in subsection (1) of Section 118?",
+    "parsed_first": "118",
+    "all_regex_matches": [
+      "118"
+    ],
+    "annotated_section": "118",
+    "agrees_with_annotation": true,
+    "matching_passages": 2,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000893",
+    "question": "According to Section 118, what shall if any person fails to comply with any direction given under section 35 2or makes or causes to be made an application for the grant of a patent in contravention of section 39, he be?",
+    "parsed_first": "118",
+    "all_regex_matches": [
+      "118",
+      "35",
+      "39"
+    ],
+    "annotated_section": "118",
+    "agrees_with_annotation": true,
+    "matching_passages": 2,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000894",
+    "question": "What does Section 119 provide?",
+    "parsed_first": "119",
+    "all_regex_matches": [
+      "119"
+    ],
+    "annotated_section": "119",
+    "agrees_with_annotation": true,
+    "matching_passages": 2,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000895",
+    "question": "What does subsection (1) of Section 119 provide?",
+    "parsed_first": "119",
+    "all_regex_matches": [
+      "119"
+    ],
+    "annotated_section": "119",
+    "agrees_with_annotation": true,
+    "matching_passages": 2,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000896",
+    "question": "In Section 119, what is if any person makes, or causes to be made, a false entry in any register kept under this act, or a writing falsely purporting to be a copy of an entry in such a register, or produces or tenders, or causes to be produced or tendered, in evidence any such writing knowing the entry or writing to be false, he to be?",
+    "parsed_first": "119",
+    "all_regex_matches": [
+      "119"
+    ],
+    "annotated_section": "119",
+    "agrees_with_annotation": true,
+    "matching_passages": 2,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000937",
+    "question": "What does subsection (1) of Section 125 provide?",
+    "parsed_first": "125",
+    "all_regex_matches": [
+      "125"
+    ],
+    "annotated_section": "125",
+    "agrees_with_annotation": true,
+    "matching_passages": 2,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000938",
+    "question": "In Section 125, what is the controller shall maintain a register to be called the register of patent agents in which to be?",
+    "parsed_first": "125",
+    "all_regex_matches": [
+      "125"
+    ],
+    "annotated_section": "125",
+    "agrees_with_annotation": true,
+    "matching_passages": 2,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000939",
+    "question": "According to subsection (2) of Section 125, what is provided?",
+    "parsed_first": "125",
+    "all_regex_matches": [
+      "125"
+    ],
+    "annotated_section": "125",
+    "agrees_with_annotation": true,
+    "matching_passages": 2,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000940",
+    "question": "Under Section 125, what shall notwithstanding anything contained in sub-section (1), it be?",
+    "parsed_first": "125",
+    "all_regex_matches": [
+      "125"
+    ],
+    "annotated_section": "125",
+    "agrees_with_annotation": true,
+    "matching_passages": 2,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000957",
+    "question": "According to subsection (1) of Section 128, what is provided?",
+    "parsed_first": "128",
+    "all_regex_matches": [
+      "128"
+    ],
+    "annotated_section": "128",
+    "agrees_with_annotation": true,
+    "matching_passages": 2,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000958",
+    "question": "Under Section 128, what shall all applications and communications to the controller under this act be?",
+    "parsed_first": "128",
+    "all_regex_matches": [
+      "128"
+    ],
+    "annotated_section": "128",
+    "agrees_with_annotation": true,
+    "matching_passages": 2,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000980",
+    "question": "What is stated in subsection (1) of Section 133?",
+    "parsed_first": "133",
+    "all_regex_matches": [
+      "133"
+    ],
+    "annotated_section": "133",
+    "agrees_with_annotation": true,
+    "matching_passages": 2,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_000981",
+    "question": "According to Section 133, what shall any country, which is a signatory or party or a group of countries, union of countries or inter-governmental organisations which are signatories or parties to an international, regional or bi-lateral treaty, convention or arrangement to which india is also a signatory or party and which affords to the applicants for patents in india or to citizens of india similar privileges as are granted to their own citizens or citizens to their member countries in respect of the grant of patents and protection of patent rights be?",
+    "parsed_first": "133",
+    "all_regex_matches": [
+      "133"
+    ],
+    "annotated_section": "133",
+    "agrees_with_annotation": true,
+    "matching_passages": 2,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_001046",
+    "question": "What does Section 143 provide?",
+    "parsed_first": "143",
+    "all_regex_matches": [
+      "143"
+    ],
+    "annotated_section": "143",
+    "agrees_with_annotation": true,
+    "matching_passages": 2,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_001047",
+    "question": "What does subsection (1) of Section 143 provide?",
+    "parsed_first": "143",
+    "all_regex_matches": [
+      "143"
+    ],
+    "annotated_section": "143",
+    "agrees_with_annotation": true,
+    "matching_passages": 2,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_001079",
+    "question": "What does Section 154 provide?",
+    "parsed_first": "154",
+    "all_regex_matches": [
+      "154"
+    ],
+    "annotated_section": "154",
+    "agrees_with_annotation": true,
+    "matching_passages": 1,
+    "matching_acts": 1,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_001080",
+    "question": "What does subsection (1) of Section 154 provide?",
+    "parsed_first": "154",
+    "all_regex_matches": [
+      "154"
+    ],
+    "annotated_section": "154",
+    "agrees_with_annotation": true,
+    "matching_passages": 1,
+    "matching_acts": 1,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_001139",
+    "question": "What is stated in subsection (1) of Section 162?",
+    "parsed_first": "162",
+    "all_regex_matches": [
+      "162"
+    ],
+    "annotated_section": "162",
+    "agrees_with_annotation": true,
+    "matching_passages": 1,
+    "matching_acts": 1,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_001140",
+    "question": "According to Section 162, what shall the indian patents and designs act, 1911, in so far as it relates to patents, is hereby repealed, that is to say, the said act be?",
+    "parsed_first": "162",
+    "all_regex_matches": [
+      "162"
+    ],
+    "annotated_section": "162",
+    "agrees_with_annotation": true,
+    "matching_passages": 1,
+    "matching_acts": 1,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_001141",
+    "question": "What does subsection (4) of Section 162 provide?",
+    "parsed_first": "162",
+    "all_regex_matches": [
+      "162"
+    ],
+    "annotated_section": "162",
+    "agrees_with_annotation": true,
+    "matching_passages": 1,
+    "matching_acts": 1,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_001142",
+    "question": "What is stated in subsection (5) of Section 162?",
+    "parsed_first": "162",
+    "all_regex_matches": [
+      "162"
+    ],
+    "annotated_section": "162",
+    "agrees_with_annotation": true,
+    "matching_passages": 1,
+    "matching_acts": 1,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "pat_v2_001143",
+    "question": "According to Section 162, what shall notwithstanding anything contained in this act, any suit for infringement of a patent or any proceeding for revocation of a patent, pending in any court at the commencement of this act be?",
+    "parsed_first": "162",
+    "all_regex_matches": [
+      "162"
+    ],
+    "annotated_section": "162",
+    "agrees_with_annotation": true,
+    "matching_passages": 1,
+    "matching_acts": 1,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000249",
+    "question": "What does clause (a) of Section 15 state?",
+    "parsed_first": "15",
+    "all_regex_matches": [
+      "15"
+    ],
+    "annotated_section": "15",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000250",
+    "question": "Under Section 15 (Registration of parts of trade marks and of trade marks as a s eries), what is provided in clause (a)?",
+    "parsed_first": "15",
+    "all_regex_matches": [
+      "15"
+    ],
+    "annotated_section": "15",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000251",
+    "question": "Under Section 15 (Registration of parts of trade marks and of trade marks as a s eries), what is provided in clause (b)?",
+    "parsed_first": "15",
+    "all_regex_matches": [
+      "15"
+    ],
+    "annotated_section": "15",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000252",
+    "question": "What is laid down in clause (b) of Section 15?",
+    "parsed_first": "15",
+    "all_regex_matches": [
+      "15"
+    ],
+    "annotated_section": "15",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000253",
+    "question": "What is laid down in clause (c) of Section 15?",
+    "parsed_first": "15",
+    "all_regex_matches": [
+      "15"
+    ],
+    "annotated_section": "15",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000254",
+    "question": "In Section 15, what does clause (c) say?",
+    "parsed_first": "15",
+    "all_regex_matches": [
+      "15"
+    ],
+    "annotated_section": "15",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000255",
+    "question": "In Section 15, what does clause (d) say?",
+    "parsed_first": "15",
+    "all_regex_matches": [
+      "15"
+    ],
+    "annotated_section": "15",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000256",
+    "question": "What does clause (d) of Section 15 state?",
+    "parsed_first": "15",
+    "all_regex_matches": [
+      "15"
+    ],
+    "annotated_section": "15",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000269",
+    "question": "What does clause (a) of Section 17 state?",
+    "parsed_first": "17",
+    "all_regex_matches": [
+      "17"
+    ],
+    "annotated_section": "17",
+    "agrees_with_annotation": true,
+    "matching_passages": 8,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000270",
+    "question": "Under Section 17 (Effect of registration of parts of a mark), what is provided in clause (a)?",
+    "parsed_first": "17",
+    "all_regex_matches": [
+      "17"
+    ],
+    "annotated_section": "17",
+    "agrees_with_annotation": true,
+    "matching_passages": 8,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000271",
+    "question": "Under Section 17 (Effect of registration of parts of a mark), what is provided in clause (i)?",
+    "parsed_first": "17",
+    "all_regex_matches": [
+      "17"
+    ],
+    "annotated_section": "17",
+    "agrees_with_annotation": true,
+    "matching_passages": 8,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000272",
+    "question": "What is laid down in clause (i) of Section 17?",
+    "parsed_first": "17",
+    "all_regex_matches": [
+      "17"
+    ],
+    "annotated_section": "17",
+    "agrees_with_annotation": true,
+    "matching_passages": 8,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000273",
+    "question": "What is laid down in clause (ii) of Section 17?",
+    "parsed_first": "17",
+    "all_regex_matches": [
+      "17"
+    ],
+    "annotated_section": "17",
+    "agrees_with_annotation": true,
+    "matching_passages": 8,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000274",
+    "question": "In Section 17, what does clause (ii) say?",
+    "parsed_first": "17",
+    "all_regex_matches": [
+      "17"
+    ],
+    "annotated_section": "17",
+    "agrees_with_annotation": true,
+    "matching_passages": 8,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000275",
+    "question": "In Section 17, what does clause (b) say?",
+    "parsed_first": "17",
+    "all_regex_matches": [
+      "17"
+    ],
+    "annotated_section": "17",
+    "agrees_with_annotation": true,
+    "matching_passages": 8,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000276",
+    "question": "What does clause (b) of Section 17 state?",
+    "parsed_first": "17",
+    "all_regex_matches": [
+      "17"
+    ],
+    "annotated_section": "17",
+    "agrees_with_annotation": true,
+    "matching_passages": 8,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000337",
+    "question": "What does Section 26 state about effect of removal from register for failure to pay fee for renewal?",
+    "parsed_first": "26",
+    "all_regex_matches": [
+      "26"
+    ],
+    "annotated_section": "26",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000338",
+    "question": "Under Section 26, what is provided regarding effect of removal from register for failure to pay fee for renewal?",
+    "parsed_first": "26",
+    "all_regex_matches": [
+      "26"
+    ],
+    "annotated_section": "26",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000339",
+    "question": "What does sub-section (1) of Section 27 state?",
+    "parsed_first": "27",
+    "all_regex_matches": [
+      "27"
+    ],
+    "annotated_section": "27",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000340",
+    "question": "Under Section 27 (No action for infringem ent of unregistered trade mark), what is provided in sub-section (1)?",
+    "parsed_first": "27",
+    "all_regex_matches": [
+      "27"
+    ],
+    "annotated_section": "27",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000341",
+    "question": "Under Section 27 (No action for infringem ent of unregistered trade mark), what is provided in sub-section (2)?",
+    "parsed_first": "27",
+    "all_regex_matches": [
+      "27"
+    ],
+    "annotated_section": "27",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000342",
+    "question": "What is laid down in sub-section (2) of Section 27?",
+    "parsed_first": "27",
+    "all_regex_matches": [
+      "27"
+    ],
+    "annotated_section": "27",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000405",
+    "question": "What does sub-section (1) of Section 33 state?",
+    "parsed_first": "33",
+    "all_regex_matches": [
+      "33"
+    ],
+    "annotated_section": "33",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000406",
+    "question": "Under Section 33 (Effect of acquiescence), what is provided in sub-section (1)?",
+    "parsed_first": "33",
+    "all_regex_matches": [
+      "33"
+    ],
+    "annotated_section": "33",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000407",
+    "question": "Under Section 33 (Effect of acquiescence), what is provided in sub-section (2)?",
+    "parsed_first": "33",
+    "all_regex_matches": [
+      "33"
+    ],
+    "annotated_section": "33",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000408",
+    "question": "What is laid down in sub-section (2) of Section 33?",
+    "parsed_first": "33",
+    "all_regex_matches": [
+      "33"
+    ],
+    "annotated_section": "33",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000409",
+    "question": "What is laid down in sub-section (1) of Section 33?",
+    "parsed_first": "33",
+    "all_regex_matches": [
+      "33"
+    ],
+    "annotated_section": "33",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000410",
+    "question": "In Section 33, what does sub-section (1) say?",
+    "parsed_first": "33",
+    "all_regex_matches": [
+      "33"
+    ],
+    "annotated_section": "33",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000783",
+    "question": "What does Section 105 state about enhanced penalty on second or subseq uent conviction?",
+    "parsed_first": "105",
+    "all_regex_matches": [
+      "105"
+    ],
+    "annotated_section": "105",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000784",
+    "question": "Under Section 105, what is provided regarding enhanced penalty on second or subseq uent conviction?",
+    "parsed_first": "105",
+    "all_regex_matches": [
+      "105"
+    ],
+    "annotated_section": "105",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000785",
+    "question": "What does Section 106 state about [Penalty for removing piece goods, etc?",
+    "parsed_first": "106",
+    "all_regex_matches": [
+      "106"
+    ],
+    "annotated_section": "106",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000786",
+    "question": "Under Section 106, what is provided regarding [Penalty for removing piece goods, etc?",
+    "parsed_first": "106",
+    "all_regex_matches": [
+      "106"
+    ],
+    "annotated_section": "106",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000801",
+    "question": "What does Section 110 state about no offence in certain cases?",
+    "parsed_first": "110",
+    "all_regex_matches": [
+      "110"
+    ],
+    "annotated_section": "110",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000802",
+    "question": "Under Section 110, what is provided regarding no offence in certain cases?",
+    "parsed_first": "110",
+    "all_regex_matches": [
+      "110"
+    ],
+    "annotated_section": "110",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000803",
+    "question": "What does sub-section (1) of Section 111 state?",
+    "parsed_first": "111",
+    "all_regex_matches": [
+      "111"
+    ],
+    "annotated_section": "111",
+    "agrees_with_annotation": true,
+    "matching_passages": 1,
+    "matching_acts": 1,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000804",
+    "question": "Under Section 111 (Forfeiture of goods), what is provided in sub-section (1)?",
+    "parsed_first": "111",
+    "all_regex_matches": [
+      "111"
+    ],
+    "annotated_section": "111",
+    "agrees_with_annotation": true,
+    "matching_passages": 1,
+    "matching_acts": 1,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000805",
+    "question": "Under Section 111 (Forfeiture of goods), what is provided in sub-section (2)?",
+    "parsed_first": "111",
+    "all_regex_matches": [
+      "111"
+    ],
+    "annotated_section": "111",
+    "agrees_with_annotation": true,
+    "matching_passages": 1,
+    "matching_acts": 1,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000806",
+    "question": "What is laid down in sub-section (2) of Section 111?",
+    "parsed_first": "111",
+    "all_regex_matches": [
+      "111"
+    ],
+    "annotated_section": "111",
+    "agrees_with_annotation": true,
+    "matching_passages": 1,
+    "matching_acts": 1,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000807",
+    "question": "What is laid down in sub-section (3) of Section 111?",
+    "parsed_first": "111",
+    "all_regex_matches": [
+      "111"
+    ],
+    "annotated_section": "111",
+    "agrees_with_annotation": true,
+    "matching_passages": 1,
+    "matching_acts": 1,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000808",
+    "question": "In Section 111, what does sub-section (3) say?",
+    "parsed_first": "111",
+    "all_regex_matches": [
+      "111"
+    ],
+    "annotated_section": "111",
+    "agrees_with_annotation": true,
+    "matching_passages": 1,
+    "matching_acts": 1,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000809",
+    "question": "In Section 111, what does sub-section (4) say?",
+    "parsed_first": "111",
+    "all_regex_matches": [
+      "111"
+    ],
+    "annotated_section": "111",
+    "agrees_with_annotation": true,
+    "matching_passages": 1,
+    "matching_acts": 1,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000810",
+    "question": "What does sub-section (4) of Section 111 state?",
+    "parsed_first": "111",
+    "all_regex_matches": [
+      "111"
+    ],
+    "annotated_section": "111",
+    "agrees_with_annotation": true,
+    "matching_passages": 1,
+    "matching_acts": 1,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000867",
+    "question": "What does clause (a) of Section 123 state?",
+    "parsed_first": "123",
+    "all_regex_matches": [
+      "123"
+    ],
+    "annotated_section": "123",
+    "agrees_with_annotation": true,
+    "matching_passages": 4,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000868",
+    "question": "Under Section 123 (Certain persons to be public servants), what is provided in clause (a)?",
+    "parsed_first": "123",
+    "all_regex_matches": [
+      "123"
+    ],
+    "annotated_section": "123",
+    "agrees_with_annotation": true,
+    "matching_passages": 4,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000869",
+    "question": "Under Section 123 (Certain persons to be public servants), what is provided in clause (b)?",
+    "parsed_first": "123",
+    "all_regex_matches": [
+      "123"
+    ],
+    "annotated_section": "123",
+    "agrees_with_annotation": true,
+    "matching_passages": 4,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000870",
+    "question": "What is laid down in clause (b) of Section 123?",
+    "parsed_first": "123",
+    "all_regex_matches": [
+      "123"
+    ],
+    "annotated_section": "123",
+    "agrees_with_annotation": true,
+    "matching_passages": 4,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000871",
+    "question": "What is laid down in clause (i) of Section 123?",
+    "parsed_first": "123",
+    "all_regex_matches": [
+      "123"
+    ],
+    "annotated_section": "123",
+    "agrees_with_annotation": true,
+    "matching_passages": 4,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000872",
+    "question": "In Section 123, what does clause (i) say?",
+    "parsed_first": "123",
+    "all_regex_matches": [
+      "123"
+    ],
+    "annotated_section": "123",
+    "agrees_with_annotation": true,
+    "matching_passages": 4,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000873",
+    "question": "In Section 123, what does clause (ii) say?",
+    "parsed_first": "123",
+    "all_regex_matches": [
+      "123"
+    ],
+    "annotated_section": "123",
+    "agrees_with_annotation": true,
+    "matching_passages": 4,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000874",
+    "question": "What does clause (ii) of Section 123 state?",
+    "parsed_first": "123",
+    "all_regex_matches": [
+      "123"
+    ],
+    "annotated_section": "123",
+    "agrees_with_annotation": true,
+    "matching_passages": 4,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000875",
+    "question": "What does clause (ii) of Section 123 state?",
+    "parsed_first": "123",
+    "all_regex_matches": [
+      "123"
+    ],
+    "annotated_section": "123",
+    "agrees_with_annotation": true,
+    "matching_passages": 4,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000876",
+    "question": "Under Section 123 (Certain persons to be public servants), what is provided in clause (ii)?",
+    "parsed_first": "123",
+    "all_regex_matches": [
+      "123"
+    ],
+    "annotated_section": "123",
+    "agrees_with_annotation": true,
+    "matching_passages": 4,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000881",
+    "question": "What does Section 126 state about implied warranty on sale of marked goods?",
+    "parsed_first": "126",
+    "all_regex_matches": [
+      "126"
+    ],
+    "annotated_section": "126",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000882",
+    "question": "Under Section 126, what is provided regarding implied warranty on sale of marked goods?",
+    "parsed_first": "126",
+    "all_regex_matches": [
+      "126"
+    ],
+    "annotated_section": "126",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000895",
+    "question": "What does sub-section (1) of Section 131 state?",
+    "parsed_first": "131",
+    "all_regex_matches": [
+      "131"
+    ],
+    "annotated_section": "131",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000896",
+    "question": "Under Section 131 (Extension of time), what is provided in sub-section (1)?",
+    "parsed_first": "131",
+    "all_regex_matches": [
+      "131"
+    ],
+    "annotated_section": "131",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000897",
+    "question": "Under Section 131 (Extension of time), what is provided in sub-section (2)?",
+    "parsed_first": "131",
+    "all_regex_matches": [
+      "131"
+    ],
+    "annotated_section": "131",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000898",
+    "question": "What is laid down in sub-section (2) of Section 131?",
+    "parsed_first": "131",
+    "all_regex_matches": [
+      "131"
+    ],
+    "annotated_section": "131",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000949",
+    "question": "What does sub-section (1) of Section 140 state?",
+    "parsed_first": "140",
+    "all_regex_matches": [
+      "140"
+    ],
+    "annotated_section": "140",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000950",
+    "question": "Under Section 140 (Power to require information of imported goods bearing false trade marks), what is provided in sub-section (1)?",
+    "parsed_first": "140",
+    "all_regex_matches": [
+      "140"
+    ],
+    "annotated_section": "140",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000951",
+    "question": "Under Section 140 (Power to require information of imported goods bearing false trade marks), what is provided in sub-section (6)?",
+    "parsed_first": "140",
+    "all_regex_matches": [
+      "140"
+    ],
+    "annotated_section": "140",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000952",
+    "question": "What is laid down in sub-section (6) of Section 140?",
+    "parsed_first": "140",
+    "all_regex_matches": [
+      "140"
+    ],
+    "annotated_section": "140",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000953",
+    "question": "What is laid down in sub-section (2) of Section 140?",
+    "parsed_first": "140",
+    "all_regex_matches": [
+      "140"
+    ],
+    "annotated_section": "140",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000954",
+    "question": "In Section 140, what does sub-section (2) say?",
+    "parsed_first": "140",
+    "all_regex_matches": [
+      "140"
+    ],
+    "annotated_section": "140",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000955",
+    "question": "In Section 140, what does sub-section (2) say?",
+    "parsed_first": "140",
+    "all_regex_matches": [
+      "140"
+    ],
+    "annotated_section": "140",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000956",
+    "question": "What does sub-section (2) of Section 140 state?",
+    "parsed_first": "140",
+    "all_regex_matches": [
+      "140"
+    ],
+    "annotated_section": "140",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000957",
+    "question": "What does sub-section (3) of Section 140 state?",
+    "parsed_first": "140",
+    "all_regex_matches": [
+      "140"
+    ],
+    "annotated_section": "140",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000958",
+    "question": "Under Section 140 (Power to require information of imported goods bearing false trade marks), what is provided in sub-section (3)?",
+    "parsed_first": "140",
+    "all_regex_matches": [
+      "140"
+    ],
+    "annotated_section": "140",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000959",
+    "question": "Under Section 140 (Power to require information of imported goods bearing false trade marks), what is provided in sub-section (4)?",
+    "parsed_first": "140",
+    "all_regex_matches": [
+      "140"
+    ],
+    "annotated_section": "140",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_000960",
+    "question": "What is laid down in sub-section (4) of Section 140?",
+    "parsed_first": "140",
+    "all_regex_matches": [
+      "140"
+    ],
+    "annotated_section": "140",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_001025",
+    "question": "What does sub-section (2) of Section 153 state?",
+    "parsed_first": "153",
+    "all_regex_matches": [
+      "153"
+    ],
+    "annotated_section": "153",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_001026",
+    "question": "Under Section 153 (Government to be bound), what is provided in sub-section (2)?",
+    "parsed_first": "153",
+    "all_regex_matches": [
+      "153"
+    ],
+    "annotated_section": "153",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_001027",
+    "question": "Under Section 153 (Government to be bound), what is provided in sub-section (3)?",
+    "parsed_first": "153",
+    "all_regex_matches": [
+      "153"
+    ],
+    "annotated_section": "153",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_001028",
+    "question": "What is laid down in sub-section (3) of Section 153?",
+    "parsed_first": "153",
+    "all_regex_matches": [
+      "153"
+    ],
+    "annotated_section": "153",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_001029",
+    "question": "What is laid down in sub-section (4) of Section 153?",
+    "parsed_first": "153",
+    "all_regex_matches": [
+      "153"
+    ],
+    "annotated_section": "153",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_001030",
+    "question": "In Section 153, what does sub-section (4) say?",
+    "parsed_first": "153",
+    "all_regex_matches": [
+      "153"
+    ],
+    "annotated_section": "153",
+    "agrees_with_annotation": true,
+    "matching_passages": 3,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_001095",
+    "question": "What does clause (i) of Section 159 state?",
+    "parsed_first": "159",
+    "all_regex_matches": [
+      "159"
+    ],
+    "annotated_section": "159",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_001096",
+    "question": "Under Section 159 (Repeal and savings), what is provided in clause (i)?",
+    "parsed_first": "159",
+    "all_regex_matches": [
+      "159"
+    ],
+    "annotated_section": "159",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_001097",
+    "question": "Under Section 159 (Repeal and savings), what is provided in clause (ii)?",
+    "parsed_first": "159",
+    "all_regex_matches": [
+      "159"
+    ],
+    "annotated_section": "159",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_001098",
+    "question": "What is laid down in clause (ii) of Section 159?",
+    "parsed_first": "159",
+    "all_regex_matches": [
+      "159"
+    ],
+    "annotated_section": "159",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_001099",
+    "question": "What is laid down in clause (i) of Section 159?",
+    "parsed_first": "159",
+    "all_regex_matches": [
+      "159"
+    ],
+    "annotated_section": "159",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_001100",
+    "question": "In Section 159, what does clause (i) say?",
+    "parsed_first": "159",
+    "all_regex_matches": [
+      "159"
+    ],
+    "annotated_section": "159",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_001101",
+    "question": "In Section 159, what does clause (i) say?",
+    "parsed_first": "159",
+    "all_regex_matches": [
+      "159"
+    ],
+    "annotated_section": "159",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_001102",
+    "question": "What does clause (i) of Section 159 state?",
+    "parsed_first": "159",
+    "all_regex_matches": [
+      "159"
+    ],
+    "annotated_section": "159",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_001103",
+    "question": "What does clause (ii) of Section 159 state?",
+    "parsed_first": "159",
+    "all_regex_matches": [
+      "159"
+    ],
+    "annotated_section": "159",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_001104",
+    "question": "Under Section 159 (Repeal and savings), what is provided in clause (ii)?",
+    "parsed_first": "159",
+    "all_regex_matches": [
+      "159"
+    ],
+    "annotated_section": "159",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_001105",
+    "question": "Under Section 159 (Repeal and savings), what is provided in clause (ii)?",
+    "parsed_first": "159",
+    "all_regex_matches": [
+      "159"
+    ],
+    "annotated_section": "159",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "tm_001106",
+    "question": "What is laid down in clause (ii) of Section 159?",
+    "parsed_first": "159",
+    "all_regex_matches": [
+      "159"
+    ],
+    "annotated_section": "159",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 2,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "des_000035",
+    "question": "Under Section 7, what does the section say?",
+    "parsed_first": "7",
+    "all_regex_matches": [
+      "7"
+    ],
+    "annotated_section": "7",
+    "agrees_with_annotation": true,
+    "matching_passages": 8,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "des_000036",
+    "question": "Under Section 8, what does sub-section (1) say?",
+    "parsed_first": "8",
+    "all_regex_matches": [
+      "8"
+    ],
+    "annotated_section": "8",
+    "agrees_with_annotation": true,
+    "matching_passages": 14,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "des_000037",
+    "question": "What is set out in sub-section (2) of Section 8?",
+    "parsed_first": "8",
+    "all_regex_matches": [
+      "8"
+    ],
+    "annotated_section": "8",
+    "agrees_with_annotation": true,
+    "matching_passages": 14,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "des_000038",
+    "question": "In Section 8, what does clause (a) of sub-section (3) specify?",
+    "parsed_first": "8",
+    "all_regex_matches": [
+      "8"
+    ],
+    "annotated_section": "8",
+    "agrees_with_annotation": true,
+    "matching_passages": 14,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "des_000039",
+    "question": "What does clause (b) of sub-section (3) of Section 8 provide?",
+    "parsed_first": "8",
+    "all_regex_matches": [
+      "8"
+    ],
+    "annotated_section": "8",
+    "agrees_with_annotation": true,
+    "matching_passages": 14,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "des_000040",
+    "question": "According to Section 8, what is stated in clause (c) of sub-section (3)?",
+    "parsed_first": "8",
+    "all_regex_matches": [
+      "8"
+    ],
+    "annotated_section": "8",
+    "agrees_with_annotation": true,
+    "matching_passages": 14,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "des_000041",
+    "question": "Under Section 8, what does clause (d) of sub-section (3) say?",
+    "parsed_first": "8",
+    "all_regex_matches": [
+      "8"
+    ],
+    "annotated_section": "8",
+    "agrees_with_annotation": true,
+    "matching_passages": 14,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "des_000042",
+    "question": "What is set out in sub-section (4) of Section 8?",
+    "parsed_first": "8",
+    "all_regex_matches": [
+      "8"
+    ],
+    "annotated_section": "8",
+    "agrees_with_annotation": true,
+    "matching_passages": 14,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "des_000043",
+    "question": "In Section 8, what is provided in sub-section (5)?",
+    "parsed_first": "8",
+    "all_regex_matches": [
+      "8"
+    ],
+    "annotated_section": "8",
+    "agrees_with_annotation": true,
+    "matching_passages": 14,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "des_000046",
+    "question": "Under Section 10, what does sub-section (1) say?",
+    "parsed_first": "10",
+    "all_regex_matches": [
+      "10"
+    ],
+    "annotated_section": "10",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "des_000047",
+    "question": "What is set out in sub-section (2) of Section 10?",
+    "parsed_first": "10",
+    "all_regex_matches": [
+      "10"
+    ],
+    "annotated_section": "10",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "des_000048",
+    "question": "In Section 10, what is provided in sub-section (3)?",
+    "parsed_first": "10",
+    "all_regex_matches": [
+      "10"
+    ],
+    "annotated_section": "10",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "des_000049",
+    "question": "What does sub-section (4) of Section 10 provide?",
+    "parsed_first": "10",
+    "all_regex_matches": [
+      "10"
+    ],
+    "annotated_section": "10",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "des_000064",
+    "question": "What does Section 18 provide?",
+    "parsed_first": "18",
+    "all_regex_matches": [
+      "18"
+    ],
+    "annotated_section": "18",
+    "agrees_with_annotation": true,
+    "matching_passages": 14,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "des_000065",
+    "question": "According to Section 19, what is stated in clause (a) of sub-section (1)?",
+    "parsed_first": "19",
+    "all_regex_matches": [
+      "19"
+    ],
+    "annotated_section": "19",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "des_000066",
+    "question": "Under Section 19, what does clause (b) of sub-section (1) say?",
+    "parsed_first": "19",
+    "all_regex_matches": [
+      "19"
+    ],
+    "annotated_section": "19",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "des_000067",
+    "question": "What is set out in clause (c) of sub-section (1) of Section 19?",
+    "parsed_first": "19",
+    "all_regex_matches": [
+      "19"
+    ],
+    "annotated_section": "19",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "des_000068",
+    "question": "In Section 19, what does clause (d) of sub-section (1) specify?",
+    "parsed_first": "19",
+    "all_regex_matches": [
+      "19"
+    ],
+    "annotated_section": "19",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "des_000069",
+    "question": "What does clause (e) of sub-section (1) of Section 19 provide?",
+    "parsed_first": "19",
+    "all_regex_matches": [
+      "19"
+    ],
+    "annotated_section": "19",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "des_000070",
+    "question": "According to Section 19, what is stated in sub-section (2)?",
+    "parsed_first": "19",
+    "all_regex_matches": [
+      "19"
+    ],
+    "annotated_section": "19",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "des_000105",
+    "question": "According to Section 36, what is stated in sub-section (1)?",
+    "parsed_first": "36",
+    "all_regex_matches": [
+      "36"
+    ],
+    "annotated_section": "36",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "des_000106",
+    "question": "Under Section 36, what does sub-section (2) say?",
+    "parsed_first": "36",
+    "all_regex_matches": [
+      "36"
+    ],
+    "annotated_section": "36",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "des_000107",
+    "question": "What is set out in sub-section (3) of Section 36?",
+    "parsed_first": "36",
+    "all_regex_matches": [
+      "36"
+    ],
+    "annotated_section": "36",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "des_000108",
+    "question": "In Section 36, what is provided in sub-section (4)?",
+    "parsed_first": "36",
+    "all_regex_matches": [
+      "36"
+    ],
+    "annotated_section": "36",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000097",
+    "question": "Under Section 15, what is stated about correction and amendment?",
+    "parsed_first": "15",
+    "all_regex_matches": [
+      "15"
+    ],
+    "annotated_section": "15",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000098",
+    "question": "What is laid down in the proviso to Section 15?",
+    "parsed_first": "15",
+    "all_regex_matches": [
+      "15"
+    ],
+    "annotated_section": "15",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000099",
+    "question": "According to Section 15, what is provided in relation to correction and amendment?",
+    "parsed_first": "15",
+    "all_regex_matches": [
+      "15"
+    ],
+    "annotated_section": "15",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000129",
+    "question": "Under Section 21 sub-section (1), what is stated about rights conferred by registration?",
+    "parsed_first": "21",
+    "all_regex_matches": [
+      "21"
+    ],
+    "annotated_section": "21",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000130",
+    "question": "What is specified in clause (a) of sub-section (1) of Section 21?",
+    "parsed_first": "21",
+    "all_regex_matches": [
+      "21"
+    ],
+    "annotated_section": "21",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000131",
+    "question": "According to clause (b) of sub-section (1) of Section 21, what is provided?",
+    "parsed_first": "21",
+    "all_regex_matches": [
+      "21"
+    ],
+    "annotated_section": "21",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000132",
+    "question": "What does Section 21 sub-section (2) provide regarding rights conferred by registration?",
+    "parsed_first": "21",
+    "all_regex_matches": [
+      "21"
+    ],
+    "annotated_section": "21",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000133",
+    "question": "Under Section 21 sub-section (3), what is stated about rights conferred by registration?",
+    "parsed_first": "21",
+    "all_regex_matches": [
+      "21"
+    ],
+    "annotated_section": "21",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000134",
+    "question": "What is laid down in Section 21 concerning rights conferred by registration?",
+    "parsed_first": "21",
+    "all_regex_matches": [
+      "21"
+    ],
+    "annotated_section": "21",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000166",
+    "question": "What is laid down in Section 28 concerning correction of register?",
+    "parsed_first": "28",
+    "all_regex_matches": [
+      "28"
+    ],
+    "annotated_section": "28",
+    "agrees_with_annotation": true,
+    "matching_passages": 15,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000167",
+    "question": "According to Section 28, what is provided in relation to correction of register?",
+    "parsed_first": "28",
+    "all_regex_matches": [
+      "28"
+    ],
+    "annotated_section": "28",
+    "agrees_with_annotation": true,
+    "matching_passages": 15,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000168",
+    "question": "What does Section 28 provide regarding correction of register?",
+    "parsed_first": "28",
+    "all_regex_matches": [
+      "28"
+    ],
+    "annotated_section": "28",
+    "agrees_with_annotation": true,
+    "matching_passages": 15,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000169",
+    "question": "Under Section 28, what is stated about correction of register?",
+    "parsed_first": "28",
+    "all_regex_matches": [
+      "28"
+    ],
+    "annotated_section": "28",
+    "agrees_with_annotation": true,
+    "matching_passages": 15,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000170",
+    "question": "What is laid down in Section 28 concerning correction of register?",
+    "parsed_first": "28",
+    "all_regex_matches": [
+      "28"
+    ],
+    "annotated_section": "28",
+    "agrees_with_annotation": true,
+    "matching_passages": 15,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000183",
+    "question": "According to Section 34 sub-section (1), what is provided in relation to procedure for application for rectification, etc., before high court?",
+    "parsed_first": "34",
+    "all_regex_matches": [
+      "34"
+    ],
+    "annotated_section": "34",
+    "agrees_with_annotation": true,
+    "matching_passages": 7,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000184",
+    "question": "What does Section 34 sub-section (2) provide regarding procedure for application for rectification, etc., before high court?",
+    "parsed_first": "34",
+    "all_regex_matches": [
+      "34"
+    ],
+    "annotated_section": "34",
+    "agrees_with_annotation": true,
+    "matching_passages": 7,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000185",
+    "question": "Under Section 34, what is stated about procedure for application for rectification, etc., before high court?",
+    "parsed_first": "34",
+    "all_regex_matches": [
+      "34"
+    ],
+    "annotated_section": "34",
+    "agrees_with_annotation": true,
+    "matching_passages": 7,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000186",
+    "question": "What is laid down in Section 35 sub-section (1) concerning appearance of registrar in legal proceedings?",
+    "parsed_first": "35",
+    "all_regex_matches": [
+      "35"
+    ],
+    "annotated_section": "35",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000187",
+    "question": "According to clause (a) of sub-section (1) of Section 35, what is provided?",
+    "parsed_first": "35",
+    "all_regex_matches": [
+      "35"
+    ],
+    "annotated_section": "35",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000188",
+    "question": "What does clause (b) of sub-section (1) of Section 35 provide?",
+    "parsed_first": "35",
+    "all_regex_matches": [
+      "35"
+    ],
+    "annotated_section": "35",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000189",
+    "question": "Under Section 35 sub-section (1), what is stated in clause (i)?",
+    "parsed_first": "35",
+    "all_regex_matches": [
+      "35"
+    ],
+    "annotated_section": "35",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000190",
+    "question": "What is specified in clause (ii) of sub-section (1) of Section 35?",
+    "parsed_first": "35",
+    "all_regex_matches": [
+      "35"
+    ],
+    "annotated_section": "35",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000191",
+    "question": "According to Section 35 sub-section (2), what is provided in relation to appearance of registrar in legal proceedings?",
+    "parsed_first": "35",
+    "all_regex_matches": [
+      "35"
+    ],
+    "annotated_section": "35",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000192",
+    "question": "What does Section 35 provide regarding appearance of registrar in legal proceedings?",
+    "parsed_first": "35",
+    "all_regex_matches": [
+      "35"
+    ],
+    "annotated_section": "35",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000271",
+    "question": "According to Section 50 sub-section (1), what is provided in relation to cognizance of certain offences and the powers of police officer for search and seizure?",
+    "parsed_first": "50",
+    "all_regex_matches": [
+      "50"
+    ],
+    "annotated_section": "50",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000272",
+    "question": "What is laid down in the proviso to Section 50 sub-section (1)?",
+    "parsed_first": "50",
+    "all_regex_matches": [
+      "50"
+    ],
+    "annotated_section": "50",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000273",
+    "question": "Under Section 50 sub-section (2), what is stated about cognizance of certain offences and the powers of police officer for search and seizure?",
+    "parsed_first": "50",
+    "all_regex_matches": [
+      "50"
+    ],
+    "annotated_section": "50",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000274",
+    "question": "What is laid down in Section 50 sub-section (3) concerning cognizance of certain offences and the powers of police officer for search and seizure?",
+    "parsed_first": "50",
+    "all_regex_matches": [
+      "50"
+    ],
+    "annotated_section": "50",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000275",
+    "question": "According to Section 50 sub-section (4), what is provided in relation to cognizance of certain offences and the powers of police officer for search and seizure?",
+    "parsed_first": "50",
+    "all_regex_matches": [
+      "50"
+    ],
+    "annotated_section": "50",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000276",
+    "question": "What does the proviso to Section 50 sub-section (4) state?",
+    "parsed_first": "50",
+    "all_regex_matches": [
+      "50"
+    ],
+    "annotated_section": "50",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000277",
+    "question": "Under Section 50 sub-section (5), what is stated about cognizance of certain offences and the powers of police officer for search and seizure?",
+    "parsed_first": "50",
+    "all_regex_matches": [
+      "50"
+    ],
+    "annotated_section": "50",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000290",
+    "question": "What is laid down in Section 57 sub-section (1) concerning stay of proceedings where the validity of registration of t he geographical indication is\nquestioned, etc?",
+    "parsed_first": "57",
+    "all_regex_matches": [
+      "57"
+    ],
+    "annotated_section": "57",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000291",
+    "question": "According to clause (a) of sub-section (1) of Section 57, what is provided?",
+    "parsed_first": "57",
+    "all_regex_matches": [
+      "57"
+    ],
+    "annotated_section": "57",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000292",
+    "question": "What does clause (b) of sub-section (1) of Section 57 provide?",
+    "parsed_first": "57",
+    "all_regex_matches": [
+      "57"
+    ],
+    "annotated_section": "57",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000293",
+    "question": "Under Section 57 sub-section (2), what is stated about stay of proceedings where the validity of registration of t he geographical indication is\nquestioned, etc?",
+    "parsed_first": "57",
+    "all_regex_matches": [
+      "57"
+    ],
+    "annotated_section": "57",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000294",
+    "question": "What is laid down in Section 57 sub-section (3) concerning stay of proceedings where the validity of registration of t he geographical indication is\nquestioned, etc?",
+    "parsed_first": "57",
+    "all_regex_matches": [
+      "57"
+    ],
+    "annotated_section": "57",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000295",
+    "question": "According to Section 57 sub-section (4), what is provided in relation to stay of proceedings where the validity of registration of t he geographical indication is\nquestioned, etc?",
+    "parsed_first": "57",
+    "all_regex_matches": [
+      "57"
+    ],
+    "annotated_section": "57",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000296",
+    "question": "What does Section 57 sub-section (5) provide regarding stay of proceedings where the validity of registration of t he geographical indication is\nquestioned, etc?",
+    "parsed_first": "57",
+    "all_regex_matches": [
+      "57"
+    ],
+    "annotated_section": "57",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000360",
+    "question": "What does Section 76 provide regarding agents?",
+    "parsed_first": "76",
+    "all_regex_matches": [
+      "76"
+    ],
+    "annotated_section": "76",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000361",
+    "question": "Under Section 76, what is stated about agents?",
+    "parsed_first": "76",
+    "all_regex_matches": [
+      "76"
+    ],
+    "annotated_section": "76",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000362",
+    "question": "What is laid down in Section 76 concerning agents?",
+    "parsed_first": "76",
+    "all_regex_matches": [
+      "76"
+    ],
+    "annotated_section": "76",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000363",
+    "question": "According to Section 76, what is provided in relation to agents?",
+    "parsed_first": "76",
+    "all_regex_matches": [
+      "76"
+    ],
+    "annotated_section": "76",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000473",
+    "question": "What is laid down in clause (a) of sub-section (1) of Section 21?",
+    "parsed_first": "21",
+    "all_regex_matches": [
+      "21"
+    ],
+    "annotated_section": "21",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000474",
+    "question": "In Section 21 on rights conferred by registration, what does clause (b) of sub-section (1) state?",
+    "parsed_first": "21",
+    "all_regex_matches": [
+      "21"
+    ],
+    "annotated_section": "21",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000483",
+    "question": "What is laid down in clause (a) of sub-section (1) of Section 35?",
+    "parsed_first": "35",
+    "all_regex_matches": [
+      "35"
+    ],
+    "annotated_section": "35",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000484",
+    "question": "In Section 35 on appearance of registrar in legal proceedings, what does clause (b) of sub-section (1) state?",
+    "parsed_first": "35",
+    "all_regex_matches": [
+      "35"
+    ],
+    "annotated_section": "35",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000485",
+    "question": "What is laid down in clause (i) of sub-section (1) of Section 35?",
+    "parsed_first": "35",
+    "all_regex_matches": [
+      "35"
+    ],
+    "annotated_section": "35",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000486",
+    "question": "In Section 35 on appearance of registrar in legal proceedings, what does clause (ii) of sub-section (1) state?",
+    "parsed_first": "35",
+    "all_regex_matches": [
+      "35"
+    ],
+    "annotated_section": "35",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000509",
+    "question": "What is laid down in clause (a) of sub-section (1) of Section 57?",
+    "parsed_first": "57",
+    "all_regex_matches": [
+      "57"
+    ],
+    "annotated_section": "57",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000510",
+    "question": "In Section 57 on stay of proceedings where the validity of registration of t he geographical indication is\nquestioned, etc, what does clause (b) of sub-section (1) state?",
+    "parsed_first": "57",
+    "all_regex_matches": [
+      "57"
+    ],
+    "annotated_section": "57",
+    "agrees_with_annotation": true,
+    "matching_passages": 11,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "gi_000551",
+    "question": "What does Section 6 provide regarding register of geographical indications?",
+    "parsed_first": "6",
+    "all_regex_matches": [
+      "6"
+    ],
+    "annotated_section": "6",
+    "agrees_with_annotation": true,
+    "matching_passages": 12,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000149",
+    "question": "What is provided in section 23(1)?",
+    "parsed_first": "23",
+    "all_regex_matches": [
+      "23"
+    ],
+    "annotated_section": "23",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000150",
+    "question": "How does section 23(1) read?",
+    "parsed_first": "23",
+    "all_regex_matches": [
+      "23"
+    ],
+    "annotated_section": "23",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000310",
+    "question": "What does section 46 provide regarding conditions as to making of interim order?",
+    "parsed_first": "46",
+    "all_regex_matches": [
+      "46"
+    ],
+    "annotated_section": "46",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000311",
+    "question": "What does section 46(a) state?",
+    "parsed_first": "46",
+    "all_regex_matches": [
+      "46"
+    ],
+    "annotated_section": "46",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000312",
+    "question": "How does section 46(a) read?",
+    "parsed_first": "46",
+    "all_regex_matches": [
+      "46"
+    ],
+    "annotated_section": "46",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000313",
+    "question": "What does section 46(b) state?",
+    "parsed_first": "46",
+    "all_regex_matches": [
+      "46"
+    ],
+    "annotated_section": "46",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000314",
+    "question": "What is laid down in section 46(b)?",
+    "parsed_first": "46",
+    "all_regex_matches": [
+      "46"
+    ],
+    "annotated_section": "46",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000315",
+    "question": "What is laid down in section 48 with respect to procedure for application for rectification, etc., before appellate board?",
+    "parsed_first": "48",
+    "all_regex_matches": [
+      "48"
+    ],
+    "annotated_section": "48",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000316",
+    "question": "According to section 48(1), what is specified?",
+    "parsed_first": "48",
+    "all_regex_matches": [
+      "48"
+    ],
+    "annotated_section": "48",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000317",
+    "question": "Under section 48(1), what provision is made?",
+    "parsed_first": "48",
+    "all_regex_matches": [
+      "48"
+    ],
+    "annotated_section": "48",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000318",
+    "question": "What is laid down in section 49 with respect to appearance of registrar in legal proceedings?",
+    "parsed_first": "49",
+    "all_regex_matches": [
+      "49"
+    ],
+    "annotated_section": "49",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000319",
+    "question": "What is provided in section 49(1)?",
+    "parsed_first": "49",
+    "all_regex_matches": [
+      "49"
+    ],
+    "annotated_section": "49",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000320",
+    "question": "Under section 49(1), what provision is made?",
+    "parsed_first": "49",
+    "all_regex_matches": [
+      "49"
+    ],
+    "annotated_section": "49",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000321",
+    "question": "What is provided in section 49(1)(a)?",
+    "parsed_first": "49",
+    "all_regex_matches": [
+      "49"
+    ],
+    "annotated_section": "49",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000322",
+    "question": "What is laid down in section 49(1)(a)?",
+    "parsed_first": "49",
+    "all_regex_matches": [
+      "49"
+    ],
+    "annotated_section": "49",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000323",
+    "question": "Under section 49, what is included within \"in any legal proceedings before the Appellate Board in which the relief sought\"?",
+    "parsed_first": "49",
+    "all_regex_matches": [
+      "49"
+    ],
+    "annotated_section": "49",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000324",
+    "question": "Under section 49(1)(b), what is stated regarding appearance of registrar in legal proceedings?",
+    "parsed_first": "49",
+    "all_regex_matches": [
+      "49"
+    ],
+    "annotated_section": "49",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000325",
+    "question": "What is laid down in section 49(1)(b)?",
+    "parsed_first": "49",
+    "all_regex_matches": [
+      "49"
+    ],
+    "annotated_section": "49",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000326",
+    "question": "What does section 49(1)(i) state?",
+    "parsed_first": "49",
+    "all_regex_matches": [
+      "49"
+    ],
+    "annotated_section": "49",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000327",
+    "question": "What is laid down in section 49(1)(i)?",
+    "parsed_first": "49",
+    "all_regex_matches": [
+      "49"
+    ],
+    "annotated_section": "49",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000328",
+    "question": "What does section 49(1)(ii) state?",
+    "parsed_first": "49",
+    "all_regex_matches": [
+      "49"
+    ],
+    "annotated_section": "49",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000329",
+    "question": "How does section 49(1)(ii) read?",
+    "parsed_first": "49",
+    "all_regex_matches": [
+      "49"
+    ],
+    "annotated_section": "49",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000340",
+    "question": "What does section 52 provide regarding costs of registrar in proceedings before appellate board?",
+    "parsed_first": "52",
+    "all_regex_matches": [
+      "52"
+    ],
+    "annotated_section": "52",
+    "agrees_with_annotation": true,
+    "matching_passages": 14,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000341",
+    "question": "What does section 52 state?",
+    "parsed_first": "52",
+    "all_regex_matches": [
+      "52"
+    ],
+    "annotated_section": "52",
+    "agrees_with_annotation": true,
+    "matching_passages": 14,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000342",
+    "question": "What is laid down in section 52?",
+    "parsed_first": "52",
+    "all_regex_matches": [
+      "52"
+    ],
+    "annotated_section": "52",
+    "agrees_with_annotation": true,
+    "matching_passages": 14,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000380",
+    "question": "According to section 63(2)(a), what is specified?",
+    "parsed_first": "63",
+    "all_regex_matches": [
+      "63"
+    ],
+    "annotated_section": "63",
+    "agrees_with_annotation": true,
+    "matching_passages": 7,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000381",
+    "question": "Under section 63(2)(a), what provision is made?",
+    "parsed_first": "63",
+    "all_regex_matches": [
+      "63"
+    ],
+    "annotated_section": "63",
+    "agrees_with_annotation": true,
+    "matching_passages": 7,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000382",
+    "question": "What does \"company\" mean under section 63?",
+    "parsed_first": "63",
+    "all_regex_matches": [
+      "63"
+    ],
+    "annotated_section": "63",
+    "agrees_with_annotation": true,
+    "matching_passages": 7,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000383",
+    "question": "What is provided in section 63(2)(b)?",
+    "parsed_first": "63",
+    "all_regex_matches": [
+      "63"
+    ],
+    "annotated_section": "63",
+    "agrees_with_annotation": true,
+    "matching_passages": 7,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000384",
+    "question": "How does section 63(2)(b) read?",
+    "parsed_first": "63",
+    "all_regex_matches": [
+      "63"
+    ],
+    "annotated_section": "63",
+    "agrees_with_annotation": true,
+    "matching_passages": 7,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000385",
+    "question": "In relation to a firm, what is meant by \"director\"?",
+    "parsed_first": null,
+    "all_regex_matches": [],
+    "annotated_section": "63",
+    "agrees_with_annotation": null,
+    "matching_passages": 0,
+    "matching_acts": 0,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000386",
+    "question": "Under section 64, what is stated about cognizance of certain offences?",
+    "parsed_first": "64",
+    "all_regex_matches": [
+      "64"
+    ],
+    "annotated_section": "64",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000387",
+    "question": "What does section 64(a) state?",
+    "parsed_first": "64",
+    "all_regex_matches": [
+      "64"
+    ],
+    "annotated_section": "64",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000388",
+    "question": "How does section 64(a) read?",
+    "parsed_first": "64",
+    "all_regex_matches": [
+      "64"
+    ],
+    "annotated_section": "64",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000389",
+    "question": "What does section 64(b) state?",
+    "parsed_first": "64",
+    "all_regex_matches": [
+      "64"
+    ],
+    "annotated_section": "64",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000390",
+    "question": "What is laid down in section 64(b)?",
+    "parsed_first": "64",
+    "all_regex_matches": [
+      "64"
+    ],
+    "annotated_section": "64",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000444",
+    "question": "What is laid down in section 87 with respect to documents open to public inspection?",
+    "parsed_first": "87",
+    "all_regex_matches": [
+      "87"
+    ],
+    "annotated_section": "87",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 4,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000445",
+    "question": "Under section 87(1), what is stated regarding documents open to public inspection?",
+    "parsed_first": "87",
+    "all_regex_matches": [
+      "87"
+    ],
+    "annotated_section": "87",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 4,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000446",
+    "question": "What is laid down in section 87(1)?",
+    "parsed_first": "87",
+    "all_regex_matches": [
+      "87"
+    ],
+    "annotated_section": "87",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 4,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000447",
+    "question": "According to section 87(1)(a), what is specified?",
+    "parsed_first": "87",
+    "all_regex_matches": [
+      "87"
+    ],
+    "annotated_section": "87",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 4,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000448",
+    "question": "What is laid down in section 87(1)(a)?",
+    "parsed_first": "87",
+    "all_regex_matches": [
+      "87"
+    ],
+    "annotated_section": "87",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 4,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000449",
+    "question": "What is provided in section 87(1)(b)?",
+    "parsed_first": "87",
+    "all_regex_matches": [
+      "87"
+    ],
+    "annotated_section": "87",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 4,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000450",
+    "question": "How does section 87(1)(b) read?",
+    "parsed_first": "87",
+    "all_regex_matches": [
+      "87"
+    ],
+    "annotated_section": "87",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 4,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000451",
+    "question": "According to section 87(1)(c), what is specified?",
+    "parsed_first": "87",
+    "all_regex_matches": [
+      "87"
+    ],
+    "annotated_section": "87",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 4,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000452",
+    "question": "How does section 87(1)(c) read?",
+    "parsed_first": "87",
+    "all_regex_matches": [
+      "87"
+    ],
+    "annotated_section": "87",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 4,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000453",
+    "question": "Under section 87(2), what is stated regarding documents open to public inspection?",
+    "parsed_first": "87",
+    "all_regex_matches": [
+      "87"
+    ],
+    "annotated_section": "87",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 4,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "sem_000454",
+    "question": "How does section 87(2) read?",
+    "parsed_first": "87",
+    "all_regex_matches": [
+      "87"
+    ],
+    "annotated_section": "87",
+    "agrees_with_annotation": true,
+    "matching_passages": 6,
+    "matching_acts": 4,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000079",
+    "question": "What shall The Chairperson do under this section?",
+    "parsed_first": null,
+    "all_regex_matches": [],
+    "annotated_section": "7",
+    "agrees_with_annotation": null,
+    "matching_passages": 0,
+    "matching_acts": 0,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000080",
+    "question": "What does Section 7 state about chairperson to be chief executive?",
+    "parsed_first": "7",
+    "all_regex_matches": [
+      "7"
+    ],
+    "annotated_section": "7",
+    "agrees_with_annotation": true,
+    "matching_passages": 8,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000133",
+    "question": "Under Section 16, who may make the application referred to in this provision?",
+    "parsed_first": "16",
+    "all_regex_matches": [
+      "16"
+    ],
+    "annotated_section": "16",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000134",
+    "question": "Under Section 16, who may make the application referred to in this provision?",
+    "parsed_first": "16",
+    "all_regex_matches": [
+      "16"
+    ],
+    "annotated_section": "16",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000135",
+    "question": "Under Section 16, who may make the application referred to in this provision?",
+    "parsed_first": "16",
+    "all_regex_matches": [
+      "16"
+    ],
+    "annotated_section": "16",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000136",
+    "question": "Under Section 16, who may make the application referred to in this provision?",
+    "parsed_first": "16",
+    "all_regex_matches": [
+      "16"
+    ],
+    "annotated_section": "16",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000137",
+    "question": "Under Section 16, who may make the application referred to in this provision?",
+    "parsed_first": "16",
+    "all_regex_matches": [
+      "16"
+    ],
+    "annotated_section": "16",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000138",
+    "question": "Under Section 16, who may make the application referred to in this provision?",
+    "parsed_first": "16",
+    "all_regex_matches": [
+      "16"
+    ],
+    "annotated_section": "16",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000139",
+    "question": "What shall An application for registration under section 14 do under this section?",
+    "parsed_first": "14",
+    "all_regex_matches": [
+      "14"
+    ],
+    "annotated_section": "16",
+    "agrees_with_annotation": false,
+    "matching_passages": 11,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000140",
+    "question": "What may An application under sub-section (1) do under this section?",
+    "parsed_first": null,
+    "all_regex_matches": [],
+    "annotated_section": "16",
+    "agrees_with_annotation": null,
+    "matching_passages": 0,
+    "matching_acts": 0,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000141",
+    "question": "What does Section 16 state about persons who may make application?",
+    "parsed_first": "16",
+    "all_regex_matches": [
+      "16"
+    ],
+    "annotated_section": "16",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000142",
+    "question": "According to Section 16, what is provided regarding persons who may make application?",
+    "parsed_first": "16",
+    "all_regex_matches": [
+      "16"
+    ],
+    "annotated_section": "16",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000149",
+    "question": "Who shall — (a) be with respect to a variety?",
+    "parsed_first": null,
+    "all_regex_matches": [],
+    "annotated_section": "18",
+    "agrees_with_annotation": null,
+    "matching_passages": 0,
+    "matching_acts": 0,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000150",
+    "question": "What shall Every application for registration under section 14 do under this section?",
+    "parsed_first": "14",
+    "all_regex_matches": [
+      "14"
+    ],
+    "annotated_section": "18",
+    "agrees_with_annotation": false,
+    "matching_passages": 11,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000151",
+    "question": "What may be in such form as do under this section?",
+    "parsed_first": null,
+    "all_regex_matches": [],
+    "annotated_section": "18",
+    "agrees_with_annotation": null,
+    "matching_passages": 0,
+    "matching_acts": 0,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000152",
+    "question": "What may be accompanied by such fees as do under this section?",
+    "parsed_first": null,
+    "all_regex_matches": [],
+    "annotated_section": "18",
+    "agrees_with_annotation": null,
+    "matching_passages": 0,
+    "matching_acts": 0,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000153",
+    "question": "What shall Every application referred to in sub-section (1) do under this section?",
+    "parsed_first": null,
+    "all_regex_matches": [],
+    "annotated_section": "18",
+    "agrees_with_annotation": null,
+    "matching_passages": 0,
+    "matching_acts": 0,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000154",
+    "question": "Within what period is the act referred to in this provision to be done?",
+    "parsed_first": null,
+    "all_regex_matches": [],
+    "annotated_section": "18",
+    "agrees_with_annotation": null,
+    "matching_passages": 0,
+    "matching_acts": 0,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000155",
+    "question": "What does Section 18 state about form of application?",
+    "parsed_first": "18",
+    "all_regex_matches": [
+      "18"
+    ],
+    "annotated_section": "18",
+    "agrees_with_annotation": true,
+    "matching_passages": 14,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000156",
+    "question": "According to Section 18, what is provided regarding form of application?",
+    "parsed_first": "18",
+    "all_regex_matches": [
+      "18"
+    ],
+    "annotated_section": "18",
+    "agrees_with_annotation": true,
+    "matching_passages": 14,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000189",
+    "question": "Who shall forward the application with his report and all the relevant document to the Authority?",
+    "parsed_first": null,
+    "all_regex_matches": [],
+    "annotated_section": "23",
+    "agrees_with_annotation": null,
+    "matching_passages": 0,
+    "matching_acts": 0,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000190",
+    "question": "What shall When the Registrar is satisfied that the requirements of sub-section (1) have been complied with to his satisfaction, he do under this section?",
+    "parsed_first": null,
+    "all_regex_matches": [],
+    "annotated_section": "23",
+    "agrees_with_annotation": null,
+    "matching_passages": 0,
+    "matching_acts": 0,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000191",
+    "question": "Who shall get examined such essentially derived variety to determine as to whether the essentially derived variety is a variety de?",
+    "parsed_first": null,
+    "all_regex_matches": [],
+    "annotated_section": "23",
+    "agrees_with_annotation": null,
+    "matching_passages": 0,
+    "matching_acts": 0,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000192",
+    "question": "What shall On receipt of an application under sub-section (2), the Authority do under this section?",
+    "parsed_first": null,
+    "all_regex_matches": [],
+    "annotated_section": "23",
+    "agrees_with_annotation": null,
+    "matching_passages": 0,
+    "matching_acts": 0,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000193",
+    "question": "Who shall apply to the breeder of essentially derived variety: Provided that the authorisation by the breeder of the initial varie?",
+    "parsed_first": null,
+    "all_regex_matches": [],
+    "annotated_section": "23",
+    "agrees_with_annotation": null,
+    "matching_passages": 0,
+    "matching_acts": 0,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000194",
+    "question": "What shall The rights of the breeder of a variety contained in section 28 do under this section?",
+    "parsed_first": "28",
+    "all_regex_matches": [
+      "28"
+    ],
+    "annotated_section": "23",
+    "agrees_with_annotation": false,
+    "matching_passages": 15,
+    "matching_acts": 7,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000195",
+    "question": "Who shall not be registered under this section unless it satisfies the requirements of section 15 as if for the word \"variety\", th?",
+    "parsed_first": "15",
+    "all_regex_matches": [
+      "15"
+    ],
+    "annotated_section": "23",
+    "agrees_with_annotation": false,
+    "matching_passages": 9,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000196",
+    "question": "What shall An essentially derived variety do under this section?",
+    "parsed_first": null,
+    "all_regex_matches": [],
+    "annotated_section": "23",
+    "agrees_with_annotation": null,
+    "matching_passages": 0,
+    "matching_acts": 0,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000197",
+    "question": "According to Section 23, what is provided regarding registration of essentially derived variety?",
+    "parsed_first": "23",
+    "all_regex_matches": [
+      "23"
+    ],
+    "annotated_section": "23",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000198",
+    "question": "What does Section 23 state about registration of essentially derived variety?",
+    "parsed_first": "23",
+    "all_regex_matches": [
+      "23"
+    ],
+    "annotated_section": "23",
+    "agrees_with_annotation": true,
+    "matching_passages": 10,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000258",
+    "question": "Who shall be entitled, either solely or jointly with any other person, to apply for the registration of a variety or be entitled t?",
+    "parsed_first": null,
+    "all_regex_matches": [],
+    "annotated_section": "32",
+    "agrees_with_annotation": null,
+    "matching_passages": 0,
+    "matching_acts": 0,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000259",
+    "question": "What shall as it accords to its own nationals, no national of such country do under this section?",
+    "parsed_first": null,
+    "all_regex_matches": [],
+    "annotated_section": "32",
+    "agrees_with_annotation": null,
+    "matching_passages": 0,
+    "matching_acts": 0,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000406",
+    "question": "Who shall exercise such financial and administrative powers over the functions of the Authority as may be prescribed: Provided tha?",
+    "parsed_first": null,
+    "all_regex_matches": [],
+    "annotated_section": "63",
+    "agrees_with_annotation": null,
+    "matching_passages": 0,
+    "matching_acts": 0,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000407",
+    "question": "According to Section 64, what is provided regarding infringement?",
+    "parsed_first": "64",
+    "all_regex_matches": [
+      "64"
+    ],
+    "annotated_section": "64",
+    "agrees_with_annotation": true,
+    "matching_passages": 13,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000440",
+    "question": "What is the punishment for selling varieties to which false denomination is applied, etc?",
+    "parsed_first": null,
+    "all_regex_matches": [],
+    "annotated_section": "71",
+    "agrees_with_annotation": null,
+    "matching_passages": 0,
+    "matching_acts": 0,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000441",
+    "question": "According to Section 71, what is provided regarding penalty for selling varieties to which false denomination is applied, etc?",
+    "parsed_first": "71",
+    "all_regex_matches": [
+      "71"
+    ],
+    "annotated_section": "71",
+    "agrees_with_annotation": true,
+    "matching_passages": 7,
+    "matching_acts": 5,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000447",
+    "question": "According to Section 76, what is provided regarding procedure where invalidity of registration is pleaded by the accused?",
+    "parsed_first": "76",
+    "all_regex_matches": [
+      "76"
+    ],
+    "annotated_section": "76",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000448",
+    "question": "What does Section 76 state about procedure where invalidity of registration is pleaded by the accused?",
+    "parsed_first": "76",
+    "all_regex_matches": [
+      "76"
+    ],
+    "annotated_section": "76",
+    "agrees_with_annotation": true,
+    "matching_passages": 9,
+    "matching_acts": 6,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000485",
+    "question": "What shall Every order made under sub-section (1) do under this section?",
+    "parsed_first": null,
+    "all_regex_matches": [],
+    "annotated_section": "94",
+    "agrees_with_annotation": null,
+    "matching_passages": 0,
+    "matching_acts": 0,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  },
+  {
+    "id": "ppvfr_000486",
+    "question": "According to Section 94, what is provided regarding power to remove difficulties?",
+    "parsed_first": "94",
+    "all_regex_matches": [
+      "94"
+    ],
+    "annotated_section": "94",
+    "agrees_with_annotation": true,
+    "matching_passages": 4,
+    "matching_acts": 4,
+    "human_detection_judgment": null,
+    "human_target_judgment": null,
+    "human_identifiability_judgment": null
+  }
+]

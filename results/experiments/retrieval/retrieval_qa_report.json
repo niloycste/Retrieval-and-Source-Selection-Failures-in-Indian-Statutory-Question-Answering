@@ -1,0 +1,67 @@
+{
+  "date": "2026-08-27",
+  "status": "canonical",
+  "qa_model": {
+    "code": "E2'",
+    "label": "LegalBERT(US) -> SQuAD v1 -> IndicIPR-QA",
+    "model_path": "artifacts/models/squad_v1/baseline_e2_squadv1/final"
+  },
+  "evaluation": {
+    "test_file": "data/splits/test.jsonl",
+    "test_questions": 344,
+    "retrieval_corpus": "data/processed/indic_ipr_qa/merged_ip_qa.jsonl",
+    "retrieval_contexts": 1116,
+    "max_seq_length": 384,
+    "doc_stride": 128,
+    "max_answer_tokens": null,
+    "span_decoding": "exhaustive constrained start<=end",
+    "window_selection": "maximum summed start/end logit",
+    "prediction_text": "literal source-context character slice"
+  },
+  "results": [
+    {
+      "setting": "Gold paragraph + QA",
+      "retrieval_recall_pct": 100.0,
+      "em_pct": 66.8605,
+      "f1_pct": 87.3721,
+      "char_f1_pct": 89.4719
+    },
+    {
+      "setting": "BM25 top-1 + QA",
+      "retrieval_recall_pct": 13.6628,
+      "em_pct": 11.0465,
+      "f1_pct": 29.4776,
+      "char_f1_pct": 58.9208
+    },
+    {
+      "setting": "BM25 top-3 + QA",
+      "retrieval_recall_pct": 20.0581,
+      "em_pct": 11.3372,
+      "f1_pct": 31.0413,
+      "char_f1_pct": 60.4165
+    },
+    {
+      "setting": "BM25 top-5 + QA",
+      "retrieval_recall_pct": 22.9651,
+      "em_pct": 10.4651,
+      "f1_pct": 31.9544,
+      "char_f1_pct": 63.0529
+    }
+  ],
+  "question_type_results": {
+    "citation-template-only": {
+      "n": 177,
+      "gold_em_pct": 74.0113,
+      "gold_f1_pct": 91.5522,
+      "bm25_top5_em_pct": 0.0,
+      "bm25_top5_f1_pct": 17.5943
+    },
+    "lexically-content-bearing": {
+      "n": 167,
+      "gold_em_pct": 59.2814,
+      "gold_f1_pct": 82.9417,
+      "bm25_top5_em_pct": 21.5569,
+      "bm25_top5_f1_pct": 47.1743
+    }
+  }
+}

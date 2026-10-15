@@ -1,0 +1,62 @@
+{
+  "created_at": "2026-09-29T18:26:37+05:30",
+  "protocol": {
+    "dense": "BAAI/bge-m3",
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "candidate_text": "paragraph only",
+    "rerank_depth": 50,
+    "rrf_k": 60,
+    "max_seq_length": 512,
+    "metrics": [
+      "recall@1",
+      "recall@3",
+      "recall@5",
+      "recall@10",
+      "recall@50",
+      "mrr@10",
+      "ndcg@10"
+    ]
+  },
+  "models": {
+    "BAAI/bge-m3": {
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "local_path": "models/retrieval/modern_bge_extension_v1/bge-m3",
+      "resolved_at": "2026-09-26T15:05:53+05:30"
+    },
+    "BAAI/bge-reranker-v2-m3": {
+      "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+      "local_path": "models/retrieval/modern_bge_extension_v1/bge-reranker-v2-m3",
+      "resolved_at": "2026-09-26T15:08:34+05:30"
+    }
+  },
+  "runtime": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.16",
+    "device": "cpu",
+    "packages": {
+      "torch": "2.10.0",
+      "transformers": "5.3.0",
+      "sentence-transformers": "5.2.3",
+      "numpy": "2.4.2"
+    },
+    "command": [
+      "scripts\\04_retrieval\\modern_retrieval_extension.py",
+      "--dataset",
+      "all",
+      "--device",
+      "auto",
+      "--threads",
+      "4",
+      "--dense-batch-size",
+      "2",
+      "--rerank-batch-size",
+      "2",
+      "--embedding-chunk-size",
+      "128"
+    ]
+  },
+  "completed_datasets": [
+    "indic",
+    "uk"
+  ]
+}

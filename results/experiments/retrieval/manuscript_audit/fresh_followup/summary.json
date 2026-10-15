@@ -1,0 +1,327 @@
+{
+  "status": "follow-up diagnostic; prior canonical artifacts unchanged",
+  "created_at": "2026-09-12T14:35:08+05:30",
+  "scope": {
+    "questions": 344,
+    "passages": 1116
+  },
+  "T1_reference_collision_audit": {
+    "status_counts": {
+      "Matches across multiple Acts": 299,
+      "Multiple passages within one Act": 5,
+      "Multiple query references": 3,
+      "No recognised locator": 19,
+      "Single matching passage": 18
+    },
+    "performance_group_counts": {
+      "Multiple matching Acts": 302,
+      "No recognised locator": 19,
+      "One matching Act": 23
+    },
+    "queries_with_explicit_detected_act": 2,
+    "semantic_identifiability": "not assessed"
+  },
+  "T2_collision_performance": {
+    "groups": {
+      "Multiple matching Acts": {
+        "n": 302,
+        "bm25_recall@1_pct": 10.596,
+        "bm25_recall@5_pct": 19.8675,
+        "section_filter_recall@5_pct": 86.755,
+        "bm25_reader": {
+          "f1_pct": 30.2045,
+          "em_pct": 7.947
+        },
+        "section_filter_reader": {
+          "f1_pct": 55.5381,
+          "em_pct": 36.4238
+        }
+      },
+      "No recognised locator": {
+        "n": 19,
+        "bm25_recall@1_pct": 52.6316,
+        "bm25_recall@5_pct": 63.1579,
+        "section_filter_recall@5_pct": 63.1579,
+        "bm25_reader": {
+          "f1_pct": 59.8932,
+          "em_pct": 47.3684
+        },
+        "section_filter_reader": {
+          "f1_pct": 59.8932,
+          "em_pct": 47.3684
+        }
+      },
+      "One matching Act": {
+        "n": 23,
+        "bm25_recall@1_pct": 13.0435,
+        "bm25_recall@5_pct": 26.087,
+        "section_filter_recall@5_pct": 100.0,
+        "bm25_reader": {
+          "f1_pct": 31.8517,
+          "em_pct": 13.0435
+        },
+        "section_filter_reader": {
+          "f1_pct": 88.5736,
+          "em_pct": 56.5217
+        }
+      }
+    },
+    "predeclared_collision_candidate_bins": {
+      "2-5": {
+        "n": 56,
+        "bm25_recall@1_pct": 10.7143,
+        "bm25_recall@5_pct": 21.4286,
+        "section_filter_recall@5_pct": 100.0,
+        "bm25_reader": {
+          "f1_pct": 34.3682,
+          "em_pct": 10.7143
+        },
+        "section_filter_reader": {
+          "f1_pct": 78.2635,
+          "em_pct": 51.7857
+        }
+      },
+      "6-10": {
+        "n": 149,
+        "bm25_recall@1_pct": 11.4094,
+        "bm25_recall@5_pct": 22.8188,
+        "section_filter_recall@5_pct": 91.2752,
+        "bm25_reader": {
+          "f1_pct": 30.5346,
+          "em_pct": 9.396
+        },
+        "section_filter_reader": {
+          "f1_pct": 53.8223,
+          "em_pct": 39.5973
+        }
+      },
+      "11+": {
+        "n": 97,
+        "bm25_recall@1_pct": 9.2784,
+        "bm25_recall@5_pct": 14.433,
+        "section_filter_recall@5_pct": 72.1649,
+        "bm25_reader": {
+          "f1_pct": 27.2936,
+          "em_pct": 4.1237
+        },
+        "section_filter_reader": {
+          "f1_pct": 45.0541,
+          "em_pct": 22.6804
+        }
+      }
+    }
+  },
+  "T3_oracle_act_restriction": {
+    "definition": "unchanged query and global BM25 scores; candidate pool restricted to annotated Act",
+    "fallback_for_section_method": "oracle-Act BM25 when no supported section match exists inside the annotated Act",
+    "results": {
+      "all": {
+        "n": 344,
+        "global_bm25": {
+          "n": 344,
+          "recall@1": 13.0814,
+          "recall@3": 20.0581,
+          "recall@5": 22.6744,
+          "recall@10": 27.0349,
+          "mrr@10": 17.3371
+        },
+        "oracle_act_restricted_bm25": {
+          "n": 344,
+          "recall@1": 20.3488,
+          "recall@3": 30.5233,
+          "recall@5": 35.1744,
+          "recall@10": 47.3837,
+          "mrr@10": 27.6576
+        },
+        "oracle_minus_global_bm25_recall@5_points": 12.5,
+        "global_section_filter": {
+          "n": 344,
+          "recall@1": 50.2907,
+          "recall@3": 73.2558,
+          "recall@5": 86.3372,
+          "recall@10": 95.3488,
+          "mrr@10": 64.8144
+        },
+        "oracle_act_restricted_section_filter": {
+          "n": 344,
+          "recall@1": 83.1395,
+          "recall@3": 94.7674,
+          "recall@5": 96.8023,
+          "recall@10": 98.2558,
+          "mrr@10": 89.1796
+        },
+        "oracle_minus_global_section_recall@5_points": 10.4651
+      },
+      "citation-template-only": {
+        "n": 177,
+        "global_bm25": {
+          "n": 177,
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "recall@10": 0.0,
+          "mrr@10": 0.0
+        },
+        "oracle_act_restricted_bm25": {
+          "n": 177,
+          "recall@1": 0.565,
+          "recall@3": 1.6949,
+          "recall@5": 5.6497,
+          "recall@10": 19.209,
+          "mrr@10": 3.862
+        },
+        "oracle_minus_global_bm25_recall@5_points": 5.6497,
+        "global_section_filter": {
+          "n": 177,
+          "recall@1": 35.5932,
+          "recall@3": 64.4068,
+          "recall@5": 83.6158,
+          "recall@10": 96.6102,
+          "mrr@10": 54.7381
+        },
+        "oracle_act_restricted_section_filter": {
+          "n": 177,
+          "recall@1": 85.3107,
+          "recall@3": 97.1751,
+          "recall@5": 100.0,
+          "recall@10": 100.0,
+          "mrr@10": 91.3277
+        },
+        "oracle_minus_global_section_recall@5_points": 16.3842
+      },
+      "lexically-content-bearing": {
+        "n": 167,
+        "global_bm25": {
+          "n": 167,
+          "recall@1": 26.9461,
+          "recall@3": 41.3174,
+          "recall@5": 46.7066,
+          "recall@10": 55.6886,
+          "mrr@10": 35.7124
+        },
+        "oracle_act_restricted_bm25": {
+          "n": 167,
+          "recall@1": 41.3174,
+          "recall@3": 61.0778,
+          "recall@5": 66.4671,
+          "recall@10": 77.2455,
+          "mrr@10": 52.8781
+        },
+        "oracle_minus_global_bm25_recall@5_points": 19.7605,
+        "global_section_filter": {
+          "n": 167,
+          "recall@1": 65.8683,
+          "recall@3": 82.6347,
+          "recall@5": 89.2216,
+          "recall@10": 94.012,
+          "mrr@10": 75.494
+        },
+        "oracle_act_restricted_section_filter": {
+          "n": 167,
+          "recall@1": 80.8383,
+          "recall@3": 92.2156,
+          "recall@5": 93.4132,
+          "recall@10": 96.4072,
+          "mrr@10": 86.9029
+        },
+        "oracle_minus_global_section_recall@5_points": 4.1916
+      }
+    }
+  },
+  "C1_input_audit": {
+    "rows": 1116,
+    "file": "passage_input_audit.jsonl",
+    "neural_title_inclusive_rerun": "not run in this CPU-only phase"
+  },
+  "C2_section_random": {
+    "exact_expected_recall@5_pct": 66.7248,
+    "formula_scope": "single annotated Indian gold passage; canonical BM25 fallback for no section candidates"
+  },
+  "C3_tie_sensitivity": {
+    "item_file": "tie_audit_items.jsonl",
+    "bm25": {
+      "recall@5_mean_pct": 22.8193,
+      "recall@5_sd_pct": 0.1454,
+      "recall@5_95_simulation_interval_pct": [
+        22.6744,
+        22.9651
+      ],
+      "queries_whose_gold_is_in_randomized_boundary_tie": 1,
+      "iterations": 10000,
+      "seed": 42
+    },
+    "section_filter": {
+      "recall@5_mean_pct": 86.2999,
+      "recall@5_sd_pct": 0.1793,
+      "recall@5_95_simulation_interval_pct": [
+        86.0465,
+        86.6279
+      ],
+      "queries_whose_gold_is_in_randomized_boundary_tie": 2,
+      "iterations": 10000,
+      "seed": 42
+    }
+  },
+  "C4_downstream_decomposition": {
+    "status": "already complete in retrieval_diagnostic_controls.json",
+    "source": "results/experiments/retrieval/retrieval_diagnostic_controls.json"
+  },
+  "C5_boost_filter": {
+    "item_file": "boost_filter_trace.jsonl",
+    "all": {
+      "n": 344,
+      "top5_sets_differ_n": 73,
+      "selected_passages_differ_n": 20,
+      "mean_filter_minus_boost_f1_points": 2.7714,
+      "label": "all"
+    },
+    "fewer_than_five_matches": {
+      "n": 73,
+      "top5_sets_differ_n": 73,
+      "selected_passages_differ_n": 20,
+      "mean_filter_minus_boost_f1_points": 13.0599,
+      "label": "fewer_than_five_matches"
+    },
+    "exactly_five_matches": {
+      "n": 9,
+      "top5_sets_differ_n": 0,
+      "selected_passages_differ_n": 0,
+      "mean_filter_minus_boost_f1_points": 0.0,
+      "label": "exactly_five_matches"
+    },
+    "more_than_five_matches": {
+      "n": 243,
+      "top5_sets_differ_n": 0,
+      "selected_passages_differ_n": 0,
+      "mean_filter_minus_boost_f1_points": 0.0,
+      "label": "more_than_five_matches"
+    },
+    "fallback": {
+      "n": 19,
+      "top5_sets_differ_n": 0,
+      "selected_passages_differ_n": 0,
+      "mean_filter_minus_boost_f1_points": 0.0,
+      "label": "fallback"
+    }
+  },
+  "provenance": {
+    "protocol": "docs/RETRIEVAL_FOLLOWUP_CONTROLS_PROTOCOL.md",
+    "script": "scripts/04_retrieval/retrieval_followup_controls.py",
+    "inputs_sha256": {
+      "data/processed/indic_ipr_qa/unique_contexts.jsonl": "aa2fb370362082319d7b6c754070e3b154a0b4e338535730ef5803399383fe7e",
+      "data/splits/test.jsonl": "851b3c0130fd21bd3da2c961a4d06e1f84f69ced3fa5487e780884b811734082",
+      "results/experiments/retrieval/runs/citation_aware_v1/bm25_top5_e2_predictions.jsonl": "a4b9eff89c3c9596de53422593c56e7891347601f3ba36e63ac6c3fbc9cf17c4",
+      "results/experiments/retrieval/runs/citation_aware_v1/bm25_section_boost_top5_e2_predictions.jsonl": "0249330ec9e6ac5143e336fb5f4f8105752e29fff33bcad314680d58f0873493",
+      "results/experiments/retrieval/runs/citation_aware_v1/bm25_section_filter_top5_e2_predictions.jsonl": "b64684507c5c2747151751457c064265fc1c6adc5a995ac1504944447d8eda8e"
+    },
+    "bm25": {
+      "k1": 1.5,
+      "b": 0.75,
+      "tokenizer": "[A-Za-z0-9]+ lowercased"
+    },
+    "tie_break": "descending score then ascending corpus index",
+    "seed": 42,
+    "python": "3.13.7",
+    "elapsed_seconds": 2.038
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "status": "canonical lightweight diagnostic",
+  "scope": {
+    "questions": 344,
+    "passages": 1116,
+    "distinct_source_sections": 75,
+    "questions_per_source_section": {
+      "min": 1,
+      "median": 4,
+      "mean": 4.5867,
+      "max": 12
+    }
+  },
+  "input_specification": {
+    "canonical_bm25": "question against paragraph text only",
+    "canonical_dense": "question against paragraph text only (recorded from dense_retrieval_experiment.py)",
+    "canonical_cross_encoder": "question--paragraph pairs over paragraph-only first-stage candidates",
+    "section_index": "section parsed from question and passage title; BM25 ordering uses paragraph text only",
+    "reader": "question--paragraph input; title and Act metadata are not supplied",
+    "metadata_fairness_controls": [
+      "BM25 over title + paragraph",
+      "oracle gold-Act name in query against Act name + title + paragraph"
+    ]
+  },
+  "retrieval_controls": {
+    "paragraph_only": {
+      "recall@1": 13.0814,
+      "recall@3": 20.0581,
+      "recall@5": 22.6744,
+      "recall@10": 27.0349,
+      "mrr@10": 17.3371
+    },
+    "title_plus_paragraph": {
+      "recall@1": 34.8837,
+      "recall@3": 47.9651,
+      "recall@5": 56.9767,
+      "recall@10": 69.7674,
+      "mrr@10": 44.5637
+    },
+    "act_title_plus_paragraph": {
+      "recall@1": 34.3023,
+      "recall@3": 47.9651,
+      "recall@5": 56.9767,
+      "recall@10": 69.186,
+      "mrr@10": 44.0812
+    },
+    "oracle_act_name_plus_act_title_paragraph": {
+      "recall@1": 46.8023,
+      "recall@3": 70.3488,
+      "recall@5": 79.0698,
+      "recall@10": 87.5,
+      "mrr@10": 60.3546
+    },
+    "section_filter_plus_bm25": {
+      "recall@1": 50.2907,
+      "recall@3": 73.2558,
+      "recall@5": 86.3372,
+      "recall@10": 95.3488,
+      "mrr@10": 64.8144
+    },
+    "section_filter_plus_title_paragraph_bm25": {
+      "recall@1": 52.6163,
+      "recall@3": 74.7093,
+      "recall@5": 87.5,
+      "recall@10": 96.2209,
+      "mrr@10": 66.6373
+    },
+    "oracle_act_plus_section_filter": {
+      "recall@1": 79.9419,
+      "recall@3": 95.6395,
+      "recall@5": 97.093,
+      "recall@10": 97.6744,
+      "mrr@10": 87.7681
+    },
+    "section_boost_plus_bm25": {
+      "recall@1": 50.2907,
+      "recall@3": 73.2558,
+      "recall@5": 86.3372,
+      "recall@10": 95.6395,
+      "mrr@10": 64.8435
+    }
+  },
+  "random_section_candidate_order": {
+    "recall@5_mean": 66.7851,
+    "recall@5_sd_across_orderings": 2.084,
+    "recall@5_95_simulation_interval": [
+      62.5,
+      70.6395
+    ],
+    "iterations": 10000,
+    "seed": 42,
+    "fallback": "canonical paragraph-only BM25 when no section is parsed"
+  },
+  "structural_identifiability": {
+    "queries_with_parsed_section": 325,
+    "queries_with_any_act_name_string": 2,
+    "queries_with_target_act_name_string": 0,
+    "parsed_queries_whose_section_occurs_in_one_act": 24,
+    "parsed_queries_whose_section_occurs_in_multiple_acts": 301,
+    "semantic_source_identifiability": "not human-annotated; structural counts do not establish whether wording lets a reader infer the Act"
+  },
+  "candidate_reduction": {
+    "matching_passages": {
+      "min": 1,
+      "median": 8,
+      "mean": 7.8892,
+      "max": 15,
+      "queries_with_five_or_fewer": 82,
+      "queries_with_more_than_five": 243
+    },
+    "distinct_acts": {
+      "median": 5,
+      "mean": 4.6862,
+      "max": 7
+    }
+  },
+  "ordering_and_ties": {
+    "tie_break": "ascending corpus index after descending score",
+    "paragraph_bm25_queries_tied_at_rank5_boundary": 6,
+    "paragraph_bm25_gold_tied_at_rank5_boundary": 1,
+    "section_filtered_queries_tied_at_rank5_boundary": 4,
+    "boost_vs_filter_top5_candidate_sets_differ_n": 73,
+    "boost_vs_filter_top5_mean_jaccard": 0.8901
+  },
+  "reader_stage_decomposition": {
+    "BM25": {
+      "n": 344,
+      "gold_available_n": 78,
+      "gold_available_pct": 22.6744,
+      "selected_annotated_source_n": 41,
+      "selected_annotated_source_pct": 11.9186,
+      "conditional_source_selection_pct_given_available": 52.5641,
+      "annotation_grounded_em_pct": 9.593,
+      "annotation_grounded_f1_pct": 11.0798,
+      "failure_stage_counts": {
+        "gold_absent_from_top5": 266,
+        "gold_available_reader_selected_other": 37,
+        "gold_selected_non_em_extraction": 8,
+        "gold_selected_normalized_em": 33
+      },
+      "mean_f1_pct_by_stage": {
+        "gold_selected_normalized_em": 100.0,
+        "gold_available_reader_selected_other": 51.9787,
+        "gold_absent_from_top5": 19.7656,
+        "gold_selected_non_em_extraction": 63.9315
+      }
+    },
+    "section_boost": {
+      "n": 344,
+      "gold_available_n": 297,
+      "gold_available_pct": 86.3372,
+      "selected_annotated_source_n": 156,
+      "selected_annotated_source_pct": 45.3488,
+      "conditional_source_selection_pct_given_available": 52.5253,
+      "annotation_grounded_em_pct": 35.7558,
+      "annotation_grounded_f1_pct": 42.7186,
+      "failure_stage_counts": {
+        "gold_absent_from_top5": 47,
+        "gold_available_reader_selected_other": 141,
+        "gold_selected_non_em_extraction": 33,
+        "gold_selected_normalized_em": 123
+      },
+      "mean_f1_pct_by_stage": {
+        "gold_selected_normalized_em": 100.0,
+        "gold_available_reader_selected_other": 23.7901,
+        "gold_selected_non_em_extraction": 72.5816,
+        "gold_absent_from_top5": 20.1003
+      }
+    },
+    "section_filter": {
+      "n": 344,
+      "gold_available_n": 297,
+      "gold_available_pct": 86.3372,
+      "selected_annotated_source_n": 175,
+      "selected_annotated_source_pct": 50.8721,
+      "conditional_source_selection_pct_given_available": 58.9226,
+      "annotation_grounded_em_pct": 38.0814,
+      "annotation_grounded_f1_pct": 47.2858,
+      "failure_stage_counts": {
+        "gold_absent_from_top5": 47,
+        "gold_available_reader_selected_other": 122,
+        "gold_selected_non_em_extraction": 44,
+        "gold_selected_normalized_em": 131
+      },
+      "mean_f1_pct_by_stage": {
+        "gold_selected_normalized_em": 100.0,
+        "gold_available_reader_selected_other": 22.4315,
+        "gold_selected_non_em_extraction": 71.9621,
+        "gold_absent_from_top5": 20.1003
+      }
+    }
+  },
+  "cluster_bootstrap": {
+    "method": "paired one-stage bootstrap over 75 Act-section source clusters",
+    "section_filter_minus_bm25_f1": {
+      "difference_points": 26.0331,
+      "cluster_bootstrap_95_ci": [
+        19.0137,
+        32.9984
+      ],
+      "confidence_level_pct": 95,
+      "resampling_unit": "Act-section source cluster",
+      "replicate_aggregation": "pool all questions from sampled clusters, then average item-level differences; cluster means are not averaged equally",
+      "clusters": 75,
+      "iterations": 10000,
+      "seed": 42
+    },
+    "section_filter_minus_bm25_recall@5": {
+      "difference_points": 63.6628,
+      "cluster_bootstrap_95_ci": [
+        54.0372,
+        72.0339
+      ],
+      "confidence_level_pct": 95,
+      "resampling_unit": "Act-section source cluster",
+      "replicate_aggregation": "pool all questions from sampled clusters, then average item-level differences; cluster means are not averaged equally",
+      "clusters": 75,
+      "iterations": 10000,
+      "seed": 42
+    },
+    "section_boost_minus_bm25_f1": {
+      "difference_points": 23.2616,
+      "cluster_bootstrap_95_ci": [
+        16.3064,
+        30.1275
+      ],
+      "confidence_level_pct": 95,
+      "resampling_unit": "Act-section source cluster",
+      "replicate_aggregation": "pool all questions from sampled clusters, then average item-level differences; cluster means are not averaged equally",
+      "clusters": 75,
+      "iterations": 10000,
+      "seed": 42
+    }
+  },
+  "provenance": {
+    "script": "scripts/04_retrieval/retrieval_diagnostic_controls.py",
+    "corpus": "data/processed/indic_ipr_qa/unique_contexts.jsonl",
+    "test": "data/splits/test.jsonl",
+    "prediction_files": {
+      "BM25": "results/experiments/retrieval/runs/citation_aware_v1/bm25_top5_e2_predictions.jsonl",
+      "section_boost": "results/experiments/retrieval/runs/citation_aware_v1/bm25_section_boost_top5_e2_predictions.jsonl",
+      "section_filter": "results/experiments/retrieval/runs/citation_aware_v1/bm25_section_filter_top5_e2_predictions.jsonl"
+    },
+    "bm25": {
+      "k1": 1.5,
+      "b": 0.75,
+      "tokenizer": "[A-Za-z0-9]+ lowercased"
+    }
+  }
+}

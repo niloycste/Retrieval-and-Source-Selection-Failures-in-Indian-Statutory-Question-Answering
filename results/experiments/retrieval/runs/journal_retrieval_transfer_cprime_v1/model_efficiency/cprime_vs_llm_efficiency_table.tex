@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\caption{C' compared with local LLM baselines using model size and QA metrics.}
+\label{tab:cprime_vs_llm_efficiency}
+\scriptsize
+\begin{tabular}{llrrrr}
+\toprule
+Model & Setting & Params (B) & EM & F1 & Char-F1 \\
+\midrule
+C': MLM+SQuAD+IPR InLegalBERT & Extractive fine-tuned QA & 0.11 & 48.26 & 82.33 & 87.27 \\
+qwen2.5:7b & LLM zero-shot & 7.00 & 29.94 & 77.59 & 81.04 \\
+qwen2.5:7b & LLM few-shot & 7.00 & 34.30 & 76.39 & 78.60 \\
+mistral:7b & LLM zero-shot & 7.00 & 18.31 & 67.11 & 75.07 \\
+mistral:7b & LLM few-shot & 7.00 & 24.71 & 68.83 & 76.01 \\
+llama3.1:latest & LLM zero-shot & 8.00 & 33.43 & 74.78 & 79.61 \\
+llama3.1:latest & LLM few-shot & 8.00 & 33.43 & 77.02 & 79.78 \\
+llama3.1:8b & LLM zero-shot & 8.00 & 31.98 & 74.00 & 78.95 \\
+llama3.1:8b & LLM few-shot & 8.00 & 31.98 & 76.94 & 80.82 \\
+\bottomrule
+\end{tabular}
+\end{table}

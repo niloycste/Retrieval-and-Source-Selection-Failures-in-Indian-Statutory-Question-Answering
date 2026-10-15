@@ -1,0 +1,75 @@
+{
+  "protocol": "docs/RETRIEVAL_EXTERNAL_VALIDATION_PROTOCOL.md",
+  "created_at": "2026-09-03T12:59:53+05:30",
+  "canonical": true,
+  "source": {
+    "source_url": "https://collections.durham.ac.uk/files/r14x51hj064",
+    "download_url": "https://collections.durham.ac.uk/downloads/r14x51hj064",
+    "archive": "E:\\Dataset on IPR\\data\\external\\uk_statutecorpus\\uk-statutecorpus_v1.0.zip",
+    "archive_bytes": 69883189,
+    "archive_md5": "29907ffa565a5e421c851ab2bc661423",
+    "archive_sha256": "6b7e984e4e23a94bdf5aaa30fee8acb592e1dc6291d5eb1afb22b123f778c868",
+    "corpus_file": "E:\\Dataset on IPR\\data\\external\\uk_statutecorpus\\extracted\\uk-statutecorpus_v1.0\\corpus\\uk-statutecorpus_passages_2020-2024_v1.0.jsonl.gz",
+    "corpus_sha256": "a2db0bbc41c3ecd002e68a46c799252d9cc887d120dc64ff2b70932254364e63",
+    "query_file": "E:\\Dataset on IPR\\data\\external\\uk_statutecorpus\\extracted\\uk-statutecorpus_v1.0\\evaluation_dataset\\uk-statutecorpus_eval100_2020-2024_v1.0.jsonl",
+    "query_sha256": "8f0d641f899ddc5cd4ec0deea8329e5de7604843125f206dea432c1729e95286",
+    "prepared_at": "2026-09-03T12:59:41+05:30"
+  },
+  "data": {
+    "corpus_passages_used": 124796,
+    "queries_used": 100,
+    "qrels_used": 300,
+    "relevance_grade_counts": {
+      "1": 100,
+      "2": 100,
+      "3": 100
+    }
+  },
+  "reference_audit": {
+    "n_with_explicit_locator": 13,
+    "share_with_explicit_locator": 0.13
+  },
+  "systems": {
+    "bm25": {
+      "k1": 1.5,
+      "b": 0.75,
+      "tokenizer": "[A-Za-z0-9]+"
+    },
+    "dense": {
+      "model": "intfloat/e5-small-v2",
+      "revision": "ffb93f3bd4047442299a41ebb6fa998a38507c52"
+    },
+    "rrf_k": 60,
+    "cross_encoder": {
+      "model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+      "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a"
+    },
+    "retrieval_depth": 100,
+    "rerank_depth": 50
+  },
+  "runtime": {
+    "threads": 4,
+    "dense_batch_size": 32,
+    "rerank_batch_size": 16,
+    "embedding_chunk_size": 512,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.7",
+    "packages": {
+      "numpy": "2.4.2",
+      "torch": "2.10.0",
+      "transformers": "5.3.0",
+      "sentence-transformers": "5.2.3"
+    },
+    "command": [
+      "E:\\Dataset on IPR\\scripts\\04_retrieval\\uk_statutecorpus_external_validation.py",
+      "--threads",
+      "4",
+      "--dense-batch-size",
+      "32",
+      "--rerank-batch-size",
+      "16",
+      "--output-dir",
+      "E:\\Dataset on IPR\\results\\experiments\\retrieval\\runs\\uk_statutecorpus_external_v1"
+    ]
+  }
+}

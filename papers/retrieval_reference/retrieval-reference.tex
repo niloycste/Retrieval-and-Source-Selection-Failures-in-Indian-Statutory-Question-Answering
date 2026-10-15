@@ -1,0 +1,2604 @@
+%Version 3.1 December 2024
+% See section 11 of the User Manual for version history
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% Please do not use \input{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%\documentclass[referee,sn-basic]{sn-jnl}% referee option is meant for double line spacing
+
+%%=======================================================%%
+%% to print line numbers in the margin use lineno option %%
+%%=======================================================%%
+
+%%\documentclass[lineno,pdflatex,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+
+%%=========================================================================================%%
+%% the documentclass is set to pdflatex as default. You can delete it if not appropriate.  %%
+%%=========================================================================================%%
+
+%%\documentclass[sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+
+%%Note: the following reference styles support Namedate and Numbered referencing. By default the style follows the most common style. To switch between the options you can add or remove Â“NumberedÂ” in the optional parenthesis. 
+%%The option is available for: sn-basic.bst, sn-chicago.bst%  
+ 
+%%\documentclass[pdflatex,sn-nature]{sn-jnl}% Style for submissions to Nature Portfolio journals
+%%\documentclass[pdflatex,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+\documentclass[pdflatex,sn-basic]{sn-jnl}% Basic Springer Nature author--year reference style
+%%\documentclass[pdflatex,sn-mathphys-ay]{sn-jnl}% Math and Physical Sciences Author Year Reference Style
+%%\documentclass[pdflatex,sn-aps]{sn-jnl}% American Physical Society (APS) Reference Style
+%%\documentclass[pdflatex,sn-vancouver-num]{sn-jnl}% Vancouver Numbered Reference Style
+%%\documentclass[pdflatex,sn-vancouver-ay]{sn-jnl}% Vancouver Author Year Reference Style
+%%\documentclass[pdflatex,sn-apa]{sn-jnl}% APA Reference Style
+%%\documentclass[pdflatex,sn-chicago]{sn-jnl}% Chicago-based Humanities Reference Style
+
+%%%% Standard Packages
+%%<additional latex packages if required can be included here>
+
+\usepackage{graphicx}%
+\usepackage{multirow}%
+\usepackage{amsmath,amssymb,amsfonts}%
+\usepackage{amsthm}%
+\usepackage{mathrsfs}%
+\usepackage[title]{appendix}%
+\usepackage{xcolor}%
+\usepackage{textcomp}%
+\usepackage{manyfoot}%
+\usepackage{booktabs}%
+\usepackage{algorithm}%
+\usepackage{algorithmicx}%
+\usepackage{algpseudocode}%
+\usepackage{listings}%
+%%%%
+
+%%%%%=============================================================================%%%%
+%%%%  Remarks: This template is provided to aid authors with the preparation
+%%%%  of original research articles intended for submission to journals published 
+%%%%  by Springer Nature. The guidance has been prepared in partnership with 
+%%%%  production teams to conform to Springer Nature technical requirements. 
+%%%%  Editorial and presentation requirements differ among journal portfolios and 
+%%%%  research disciplines. You may find sections in this template are irrelevant 
+%%%%  to your work and are empowered to omit any such section if allowed by the 
+%%%%  journal you intend to submit to. The submission guidelines and policies 
+%%%%  of the journal take precedence. A detailed User Manual is available in the 
+%%%%  template package for technical guidance.
+%%%%%=============================================================================%%%%
+
+%% as per the requirement new theorem styles can be included as shown below
+\theoremstyle{thmstyleone}%
+\newtheorem{theorem}{Theorem}%  meant for continuous numbers
+%%\newtheorem{theorem}{Theorem}[section]% meant for sectionwise numbers
+%% optional argument [theorem] produces theorem numbering sequence instead of independent numbers for Proposition
+\newtheorem{proposition}[theorem]{Proposition}% 
+%%\newtheorem{proposition}{Proposition}% to get separate numbers for theorem and proposition etc.
+
+\theoremstyle{thmstyletwo}%
+\newtheorem{example}{Example}%
+\newtheorem{remark}{Remark}%
+
+\theoremstyle{thmstylethree}%
+\newtheorem{definition}{Definition}%
+
+\raggedbottom
+%%\unnumbered% uncomment this for unnumbered level heads
+
+%% ============================================================
+%%  Journal manuscript for Artificial Intelligence and Law
+%%  Target venue : Artificial Intelligence and Law (Springer Nature)
+%%  Class        : sn-jnl.cls, sn-basic reference style (author--year).
+%% ============================================================
+
+
+%% sn-jnl loads graphicx and natbib; the rest this manuscript needs itself.
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{placeins}
+\usepackage{xurl}% Allow long bibliography URLs to wrap within the margins.
+\hypersetup{hypertexnames=false}
+
+\DeclareMathOperator*{\argmax}{argmax}
+\newcommand{\fixedreader}{LegalBERT--SQuAD--IPR}
+
+\algrenewcommand\algorithmicrequire{Input:}
+\algrenewcommand\algorithmicensure{Output:}
+\algnewcommand{\LineComment}[1]{\hfill \(\triangleright\) \textit{#1}}
+
+\graphicspath{{plots/}}
+
+\begin{document}
+
+\title{Beyond Answer Extraction: Diagnosing Retrieval and Source Selection Failures in Indian
+Statutory Question Answering}
+
+% Author names and affiliations are supplied through the confidential
+% submission fields and omitted from the double-anonymous manuscript.
+
+%% ============================================================
+\abstract{Answering a question about a statute requires finding a supporting
+provision and extracting the relevant information. A model may extract an
+answer well when the source is supplied, yet fail when it must first find and
+choose that source. This study presents a stage-wise diagnostic framework that
+separates candidate access, source selection, answer extraction, and assessed
+legal adequacy. It applies the framework to IndicIPR-QA, a benchmark covering
+seven Indian intellectual property Acts. With the reader and its
+answer selection rule fixed, F1 falls from 87.37 with the annotated paragraph
+to 31.95 when BM25 searches paragraph text alone. Adding statutory structure
+through section titles and section filtering substantially improves recovery
+of the annotated source. Controls examine the separate contributions of smaller
+candidate pools and word matching. However, matching a section number does not
+necessarily identify the intended Act, and source selection errors remain under
+both the reader decoder and an independent reranker. An exploratory analysis
+also links question wording with retrieval difficulty. A human audit finds
+that agreement with the benchmark annotation does not necessarily match assessed
+legal adequacy; it does not estimate legal error rates across the full test
+set. Together, these findings show how separate measures of retrieval, source
+selection, extraction, and human assessment help explain QA scores on this
+benchmark. The findings apply to the tested questions and systems; they do not
+establish a general limit on legal retrieval.}
+%% 6 keywords (journal requires 4-6)
+\keywords{Legal NLP, Extractive question answering, Legal information retrieval,
+Statutory retrieval, Indian IPR law, Statutory references}
+
+\maketitle
+
+
+%% ============================================================
+
+
+\section{Introduction}\label{sec:intro}
+
+Statutory question answering requires a system to find a supporting provision
+and extract the relevant information. Statutes are organised into Acts,
+sections, subsections, and clauses, yet different provisions may use similar
+words. A passage may therefore differ from the source intended by a benchmark
+while remaining relevant under another legal interpretation. This reflects the
+broader view that legal relevance depends on the task and intended use
+\citep{van2017concept,vsavelka2022legal}.
+
+When the annotated paragraph is supplied, a model only extracts the answer.
+When the source must first be retrieved, the system must also find and select
+that paragraph. The \emph{retrieval--reading gap} is the difference between
+these settings. An overall score can hide whether the annotated paragraph was
+not retrieved, another source was selected, or the extracted span did not
+match the annotation. Separating these outcomes identifies the affected stage.
+
+Some questions describe the needed information, while others mainly name a
+section or clause. Descriptive words support content matching, whereas a
+locator points to statutory structure and may say little about the answer.
+Because section identifiers recur across Acts, a reference can narrow the
+candidates without identifying the intended Act. The analysis examines how
+these patterns relate to annotated-source recovery and later pipeline stages.
+
+Throughout this paper, retrieval success means recovery of the
+benchmark-annotated evidence paragraph. An \emph{annotated-source retrieval
+failure} occurs when that paragraph is absent from the candidate pool. A
+\emph{source selection failure} occurs when the paragraph is available but the
+system chooses another one. An \emph{answer extraction failure} occurs when
+the system chooses the annotated paragraph but predicts a span that does not exactly match the
+annotated answer. These annotation-relative measures do not determine the
+governing provision or exclude another legally relevant source. A separate
+human audit examines legal adequacy in 80 sampled cases.
+
+The analysis uses IndicIPR-QA, a benchmark of 4,462 extractive question and
+answer pairs over seven Indian intellectual property Acts
+\citep{anonymous2026indiciprqa}. The fixed LegalBERT--SQuAD--IPR reader performs
+strongly when given the annotated paragraph but substantially worse when BM25
+retrieves from paragraph text alone. This retrieval--reading gap motivates an
+investigation of where pipeline errors arise and how they vary across questions.
+
+With the reader fixed, the experiments compare paragraph-only and title-aware
+retrieval, section matching, and changes to query references. Section filtering
+keeps passages whose section identifier matches the question and ranks them
+with BM25; controls separate title information, candidate-pool reduction, and
+ranking. The main methodological contribution is a stage-wise diagnostic
+framework for statutory QA. It separates candidate access, source selection,
+answer extraction, and assessed legal adequacy while keeping the answer reader
+fixed. The framework is used to examine how statutory structure affects
+annotated-source recovery and which errors remain. Section filtering is one
+diagnostic intervention within the framework, not a proposed optimal method.
+
+The study addresses three research questions:
+
+\begin{description}
+    \item[RQ1: Retrieval.] How much does performance decrease when the system
+    must retrieve the annotated paragraph instead of being given it?
+
+    \item[RQ2: Question wording.] Are annotated-source retrieval failures more
+    common in questions classified by the operational reference removal rule as
+    a zero-residual reference pattern?
+
+    \item[RQ3: Role of references.] How do statutory references in a query act
+    as structural signals for retrieving the annotated paragraph?
+\end{description}
+
+The paper makes three contributions:
+\begin{enumerate}
+    \item A stage-wise diagnostic framework separates annotated-source
+    retrieval, source selection, answer extraction, and human assessment of
+    legal adequacy. Holding the reader fixed makes it possible to trace how
+    candidate changes propagate through the same QA pipeline.
+
+    \item Several controlled tests examine the link between statutory
+    references in the query, retrieval, and source selection. The comparison
+    covers sparse, dense, fusion, and reranking systems, together with controls
+    for titles, candidate-pool size, and ranking within a matched section pool.
+
+    \item Query-reference interventions and an operational question grouping
+    examine how locators and descriptive words contribute to retrieval. An
+    80-case audit by two law graduate students then compares benchmark
+    agreement with assessed source relevance and answer adequacy.
+\end{enumerate}
+
+%% ============================================================
+\section{Related Work}\label{sec:related}
+
+Legal question answering brings together two tasks: finding
+relevant information and using it to produce an answer. The following review
+covers the benchmarks used to study these tasks, methods for retrieving
+statutory provisions, and approaches that use the structure of legal documents.
+This provides the context for examining how references within questions affect
+retrieval and the interpretation of answer scores.
+
+Finding a legal source may require more than matching a topic. The result can
+depend on legal authority, jurisdiction, and the structure of Acts, sections,
+clauses, and cross-references. A passage with similar words may therefore be
+unsuitable for the question. This makes the source and its place in the statute
+important parts of retrieval evaluation
+\citep{van2017concept,vsavelka2022legal}.
+
+\subsection{Question Answering and Legal Benchmarks}
+
+Extractive question answering asks a model to select an answer span from a
+passage. SQuAD~1.1~\citep{rajpurkarSQuAD100000Questions2016} is a widely used
+benchmark for this task and provides the reader transfer stage used here.
+Later datasets added questions designed to appear answerable when they are
+not, questions from search engines, automatically linked evidence, reasoning
+across documents, and reading comprehension from examinations
+\citep{rajpurkarKnowWhatYou2018,kwiatkowskiNaturalQuestionsBenchmark2019,
+joshiTriviaQALargeScale2017,yangHotpotQADatasetDiverse2018,
+laiRACELargescaleReAding2017}. These resources study different forms of
+reading and reasoning rather than retrieval of statutory provisions.
+
+Legal benchmarks target different documents and tasks. CUAD
+\citep{hendrycksCUADExpertAnnotatedNLP2021} supports clause level review of
+commercial contracts, while JEC-QA
+\citep{zhongJECQALegalDomainQuestion2020} contains multiple choice questions
+from China's National Judicial Examination. LegalBench contains 162 tasks
+covering six types of legal reasoning; LexGLUE brings together several legal
+language understanding datasets; and LawBench evaluates 20 Chinese legal tasks
+at three cognitive levels
+\citep{guha2023legalbench, chalkidisLexGLUEBenchmarkDataset2022,
+feiLawBenchBenchmarkingLegal2024}. Resources focused on legislation bring source
+texts more directly into QA. DiscoLQA uses discourse units for zero-shot QA
+over European legislation, while EQUALS evaluates QA by reading Chinese laws
+\citep{sovrano2025discolqa,chen2023equals}. IPBench evaluates broader
+intellectual property knowledge and practice rather than verbatim answer span
+extraction from Indian IPR statutes
+\citep{wangIPBenchBenchmarkingKnowledge2025}.
+
+Indian legal NLP has also studied judgment prediction and explanation, as
+well as continued pretraining on Indian legal text
+\citep{malikILDCCJPEIndian2021,paul2023pre}. AILQA evaluates
+retrieval augmented generation for Indian legal QA
+\citep{nigam2026ailqa}. INLegalLlama combines continued pretraining and
+supervised fine-tuning for Indian judgment prediction
+\citep{nigamNyayaAnumanaINLegalLlamaLargest2025}. The present study focuses on
+a different task: retrieving the annotated statutory paragraph and extracting
+an answer span from it. Rather than comparing generated answers, it holds the
+reader fixed and attributes errors to candidate access, source selection, or
+span extraction.
+
+\subsection{Retrieving and Reranking Statutory Provisions}
+
+Retrieval methods connect a question with relevant passages in different ways.
+BM25~\citep{robertsonProbabilisticRelevanceFramework2009} uses lexical
+matching, while dense passage retrieval
+\citep{karpukhinDensePassageRetrieval2020} represents questions and passages
+as vectors for semantic matching. BGE-M3 is a multilingual embedding model
+that supports dense, sparse, and multiple vector retrieval; this study uses only
+its dense representation \citep{chenM3Embedding2024}. Cross-encoders
+\citep{gao2021rethinkbert} score questions and passages together and can
+rerank candidates from an initial retrieval stage. Retrieval augmented
+generation~\citep{lewisRetrievalAugmentedGenerationKnowledgeIntensive2020}
+uses retrieved passages as evidence for answer generation. These methods show
+that retrieval quality can affect the evidence available to the final answer.
+
+For statutory retrieval, BSARD~\citep{louisSpanakisBSARD2022} introduced more
+than 1,100 French language legal questions from Droits Quotidiens and more than
+22,600 Belgian statutory articles. Experienced jurists linked the questions to
+relevant articles. Its experiments showed that supervised dense retrieval can
+increase recall. Building on this setting, \citet{louisFindingLaw2023} used a
+graph augmented dense retriever to model relationships among statutory
+articles. Their approach uses connections between provisions instead of
+treating each article as an independent document.
+
+Legal RAG benchmarks also evaluate retrieval together with downstream legal
+answering. \citet{zhengReasoningFocusedLegalRetrieval2025} study bar exam and
+housing statute questions, while \citet{afaneBenchmarkingLegalRAG2026} examine
+statutory surveys. A closely related study by \citet{alshehri2026neural}
+evaluates UK statutory retrieval using BM25 and dense candidate generation
+followed by ten neural rerankers. It also distils a proprietary reranker into
+an open ModernBERT cross-encoder. Its main focus is ranking relevant
+provisions within the candidate set. The present study instead follows
+retrieved candidates through a fixed answer reader and reports retrieval,
+source selection, extraction, and assessed legal adequacy separately.
+
+\subsection{Legal Structure and References in Questions}
+
+Legal structure can provide useful information for retrieval. Alongside the
+Belgian graph approach discussed above, JuriFindIT
+\citep{noceJuriFindITItalian2026} represents references between Italian
+statutory articles in a heterogeneous graph. For Thai legal QA,
+\citet{akarajaradwongNitiBench2025} evaluate hierarchy aware chunking and
+cross-reference handling. These studies use legal structure to organise and
+retrieve evidence.
+
+Other studies consider evidence spread across multiple provisions.
+\citet{chaeStructureAwareStatuteQA2026} use graph guided retrieval to find
+regulatory evidence across a document hierarchy and evaluate performance when
+statutory context is incomplete. Citation prediction is a related but
+different task. \citet{han2026legal} compare prompting, sparse and dense
+retrieval, task specific fine-tuning, and reranking for predicting Australian
+legal citations. Together, these studies show why legal relevance depends on
+the task and cannot be judged from a shared topic alone
+\citep{vsavelka2022legal,van2017concept}.
+
+The closest studies mainly improve provision retrieval, model document-side
+structure, rerank candidates, or evaluate retrieval within a RAG pipeline.
+Those goals differ from attributing an answer error to candidate access,
+source selection, or span extraction under a fixed reader. This study makes
+that attribution the main object of evaluation. It also examines a structural
+signal already present in the query: tests remove, isolate, or replace the
+reference, while controls examine titles, candidate-pool size, and ranking.
+The human audit adds a separate comparison between benchmark agreement and
+assessed legal adequacy. The framework therefore complements work on stronger
+retrievers, hierarchy-aware models, graphs, and legal RAG; it does not claim
+to outperform those systems. Supervised retrieval and RAG systems may achieve
+higher scores.
+Table~\ref{tab:positioning} summarises the closest comparisons.
+
+\begin{table}[!htbp]
+    \caption{Comparison with related studies. ``Structure'' means the main
+    structural signal used or evaluated.}
+    \label{tab:positioning}
+    \centering
+    \scriptsize
+    \setlength{\tabcolsep}{3.5pt}
+    \renewcommand{\arraystretch}{1.14}
+    \begin{tabular}{@{}
+        >{\raggedright\arraybackslash}p{2.8cm}
+        >{\raggedright\arraybackslash}p{1.8cm}
+        >{\raggedright\arraybackslash}p{2.0cm}
+        >{\raggedright\arraybackslash}p{4.8cm}@{}}
+        \toprule
+        Study & Setting & Structure & Main distinction \\
+        \midrule
+        BSARD~\citep{louisSpanakisBSARD2022}
+        & Belgian statutes & Not modelled
+        & Statutory article retrieval from natural language questions; no
+        intervention on citations in the query. \\
+
+        Finding the Law~\citep{louisFindingLaw2023}
+        & Belgian statutes & Document topology
+        & Models dependencies among statutory articles rather than
+        references in the query. \\
+
+        \citet{alshehri2026neural}
+        & UK legislation & Provision level relevance
+        & Studies candidate reranking and distillation; no diagnosis of
+        zero-residual reference patterns. \\
+
+        Juri\-FindIT~\citep{noceJuriFindITItalian2026}
+        & Italian statutes & Cross article graph
+        & Encodes legislative cross-references on the document side. \\
+
+        Search\-Fire\-Safety~\citep{chaeStructureAwareStatuteQA2026}
+        & Regulatory QA & Document hierarchy
+        & Tests graph guided retrieval and safety when linked statutory
+        evidence is missing. \\
+
+        This work
+        & Indian IPR statutes & Query section reference
+        & Separates candidate access, source selection, extraction, and legal
+        adequacy; also intervenes on references in the query.
+        \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\FloatBarrier
+
+
+%% ============================================================
+\section{Research Design: Benchmark, Tasks, and Evaluation}
+\label{sec:experimental_setup}
+
+\subsection{Study Sequence}
+
+RQ1 compares retrieval performance using the same reader, questions, and
+corpus. RQ2 divides the questions into two groups based on their wording
+after removing references and question templates. RQ3 tests the role of
+statutory references by changing how they are used during retrieval.
+
+After examining the results by Act, we inspected the test questions as an
+exploratory step. The reference removal patterns, the list of question frame words, and the rule
+that defines the two groups were then developed from this test material.
+They were not developed on a separate set of questions.
+Appendix~\ref{app:review_checks} gives the full 54-word list and the automatic
+check of reference matching. The groups describe the result of a text rule;
+they are not expert labels of question meaning. The reference tests were
+defined before those experiments ran, but no plan was formally registered in
+advance. RQ2 is therefore an exploratory characterization of patterns in this
+benchmark, not a confirmatory test of a predefined question taxonomy. RQ3 is
+also exploratory and was not preregistered. Neither analysis provides
+independent confirmation or shows that the effects apply elsewhere. The RQ1
+gap, the retrieval comparisons, the metadata controls, and the source
+selection comparison can be computed without this question grouping rule.
+They remain diagnostic measurements on the same fixed benchmark, rather than
+an external test of generalization.
+
+Figure~\ref{fig:study_pipeline_overview} summarises the study.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{plots/01_retrieval_diagnostic_overview.pdf}
+    \caption{Rules used in the analysis. Panel (a) shows
+    the rule used to identify the zero-residual reference pattern and
+    lexically content-bearing questions. Panel (b) uses schematic passage cards
+    to show how a Section 14 reference retains provisions with the same number across
+    Acts while excluding other sections. Random ordering and BM25 ranking use
+    the same matched pool. Both retain all matches when fewer than five exist.
+    The recall@5 values summarise all 344 test questions,
+    not the schematic example. Questions without a parsed section use BM25 fallback.}
+    \label{fig:study_pipeline_overview}
+\end{figure}
+
+\subsection{IndicIPR-QA}\label{sec:dataset_description}
+
+IndicIPR-QA is an extractive QA benchmark with 4,462 question--answer
+pairs from 1,116 statutory paragraphs across the Copyright
+Act, 1957; Patents Act, 1970; Trade Marks Act, 1999; Designs Act, 2000;
+Geographical Indications of Goods (Registration and Protection) Act, 1999;
+Semiconductor Integrated Circuits Layout-Design Act, 2000; and Protection of
+Plant Varieties and Farmers' Rights Act, 2001
+\citep{anonymous2026indiciprqa}. Each answer is copied exactly from a continuous
+span in its source paragraph. Questions were generated by a model, then
+filtered and curated. The dataset is split by statute section into 3,710
+training, 408 validation, and 344 test pairs. No supervised context is shared
+across these splits. Dataset validation includes a two-annotator review of
+200 pairs for question clarity, answer correctness, and answer minimality
+\citep{anonymous2026indiciprqa}. Dataset construction and validation are
+described in a resource paper accepted for publication at IEEE DSAA 2026; its
+proceedings entry is forthcoming. Minimality concerns whether the answer contains
+only the text needed to answer the question. The experiments use the released
+splits without changing them. Access details are given in the Data and Code
+Availability statement.
+Table~\ref{tab:indicipriqa_stats}
+reports the dataset characteristics used in the experiments.
+
+\begin{table}[!htbp]
+    \caption{Characteristics of the IndicIPR-QA benchmark used in this study.
+    Source: IndicIPR-QA \citep{anonymous2026indiciprqa}.}
+    \label{tab:indicipriqa_stats}
+    \centering
+    \scriptsize
+    \begin{tabular}{lr}
+        \toprule
+        Acts covered                         & 7 \\
+        Sections covered                     & 681 \\
+        Contexts at paragraph level             & 1,116 \\
+        Total QA pairs                       & 4,462 \\
+        Train / Validation / Test            & 3,710 / 408 / 344 \\
+        Avg.\ context length (words)         & 171.3 \\
+        Avg.\ question length (words)        & 11.9 \\
+        Avg.\ answer length (words)          & 35.6 \\
+        Median answer length (words)         & 28 \\
+        Max answer length (words)            & 375 \\
+        Answers containing semicolons (\%)   & 19.9 \\
+        Q--ctx lexical overlap (mean)        & 0.451 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Two properties are important for this study. First, answers average 35.6 words,
+so answer boundaries need careful handling. Mean answer length alone does not
+show that this task is harder than other QA tasks. Second, questions identify
+the target provision in different ways. Some describe its content, while others
+mainly use a section or subsection reference. This distinction emerged from
+the analysis. It was not defined in advance.
+
+\subsection{Gold Context and Full Pipeline Evaluation}
+
+Annotated context, or gold context, evaluation gives the model the annotated
+paragraph and measures answer extraction. Full pipeline evaluation first retrieves
+candidate paragraphs. The same reader then selects a source and extracts an
+answer. Both evaluations use the same 344 test questions. Retrieval searches
+all 1,116 corpus paragraphs.
+
+The experiments use the fixed \fixedreader{} reader. It is based on
+\texttt{nlpaueb/legal-bert-base-uncased}~\citep{chalkidis2020legalbert} and was
+fine-tuned first on SQuAD~v1 and then on the IndicIPR-QA training split. It
+reaches 87.37 F1 when given the annotated paragraph. The saved model and reader
+settings stay fixed across retrieval experiments. This makes it possible to
+relate changes in full pipeline scores to changes in the retrieved candidates.
+The source selection counts therefore apply to this reader and decoder.
+
+The reader was chosen after earlier results were available, from existing
+reader configurations. It was not chosen using a validation set created for
+this study. The study records do not contain a complete list of the alternatives,
+so no total is reported. Keeping this reader fixed makes the comparisons
+consistent; it does not establish that the reader is optimal. The same test
+set was used for model choice, error analysis, and reference tests. The results
+are therefore comparisons on the same questions within a fixed pipeline, not
+a new evaluation on unseen data.
+
+The full pipeline evaluation consists of three stages: candidate retrieval,
+source selection, and answer extraction. Figure~\ref{fig:qa_pipeline}
+illustrates these stages and the corresponding failure points.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{plots/pipeline.pdf}
+    \caption{Statutory QA pipeline and failures relative to the annotations.
+    The left column shows the pipeline during inference: candidate
+    retrieval, source selection, answer extraction, and answer with
+    selected source output. The right column shows offline checks against the
+    retained benchmark annotation. Dashed arrows denote diagnostic
+    associations, not gates during inference; the checks do not establish legal
+    correctness.}
+    \label{fig:qa_pipeline}
+\end{figure}
+
+\fixedreader{} predicts one continuous answer span by scoring possible start
+and end positions. Long contexts are split into overlapping 384-token windows
+with a stride of 128 tokens. Only valid spans where $s\leq e$ are considered. The
+decoder selects the span with the highest summed start--end logit across all
+windows. These scores are raw logits, the model scores before conversion to
+probabilities. The main pipeline applies no local softmax or adjustment to make
+scores comparable across passages. This rule selects a source but does not
+give a calibrated estimate of its relevance. A passage with
+more windows has more chances to receive a high score. The rule does not
+correct for this effect. Appendix~\ref{app:review_checks} reports extra checks
+for selection and answer length.
+There is no further answer length limit, although each span must fit within
+one context window. This avoids an arbitrary short answer cutoff in a corpus
+with long annotated spans. It does not guarantee sensible boundaries.
+The predicted answer is returned as the corresponding character span from the
+source paragraph. Nineteen of the 344 test inputs require multiple windows; in 14
+cases, the annotated answer is absent from the first window. The same decoder is
+used for all main evaluation settings. In two complementary selector checks,
+BGE-reranker-v2-m3 selects one passage from either the section-filter top-five
+pool or the title-aware neural top-five pool. The fixed reader then extracts
+only from that passage, so raw span logits do not choose the source in these
+controls.
+
+Table~\ref{tab:input_specification} lists the information available to each
+setting. Paragraph text alone is used for the main BM25, dense, fusion,
+and cross-encoder experiments. A control with the same input format gives BM25,
+BGE-M3, fusion, and BGE reranking the section title and paragraph. Methods
+based on section filtering use titles to form their candidate pools. Annotated Act labels
+are used only in the oracle controls, which use known annotation information.
+These controls either restrict the candidate pool
+or add the Act name to the query and candidate representation.
+
+\begin{table}[!htbp]
+    \caption{Input specification for the retrieval and reading systems.
+    ``Full question'' denotes the original benchmark question. The table shows
+    the main configurations; oracle variants and fallbacks are detailed in
+    Table~\ref{tab:metadata_controls}.}
+    \label{tab:input_specification}
+    \centering
+    \scriptsize
+    \setlength{\tabcolsep}{3.5pt}
+    \begin{tabular}{@{}
+        >{\raggedright\arraybackslash}p{2.7cm}
+        >{\raggedright\arraybackslash}p{2.5cm}
+        >{\raggedright\arraybackslash}p{4.8cm}
+        >{\raggedright\arraybackslash}p{2.3cm}@{}}
+        \toprule
+        Component & Query input & Candidate side input & Role \\
+        \midrule
+        BM25 / dense / RRF
+        & Full question
+        & Paragraph text
+        & Content baseline \\
+
+        Cross-encoder
+        & Full question
+        & Paragraph text for top-50 candidates
+        & Reranking \\
+
+        Title+paragraph BM25
+        & Full question
+        & Section title + paragraph
+        & Metadata control \\
+
+        Title-aware BGE / RRF / reranker
+        & Full question
+        & Section title + paragraph
+        & Neural metadata control \\
+
+        Section filter + BM25
+        & Parsed section + full question
+        & Section titles for matching; paragraph text for ranking
+        & Structural diagnostic \\
+
+        Oracle Act restriction
+        & Full question
+        & Paragraphs from annotated Act
+        & Candidate restriction \\
+
+        Oracle Act + section restriction
+        & Parsed section + full question
+        & Paragraphs from annotated Act and section
+        & Candidate restriction \\
+
+        Oracle Act name BM25
+        & Full question + annotated Act name
+        & Act name + title + paragraph
+        & Information added control \\
+
+        \fixedreader{} reader
+        & Full question
+        & Paragraph text
+        & Answer extraction \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{Evaluation Metrics}
+
+Normalised Exact Match (EM) and F1 at token level are the main metrics for answer text.
+Before scoring, predicted and annotated answers are converted to lowercase.
+The ASCII characters in Python's \texttt{string.punctuation} are removed, and
+extra spaces are normalised. Articles remain. This differs from the official
+SQuAD normalisation. Removing punctuation makes the score insensitive to some
+legally important boundary differences. It does not remove those differences
+from the source text or predicted character span. EM measures whether the
+normalised prediction exactly matches the reference:
+\begin{equation}
+	\mathrm{EM}=\mathbf{1}\{\mathrm{norm}(\hat{a})=\mathrm{norm}(a)\},
+	\label{eq:em}
+\end{equation}
+where $a$ and $\hat{a}$ denote the annotated and predicted answer strings,
+respectively.
+
+For F1 at token level, let $\mathcal{A}$ and $\mathcal{P}$ denote the annotated and
+predicted token multisets. Precision, recall, and F1 are computed as
+\begin{align}
+	\mathrm{Precision} &= \frac{|\mathcal{A}\cap\mathcal{P}|}{|\mathcal{P}|}, &
+	\mathrm{Recall}  &= \frac{|\mathcal{A}\cap\mathcal{P}|}{|\mathcal{A}|}, \\
+	\mathrm{F1}   &= \frac{2\,\mathrm{Precision}\,\mathrm{Recall}}
+	{\mathrm{Precision}+\mathrm{Recall}}.
+	\label{eq:f1}
+\end{align}
+If either token multiset is empty, the implementation assigns an F1 score of
+zero.
+
+EM requires an exact match after normalisation. F1 at token level gives partial
+credit for overlapping tokens. Neither metric shows whether the answer came
+from the annotated paragraph. The evaluation therefore also reports how often
+that source is selected, both overall and among questions where it is in the
+top five. EM/F1 grounded in the annotation is zero when the system
+selects another paragraph. Grounded EM equals the exact match count from the
+annotated source in Table~\ref{tab:stage_decomposition} divided by 344. These
+grounding measures use benchmark annotations. They are not expert judgements that the
+annotated paragraph is the only correct legal source. We do not use
+character frequency overlap because it ignores character order and can give
+high scores to legally different spans. Appendix~\ref{app:secondary} documents
+the older artifact field that stores this measure.
+
+\subsection{Human Evaluation Protocol}
+\label{sec:human_protocol}
+
+The human audit examines the section-filter top-five pipeline with the original
+raw logit decoder. A random sample with seed 42 selects 20 questions without replacement
+from each of its four outcomes: annotated source absent, available but not
+selected, selected without exact match, and selected with exact match. The
+corresponding test-set populations are 47, 122, 44, and 131 questions. The audit
+therefore covers 80 of 344 questions. Each outcome group contributes the same
+number of cases, although the groups differ in size in the full test set.
+Results are reported as counts within each group. Pooling them without weights
+would not estimate how common legal errors are in the full test set.
+
+Two law graduate students, identified only by anonymised codes in this paper,
+assessed the cases separately, then discussed them to reach agreed labels.
+Their legal training was appropriate for the bounded task of comparing the
+supplied questions, statutory passages, and answer spans. The task did not ask
+them to provide legal advice, determine current governing law, or represent
+practitioner consensus.
+Both knew that their
+assessments would be used in this research and agreed to that use. No
+AI-generated draft assessments were shown to them during annotation or consensus.
+This concerns annotation suggestions, not the system predictions being assessed.
+The forms displayed the question, two statutory passages with Act names and
+titles, and their answers. The labels A/B hid which passage and answer came
+from the benchmark or system. These labels did not identify the annotators. The
+completed forms did not collect a separate question-only assessment. Source
+identifiability judgements, about whether a question points to a unique source,
+were made with the candidate passages visible. The reviewers did not search
+freely across statutes.
+
+The assessment covers source identifiability, legal relevance, whether sources
+are legally equivalent, answer correctness, error materiality, and text quality.
+Error materiality describes how serious an error is for the answer's legal
+meaning. The assessment concerns
+the archived passages supplied in the forms, not a verification of current law.
+The same two reviewers recorded final labels, reasons, discussion notes, and
+confirmations; there was no third adjudicator. Original ratings are retained
+for agreement analysis, separately from later label revisions and consensus.
+Raw agreement, Cohen's nominal $\kappa$ \citep{cohen1960agreement}, Gwet's AC1
+\citep{gwet2008agreement}, and quadratic weighted materiality $\kappa$
+\citep{cohen1968weighted} are descriptive measures of consistency, not tests of
+legal validity. Appendix~\ref{app:human_agreement} specifies the categories,
+denominators, and exclusions.
+
+
+
+\FloatBarrier
+
+
+%% ============================================================
+\section{Establishing the Retrieval--Reading Gap}
+\label{sec:results}
+
+Under the fixed protocol in Section~\ref{sec:experimental_setup}, BM25
+retrieves candidate paragraphs from the 1,116 statutory contexts, and \fixedreader{}
+extracts an answer from each candidate. The candidate containing the maximum
+raw reader span score is selected:
+\begin{align}
+	\hat{c}
+	&= \argmax_{c\in \mathrm{Top}_k(q)} S_{\theta}(q,c), \\
+	\hat{a}
+	&= a_{\theta}(q,\hat{c}).
+	\label{eq:retrieve_read}
+\end{align}
+Here, $\mathrm{Top}_k(q)$ is the BM25-ranked candidate set, $S_{\theta}$ is
+the maximum summed raw start--end logit score over valid spans and windows
+for candidate $c$, and $a_{\theta}$ is the corresponding predicted answer span.
+BM25 implementation details are given in Appendix~\ref{app:secondary}.
+
+\begin{table}[!ht]
+\caption{Full pipeline retrieval and extractive QA using \fixedreader{} on
+		IndicIPR-QA.}
+	\label{tab:end_to_end_retrieval_qa}
+	\centering
+	\small
+	\begin{tabular}{lccc}
+		\toprule
+		Setting & R@k (\%) & EM (\%) & F1 (\%) \\
+		\midrule
+		Annotated paragraph + \fixedreader{} & 100.00 & 66.86 & 87.37 \\
+		BM25 top-1 + \fixedreader{}     & 13.08 & 10.76 & 29.47 \\
+		BM25 top-3 + \fixedreader{}     & 20.06 & 11.34 & 31.04 \\
+		BM25 top-5 + \fixedreader{}     & 22.67 & 10.47 & 31.95 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+Table~\ref{tab:end_to_end_retrieval_qa} shows the retrieval--reading gap. F1
+falls from 87.37 with the annotated paragraph to 31.95 with BM25 top five. The
+top five recall is 22.67\%. Expanding the pool from one to five candidates adds
+only 2.48 F1 points. This result motivates separate analysis of retrieval,
+source selection, and extraction.
+
+The annotated paragraph is absent from BM25's top five for 266 questions.
+For 188 of these, the top ranked passage is from another Act. The other 78
+are from the annotated Act but a different paragraph. This comparison does not
+rank how serious the differences are legally. The reader cannot decline to
+answer, so it still answers
+from the retrieved candidates (Sections~\ref{sec:qualitative}
+and~\ref{sec:limitations}).
+
+\section{Content Based Retrieval Baselines}
+\label{sec:content_retrieval}
+
+\subsection{Sparse, Dense, and Hybrid Initial Retrieval}
+\label{sec:dense_retrieval}
+
+The BM25 result raises the question of whether other content based
+retrievers can retrieve candidates missed by BM25. This experiment compares
+four zero-shot dense retrievers and sparse--dense fusion on the same 1,116
+passages and 344 test questions. Dense models rank independently encoded
+questions and passages using cosine similarity. Reciprocal rank fusion (RRF,
+$k{=}60$)~\citep{cormack2009rrf} combines BM25 with E5, which has the highest
+recall@5 among these four dense models.
+
+All content based systems use paragraph text only. Titles, section fields,
+and Act labels are excluded. Dense embeddings are L2-normalised and use the
+models' standard query/passage prefixes where required, with batch size 32 and
+default truncation. The RRF results in Table~\ref{tab:dense_retrieval} use
+depth-10 lists; the depth-50 fusion used for reranking is reported separately.
+
+\begin{table}[!htbp]
+	\caption{Retrieval comparison on 1,116 statutory passages and 344
+	test questions. All scores are on the 0--100 scale.}
+	\label{tab:dense_retrieval}
+	\centering
+	\scriptsize
+	\setlength{\tabcolsep}{3pt}
+	\begin{tabular}{@{}lrrrrr@{}}
+		\toprule
+		Retriever & R@1 & R@3 & R@5 & R@10 & MRR@10 \\
+		\midrule
+		BM25 (sparse)                & 13.08 & 20.06 & 22.67 & 27.03 & 17.34 \\
+		\midrule
+		all-MiniLM-L6-v2             & 10.17 & 16.28 & 20.93 & 28.20 & 14.70 \\
+		multi-qa-MiniLM-L6-cos-v1    &  8.43 & 16.28 & 17.73 & 24.13 & 12.66 \\
+		bge-small-en-v1.5            & 10.17 & 18.31 & 22.38 & 30.23 & 15.80 \\
+		e5-small-v2                  &  9.88 & 18.31 & 23.26 & 29.94 & 15.60 \\
+		\midrule
+		Hybrid RRF (BM25 + E5)       & 11.92 & 19.77 & 26.16 & 31.40 & 17.47 \\
+		\bottomrule
+	\end{tabular}
+	\begin{flushleft}
+		{\scriptsize All rows use the same retrieval only pipeline. The BM25
+		ordering is canonical throughout the main tables: descending score,
+		then ascending index in the released paragraph corpus, with
+		$k_1{=}1.5$ and $b{=}0.75$. Legacy results used another corpus order;
+		the identity matched comparison is documented in
+		Appendix~\ref{app:review_checks}.}
+	\end{flushleft}
+\end{table}
+
+Among the four small dense models in Table~\ref{tab:dense_retrieval}, none
+consistently outperforms BM25. BM25--E5 fusion gives the best recall@5 in this
+initial comparison (26.16), but these zero-shot results do not establish the
+performance of legally supervised retrievers. A stronger modern model
+extension is reported after the reranking baseline.
+
+\FloatBarrier
+
+\subsection{Does Cross-Encoder Reranking Help?}\label{sec:reranking}
+
+Initial retrieval can fail in two ways: the annotated paragraph may be
+missing from the candidate pool, or it may be present but ranked too low.
+This experiment tests the second case. BM25 and the hybrid retriever each
+provide 50 candidates to the Sentence Transformers checkpoint
+\texttt{ms-marco-MiniLM-L6-v2},\footnote{Model card:
+\url{https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2}.
+The archived experiment code uses the older \texttt{L-6} identifier.}
+which jointly scores the question and each passage. The maximum input
+length is 512 tokens and the batch size is 64. Corpus, test questions, and
+annotated source matching remain unchanged. Recall@50 sets the upper bound for
+reranking. A reranker cannot recover a missing paragraph.
+\enlargethispage{27pt}% Accommodate the checkpoint footnotes without a vertical overflow.
+
+\begin{table}[!htbp]
+	\caption{Cross-encoder reranking of the top 50 initial candidates.
+		Recall@50 is the maximum recall available to the reranker.
+		All scores are on the 0--100 scale.}
+	\label{tab:rerank}
+	\centering
+	\scriptsize
+	\setlength{\tabcolsep}{3pt}
+	\begin{tabular}{@{}lrrrrrr@{}}
+		\toprule
+		System & R@1 & R@3 & R@5 & R@10 & R@50 & MRR@10 \\
+		\midrule
+		BM25                   & 13.08 & 20.06 & 22.67 & 27.03 & 41.86 & 17.34 \\
+		\quad + cross-encoder & 17.44 & 26.45 & 29.94 & 34.59 & 41.86 & 22.56 \\
+		Hybrid RRF             & 11.92 & 22.09 & 26.74 & 33.72 & 40.41 & 18.12 \\
+		\quad + cross-encoder & 17.15 & 24.71 & 30.23 & 35.17 & 40.41 & 22.30 \\
+		\bottomrule
+	\end{tabular}
+	\begin{flushleft}
+		{\scriptsize The hybrid rows differ slightly from
+		Table~\ref{tab:dense_retrieval} because fusion is computed over
+		depth-50 rather than depth-10 candidate lists. All other settings are
+		unchanged.}
+	\end{flushleft}
+\end{table}
+
+Cross-encoder reranking raises BM25 recall@5 from 22.67 to 29.94, while the
+hybrid pipeline reaches 30.23 (Table~\ref{tab:rerank}). Initial recall@50
+remains only 41.86 and 40.41, respectively, so reranking cannot recover most
+missing paragraphs.
+
+To test whether this result is limited to the smaller checkpoints above, a
+separate modern model extension evaluates dense BGE-M3
+\citep{chenM3Embedding2024} and BGE-reranker-v2-m3.\footnote{Model card:
+\url{https://huggingface.co/BAAI/bge-reranker-v2-m3}.} Both checkpoints are
+used without legal domain fine-tuning. We first use paragraph text alone, then
+repeat BM25, BGE-M3, fusion, and reranking with the section title prepended to
+the paragraph. The maximum sequence length is 512, and the embeddings are
+L2-normalised. RRF combines depth-50 BM25 and BGE-M3 rankings with $k=60$.
+The reranker reorders exactly the first 50 candidates supplied by BM25 or RRF.
+The archived manifest records the exact checkpoint revisions and runtime settings.
+This comparison checks whether the findings also hold with these larger models.
+
+\begin{table}[!htbp]
+    \caption{Modern model retrieval extension on IndicIPR-QA. The lower panel
+    repeats the comparison with section titles prepended to candidate
+    paragraphs. Reranking preserves the recall@50 ceiling of its initial
+    candidate pool. Scores are on the 0--100 scale.}
+    \label{tab:modern_bge_indic}
+    \centering
+    \scriptsize
+    \renewcommand{\arraystretch}{0.93}
+    \setlength{\tabcolsep}{1.3pt}
+    \begin{tabular}{@{}lrrrrrrr@{}}
+        \toprule
+        System & R@1 & R@3 & R@5 & R@10 & R@50 & MRR@10 & nDCG@10 \\
+        \midrule
+        BM25 & 13.08 & 20.06 & 22.67 & 27.03 & 41.86 & 17.34 & 19.66 \\
+        BGE-M3 & 14.24 & 20.93 & 29.94 & 33.72 & 46.22 & 19.51 & 22.87 \\
+        BM25 + BGE-M3 RRF & 14.24 & 24.71 & 30.81 & 36.05 & 45.06 & 20.72 & 24.39 \\
+        BM25 + BGE reranker & 18.02 & 25.58 & 29.07 & 33.72 & 41.86 & 22.69 & 25.33 \\
+        BGE RRF + BGE reranker & 17.73 & 25.58 & 29.36 & 34.01 & 45.06 & 22.76 & 25.46 \\
+        \midrule
+        Title+paragraph BM25 & 34.88 & 47.97 & 56.98 & 69.77 & 94.77 & 44.56 & 50.48 \\
+        Title+paragraph BGE-M3 & 34.01 & 46.22 & 52.03 & 60.76 & 81.40 & 42.17 & 46.59 \\
+        Title+paragraph RRF & 45.35 & 61.05 & 70.64 & 77.91 & 94.48 & 55.21 & 60.66 \\
+        Title+paragraph RRF + BGE reranker & 51.74 & 75.29 & 83.72 & 91.28 & 94.48 & 65.46 & 71.72 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Table~\ref{tab:modern_bge_indic} compares both the models and the information
+given to them. With paragraph text alone, BGE-M3 raises recall@5 from 22.67
+to 29.94, and BM25--BGE-M3 fusion reaches 30.81. The fused paragraph-only
+candidate pool has a recall@50 ceiling of 45.06, so even its best recall@5
+result leaves the annotated paragraph outside the first five candidates for
+69.19\% of the questions. Adding section titles changes the comparison:
+title-plus-paragraph fusion reaches 70.64 recall@5, and BGE reranking raises it
+to 83.72. That reranker operates below the fused pool's 94.48 recall@50
+ceiling. The much lower scores for paragraph text alone are therefore largely
+linked to the missing title information. The tested neural models can use
+titles when they are provided. The strongest title-aware neural configuration
+is also evaluated with the fixed answer reader in
+Section~\ref{sec:section_end_to_end}; the other three title-aware rows are
+retrieval-only comparisons.
+
+Results by Act motivate the query analysis below: Plant Varieties reaches
+72.50 recall@5 with the depth-50 hybrid pipeline followed by cross-encoder reranking, whereas
+Designs remains at 0.00 because its annotated paragraphs are absent from the
+pool (Table~\ref{tab:retrieval_per_act}). This is a pipeline comparison, not
+an isolated reranking effect.
+
+The contrast between paragraph-only and title-aware representations motivates
+the structural diagnosis that follows.
+
+
+\section{Diagnosing Zero-Residual Reference Patterns}
+\label{sec:structural_diagnosis}
+
+\subsection{A Clue from Individual Acts: Reading and Retrieval Move in Opposite Directions}
+\label{sec:per_act_clue}
+
+Results for individual Acts provide an initial clue (Table~\ref{tab:retrieval_per_act}).
+Designs has 98.97 annotated paragraph F1 but 0.00 recall@5 for all three
+retrieval pipelines. Plant Varieties has the strongest retrieval but the
+lowest reader F1 (72.26).
+
+\begin{table}[!htbp]
+	\caption{Recall@5, lexical overlap, and gold context F1 by Act. Retrieval
+	and reading performance show opposite patterns. The final retrieval column
+	uses the hybrid pipeline with cross-encoder reranking described in
+	Section~\ref{sec:reranking}. Recall and F1 are on the 0--100 scale;
+	lexical overlap is on the 0--1 scale.}
+	\label{tab:retrieval_per_act}
+	\centering
+	\scriptsize
+	\setlength{\tabcolsep}{3pt}
+	\begin{tabular}{@{}lrrrrr@{}}
+		\toprule
+		Act & Q--Ctx overlap & BM25 R@5 & Hybrid R@5 & Hybrid+CE R@5 & Reader F1 \\
+		\midrule
+		Plant Varieties & 0.636 & 45.00 & 50.00 & 72.50 & 72.26 \\
+		Copyright       & 0.447 & 32.00 & 36.00 & 36.00 & 74.57 \\
+		GI              & 0.458 & 25.49 & 31.37 & 35.29 & 83.62 \\
+		Patents         & 0.429 & 24.64 & 23.19 & 26.09 & 96.34 \\
+		Trade Marks     & 0.416 & 17.05 & 22.73 & 21.59 & 86.32 \\
+		Semiconductor   & 0.418 & 14.89 & 19.15 & 23.40 & 94.00 \\
+		Designs         & 0.320 &  0.00 &  0.00 &  0.00 & 98.97 \\
+		\bottomrule
+	\end{tabular}
+	\begin{flushleft}
+		\scriptsize
+		The Hybrid column uses BM25 on paragraph text only and
+		\texttt{e5-small-v2} rankings truncated to depth 10 and fused by RRF
+		($k=60$). Hybrid+CE uses depth-50 BM25 and E5 rankings, retains the
+		50-candidate pool, and reranks it with
+		\texttt{ms-marco-MiniLM-L6-v2}. Both use candidates containing paragraph text only from
+		the same 1,116-passage corpus.
+	\end{flushleft}
+\end{table}
+
+In this benchmark, difficult retrieval cases are not necessarily difficult
+reading cases. Many Designs questions consist mainly of locators such as
+``Under Section 7'' and contain few distinctive terms for retrieval based only
+on paragraph text. The comparison within each Act below checks whether the
+difference between question groups also appears within individual Acts.
+
+\subsection{Question Groups Defined by a Text Rule}
+\label{sec:citation_specified}
+
+The results by Act lead to a closer look at the words in each question.
+This is an exploratory diagnostic analysis; it does not test a question
+taxonomy specified before evaluation.
+A fixed rule
+removes recognised section, subsection, clause, item, and paragraph
+references, as well as fixed interrogative words. Questions with no remaining
+tokens are classified as a \emph{zero-residual reference pattern} ($n=177$).
+For compact table labels, the paper also uses \emph{zero-residual} for this
+same group. The other questions are \emph{lexically content-bearing}
+($n=167$), meaning that some tokens remain. These labels describe the result
+of the rule, not an expert judgement about the meaning of a question. A
+zero-residual question may still have legal meaning.
+Appendix~\ref{sec:classifier_robustness} gives the rule, word list, and checks
+using different token thresholds.
+
+\begin{table}[!htbp]
+	\caption{Test question groups defined by the text rule, scored
+		with \fixedreader{}.}
+	\label{tab:citation_specified}
+	\centering
+	\small
+	\setlength{\tabcolsep}{4pt}
+	\begin{tabular}{@{}lrcccc@{}}
+		\toprule
+		 & & \multicolumn{2}{c}{Annotated paragraph} & \multicolumn{2}{c}{BM25 top-5} \\
+		\cmidrule(lr){3-4}\cmidrule(lr){5-6}
+		Question type & $n$ & EM (\%) & F1 (\%) & EM (\%) & F1 (\%) \\
+		\midrule
+		Zero-residual pattern     & 177 & 74.01 & 91.55 &  0.00 & 17.59 \\
+		Lexically content-bearing & 167 & 59.28 & 82.94 & 21.56 & 47.17 \\
+		\midrule
+		All                       & 344 & 66.86 & 87.37 & 10.47 & 31.95 \\
+		\bottomrule
+	\end{tabular}
+	\begin{flushleft}
+		{\scriptsize The primary rule classifies a question as
+		zero-residual when no tokens remain after removing recognised
+		statutory references and fixed interrogative words. The labels are
+		operational, not human semantic annotations.}
+	\end{flushleft}
+\end{table}
+
+For the zero-residual group, F1 is 91.55 with the annotated paragraph but
+17.59 after BM25 retrieval, with no exact matches. Content-bearing questions
+reach 47.17 F1 after retrieval
+(Table~\ref{tab:citation_specified}).
+
+The split is not the same as citation presence. Of the 167 content-bearing
+questions, 148 contain a citation and 19 contain none. Shares by Act and
+possible effects of question generation are reported in
+Appendix~\ref{app:secondary}. The overall difference is not explained only by
+the different numbers of questions from each Act.
+Within each of the five Acts having at least nine questions in both groups,
+BM25 recall@5 is 0.00 for the zero-residual reference-pattern group and ranges from 30.43
+to 88.89 for the content-bearing group
+(Table~\ref{tab:within_act_question_groups}). This comparison does not rule
+out effects of question generation or question difficulty.
+The result is an association between the zero-residual reference pattern and
+difficulty in recovering the annotated source on this benchmark. It does not
+establish that references alone cause annotated-source retrieval failures.
+
+\FloatBarrier
+
+
+%% ============================================================
+\section{Section Reference Based Candidate Filtering}
+\label{sec:citation_rq}
+
+RQ2 examines how question wording relates to retrieval on this benchmark.
+RQ3 then tests how references in the questions affect retrieval.
+
+\subsection{Section Matching Rule and Metadata Controls}
+\label{sec:citation_aware}
+
+This experiment tests section matching. Separate controls examine the roles
+of passage titles and the number of candidates.
+
+Each passage title begins ``Section~$n$: \ldots''. A regular expression extracts
+the first section identifier from the question and title. It does not use
+relevance labels, passage identities, or the annotated Act. No question names
+its target Act, and section numbers recur across Acts. The rule returns a
+string for 94.48\% of test questions. This is not a human validated accuracy
+estimate.
+Here, \emph{citation} means an internal statutory locator.
+
+The exact case insensitive pattern is
+\begin{quote}\small
+\verb|\bsections?\s*[.\-]?\s*(\d+[A-Za-z]{0,2})\b|
+\end{quote}
+The system converts the first match to uppercase and compares it with the first
+identifier in each title. The rule accepts letter suffixes. It does not infer
+governing provisions, resolve nested locators, expand ranges or lists, or tell
+a bare subsection match from a section locator. Examples and
+item level disagreements appear in Appendix~\ref{app:review_checks}.
+
+Of 325 parsed first references, 321 agree with the annotated source section.
+We do not repair the four disagreements or 19 unparsed cases with source labels
+(Appendix~\ref{app:review_checks}). Agreement does not prove parser accuracy,
+identify the intended target, or show that the source is unique.
+
+The filter is query driven rather than an annotation oracle: it reads the
+locator written in the question and receives neither the annotated Act nor the
+annotated paragraph identity. It is nevertheless a structurally privileged
+condition because it assumes that an explicit section locator is present and
+parsable. It is therefore evaluated as a diagnostic intervention, with title,
+random-pool, wrong-locator, predicted-Act, and oracle-Act controls, rather than
+as a general replacement for content retrieval.
+
+We evaluate two structural methods. The \emph{boost} adds 1,000 BM25-score
+units to passages from the parsed section and ranks the full corpus. The
+\emph{filter} ranks only passages from the parsed section with BM25 on paragraph
+text only. It returns all matches when fewer than five exist. If no section is
+found, it falls back to unrestricted BM25. Both methods sort by descending
+score and then by ascending corpus index to break ties.
+
+Boost and filter have identical recall@1/@3/@5
+(50.29/73.26/86.34). However, 73 top five sets differ because boost fills pools
+smaller than five from the full corpus. The selected passage differs for 20
+questions. In this subgroup, filtering adds 13.06 reader-F1 points. It adds
+2.77 points overall. At rank 10, their recalls are 95.64 and 95.35. Filter uses BM25 fallback
+for 19 unparsed queries.
+
+Table~\ref{tab:citation_aware} reports the aggregate retrieval performance of
+the section boost variant alongside the learned retrieval baselines.
+
+\begin{table}[!htbp]
+	\caption{Section reference based retrieval and learned retrieval on the same
+		1,116 passages and 344 test questions. Section boost is deterministic.
+		Scores are on the 0--100 scale.}
+	\label{tab:citation_aware}
+	\centering
+	\scriptsize
+	\setlength{\tabcolsep}{4pt}
+	\begin{tabular}{@{}lrrrrr@{}}
+		\toprule
+		System & R@1 & R@3 & R@5 & R@10 & MRR@10 \\
+		\midrule
+		BM25                           & 13.08 & 20.06 & 22.67 & 27.03 & 17.34 \\
+		BM25 + BGE-M3 RRF              & 14.24 & 24.71 & 30.81 & 36.05 & 20.72 \\
+		BGE RRF + BGE reranker         & 17.73 & 25.58 & 29.36 & 34.01 & 22.76 \\
+		\midrule
+		Section boost + paragraph BM25 & 50.29 & 73.26 & 86.34 & 95.64 & 64.84 \\
+		\bottomrule
+	\end{tabular}
+	\begin{flushleft}
+		{\scriptsize The BGE rows reproduce the depth-50 modern model extension
+		in Table~\ref{tab:modern_bge_indic}. The BGE reranker cannot change the
+		45.06 recall@50 ceiling of its RRF candidate pool.}
+	\end{flushleft}
+\end{table}
+
+\begin{table}[!htbp]
+    \caption{Metadata and candidate pool controls on the 344 test questions.
+    The random-order values separate candidate-pool reduction from ranking.
+    The section-pool value is the expected recall@5; the value in parentheses
+    is the mean $\pm$ standard deviation from a 10,000-order simulation.
+    Oracle rows use the annotated Act. They are diagnostic controls, not
+    deployable baselines.}
+    \label{tab:metadata_controls}
+    \centering
+    \scriptsize
+    \setlength{\tabcolsep}{5pt}
+    \begin{tabular}{@{}lr@{}}
+        \toprule
+        Control & R@5 (\%) \\
+        \midrule
+        Paragraph BM25 & 22.67 \\
+        Title+paragraph BM25 & 56.98 \\
+        Same-size corpus pool, random order & 3.86 \\
+        Section pool, random order & 66.72 (66.72 $\pm$ 2.07) \\
+        Section filter, paragraph ranker & 86.34 \\
+        Section filter, title+paragraph ranker & 87.50 \\
+        Predicted Act+section, hard filter & 75.00 \\
+        Predicted Act+section, empty-pool fallback & 77.91 \\
+        Oracle Act restriction, paragraph ranker & 35.17 \\
+        Oracle Act name query, title+paragraph ranker & 79.07 \\
+        Oracle Act+section restriction, paragraph ranker & 96.80 \\
+        Oracle Act+section, title ranker with Act name fallback & 97.09 \\
+        \bottomrule
+    \end{tabular}
+    \begin{flushleft}
+        {\scriptsize Title+paragraph controls add passage titles to BM25. The
+        reader still receives paragraph text only. The same-size corpus row
+        samples as many passages as the matching section pool, but does not use
+        the section identifier. \emph{Restriction}
+        leaves the question unchanged and limits candidates using the
+        annotated Act. \emph{Act name query} also adds the Act name to the
+        query and candidate representations. The final row ranks
+        titles and paragraphs within the annotated Act and parsed section.
+        Without a parsed section, it uses the full corpus Act name query
+        control rather than Act restriction. Predicted Act+section uses a
+        question-only Act classifier trained on the training split; it does
+        not use the annotated Act at retrieval time.}
+    \end{flushleft}
+\end{table}
+
+Titles raise BM25 recall@5 from 22.67 to 56.98, while section filtering reaches
+86.34. Titles within that pool add only 1.16 points
+(Table~\ref{tab:metadata_controls}). The title-aware BM25 control accounts for
+part of the difference between BM25 on paragraph text only and section
+filtering. The stronger representation-matched comparison in
+Table~\ref{tab:modern_bge_indic} reduces the remaining gap: title-plus-paragraph
+fusion with BGE reranking reaches 83.72 recall@5, 2.62 points below section
+filtering. Section matching therefore remains a useful diagnostic signal, but
+the large paragraph-only gap should not be interpreted as evidence that a
+strong retriever cannot use title metadata.
+Because the benchmark contains only 19 citation-free questions, this result
+should not be read as evidence that section filtering is broadly effective for
+questions without statutory locators. It measures the value of an available
+locator in this question set and its associated candidate pools.
+
+For a parsed query with nonempty section pool \(C_i\), random ordering gives
+expected top five source recovery
+\[
+p_i=\mathbf{1}\{g_i\in C_i\}\min(1,5/|C_i|),
+\qquad \mathbb{E}[\mathrm{R@5}]=\frac{100}{344}\sum_{i=1}^{344}p_i.
+\]
+Here \(g_i\) is the annotated paragraph. For a query using fallback, \(p_i\)
+is instead the fixed unrestricted BM25 top five hit indicator. Therefore, the 19
+unparsed questions do not receive random full corpus rankings.
+The section matched pool contains 7.89 passages on average (median 8, range
+1--15). Of 325 parsed queries, 82 have at most five matches and 243 have more.
+Random ordering of these pools gives an expected recall@5 of 66.72. A
+10,000-order simulation gives 66.72, with SD 2.07 and a 95\% range of
+$[62.79,70.93]$. BM25 within the same pool reaches 86.34. The difference
+between BM25 ranking and expected random ordering is 19.62 points, with a
+paired source-cluster 95\% interval of $[13.73,25.46]$. A separate size-only
+control takes random pools with the same number of paragraphs from the full
+corpus. It reaches only 3.86 recall@5. Thus, the section filter is not
+explained by candidate-pool size alone: the matched pool makes the annotated
+paragraph more likely to be available, and BM25 further ranks it within that
+pool. This does not make the filter a general retrieval method; it uses a
+section identifier already present in these questions.
+
+Figure~\ref{fig:retrieval_progression} summarises this retrieval progression
+and the differences between the two operational question types.
+
+Oracle Act restriction raises BM25 recall@5 to 35.17 and Act plus section
+restriction to 96.80. The 79.07 Act name control additionally modifies query
+and candidate text. These are diagnostic, not deployable, comparisons.
+
+We also tested whether a predicted Act could improve the section filter without
+using annotated Act labels. A TF--IDF logistic-regression classifier used only
+question text and Act labels from 3,691 training pairs. Nineteen training pairs
+whose question text exactly repeated a validation or test question were removed
+before fitting. The classifier was not tuned or refit on validation or test
+data. It reaches 81.37\% Act accuracy on validation and 78.20\% on test.
+Intersecting its predicted Act with the parsed section reduces test recall@5
+from 86.34 to 75.00. If an empty intersection falls back to the section pool,
+recall@5 is 77.91. The loss is consistent with an incorrect Act prediction
+removing the annotated paragraph. The test result therefore does not support
+adding this simple Act classifier to the section filter.
+
+As a locator-sensitivity check, we replaced each parsed section number with a
+different valid number, chosen without using the annotated Act or source. None
+of the 325 parsed questions retained the annotated paragraph in the resulting
+top five. The overall recall@5 is 3.49 because the 19 unparsed questions keep
+the usual BM25 fallback, which supplies all 12 hits. This result is expected
+for a hard section filter. It shows sensitivity to the locator, not that the
+system has learned legal reasoning.
+
+For questions in the zero-residual reference-pattern group, Act restriction changes BM25 recall@5 from 0.00
+to 5.65 and section filter recall from 83.62 to 100.00. The corresponding
+content-bearing values are 46.71--66.47 and 89.22--93.41. For section
+filtering, the oracle Act restriction closes a larger gap for
+the zero-residual reference-pattern group (16.38 points) than for content-bearing questions
+(4.19 points). This pattern is consistent with greater cross Act ambiguity
+when descriptive wording is absent.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{plots/21_retrieval_progression.pdf}
+    \caption{Retrieval progression on the 344 test questions. Panel (a)
+    compares content based retrieval, title-aware BM25, random ordering after
+    candidate reduction by section, and BM25 ranking within the same pool.
+    Panel (b) compares paragraph BM25 and retrieval based on sections across the
+    two question types. Panel (a) uses values from
+    Tables~\ref{tab:dense_retrieval}, \ref{tab:modern_bge_indic}, and
+    \ref{tab:metadata_controls}; panel (b) uses the question type breakdown
+    reported in Section~\ref{sec:citation_aware}.}
+    \label{fig:retrieval_progression}
+\end{figure}
+
+\subsection{Candidate Ambiguity and Ranking Robustness}
+\label{sec:candidate_ambiguity}
+
+Using the first parsed section, which is the value used by the section-filter
+system, 301 of 325 parsed queries (92.6\%) match passages from multiple Acts;
+the other 24 match passages from one Act. A separate audit forms the union of
+candidates for every recognised section reference in each question. Under
+that broader rule, 302 questions match multiple Acts, 23 match one Act, and 19
+have no recognised locator. The one-question difference is caused by a
+multi-reference Copyright question whose first locator, Section 30A, occurs in
+one Act, while its second locator, Section 19, occurs in several Acts. Section
+matching therefore narrows
+the pool without necessarily identifying the annotated Act. The retrieval
+evaluation counts matches with the annotated source. It does not establish
+that the system has identified the Act intended by the question.
+The separate human audit examines whether the source can be identified for 80 sampled cases
+with candidate evidence visible (Section~\ref{sec:human_results}); it does not
+validate Act identification across the full test set.
+
+Section filtering reduces top five annotated-source misses from 266 to 47 and
+cross Act top ranked mismatches from 188 to 40. Of the 40 parsed misses, 35 rank
+another Act first. Seven additional misses use BM25 fallback. Residual errors thus
+mainly concern provisions from different Acts that share a section number, without establishing why.
+
+The broader all-reference grouping is used here as a separate ambiguity audit:
+it asks how many cross-Act alternatives are opened by any recognised locator in
+the question. The reported section-filter outcomes still come from the system's
+first parsed locator. The union-based pool-size groups therefore provide context
+for ambiguity rather than reproduce the exact pool used at inference. Among the
+302 multiple Act questions, section filter recall@5 is 100.00
+for pools of 2--5 passages, 91.28 for pools of 6--10, and 72.16 for pools of
+11 or more. The corresponding reader F1 values are 78.26, 53.82, and 45.05.
+The 23 one Act questions reach 100.00 recall@5 and 88.57 reader F1. These
+groups are descriptive because pool size is related to the Act and question
+mix. Still, the remaining decline is concentrated in larger candidate pools
+that contain provisions with the same number from several Acts.
+
+Randomly ordering passages with equal scores also gives similar results.
+Across 10,000 random orders, BM25 and section filter mean recall@5 are 22.82 (SD 0.15) and
+86.30 (SD 0.18). They have only one and two boundary tie queries,
+respectively.
+
+\subsection{Full Pipeline QA and Stage by Stage Errors}
+\label{sec:section_end_to_end}
+
+Higher retrieval recall does not necessarily produce higher annotated source
+selection or answer scores under the fixed raw logit decoder. To examine this
+issue, each retrieval configuration passes its candidates to the fixed
+\fixedreader{} reader and decoder from Section~\ref{sec:experimental_setup}.
+Retrieval and source selection do not use the annotated passage identity.
+
+\begin{table}[!htbp]
+	\caption{Full pipeline retrieval and extraction on the 344 test questions.
+        ``Candidate-pool R@5'' is annotated-source recall before the active
+        source-selection rule is applied; the rank-1 reader receives only the
+        passage selected by the BGE reranker.
+        ``Selected source'' is the percentage of cases in which the annotated
+        paragraph is selected. F1 grounded in the annotation is zero when
+        another paragraph is selected. Scores are on the 0--100 scale.}
+	\label{tab:citation_aware_end_to_end}
+	\centering
+	\scriptsize
+	\setlength{\tabcolsep}{3pt}
+	\begin{tabular}{@{}>{\raggedright\arraybackslash}p{4.4cm}rrrrr@{}}
+		\toprule
+		Setting & \shortstack{Candidate-pool\\R@5} & Selected source & EM & F1 & \shortstack{Annotation-\\grounded F1} \\
+		\midrule
+		Annotated paragraph + \fixedreader{}        & 100.00 & 100.00 & 66.86 & 87.37 & 87.37 \\
+		BM25 top-5 + \fixedreader{}            &  22.67 &  11.92 & 10.47 & 31.95 & 11.08 \\
+		Title+paragraph BM25 + \fixedreader{} &  56.98 &  30.52 & 23.55 & 45.07 & 27.85 \\
+		Title-aware neural top-5 + \fixedreader{} & 83.72 & 37.79 & 30.23 & 53.12 & 35.41 \\
+		Title-aware neural rank-1 + \fixedreader{} & 83.72 & 51.74 & 33.14 & 54.62 & 44.38 \\
+		Section boost + \fixedreader{}        &  86.34 &  45.35 & 36.34 & 55.22 & 42.72 \\
+		Section filter + \fixedreader{}       &  86.34 &  50.87 & 38.37 & 57.99 & 47.29 \\
+		Section filter + BGE selector + \fixedreader{} & 86.34 & 56.40 & 35.76 & 58.47 & 48.62 \\
+		\bottomrule
+	\end{tabular}
+	\begin{flushleft}
+		{\scriptsize The annotated paragraph row is an upper bound reading
+		condition, not a full pipeline system. The two title-aware neural rows
+		use the title-plus-paragraph RRF pool reranked by BGE. In the top-5 row,
+		raw reader logits select among five passages. In the rank-1 row, the BGE
+		reranker selects the first passage and the reader extracts from it. In the
+		last row,
+		BGE-reranker-v2-m3 selects a passage from the unchanged section-filter
+		top-five pool using the question and title-plus-paragraph text; the fixed
+		reader then extracts from that single passage. The 19 unparsed queries use
+		the documented BM25 fallback.}
+	\end{flushleft}
+\end{table}
+\FloatBarrier
+
+BM25 using titles and paragraphs reaches 45.07 F1, while section filtering reaches
+57.99. The difference is 12.92 points over that metadata matched baseline
+(Table~\ref{tab:citation_aware_end_to_end}). A paired bootstrap over source
+clusters gives a 95\% interval for this difference of
+$[6.62,19.44]$ (75 Act--section clusters, 10,000 resamples, seed 42).
+Against BM25 on paragraph text only, filter and boost gain 26.03 and 23.26 points,
+with bootstrap intervals over source clusters of $[19.01,33.00]$ and $[16.31,30.13]$.
+
+The strongest title-aware neural retriever closes much of the retrieval gap:
+its annotated paragraph recall@5 is 83.72, compared with 86.34 for section
+filtering. When raw reader logits select among its top five passages, it reaches
+37.79 annotated-source selection, 53.12 F1, and 35.41 F1 grounded in the
+annotation. Using the BGE rank-one passage as the source raises these values to
+51.74, 54.62, and 44.38.
+\begin{minipage}{\textwidth}
+\setlength{\parindent}{1.5em}
+The corresponding section-filter values are 50.87, 57.99, and 47.29 with
+reader-based source selection, and 56.40, 58.47, and 48.62 with the independent
+BGE selector.
+
+Thus, providing titles makes the neural retrieval comparison much stronger,
+but the source-selection rule and candidate pool still affect the final answer
+scores.
+
+The section-filter BGE-selected pipeline is 3.85 F1 points higher than the
+title-aware neural rank-one pipeline. A paired bootstrap over the same 75
+Act--section source clusters gives a 95\% interval of $[-0.16,8.73]$ (10,000
+resamples, seed 42). The interval includes zero, so this post-hoc comparison
+does not show a clear F1 difference between the two pipelines.
+\end{minipage}
+
+Despite equal recall@5, filtering has higher F1 than boosting (57.99 versus
+55.22) and higher source selection (50.87 versus 45.35). It excludes sections
+that do not match before reader scoring. Filtering raises F1 from 17.59 to
+58.43 for the zero-residual reference-pattern group and from 47.17 to 57.52 for
+content-bearing questions.
+
+The independent BGE selector tests whether the remaining source-selection
+errors are merely an artefact of comparing raw reader span logits across
+passages. It raises annotated-source selection from 50.87 to 56.40 and
+conditional selection from 58.92 to 65.32, while F1 changes from 57.99 to
+58.47. The alternative selector therefore improves source attribution but
+still selects another source in 103 of the 297 cases where the annotated
+paragraph is available. This check reduces dependence on the main decoder
+rule, but it remains a zero-shot selector evaluated against annotation
+identity rather than expert legal relevance.
+
+Table~\ref{tab:stage_decomposition} further breaks down the remaining errors.
+
+\begin{table}[!htbp]
+    \caption{Stage by stage outcomes for the 344 test questions. The four middle
+    columns are separate counts. ``Avail., other'' means that the annotated
+    source is available but the source-selection rule chooses another source.
+    ``Source, not exact'' and ``Source, exact'' mean that the rule chooses the annotated
+    source without or with an exact answer match. ``Conditional source'' is the
+    percentage of available annotated paragraphs that the active source-selection
+    rule chooses.
+    F1 grounded in the annotation is on the 0--100 scale.}
+    \label{tab:stage_decomposition}
+    \centering
+    \scriptsize
+    \setlength{\tabcolsep}{3pt}
+    \begin{tabular}{@{}lrrrrrr@{}}
+        \toprule
+        Setting & \shortstack{Source\\absent} & \shortstack{Avail.,\\other}
+        & \shortstack{Source,\\not exact} & \shortstack{Source,\\exact}
+        & \shortstack{Cond.\\source (\%)} & \shortstack{Grounded\\F1} \\
+        \midrule
+        BM25 & 266 & 37 & 8 & 33 & 52.56 & 11.08 \\
+        Title+paragraph BM25 & 148 & 91 & 28 & 77 & 53.57 & 27.85 \\
+        Title-aware neural top-5 & 56 & 158 & 30 & 100 & 45.14 & 35.41 \\
+        Title-aware neural rank-1 & 56 & 110 & 64 & 114 & 61.81 & 44.38 \\
+        Section boost & 47 & 141 & 33 & 123 & 52.53 & 42.72 \\
+        Section filter & 47 & 122 & 44 & 131 & 58.92 & 47.29 \\
+        Section filter + BGE selector & 47 & 103 & 71 & 123 & 65.32 & 48.62 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+\FloatBarrier
+
+Figure~\ref{fig:stage_decomposition} shows the four outcomes. Under
+section filtering, 47 sources are absent, 122 are available but not selected,
+44 are selected without exact match, and 131 yield exact match. Raw F1 is
+57.99 versus 47.29 F1 grounded in the annotation. Thus, answers from other sources
+can receive token credit. Decoder alternatives retain this failure category
+(Appendix~\ref{app:review_checks}). The independent BGE selector changes the
+corresponding counts to 47, 103, 71, and 123. Its increase in annotated-source
+selection does not translate into more exact answers because the fixed reader
+produces a non-exact span in more of the additionally selected annotated
+paragraphs. The title-aware neural top-five condition has corresponding counts
+of 56, 158, 30, and 100. Direct BGE rank-one selection changes them to 56, 110,
+64, and 114.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{plots/22_stagewise_outcomes.pdf}
+    \caption{Stage by stage outcomes for seven pipelines using the same fixed
+    answer reader on the 344 test questions. The rank-one and selector rows use
+    the independent BGE reranker for source selection. Direct labels show question
+    counts and each row
+    totals 344. ``Exact'' denotes normalised exact match. Section filtering
+    greatly reduces cases in which the annotated paragraph is absent from the
+    top five, but source selection errors remain substantial.}
+    \label{fig:stage_decomposition}
+\end{figure}
+
+For the 325 questions with a parsed citation, BM25 and the section boost system
+achieve recall@5 of 20.31 and 87.69, respectively. For the 19 questions without
+citations, both achieve 63.16 through the same fallback. This small subgroup
+is not sufficient to characterise retrieval from ordinary descriptive
+questions.
+
+\section{Reference Sensitivity and Redirection Stress Tests}
+\label{sec:citation_ablation}
+
+Four query variants test the reference directly: the original query, a query
+with the reference removed, a reference only query, and a query with the
+section number replaced by another section from the same Act. Removal cleans
+dangling wording. The reference only query keeps the first section locator.
+Replacement keeps the other wording and acts as an artificial redirection
+stress test. It is not a model of user error. We use the annotated Act only to
+draw the replacement. We never give it to the retriever.
+
+We sample replacement sections uniformly from other sections in the annotated
+Act. The unchanged clause text can make the query inconsistent. Recall remains
+measured against the original annotation. We use seeds 7, 42, and 99, and the
+table reports seed 42. Of 344 questions, 325 have a parsed section. The other
+19 receive no reference only or replacement query, although cleanup changes
+six of them. We do not retrain any model. This experiment uses a 384-token
+cross-encoder limit rather than 512 tokens. Its original query scores are
+therefore specific to this experiment.
+
+The section boost system uses the 1,000-point rule defined in
+Section~\ref{sec:citation_aware}. Removal triggers BM25 fallback. Replacement
+changes the boosted pool by construction. Learned systems provide the
+not programmed comparison.
+
+\begin{table}[!htbp]
+	\caption{Citation contribution ablation, recall@5, for representative
+		systems. Removal includes minor wording cleanup. Replacement leaves other
+		wording unchanged. Citation only retains the first section reference.
+		Section boost uses the deterministic 1,000-point rule. The control without citations has no
+		citation only or corrupted reference variant. Values are percentages;
+		corrupted reference values in the table use seed 42.}
+	\label{tab:citation_ablation}
+	\centering
+	\small
+	\setlength{\tabcolsep}{4pt}
+	\begin{tabular}{@{}llrrrr@{}}
+		\toprule
+		Group & System & Original & Cit.\ removed & Cit.\ only & Corrupted ref. \\
+		\midrule
+\multicolumn{6}{@{}l}{\textit{Zero-residual pattern ($n=177$)}} \\
+		& BM25                 &  0.00 &  1.13 &  0.00 &  0.56 \\
+		& Hybrid + CE          &  0.56 &  0.00 &  0.00 &  1.69 \\
+		& Section boost + BM25 & 83.62 &  1.13 & 62.71 & 0.00 \\
+		\midrule
+		\multicolumn{6}{@{}l}{\textit{Lexically content-bearing, with citations ($n=148$)}} \\
+		& BM25                 & 44.59 & 42.57 &  2.03 & 43.92 \\
+		& Hybrid + CE          & 60.14 & 54.05 & 10.14 & 49.32 \\
+		& Section boost + BM25 & 92.57 & 42.57 & 65.54 & 11.49 \\
+		\midrule
+		\multicolumn{6}{@{}l}{\textit{Control without citations ($n=19$)}} \\
+		& BM25                 & 63.16 & 63.16 & --- & --- \\
+		& Section boost + BM25 & 63.16 & 63.16 & --- & --- \\
+		\bottomrule
+	\end{tabular}
+	\begin{flushleft}
+		{\scriptsize Corrupted Reference recall@5, mean $\pm$ standard deviation
+		over three corruption seeds:
+		$0.00\pm0.00$ for the section boost system on zero-residual reference-pattern
+		questions and $12.61\pm1.03$ on lexically content-bearing,
+		questions with citations.}
+	\end{flushleft}
+\end{table}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{plots/23_citation_intervention.pdf}
+\caption{Query reference intervention on the 177 zero-residual reference-pattern
+    questions. Panel (a) shows an actual Copyright Act question and its saved
+    transformations under seed 42. Panel (b) reports aggregate section boost
+    recall@5 across all 177 questions, not the individual example, against the
+    original annotated paragraphs. Citation removal includes minor wording
+    cleanup. Citation only keeps the first section reference. The corrupted
+    reference uses another valid section of the same Act. This condition is a
+    stress test, not a rewrite intended to preserve the answer.}
+    \label{fig:citation_intervention}
+\end{figure}
+For the 177 zero-residual reference-pattern questions, reference removal reduces section boost
+recall@5 from 83.62 to 1.13. Replacement lowers it to 0.00 across all seeds,
+while reference only queries retain 62.71
+(Table~\ref{tab:citation_ablation}; Figure~\ref{fig:citation_intervention}).
+These interventions reuse the test set and were not preregistered; they are
+exploratory.
+
+For 148 content-bearing questions with citations, section boost recall
+falls from 92.57 to 42.57 after removal and 11.49 after replacement. Hybrid+CE
+falls from 60.14 to 49.32 under replacement. The smaller removal effect in
+this group is consistent with descriptive wording partly offsetting the loss
+of the reference. The 19 controls without citations give identical BM25 and
+section boost recall@5 (63.16) through fallback.
+
+The section boost replacement result is expected by construction because the
+system assigns its bonus to the substituted identifier. It verifies the
+direction of the programmed redirection rather than demonstrating a learned
+failure mechanism. The Hybrid+CE change is the more informative non-programmed
+comparison, although it is smaller and remains specific to these artificial
+rewrites.
+
+In these benchmark interventions, statutory references narrow the candidate
+pool, while the remaining query wording helps rank candidates within it.
+Artificially corrupted references can
+redirect retrieval away from the annotated paragraph. Annotated source
+selection errors also remain under the fixed raw logit decoder.
+
+
+%% ============================================================
+\section{Human Evaluation of Sources and Answers}
+\label{sec:human_results}
+
+Benchmark metrics measure annotated-source recovery, while the human audit
+examines whether the retrieved evidence and answer are legally adequate under
+the supplied material. It does not replace the benchmark labels or change the
+reported EM, F1, or retrieval recall. The original ratings show 90.00\% agreement on selected-source
+relevance ($\kappa=0.755$, AC1 $=0.884$, $n=80$) and 79.75\% on predicted-answer
+correctness ($\kappa=0.655$, AC1 $=0.749$, $n=79$). Agreement on whether the
+question uniquely identifies the annotated source is lower: 62.03\%
+($\kappa=0.199$, AC1 $=0.502$, $n=79$). The corresponding selected-source values
+are 63.29\%, $0.304$, and $0.516$. The two annotators therefore agree more
+often on some questions in the audit form than on others. Low agreement on
+source uniqueness alone does not prove that a question is ambiguous.
+
+\begin{table}[!htbp]
+    \caption{Final consensus judgements by section-filter pipeline outcome.
+    Each row contains 20 audited questions; $N$ is the full test-set group
+    size. Relevance counts only ``Yes''. Predicted-answer correctness retains
+    all four categories. Materiality counts ``Moderate'' or ``High''; it is a
+    separate judgement, not a transformation of correctness or token overlap.}
+    \label{tab:human_consensus}
+    \centering
+    \scriptsize
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.6cm}rr@{\hspace{9pt}}rrrrr@{}}
+        \toprule
+        & & \shortstack{Selected source\\relevant}
+        & \multicolumn{4}{c}{Predicted answer correct}
+        & \shortstack{Moderate/\\high error} \\
+        \cmidrule(lr){4-7}
+        Pipeline outcome & $N$ & Yes & Yes & Partly & No & Unclear & \\
+        \midrule
+        Annotated source absent & 47 & 8 & 7 & 2 & 7 & 4 & 9 \\
+        Available, other selected & 122 & 11 & 10 & 1 & 9 & 0 & 10 \\
+        Selected, non-exact & 44 & 18 & 9 & 8 & 3 & 0 & 11 \\
+        Selected, exact answer & 131 & 17 & 16 & 0 & 3 & 1 & 3 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Table~\ref{tab:human_consensus} shows that matching the annotated source and
+assessed legal adequacy are different measures. Among the 40 cases in which
+another source was selected, the final agreed ratings classed 17 predicted answers as correct, three
+partly correct, 16 incorrect, and four unclear. Yet none of these source pairs
+was judged fully equivalent: 39 were non-equivalent and one partly equivalent.
+The written reasons for accepted answers commonly describe a question that omits
+the Act and an answer that correctly states a provision under another plausible
+interpretation. Such acceptance does not establish that the selected source
+governs the benchmark's intended legal question. In contrast, 19 cases in
+these groups received moderate or high error materiality ratings. Under the
+audit criteria, these mismatches include missing information or incorrect
+answers that affect the meaning of the response. These findings describe the
+sampled cases, not a legal error rate for all
+annotated-source retrieval failures.
+
+An exact match also does not guarantee an adequate legal answer. Of 20 cases
+with the annotated source selected and an exact answer match, the final ratings classed 16
+answers correct, three incorrect, and one unclear. The three rejected cases
+involve text assigned across a section boundary, an extracted cross-reference
+fragment, or material from a schedule assigned to the wrong section. The
+unclear case concerns a problem with the question wording. These are judgements about
+the retained benchmark evidence, not newly corrected annotations. In the
+group without exact matches, nine answers were judged correct, eight partly correct,
+and three incorrect. The written reasons distinguish harmless differences in
+answer length from missing conditions and exceptions. Thus, neither exact matching nor source
+matching alone reproduces the final human assessment in this sample.
+
+\FloatBarrier
+
+\section{External Retrieval Comparison on UK-StatuteCorpus}
+\label{sec:uk_external_validation}
+
+An external comparison tests whether the content retrieval results also appear
+outside the Indian benchmark. We evaluate the original small model systems and
+the modern BGE extension on UK-StatuteCorpus Eval100
+\citep{alshehri2026neural}. It contains 100 English questions over 124,796 UK
+statutory passages from 2020--2024. Each question has three relevant passages,
+one at each relevance grade from 1 to 3. This gives 300 graded judgements. The
+dataset provides passage relevance labels rather than answer spans. Therefore,
+this experiment evaluates retrieval ranking only. It does not repeat the
+retrieval--reading analysis. The saved run record lists the corpus,
+query, model, and evaluation settings. The UK runs use depth-100 retrieval and
+fusion lists, then rerank the first 50 candidates. The legacy cross-encoder and
+both BGE checkpoints use a 512-token limit. The BGE extension uses the same
+representation with paragraph text only and the same pinned model revisions as
+Table~\ref{tab:modern_bge_indic}.
+The UK queries were not processed with the Indian section parser or with the
+Indian reference removal, reference only, or corrupted reference variants.
+They used only the fixed system preprocessing. This includes trimmed query
+strings, lowercase alphanumeric tokenisation for BM25, and the standard
+``query:`` and ``passage:`` prefixes for E5. It also includes the saved BGE
+checkpoint defaults, without added Act or title metadata. The separate UK
+reference audit only records reference patterns. It does not change the
+evaluated queries.
+
+For UK evaluation, let \(G_i\) be all released passages with positive
+relevance for query \(i\), and \(T_{ik}\) the top \(k\) retrieved passages.
+Reported recall is the mean of the recall values for individual questions:
+\[
+\mathrm{R@}k=\frac{100}{n}\sum_{i=1}^{n}
+ \frac{|T_{ik}\cap G_i|}{|G_i|}, \qquad n=100.
+\]
+The leading factor converts a proportion to a percentage. The result is not a
+pooled count or the share of queries with any hit. Grade-3 recall replaces
+\(G_i\) by its grade-3 subset. Relevance grades enter nDCG, not ordinary
+recall. IndicIPR-QA has one annotated paragraph per question, so its recall
+reduces to a hit rate. These two forms of recall have different meanings.
+Table~\ref{tab:uk_external_retrieval} reports the resulting retrieval
+performance.
+
+\begin{table}[!htbp]
+\caption{External retrieval comparison on UK-StatuteCorpus Eval100 (100
+questions). Recall uses all released relevant passages; Grade-3 R@10 counts
+only the highest relevance judgements.}
+\label{tab:uk_external_retrieval}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.3pt}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+System & R@5 & R@10 & R@50 & MRR@10 & nDCG@10 & G3 R@10 \\
+\midrule
+BM25                         & 25.67 & 33.67 & 52.67 & 40.83 & 27.13 & 45.00 \\
+E5-small-v2                  & 20.67 & 31.67 & 52.67 & 33.54 & 28.27 & 53.00 \\
+BM25 + E5 RRF                & 27.33 & 40.33 & 55.67 & 43.61 & 33.61 & 60.00 \\
+BM25 + legacy cross-encoder  & 27.33 & 37.33 & 52.67 & 44.18 & 33.66 & 57.00 \\
+E5 RRF + legacy cross-encoder& 25.67 & 36.67 & 55.67 & 43.49 & 33.27 & 56.00 \\
+\midrule
+BGE-M3                        & 29.33 & 42.00 & 57.00 & 49.13 & 37.45 & 62.00 \\
+BM25 + BGE-M3 RRF             & 31.33 & 40.67 & 59.33 & 47.32 & 34.21 & 61.00 \\
+BM25 + BGE reranker           & 30.67 & 40.67 & 52.67 & 55.87 & 38.32 & 61.00 \\
+BGE RRF + BGE reranker        & 32.00 & 43.33 & 59.33 & 56.81 & 40.53 & 67.00 \\
+\bottomrule
+\end{tabular}
+\begin{flushleft}
+{\scriptsize All scores are on the 0--100 scale; the machine readable
+summary reports proportions and bootstrap intervals.}
+\end{flushleft}
+\end{table}
+
+Table~\ref{tab:uk_external_retrieval} shows that the modern models strengthen
+the content retrieval comparison. BGE-M3 raises recall@10 from 33.67 for BM25
+to 42.00. The paired difference is 8.33 points, with a 95\%
+interval from a bootstrap over questions of $[2.67,14.00]$. Its nDCG@10 gain is 10.32 points
+($[4.23,16.23]$). BM25--BGE-M3 fusion gives the best initial recall@5
+(31.33) and a recall@50 ceiling of 59.33. Applying the BGE reranker to this
+pool gives the highest MRR@10 (56.81), nDCG@10 (40.53), and Grade-3 recall@10
+(67.00). Compared with BGE fusion before reranking, its nDCG@10 gain is 6.32
+points ($[2.22,10.54]$). Its recall@5 gain is only 0.67 points, and the interval
+crosses zero ($[-3.33,4.67]$). All intervals use 10,000 paired resamples at
+question level with seed 42. On Eval100, these comparisons indicate distinct gains
+from dense retrieval, fusion, and reranking. The reference subgroup audit
+appears in Appendix~\ref{app:uk_reference}. Because the data and relevance
+scheme differ, this is an additional check of content retrieval rather than
+a replication of the Indian reference filtering mechanism.
+
+\FloatBarrier
+
+\section{Discussion}
+\label{sec:discussion}
+
+The analysis reports retrieval, annotated source selection, and answer
+extraction separately. Section filtering achieves higher retrieval scores on
+this reference heavy benchmark. The title-aware BGE reranker nearly closes the
+retrieval difference. This shows that the tested neural pipeline can use
+section titles when they are supplied. Many selection errors remain under
+both the fixed reader decoder and the independent BGE selector. Other source
+selection methods may give different results.
+
+\subsection{What Does the Benchmark Measure?}
+
+Gold context F1 measures extraction from a supplied paragraph. It does not
+measure open legal research. A locator such as ``Section 25'' is useful within
+that paragraph but can refer to several Acts. The operational question split
+helps examine this difference. Appendix~\ref{sec:classifier_robustness} reports
+checks with different thresholds. The groups are defined by a text rule, not
+by human judgements about meaning. Because the questions were generated and
+curated, these operational groups may not reflect the distribution of
+practitioner queries; Section~\ref{sec:limitations} discusses this limitation.
+
+The final ratings accepted some answers from other sources and rejected some exact
+matches, showing why benchmark agreement should not be treated as a legal
+judgement. Disagreement on source uniqueness also limits how far the final
+ratings can be applied beyond this sample.
+
+\subsection{Implications for Legal Information Access}
+
+A statutory reference is a formal way to identify a provision. Its meaning
+depends on the Act and legislative structure
+\citep{louisFindingLaw2023,noceJuriFindITItalian2026}. The same section number
+can occur in different Acts, so matching the number alone may not identify
+the intended source.
+
+In Table~\ref{tab:qualitative}, BM25 answers a Trade Marks question from the
+Patents Act. This annotation-source mismatch is not a judgement about the
+controlling law. Displaying the Act and provision would make this type of
+mismatch visible to a user.
+
+\subsection{Legal Significance of Retrieval Errors}
+
+Selecting a passage from a different Act needs closer examination. Similar
+wording may hide differences in the scope, conditions, or exceptions of a
+provision. However, a mismatch with the annotation alone does not prove that
+the answer is legally wrong. This study does not measure harm from legal
+advice or determine which provision governs a legal question. The human audit
+instead illustrates why answer overlap, source identity, relevance, and the
+assessed importance of errors need to be considered together in this sample.
+
+\subsection{Implications for Statutory QA System Design}
+
+The metadata controls show that the representation of statutory passages
+affects annotated-source recovery on this benchmark. Paragraph text alone omits
+useful structural signals: adding section titles improves both BM25 and the
+tested neural pipeline, while section identifiers narrow the candidate pool.
+BM25 ranking within the same section pool adds value beyond random ordering.
+These findings do not show a general inability of strong retrievers to use
+statutory structure. They motivate testing richer metadata, including the
+hierarchy of Acts, sections, and clauses, relationships between sections, and
+cross-references. The additional value of these untested signals remains open.
+
+For systems that handle questions like those in this benchmark, aligning query
+locators with statutory metadata may be useful. Content can then rank
+provisions with the same number, while a content fallback handles questions
+without a parsed locator. Checks between the selected source, locator, and
+wording may catch some redirections. However, questions with too little detail may
+remain unresolved. Clause level and cross-reference parsing were not tested.
+
+\subsection{Implications for Benchmark Design}
+
+For benchmarks with similar question forms, separate reporting of the
+zero-residual reference pattern and lexically content-bearing questions may make aggregate
+scores easier to interpret. Such benchmarks could also provide separate tracks
+for locator resolution, content retrieval, and extraction from an identified
+provision.
+
+\section{Limitations}
+\label{sec:limitations}
+
+The findings apply to this benchmark. Searching paragraph text alone leaves
+out titles that many generated questions cite. Part of the retrieval problem
+therefore comes from information missing from the index. Adding titles to
+the neural pipeline reduces the
+recall@5 difference between BGE reranking and section filtering to 2.62 points,
+and the fixed-reader comparison still depends on how the source is selected.
+This is one model setting without legal training, not a general comparison of
+retrievers that use titles. The question grouping rule and section parser
+have not been checked through human judgements of question meaning. The
+questions were generated and then curated, so the frequency of explicit
+statutory references may differ from naturally occurring legal queries. Their
+repeated wording may make section references especially useful. The results may therefore partly reflect
+how questions were generated and filtered, rather than how users normally ask
+questions. Comparisons within Acts do not fully separate these possible
+effects. Validation on independently written, practitioner-generated queries,
+with and without explicit references, remains an important direction for
+future work; no such set is evaluated here.
+
+The reader's raw scores are not calibrated across passages. The results
+therefore depend on both the retrieved candidates and the fixed answer
+selection rule. They are not an upper bound on source selection performance.
+An independent BGE selector improves selection of the annotated source, but
+this does not establish that its scores are calibrated or that its choices
+are legally relevant. The remaining query words may reflect legal content,
+headings, or the style of the question generator. Equal scores and corpus
+order may also affect ranking. Dataset validation covers 200 pairs
+\citep{anonymous2026indiciprqa}. The separate 80-case audit in this study
+examines outputs from the section filter pipeline and their retained annotations.
+
+The human audit involves two law graduate students and 20 cases per pipeline outcome.
+It is not a practitioner study or an independent third-party adjudication.
+The students saw two candidate passages when judging whether a question
+identified a unique source. Their ratings do not show whether the question
+alone identifies one source across the full corpus. Agreement varies across
+the rating fields, especially source uniqueness and text quality. Discussion
+can change labels that were originally shared as well as those that differed.
+The final agreement is not an independent legal standard. The audit does not
+validate the question grouping rule or section parser, compare legal adequacy
+across retrieval systems, or estimate rates for all 344 questions from the
+pooled sample. It also does not correct the benchmark labels or repeat the
+retrieval study on independent data. A larger follow-up should include
+practising lawyers or legal researchers, independent adjudication, and cases
+sampled to support population-level estimates.
+
+The same 344 questions support model selection, diagnosis, and evaluation. The
+question grouping in RQ2 was developed from this test material, and the
+interventions were defined before their runs but not preregistered. These
+analyses characterize this fixed benchmark rather than confirm a general
+relationship. The tested methods
+include BM25, four small zero-shot encoders, BGE-M3, two cross-encoders, fusion,
+and a rule based section reference procedure. The BGE extension is a stronger
+general purpose comparison, not a legally supervised retriever. The experiments
+do not cover supervised legal retrievers, late interaction, alternative
+title-aware neural architectures, or matching at finer levels such as clauses.
+Recall@50 limits what reranking can recover. Results close to zero for the
+zero-residual reference-pattern group also limit claims
+about the learned systems. Training on statutory question--provision pairs is
+an important next comparison. Supervised retrievers, LLM based rerankers, or
+generative QA pipelines may achieve higher scores. Evaluating them would move
+the study towards improving the system rather than explaining its errors.
+The purpose here is to locate errors in retrieval and source selection,
+not to claim that the tested systems are the best available methods.
+
+The UK study tests content retrieval, not the full Indian mechanism. Also,
+only 19 IndicIPR-QA questions have no citation. A closer replication needs
+aligned provision relevance, answer evidence, suitable models, and overlapping
+locators. UK-StatuteCorpus, EQUALS, BSARD, JuriFindIT, and IL-TUR do not jointly
+provide these conditions
+\citep{chen2023equals,louisSpanakisBSARD2022,noceJuriFindITItalian2026,
+joshiILTUR2024}. IndicIPR-QA is also limited to answerable, single section,
+English questions over seven Indian IPR Acts. The results do not establish
+transfer to other jurisdictions or legal fields, to case law or contracts, or
+to multilingual systems. The benchmark also excludes unanswerable, multiple
+section, and interactive settings. Future work should test the diagnostic
+framework with LLM and RAG pipelines, independently written questions, and
+other legal documents and languages. Generator style may remain. We have not
+verified that the archived statutes are currently consolidated or in force.
+The findings are not legal advice.
+
+
+\FloatBarrier
+
+
+%% ============================================================
+% Keep the short conclusion together without changing font size or margins.
+\begin{samepage}
+\section{Conclusion}
+\label{sec:conclusion}
+
+This study examines where errors arise when a fixed reader must retrieve and
+select statutory evidence before extracting an answer. On IndicIPR-QA,
+paragraph-only retrieval produces a large retrieval--reading gap. Adding
+section titles or matching section identifiers improves annotated-source
+recovery, showing that passage representation matters alongside retrieval
+model choice. However, provisions with the same number remain ambiguous across
+Acts, and both the reader decoder and an independent reranker still make source
+selection errors. The human audit also shows that benchmark agreement and
+assessed legal adequacy are different measures. These findings describe one
+benchmark and fixed pipeline: section filtering is a diagnostic intervention,
+and the question-pattern analysis is exploratory. Separate reporting of
+candidate retrieval, source selection, and answer extraction therefore makes
+the aggregate QA score easier to interpret in this setting. Validation with
+independently written and multiple-section questions remains open.
+\end{samepage}
+
+
+%% ============================================================
+\appendix
+\section{Retrieval Diagnostics and Robustness Audits}
+\label{app:secondary}
+
+\subsection{Sources of Data, Models, and Analyses}
+
+Table~\ref{tab:analysis_provenance} separates the existing dataset and reader
+from the analyses in this study. \fixedreader{} is the LEGAL-BERT-BASE
+checkpoint trained first on SQuAD-v1 and then on IndicIPR-QA. It was selected
+after earlier results were available and is held fixed here. It is not a new
+model architecture.
+
+\begin{table}[!htbp]
+    \caption{Sources of the datasets, models, and analyses used in the
+    manuscript.}
+    \label{tab:analysis_provenance}
+    \centering
+    \scriptsize
+    \setlength{\tabcolsep}{3.5pt}
+    \renewcommand{\arraystretch}{1.12}
+    \begin{tabular}{@{}
+        >{\raggedright\arraybackslash}p{4.0cm}
+        >{\raggedright\arraybackslash}p{2.0cm}
+        >{\raggedright\arraybackslash}p{6.0cm}@{}}
+        \toprule
+        Component & Status here & Evidence artifact \\
+        \midrule
+        Dataset construction, annotation, splits
+        & Inherited
+        & Dataset description; released split and corpus files \\
+
+        \fixedreader{} training and reader comparison
+        & Fixed input
+        & Archived training outputs and fixed checkpoint \\
+
+        Retrieval and reading gap with paragraph text alone
+        & New analysis
+        & Canonical retrieval QA report and predictions for each question \\
+
+        Dense, RRF, and cross-encoder retrieval
+        & New analysis
+        & Dense and reranking reports; depth-10 and depth-50 settings \\
+
+        BGE-M3 retrieval and BGE reranking
+        & New analysis
+        & Pinned model manifest, cached rankings, per query metrics, and
+        independent validation report \\
+
+        Title-aware neural retrieval, reader, and selector controls
+        & Additional control
+        & Pinned BGE rankings, fixed-reader predictions, per query metrics,
+        selector predictions, and versioned summaries \\
+
+        Operational partition and citation intervention
+        & New analysis
+        & Item audit, robustness JSON, transformed queries, six system ablation \\
+
+        UK external retrieval comparison
+        & New analysis
+        & Run manifest, per query file, cached rankings, bootstrap summary \\
+
+        Metadata, random order, stage, and cluster controls
+        & Robustness analysis
+        & Diagnostic control script and JSON outputs \\
+
+        Section pool, wrong locator, and predicted Act controls
+        & Robustness analysis
+        & Fixed protocol, train-only Act classifier, saved rankings, and
+        independent metric checks \\
+
+        Collision, oracle, tie, and UK reference controls
+        & Robustness analysis
+        & Follow up protocol, item traces, and summary JSON files \\
+
+        Metadata matched full pipeline reader control
+        & Additional control
+        & Additional metadata matched control and item level outputs \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+The IndicIPR retrieval runs use Python with
+\texttt{sentence-transformers 5.2.3}, \texttt{transformers 5.3.0},
+\texttt{torch 2.10.0}, and \texttt{numpy 2.4.2}. BM25 lowercases tokens matched
+by \texttt{[A-Za-z0-9]+}, uses $k_1=1.5$ and $b=0.75$, and breaks equal scores
+by ascending corpus index. Before generating new values, the metadata and stage
+audit reproduces the canonical 22.67 recall@5. The BGE extension uses the same
+package versions. It records the exact model revisions and command, and stores
+complete per query rankings and metrics for both datasets. An independent
+validation script recomputes every total from the per query files. It also
+checks query counts, ranking depths, embedding shapes, and candidate ceilings.
+
+The plan for these supplementary checks was saved before they were run. However,
+it was not formally registered or stored in an external repository. The reader
+condition using title-aware BM25, the neural retrieval condition using titles,
+and the independent source selector are post-hoc controls.
+Canonical outputs keep the legacy \texttt{char\_f1} field for backward
+compatibility. The manuscript does not use it in any result or claim.
+
+The section-pool extension uses \texttt{scikit-learn 1.8.0}. It fits a fixed
+TF--IDF logistic-regression Act classifier on training questions only. To avoid
+exact duplicate input strings, it removes 19 training pairs whose question text
+also occurs in a validation or test pair; it does not use their held-out labels
+or evidence. The saved outputs include all candidate pools and rankings, the
+classifier probabilities, input hashes, split audit, and a separate script
+that recomputes the reported metrics.
+
+\subsection{Checks of the Question Grouping Rule}
+\label{sec:classifier_robustness}
+
+The primary rule applies the reference patterns and question frame word list
+provided in the supplementary files. It does not use human judgement about
+whether a remaining word is meaningful. The list contains 54 common words, including
+\emph{what}, \emph{under}, \emph{provide}, \emph{stated}, and \emph{mean}. The
+rule was developed after inspecting the test material. It did not come from an
+external annotation study or a plan registered before the study.
+Table~\ref{tab:classifier_examples} shows examples of the resulting labels, while
+Table~\ref{tab:classifier_thresholds} tests whether the results depend on the
+zero token boundary. These checks reuse the same 344 fixed \fixedreader{}
+predictions. We do not retrain the reader or retriever.
+
+\begin{table}[!htbp]
+    \caption{Examples of the operational question partition. Residual tokens
+    are obtained after citation removal and frame word filtering.
+    The labels are Zero-residual and Content-bearing; the latter
+    abbreviates lexically content-bearing.}
+    \label{tab:classifier_examples}
+    \centering
+    \scriptsize
+    \setlength{\tabcolsep}{3.5pt}
+    \begin{tabular}{@{}p{7.3cm}p{2.4cm}p{2.2cm}@{}}
+        \toprule
+        Question & Residual tokens & Operational label \\
+        \midrule
+        Under Section 14, what is stated in clause (b)? & none & Zero-residual \\
+        What does Section 30A provide regarding application of section 19? & application & Content-bearing \\
+        Under Section 33 (Effect of acquiescence), what is provided in subsection (1)? & effect; acquiescence & Content-bearing \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[!htbp]
+	\caption{Question groups under three token thresholds. D contains questions
+        at or below the threshold; L contains the remaining questions. Only at
+        threshold zero is D the zero-residual group. F1 is on the 0--100 scale.}
+	\label{tab:classifier_thresholds}
+	\centering
+	\small
+	\setlength{\tabcolsep}{6pt}
+	\begin{tabular}{@{}crrr@{}}
+		\toprule
+		Maximum residual tokens in D & $n_{D}/n_{L}$ & Gold context F1 D/L & BM25 F1 D/L \\
+		\midrule
+		0 (primary) & 177/167 & 91.55/82.94 & 17.59/47.17 \\
+		1           & 187/157 & 90.05/84.19 & 18.36/48.14 \\
+		2           & 219/125 & 88.87/84.75 & 20.07/52.77 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The BM25 full pipeline gap is 29.58, 29.78, and 32.69 F1 points at thresholds
+zero, one, and two. The direction and approximate size of the gap persist
+across these three boundaries. This checks how much the threshold changes the
+results. It does not test whether the labels capture the meaning of a question.
+
+Table~\ref{tab:classifier_continuous} shows the same relationship without a
+binary split. Full pipeline F1 is 17.59 for questions with zero residual tokens
+and 61.12 for questions with five or more. Scores do not rise at every step
+between these groups. Residual token count has a descriptive Spearman correlation
+of $\rho=0.506$ with full pipeline F1. This value measures its link with answer
+overlap, not with candidate recall or source identification.
+
+\begin{table}[!htbp]
+    \caption{Residual token bins and BM25 top 5 full pipeline F1 with \fixedreader{}.
+    F1 is on the 0--100 scale.}
+    \label{tab:classifier_continuous}
+    \centering
+    \small
+    \begin{tabular}{@{}crr@{}}
+        \toprule
+        Residual token bin & $n$ & Full pipeline F1 \\
+        \midrule
+        0    & 177 & 17.59 \\
+        1    & 10  & 31.96 \\
+        2    & 32  & 30.08 \\
+        3--4 & 37  & 32.90 \\
+        5+   & 88  & 61.12 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+The item level audit records question IDs, original and transformed
+questions, residual tokens and counts, assigned classes, and gold context and
+full pipeline F1. The robustness files contain the citation patterns, frame
+word list, threshold summaries, and residual token/F1 analysis. These files
+record how the groups were defined and checked. They do not provide
+human validation of the question categories.
+
+\subsection{Distribution of the Operational Question Groups by Act}
+
+The main text reports the zero-residual and lexically content-bearing
+split because it motivates RQ3. This appendix examines how the split varies
+across Acts and how it relates to retrieval gains. IndicIPR-QA questions were
+machine generated with the same procedure for all Acts. However, the
+zero-residual reference-pattern share varies widely: 95.8\% for Designs (23 of 24),
+71.0\% for Patents, 64.0\% for Copyright, 60.2\% for Trade Marks, 51.1\% for
+Semiconductor Layout-Design, 23.5\% for Geographical Indications, and 0.0\%
+for Plant Varieties (0 of 40). The operational split is not uniform across
+Acts. With only seven Acts, we cannot tell whether the differences come from
+statutory drafting, generator behaviour, or both. Across the seven Acts,
+those with a higher share of zero-residual questions have smaller improvements
+from Hybrid+CE over BM25, with the two rankings in exactly opposite order. Using the
+recall@5 values in Table~\ref{tab:retrieval_per_act}, the gains are $+27.50$,
+$+9.80$, $+8.51$, $+4.54$, $+4.00$, $+1.45$, and $+0.00$ points for Plant
+Varieties, Geographical Indications, Semiconductor Layout-Design, Trade Marks,
+Copyright, Patents, and Designs, respectively. Spearman $\rho$ is $-1.00$, and
+Pearson $r$ is $-0.92$. This is a combined pipeline difference, not an isolated
+cross-encoder effect. The comparison changes initial retrieval and adds
+reranking. The association is exploratory and does not show that question
+composition causes the difference.
+
+Because the operational group is imbalanced across Acts, we also compare the
+groups within Acts. Table~\ref{tab:within_act_question_groups} includes the
+five Acts with at least nine test questions in each group. Designs has only one
+content-bearing question, and Plant Varieties has no zero-residual reference-pattern
+question, so neither supports a stable within-Act contrast.
+
+\begin{table}[!htbp]
+    \caption{Within-Act BM25 top-five results for the two operational question
+    groups. RD denotes the zero-residual pattern and CB denotes lexically
+    content-bearing. Scores are on the 0--100 scale.}
+    \label{tab:within_act_question_groups}
+    \centering
+    \scriptsize
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabular}{@{}lrrrrrr@{}}
+        \toprule
+        & \multicolumn{3}{c}{RD} & \multicolumn{3}{c}{CB} \\
+        \cmidrule(lr){2-4}\cmidrule(l){5-7}
+        Act & $n$ & R@5 & F1 & $n$ & R@5 & F1 \\
+        \midrule
+        Copyright & 16 & 0.00 & 14.96 & 9 & 88.89 & 52.95 \\
+        Geographical Indications & 12 & 0.00 & 8.93 & 39 & 33.33 & 43.36 \\
+        Patents & 49 & 0.00 & 20.36 & 20 & 85.00 & 78.20 \\
+        Semiconductor Layout-Design & 24 & 0.00 & 15.08 & 23 & 30.43 & 39.12 \\
+        Trade Marks & 53 & 0.00 & 18.16 & 35 & 45.71 & 41.58 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+The retrieval difference appears within every Act shown, although its size
+varies. It is therefore not explained only by the different numbers of
+questions from each Act. This does not validate the labels as measures of
+question meaning or separate statutory writing style from the effects of
+question generation.
+
+The lexically content-bearing group is not the same as the group without
+citations. Of the 167 lexically content-bearing questions, 148 contain both a
+statutory citation and residual lexical tokens, while 19 contain no parsable
+citation. A question can therefore have both a reference and remaining words.
+The split into 177 zero-residual and 167 content-bearing questions differs
+from the split into 325 questions with citations and 19 without them. In
+particular, the 82.94 gold context F1 belongs to the content-bearing group,
+not the group without citations. Zero-residual reference-pattern questions account
+for 51.5\% of the test set.
+
+\subsection{Qualitative Retrieval Cases}
+\label{sec:qualitative}
+
+Table~\ref{tab:qualitative} shows three cases: exact extraction, a span that
+extends into an adjacent clause, and an annotated-source retrieval miss. We score
+these examples against the benchmark annotations. In case~(b), the predicted
+span has partial token overlap but includes another category of persons. In
+case~(c), \fixedreader{} matches the annotation when given the annotated
+paragraph but fails after retrieval. In this benchmark, the cases illustrate
+the value of reporting answer overlap and source selection separately.
+
+\enlargethispage{6pt}% Keep the source boundary footnote within the page box.
+In case~(c), the benchmark annotation includes the subsection's concluding
+registration language after clause (d), while the government-hosted text
+separates that language from the listed item ``colour.''\footnote{Trade Marks
+Act, 1999, Section 15: \url{https://www.incometaxindia.gov.in/w/section-15-217}.}
+The example therefore shows an annotation-source mismatch. It does not
+independently validate the retained clause boundary.
+
+\begin{table}[!hb]
+	\caption{Three verbatim cases from the test split. Reader outputs preserve
+		the source text selected by the canonical span decoder, with line breaks
+		adjusted for presentation. Cases (a) and (b) use gold context reading;
+		case (c) compares gold context reading with retrieval followed by reading.
+		F1 values are on the 0--1 scale.}
+	\label{tab:qualitative}
+	\centering
+	\small
+	\begin{tabular}{@{}p{2.3cm}p{7.95cm}@{}}
+		\toprule
+		\multicolumn{2}{@{}l}{\textit{(a) Correct extraction. Trade Marks Act,
+			Section 15}} \\
+		\midrule
+		Question     & What is laid down in clause (b) of Section 15? \\
+		Annotated answer    & statement of number, price, quality or names of places \\
+		\fixedreader{} output & statement of number, price, quality or names of places \\
+		Outcome      & Exact match. \\
+		\midrule
+		\multicolumn{2}{@{}l}{\textit{(b) Boundary error. Geographical
+			Indications Act, Section 76}} \\
+		\midrule
+		Question     & Under Section 76, what is stated about agents? \\
+		Annotated answer    & a person registered in the prescribed manner as a
+		               geographical indications agent, or \\
+		\fixedreader{} output & a person registered in the prescribed manner as a
+		               geographical indications agent, or (c) a person in the sole
+		               and regular employment of the principal. \\
+		Outcome      & F1 0.68, exact match 0. The span extends into the
+		               adjacent clause, changing which persons the provision covers. \\
+		\midrule
+		\multicolumn{2}{@{}l}{\textit{(c) Annotated-source retrieval miss. Trade Marks Act,
+			Section 15}} \\
+		\midrule
+		Question     & In Section 15, what does clause (d) say? \\
+		Annotated answer    & colour, seeks to register those trade marks, they may be
+		               registered as a series in one registration. \\
+		Reader output with annotated context & colour, seeks to register those trade marks, they may be
+		               registered as a series in one registration.
+		               (F1 1.00: agreement with the retained benchmark annotation) \\
+		Reader output after BM25 top-5 & that the subject of any claim of the complete
+		               specification is not an invention within the meaning of
+		               this Act (F1 0.00) \\
+		Outcome      & The retrieved paragraph belongs to the Patents Act, so the
+			               reader answers a Trade Marks question from a non-annotated statute. \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+
+\FloatBarrier
+
+
+\subsection{Parser, Decoder, and Span-Length Robustness Checks}
+\label{app:review_checks}
+
+These robustness checks reuse the 344 questions, fixed corpus, and frozen
+reader. They check how alternative settings affect the results, rather than
+validate the findings on new data. Outputs for each item record all tested decisions.
+
+\paragraph*{First reference agreement with the annotated source section.}
+The rule agrees with 321 of 325 parsed annotated sections (98.77\%). Nineteen
+questions are unparsed. The four Plant Varieties disagreements appear in
+Table~\ref{tab:parser_disagreements}. Multiple matches use first textual
+occurrence, without deciding which reference is legally more important. The audit has fields for
+human detection, target choice, and source identification judgements. We did
+not collect these judgements, so we do not claim a manual accuracy or ambiguity
+rate.
+
+\begin{table}[!htbp]
+\caption{Automatic first reference disagreements with the retained source
+annotation. This is a label agreement check, not a legal correction of the query.}
+\label{tab:parser_disagreements}
+\centering\small
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Question ID & First parsed section & Annotated section \\
+\midrule
+ppvfr\_000139 & 14 & 16 \\
+ppvfr\_000150 & 14 & 18 \\
+ppvfr\_000194 & 28 & 23 \\
+ppvfr\_000195 & 15 & 23 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph*{Exact frame word list.}
+The 54 distinct frame words, sorted alphabetically, are:
+a, about, according, an, and, are, as, be, been, being, do, does, down, for, here, in, is, it, its, laid, lay, lays, mean, means, meant, of, or, out, per, provide, provided, provides, regarding, respect, said, say, says, set, sets, specified, specifies, specify, state, stated, states, that, the, there, this, to, under, what, which, with.
+The classifier audit stores the citation deletion patterns and residual tokens.
+The patterns, vocabulary, and zero token boundary were developed after
+inspecting the test material. The threshold analysis does not measure false
+positive or false negative labels, and it does not test the rule on new data.
+
+\paragraph*{Predicted span lengths.}
+Table~\ref{tab:prediction_lengths} counts whitespace delimited output words.
+The descriptive 100-word threshold is neither a legal criterion nor a model
+selection rule. The decoder has no extra cap but cannot span windows.
+
+\begin{table}[!htbp]
+\caption{Predicted span lengths under the main raw logit decoder, 344 outputs
+per setting. No annotated answer percentile is used to choose a cutoff.}
+\label{tab:prediction_lengths}
+\centering\small
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Setting & Mean words & Maximum words & Over 100 words \\
+\midrule
+Annotated paragraph & 39.26 & 233 & 16 \\
+Paragraph BM25 & 37.31 & 207 & 9 \\
+Title+paragraph BM25 & 39.98 & 233 & 9 \\
+Section filter & 40.33 & 181 & 14 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph*{Results by answer length.}
+Table~\ref{tab:answer_length_scores} reports mean EM/F1 and source selection
+for separate answer length groups. Each question belongs to one group.
+The counts sum to 344 but do not control
+for Act or question type. We report source selection with the overlap metrics
+because answers from a non-annotated source can receive token credit.
+
+\begin{table}[!htbp]
+\caption{Raw decoder scores by answer length. EM, F1 and selected annotated
+source are percentages, averaged over the questions in each group.}
+\label{tab:answer_length_scores}
+\centering\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}l@{\hspace{6pt}}l|rrrr@{}}
+\toprule
+Setting & \shortstack{Annotated answer\\words} & $n$ & EM & F1 & Selected source \\
+\midrule
+Annotated paragraph & 1--10 & 43 & 67.44 & 81.44 & 100.00 \\
+Annotated paragraph & 11--30 & 114 & 76.32 & 92.86 & 100.00 \\
+Annotated paragraph & 31+ & 187 & 60.96 & 85.39 & 100.00 \\
+\midrule
+Paragraph BM25 & 1--10 & 43 & 25.58 & 35.42 & 23.26 \\
+Paragraph BM25 & 11--30 & 114 & 15.79 & 33.04 & 14.91 \\
+Paragraph BM25 & 31+ & 187 & 3.74 & 30.50 & 7.49 \\
+\midrule
+Title+paragraph BM25 & 1--10 & 43 & 32.56 & 43.37 & 37.21 \\
+Title+paragraph BM25 & 11--30 & 114 & 25.44 & 43.25 & 28.95 \\
+Title+paragraph BM25 & 31+ & 187 & 20.32 & 46.57 & 29.95 \\
+\midrule
+Section filter & 1--10 & 43 & 44.19 & 53.75 & 48.84 \\
+Section filter & 11--30 & 114 & 44.74 & 59.21 & 50.00 \\
+Section filter & 31+ & 187 & 33.16 & 58.22 & 51.87 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph*{Canonical BM25 and legacy provenance.}
+Main tables use the released corpus order and break ties by ascending index. A
+legacy script used first occurrence order. Matching passages by exact identity changes 21
+ordered top five lists but changes no selected source or answer. Canonical
+top one recall/EM/F1 are 13.08/10.76/29.47 instead of 13.66/11.05/29.48.
+Top three results do not change. Top five recall is 22.67 instead of 22.97,
+while EM/F1 remain 10.47/31.95. The archive contains item level comparisons.
+The main results do not mix in legacy values.
+
+\paragraph*{Selection and length cap sensitivity.}
+We reevaluated the frozen reader on 3,509 distinct question--candidate pairs.
+This process involved no training or checkpoint selection. Reproduced raw
+decoding matches the sources and whitespace normalised answers.
+Table~\ref{tab:decoder_sensitivity} compares four rules: the original summed
+logits, within window start/end softmax products, retrieval rank one selection,
+and a fixed 128-token cap. Local softmax does not calibrate scores across
+passages. We did not tune the cap on test percentiles.
+
+\begin{table}[!htbp]
+\caption{Decoder sensitivity using unchanged candidate pools.
+Selected source and F1 metrics are percentages. Available/other is the count
+with the annotated paragraph retrieved but another source selected.
+All comparisons are descriptive, not independent test set validation.}
+\label{tab:decoder_sensitivity}
+\centering\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+Pool & Rule & \shortstack{Selected\\source} & \shortstack{Available/\\other}
+ & F1 & \shortstack{Annotation-\\grounded F1} \\
+\midrule
+Paragraph BM25 & Raw & 11.92 & 37 & 31.95 & 11.08 \\
+Paragraph BM25 & Local softmax & 10.47 & 42 & 30.09 & 10.05 \\
+Paragraph BM25 & Rank 1 & 13.08 & 33 & 29.47 & 11.98 \\
+Paragraph BM25 & Cap 128 & 12.21 & 36 & 32.10 & 11.33 \\
+\midrule
+Title+paragraph & Raw & 30.52 & 91 & 45.07 & 27.85 \\
+Title+paragraph & Local softmax & 23.55 & 115 & 40.45 & 22.49 \\
+Title+paragraph & Rank 1 & 34.88 & 76 & 42.98 & 30.02 \\
+Title+paragraph & Cap 128 & 30.23 & 92 & 45.09 & 27.88 \\
+\midrule
+Section filter & Raw & 50.87 & 122 & 57.99 & 47.29 \\
+Section filter & Local softmax & 44.19 & 145 & 53.47 & 41.61 \\
+Section filter & Rank 1 & 50.29 & 124 & 54.28 & 44.44 \\
+Section filter & Cap 128 & 50.58 & 123 & 58.13 & 47.28 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For section filtering, available but other errors are 122 (Raw), 145 (Local
+softmax), 124 (Rank 1), and 123 (Cap 128). The cap gives a small raw-F1 increase,
+but this does not imply better legal answers. Source selection and grounded F1
+both fall, and gold context F1 changes from 87.37 to 87.26.
+
+Under Raw, multiple window candidates comprise 61/1,720 BM25, 42/1,720
+title-aware, and 84/1,531 section filter pairs. They supply 5, 8, and 16
+selected sources. Local softmax selects 11, 11, and 21. These counts do not
+isolate a window count effect or show that the scores are calibrated.
+
+
+\FloatBarrier
+
+\subsection{Original Human Ratings and Final Agreement}
+\label{app:human_agreement}
+
+Table~\ref{tab:human_agreement} uses the original separate assessments:
+\texttt{Frozen\_Input\_A} and \texttt{Original\_Input\_C}. The later revised C
+version is kept so that changes can be traced, but it is not used to estimate
+original agreement. Displayed evidence is matched to annotated and selected roles by
+case ID and exact passage/answer contents. In three original C records,
+identical evidence has different labels, and it is not possible to tell which
+source each label refers to without guessing. The affected comparisons exclude both
+uniqueness labels for LEX-050, both materiality labels for LEX-053, and both
+correctness and materiality labels for LEX-060. Other judgements from these
+cases remain included. This gives 79 pairs for uniqueness and correctness,
+78 for materiality, and 80 for the other dimensions.
+
+\begin{table}[!htbp]
+    \caption{Agreement before consensus and later source-label revisions.
+    Agreement is an exact-label percentage; coefficients are on their original
+    scale. $q$ is the fixed number of allowed categories used for AC1, including
+    categories not observed in a particular comparison.}
+    \label{tab:human_agreement}
+    \centering
+    \scriptsize
+    \setlength{\tabcolsep}{5pt}
+    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{5.3cm}rrrrr@{}}
+        \toprule
+        Judgement & $n$ & $q$ & Agreement (\%) & $\kappa$ & AC1 \\
+        \midrule
+        Annotated source uniquely identified & 79 & 3 & 62.03 & 0.199 & 0.502 \\
+        Selected source uniquely identified & 79 & 3 & 63.29 & 0.304 & 0.516 \\
+        Annotated source legally relevant & 80 & 4 & 100.00 & 1.000 & 1.000 \\
+        Selected source legally relevant & 80 & 4 & 90.00 & 0.755 & 0.884 \\
+        Sources legally equivalent & 80 & 5 & 100.00 & 1.000 & 1.000 \\
+        Annotated answer legally correct & 79 & 4 & 96.20 & 0.884 & 0.957 \\
+        Predicted answer legally correct & 79 & 4 & 79.75 & 0.655 & 0.749 \\
+        Predicted-answer error materiality & 78 & 6 & 83.33 & 0.726 & 0.810 \\
+        Annotated-answer error materiality & 78 & 6 & 94.87 & 0.865 & 0.944 \\
+        Text quality issue & 80 & 4 & 72.50 & 0.141 & 0.693 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Uniqueness uses Yes/No/Unclear; relevance and correctness add Partly.
+Equivalence also allows Not applicable. Materiality uses
+None/Low/Moderate/High/Not applicable/Unclear, and text quality uses
+None/Minor/Material/Unclear. Unclear and Not applicable are treated as
+categories in nominal agreement, not missing values. AC1 uses pooled rater
+category proportions and the fixed category sets in the table. The differences
+between AC1 and $\kappa$, particularly for text quality, reflect different
+ways of estimating chance agreement; reporting the larger coefficient does not resolve
+the observed disagreements.
+
+For materiality only, quadratic weighted $\kappa$ orders None, Low, Moderate,
+and High as $0,1,2,3$, with agreement weight
+$w_{ij}=1-[(i-j)/3]^2$. Pairs containing Unclear or Not applicable are excluded
+from this ordinal calculation. Predicted-answer materiality has weighted
+$\kappa=0.955$ on 74 pairs, after four further exclusions from the 78
+role-identifiable pairs; annotated-answer materiality has weighted
+$\kappa=0.954$ on all 78 pairs. The weighting gives partial credit to adjacent
+categories and assumes equal category spacing. These values do not replace
+the nominal coefficients or prove that the severity labels are legally valid.
+No significance test or acceptance threshold is applied to these descriptive
+coefficients.
+
+The final agreed ratings form a separate record covering all 80 cases. They
+include changes to cases where the original ratings agreed. Both reviewers'
+confirmations, written reasons, and discussion notes are kept. The final labels
+are not used to recalculate original agreement. The summary
+script checks source-role mappings, reconstructs the seeded sample, recomputes
+both agreement sheets, and summarises the final labels by sampling group without
+changing the workbooks. This checks the calculations and their source records,
+not how the review was conducted or whether its legal conclusions are correct.
+
+\FloatBarrier
+
+\subsection{UK Reference Subgroup Diagnostic}\label{app:uk_reference}
+
+An automatic metadata audit of the original UK comparison of five systems
+identifies 24 queries with recognised references. Five have a provision locator, 20
+have an instrument identifier, and one has both. These groups were not annotated by humans
+(Table~\ref{tab:uk_reference_subgroups}). The audit was not rerun for
+the later BGE extension.
+
+\begin{table}[!htbp]
+\caption{Original UK retrieval comparison of five systems, grouped by references in the queries.
+Values are percentages. An automatic audit defines the groups, so
+they are not new human annotations. The later BGE extension is not included.}
+\label{tab:uk_reference_subgroups}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{1.8pt}
+\begin{tabular}{@{}lrr@{\hspace{10pt}}rr@{}}
+\toprule
+& \multicolumn{2}{c}{With references ($n=24$)}
+& \multicolumn{2}{c}{Without references ($n=76$)} \\
+\cmidrule(lr){2-3}\cmidrule(l){4-5}
+System & R@5 & nDCG@10 & R@5 & nDCG@10 \\
+\midrule
+BM25                 & 29.17 & 27.67 & 24.56 & 26.96 \\
+E5-small-v2          & 18.06 & 19.34 & 21.49 & 31.10 \\
+BM25 + E5 RRF        & 30.56 & 32.85 & 26.32 & 33.84 \\
+BM25 + cross-encoder & 20.83 & 27.74 & 29.39 & 35.53 \\
+RRF + cross-encoder  & 19.44 & 25.91 & 27.63 & 35.59 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Reference removal lowers BM25 recall@5 from 29.17 to 9.72 and nDCG@10 from
+27.67 to 9.58. However, 16 rewrites lose information or valid syntax. Also,
+none of the five provision locators aligns with relevant passage URL metadata.
+This small and mixed group provides neither structural ground truth nor a
+causal replication of the Indian mechanism.
+
+
+\FloatBarrier
+
+% For double-anonymous SNAPP review, author contributions, funding, competing
+% interests, ethics/consent, and AI-tool disclosures are supplied through the
+% confidential submission fields rather than printed in the reviewer manuscript.
+% Restore any declarations requested by the editor in the accepted,
+% de-anonymised version.
+
+\section*{Data and Code Availability}
+
+An anonymised snapshot of IndicIPR-QA, the experiment code, fixed inputs,
+item-level outputs, and numerical audits is supplied to reviewers through the
+journal submission system. Identifying public repository details are withheld
+from the reviewer manuscript and will be restored after double-anonymous review.
+
+
+\begingroup
+\setlength{\bibsep}{0.35em} % Avoid a final bibliography page containing one entry.
+\interlinepenalty=10000 % Keep a reference's final DOI/URL with its entry.
+\bibliography{retrieval-references}% manuscript bibliography
+\endgroup
+%% if required, the content of .bbl file can be included here once bbl is generated
+%%\input sn-article.bbl
+
+\end{document}

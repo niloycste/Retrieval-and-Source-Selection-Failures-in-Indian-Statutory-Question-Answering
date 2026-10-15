@@ -1,0 +1,10 @@
+model,setting,n,approx_params_b,em,f1,char_f1,source
+C': MLM+SQuAD+IPR InLegalBERT,Extractive fine-tuned QA,344,0.11,48.2558,82.3282,87.2746,transfer_comparison
+qwen2.5:7b,LLM zero-shot,344,7.0,29.94,77.59,81.04,llm_baseline_results_qwen.json
+qwen2.5:7b,LLM few-shot,344,7.0,34.3,76.39,78.6,llm_baseline_results_qwen.json
+mistral:7b,LLM zero-shot,344,7.0,18.31,67.11,75.07,llm_baseline_results_mistral.json
+mistral:7b,LLM few-shot,344,7.0,24.71,68.83,76.01,llm_baseline_results_mistral.json
+llama3.1:latest,LLM zero-shot,344,8.0,33.43,74.78,79.61,llm_baseline_results_llama3.1_latest.json
+llama3.1:latest,LLM few-shot,344,8.0,33.43,77.02,79.78,llm_baseline_results_llama3.1_latest.json
+llama3.1:8b,LLM zero-shot,344,8.0,31.98,74.0,78.95,llm_baseline_results_llama3.1.json
+llama3.1:8b,LLM few-shot,344,8.0,31.98,76.94,80.82,llm_baseline_results_llama3.1.json
