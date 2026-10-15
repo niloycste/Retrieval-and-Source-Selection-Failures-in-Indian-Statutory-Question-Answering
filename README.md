@@ -9,6 +9,8 @@
 [![Domain: Indian IPR law](https://img.shields.io/badge/Domain-Indian%20IPR%20law-7C3AED)](#dataset-and-scope)
 [![Evaluation: Reproducible](https://img.shields.io/badge/Evaluation-Reproducible-059669)](#reproduce-the-reported-results)
 [![Status: Research artifacts](https://img.shields.io/badge/Status-Research%20artifacts-EA580C)](#repository-guide)
+[![Paper](https://img.shields.io/badge/Read-the%20paper-DC2626?logo=readthedocs&logoColor=white)](papers/retrieval_reference/retrieval-reference.pdf)
+[![Dataset](https://img.shields.io/badge/Dataset-Hugging%20Face-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/niloycste68/IndicIPRExtractiveQA)
 
 **M. Mohaiminul Islam** · **Muhammad Abulaish**<br>
 Department of Computer Science and Engineering, South Asian University, New Delhi, India
@@ -19,12 +21,17 @@ Department of Computer Science and Engineering, South Asian University, New Delh
 
 ---
 
-## Why this repository exists
+## ✨ Why this repository matters
 
 Strong answer extraction does not guarantee reliable statutory question
 answering. A system may extract an answer well when it is given the annotated
 paragraph, but fail to retrieve that paragraph or select it from several
 plausible candidates.
+
+> [!IMPORTANT]
+> **Core idea:** a single QA score can hide three different problems: the
+> annotated source was not retrieved, another source was selected, or the
+> reader extracted a mismatched answer span.
 
 This repository accompanies a diagnostic study of that gap in IndicIPR-QA,
 an extractive question-answering benchmark over seven Indian intellectual
@@ -41,7 +48,7 @@ query-side statutory locators help recover the annotated source, and which
 errors remain after source recovery improves. Section filtering is a controlled
 diagnostic, not a proposed universal retrieval architecture.
 
-## Research at a glance
+## 📊 Research at a glance
 
 | Diagnostic result | Value |
 |---|---:|
@@ -53,6 +60,12 @@ diagnostic, not a proposed universal retrieval architecture.
 | Section-filter end-to-end F1 | **57.99** |
 | Title-aware neural retrieval recall@5 | **83.72%** |
 | Section filter versus title-aware BM25 F1 difference | **+12.92** points, 95% cluster interval **[6.62, 19.44]** |
+
+> [!TIP]
+> **Headline result:** paragraph-only BM25 recovers the annotated source in
+> only **22.67%** of top-five candidate pools. Section-aware filtering raises
+> this to **86.34%**, while the remaining errors expose Act ambiguity,
+> source-selection errors, and answer-boundary errors.
 
 The preserved experiments include sparse retrieval, zero-shot dense retrieval,
 RRF, cross-encoder reranking, BGE-M3 retrieval, BGE reranking, title-aware
@@ -66,7 +79,7 @@ comparison.
 
 <p align="center"><em>Operational overview of the retrieval diagnostic. See the paper for the complete protocol and limitations.</em></p>
 
-## Dataset and scope
+## 🗂️ Dataset and scope
 
 | Item | Value |
 |---|---:|
@@ -76,7 +89,8 @@ comparison.
 | Train / validation / test questions | **3,710 / 408 / 344** |
 | Human legal-adequacy audit | **80 stratified cases** |
 
-**Dataset:** [IndicIPRExtractiveQA on Hugging Face](https://huggingface.co/datasets/niloycste68/IndicIPRExtractiveQA) (`niloycste68/IndicIPRExtractiveQA`).
+> [!NOTE]
+> **Dataset:** [IndicIPRExtractiveQA on Hugging Face](https://huggingface.co/datasets/niloycste68/IndicIPRExtractiveQA) · [`niloycste68/IndicIPRExtractiveQA`](https://huggingface.co/datasets/niloycste68/IndicIPRExtractiveQA)
 
 The repository contains fixed corpus and split files for exact results-based
 reproduction. The findings are benchmark-specific: they measure recovery of a
@@ -84,7 +98,7 @@ retained annotated source, not unique legal correctness or a universal limit on
 legal retrieval. Questions are generated and curated, so their frequency of
 explicit statutory locators may differ from naturally occurring legal requests.
 
-## Quick start
+## 🚀 Quick start
 
 Run the commands from the repository root.
 
@@ -99,7 +113,7 @@ pip install -r requirements.txt
 
 On Linux or macOS, activate the environment with `source .venv/bin/activate`.
 
-## Reproduce the reported results
+## 🔬 Reproduce the reported results
 
 Choose the smallest path that answers your question.
 
@@ -147,7 +161,7 @@ The externally licensed UK-StatuteCorpus and embedding caches are not
 redistributed. See `scripts/04_retrieval/uk_statutecorpus_external_validation.py`
 and `docs/RETRIEVAL_EXTERNAL_VALIDATION_PROTOCOL.md` for that comparison.
 
-## Repository guide
+## 🧭 Repository guide
 
 ```text
 .
@@ -170,7 +184,7 @@ and `docs/RETRIEVAL_EXTERNAL_VALIDATION_PROTOCOL.md` for that comparison.
 `docs/RESULT_PROVENANCE.md` maps the paper claims to the saved artifacts.
 `ARTIFACT_MANIFEST.md` records the contents and exclusions of this release.
 
-## Human legal-adequacy assessment
+## ⚖️ Human legal-adequacy assessment
 
 Two law graduate students independently assessed 80 stratified section-filter
 cases. Original agreement, later consensus, and the annotation-relative
@@ -188,7 +202,7 @@ Publicly available:
 Not released: annotator-identifying workbooks, free-text rationales, authority
 notes, dates, and the private passage-order decoding key.
 
-## Citation
+## ✍️ Citation
 
 If you use this repository, its experiments, or the retrieval-diagnostic
 framework, please cite the accompanying paper:
