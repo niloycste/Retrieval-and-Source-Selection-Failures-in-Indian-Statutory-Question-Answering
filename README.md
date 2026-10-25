@@ -7,7 +7,7 @@
 [![Python 3.12+](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)](#quick-start)
 [![Task: Statutory QA](https://img.shields.io/badge/Task-Statutory%20Extractive%20QA-2563EB)](#research-at-a-glance)
 [![Domain: Indian IPR law](https://img.shields.io/badge/Domain-Indian%20IPR%20law-7C3AED)](#dataset-and-scope)
-[![Evaluation: Reproducible](https://img.shields.io/badge/Evaluation-Reproducible-059669)](#reproduce-the-reported-results)
+[![Evaluation: Reproducible](https://img.shields.io/badge/Evaluation-Reproducible-059669)](#reproduce-the-complete-paper)
 [![Status: Research artifacts](https://img.shields.io/badge/Status-Research%20artifacts-EA580C)](#repository-guide)
 [![Paper](https://img.shields.io/badge/Read-the%20paper-DC2626?logo=readthedocs&logoColor=white)](papers/retrieval_reference/retrieval-reference.pdf)
 [![Dataset](https://img.shields.io/badge/Dataset-Hugging%20Face-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/niloycste68/IndicIPRExtractiveQA)
@@ -15,7 +15,7 @@
 **M. Mohaiminul Islam** · **Muhammad Abulaish**<br>
 Department of Computer Science and Engineering, South Asian University, New Delhi, India
 
-[Pipeline](#diagnostic-pipeline) · [Results](#research-at-a-glance) · [Visual summary](#visual-summary) · [Reproduce](#reproduce-the-reported-results) · [Paper](papers/retrieval_reference/retrieval-reference.pdf) · [Citation](#citation)
+[Pipeline](#diagnostic-pipeline) · [Results](#research-at-a-glance) · [Visual summary](#visual-summary) · [Reproduce](#reproduce-the-complete-paper) · [Paper](papers/retrieval_reference/retrieval-reference.pdf) · [Citation](#citation)
 
 </div>
 
@@ -163,56 +163,156 @@ pip install -r requirements.txt
 
 On Linux or macOS, activate the environment with `source .venv/bin/activate`.
 
-## 🔬 Reproduce the reported results
+## 🔬 Reproduce the complete paper
 
-Choose the smallest path that answers your question.
+The public release supports a complete **results-to-PDF reproduction** of the
+paper: verify the saved item-level evidence, recompute the manuscript numbers,
+regenerate the quantitative figures, and compile the LaTeX source. This path
+does not download models or require a GPU.
 
-| Reproduction level | Command | Models required? | What it checks or produces |
-|---|---|:---:|---|
-| Release integrity | `python verify_release.py` | No | Fixed test size, required artifacts, headline values |
-| Numerical audit | `python scripts/04_retrieval/audit_retrieval_manuscript.py` | No | Tables, counts, and bootstrap intervals from saved evidence |
-| Figure regeneration | Commands below | No | Paper figures from canonical result files |
-| Retrieval reruns | Scripts in `scripts/04_retrieval/` | Yes | Re-ranks the corpus with public models |
-| Reader inference | Reader-enabled scripts | Yes | Re-runs fixed-reader QA predictions |
+It is different from a **from-scratch inference rerun**. The latter additionally
+requires public model downloads and three inputs that are deliberately not
+stored in this repository: the fixed LegalBERT reader checkpoint, the licensed
+UK-StatuteCorpus archive, and the private human-review workbooks. The table and
+instructions below make that boundary explicit.
 
-### 1. Verify the release and paper numbers
+| Reproduction target | Included in this release? | Extra input or compute |
+|---|:---:|---|
+| Recompute manuscript tables, counts, and intervals | Yes | None |
+| Regenerate quantitative paper figures | Yes | None |
+| Rebuild the manuscript PDF | Yes | A LaTeX distribution with `pdflatex` and `bibtex` |
+| Rerun public dense retrievers and rerankers | Code only | Hugging Face downloads; GPU recommended |
+| Rerun fixed-reader QA inference | Code and cached outputs | Original reader checkpoint for uncached pairs |
+| Rerun the UK external comparison | Code and saved outputs | Separately obtained UK-StatuteCorpus archive |
+| Recreate the human audit from original forms | Aggregate and de-identified labels only | Restricted source workbooks and decoding key |
+
+### A. Complete public results-to-PDF workflow
+
+Run these commands from the repository root after completing the
+[Quick start](#quick-start).
+
+#### 1. Verify the release and recompute the paper numbers
 
 ```powershell
 python verify_release.py
 python scripts/04_retrieval/audit_retrieval_manuscript.py
+python scripts/04_retrieval/audit_retrieval_bibliography.py
 ```
 
-These results-only checks do not download models. They verify the saved
-item-level evidence and the principal manuscript values.
+The first command checks the expected files, test-set size, and headline
+invariants. The manuscript audit recomputes retrieval metrics, reader scores,
+stage counts, citation analyses, UK per-query means, and bootstrap intervals
+from the released evidence. The bibliography audit checks cited identifiers
+and bibliography consistency. These are artifact audits, not model reruns or
+independent legal validation.
 
-### 2. Regenerate the analysis figures
+#### 2. Regenerate the analysis figures
 
 ```powershell
 python scripts/08_figures/make_retrieval_paper_analysis_figures.py
+```
+
+This writes the generated PDF and PNG figures to
+`papers/retrieval_reference/plots/` and asserts their headline inputs before
+rendering. The manuscript's pipeline figure, `plots/pipeline1.png`, is a curated
+source asset included in the release rather than a programmatically generated
+chart. To regenerate the unused archived alternative diagram, run:
+
+```powershell
 python scripts/08_figures/make_retrieval_decoder_diagram.py
 ```
 
-Generated files are written to `papers/retrieval_reference/plots/`. The first
-command regenerates the quantitative analysis figures. The second regenerates
-an archived alternative inference/evaluation diagram. The manuscript's current
-Figure 2 is the curated `plots/pipeline1.png` diagram shown above.
-
-### 3. Re-run retrieval or source-selection controls
-
-Dense retrieval, reranking, and reader inference download public Hugging Face
-models on first use. GPU acceleration is recommended for full inference but is
-not needed for the results-only audits.
+#### 3. Compile the manuscript
 
 ```powershell
-python scripts/04_retrieval/dense_retrieval_experiment.py
-python scripts/04_retrieval/cross_encoder_rerank_experiment.py
-python scripts/04_retrieval/citation_aware_retrieval_experiment.py --with-reader
-python scripts/04_retrieval/title_neural_end_to_end_control.py --device auto
+Push-Location papers/retrieval_reference
+pdflatex -interaction=nonstopmode -halt-on-error retrieval-reference.tex
+bibtex retrieval-reference
+pdflatex -interaction=nonstopmode -halt-on-error retrieval-reference.tex
+pdflatex -interaction=nonstopmode -halt-on-error retrieval-reference.tex
+Pop-Location
 ```
 
-The externally licensed UK-StatuteCorpus and embedding caches are not
-redistributed. See `scripts/04_retrieval/uk_statutecorpus_external_validation.py`
-and `docs/RETRIEVAL_EXTERNAL_VALIDATION_PROTOCOL.md` for that comparison.
+The rebuilt paper is
+`papers/retrieval_reference/retrieval-reference.pdf`. The repeated LaTeX passes
+resolve the bibliography, cross-references, and figure/table numbering. On
+Linux or macOS, use `cd papers/retrieval_reference` in place of
+`Push-Location` and return to the repository root afterward.
+
+### B. From-scratch retrieval and inference reruns
+
+The main experiment entry points are shown below. Run them from the repository
+root; they write versioned reports under `results/experiments/retrieval/`.
+
+```powershell
+# Paragraph-only sparse, dense, fusion, and legacy reranking baselines
+python scripts/04_retrieval/dense_retrieval_experiment.py
+python scripts/04_retrieval/cross_encoder_rerank_experiment.py
+
+# Question grouping, section retrieval, reference interventions, and controls
+python scripts/04_retrieval/citation_specified_questions.py --write-artifacts
+python scripts/04_retrieval/citation_aware_retrieval_experiment.py
+python scripts/04_retrieval/citation_contribution_ablation.py
+python scripts/04_retrieval/wrong_act_severity.py
+python scripts/04_retrieval/retrieval_diagnostic_controls.py
+python scripts/04_retrieval/retrieval_followup_controls.py
+python scripts/04_retrieval/section_filter_act_extension.py
+
+# BGE-M3, title-aware retrieval, and independent source selection
+python scripts/04_retrieval/modern_retrieval_extension.py --prepare-models
+python scripts/04_retrieval/modern_retrieval_extension.py --dataset indic --device auto
+python scripts/04_retrieval/metadata_neural_and_selector_control.py --device auto
+python scripts/04_retrieval/validate_metadata_neural_selector.py
+```
+
+The three end-to-end reader scripts below require the fixed QA checkpoint. It
+is not redistributed; pass its local directory explicitly rather than relying
+on the absent default path:
+
+```powershell
+python scripts/04_retrieval/citation_aware_retrieval_experiment.py --with-reader --qa-model "PATH_TO_FIXED_READER" --device auto
+python scripts/04_retrieval/metadata_matched_end_to_end_control.py --qa-model "PATH_TO_FIXED_READER" --device auto
+python scripts/04_retrieval/title_neural_end_to_end_control.py --qa-model "PATH_TO_FIXED_READER" --device auto
+```
+
+The decoder and span-length robustness analysis can then be repeated with:
+
+```powershell
+python scripts/04_retrieval/review_robustness_audit.py --with-reader
+```
+
+That command reuses the released, provenance-checked reader cache where
+possible; if a required question-passage pair is absent, it expects the reader
+at the default checkpoint path recorded by the script. These programs perform
+inference only. Training the inherited fixed reader is outside this paper's
+experiment pipeline.
+
+For the external UK comparison, obtain `uk-statutecorpus_v1.0.zip` separately
+and follow [`docs/RETRIEVAL_EXTERNAL_VALIDATION_PROTOCOL.md`](docs/RETRIEVAL_EXTERNAL_VALIDATION_PROTOCOL.md).
+The expected command shape is:
+
+```powershell
+python scripts/04_retrieval/uk_statutecorpus_external_validation.py --archive "PATH_TO_uk-statutecorpus_v1.0.zip"
+python scripts/04_retrieval/modern_retrieval_extension.py --dataset uk --device auto
+```
+
+The second command expects the external data prepared at the protocol's
+documented local path. Model and data revisions, hashes, canonical outputs, and
+claim-to-artifact mappings are recorded in
+[`docs/RESULT_PROVENANCE.md`](docs/RESULT_PROVENANCE.md),
+[`ARTIFACT_MANIFEST.md`](ARTIFACT_MANIFEST.md), and the run manifests under
+`results/experiments/retrieval/runs/`.
+
+### C. Human-audit reproducibility boundary
+
+The public release contains the seeded sampling manifest, codebook, verified
+aggregate summary, and de-identified categorical labels. These are sufficient
+to inspect the reported sample composition and released labels. Exact
+re-execution of `summarize_human_validation.py` requires the restricted master
+workbook, free-text records, and private passage-order decoding key, so it is
+not presented as a public from-scratch command. See
+[Human legal-adequacy assessment](#human-legal-adequacy-assessment) for the
+released and withheld artifacts.
 
 ## 🧭 Repository guide
 
