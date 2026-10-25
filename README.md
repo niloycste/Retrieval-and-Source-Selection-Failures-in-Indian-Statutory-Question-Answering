@@ -10,10 +10,9 @@
 [![Evaluation: Reproducible](https://img.shields.io/badge/Evaluation-Reproducible-059669)](#reproduce-the-complete-paper)
 [![Status: Research artifacts](https://img.shields.io/badge/Status-Research%20artifacts-EA580C)](#repository-guide)
 [![Paper](https://img.shields.io/badge/Read-the%20paper-DC2626?logo=readthedocs&logoColor=white)](papers/retrieval_reference/retrieval-reference.pdf)
-[![Dataset](https://img.shields.io/badge/Dataset-Hugging%20Face-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/niloycste68/IndicIPRExtractiveQA)
+[![Anonymous review snapshot](https://img.shields.io/badge/Review-Anonymous%20snapshot-6B7280)](https://anonymous.4open.science/r/Retrieval-and-Source-Selection-Failures-in-Indian-Statutory-Question-Answering-9506/)
 
-**M. Mohaiminul Islam** · **Muhammad Abulaish**<br>
-Department of Computer Science and Engineering, South Asian University, New Delhi, India
+**Anonymous authors** · Double-anonymous review version
 
 [Pipeline](#diagnostic-pipeline) · [Results](#research-at-a-glance) · [Visual summary](#visual-summary) · [Reproduce](#reproduce-the-complete-paper) · [Paper](papers/retrieval_reference/retrieval-reference.pdf) · [Citation](#citation)
 
@@ -140,7 +139,9 @@ legally adequate under the supplied material.
 | Human legal-adequacy audit | **80 stratified cases** |
 
 > [!NOTE]
-> **Dataset:** [IndicIPRExtractiveQA on Hugging Face](https://huggingface.co/datasets/niloycste68/IndicIPRExtractiveQA) · [`niloycste68/IndicIPRExtractiveQA`](https://huggingface.co/datasets/niloycste68/IndicIPRExtractiveQA)
+> **Dataset:** the fixed corpus and train/validation/test splits needed for the
+> paper are included under [`data/`](data/). Identifying public-hosting details
+> are withheld during double-anonymous review.
 
 The repository contains fixed corpus and split files for exact results-based
 reproduction. The findings are benchmark-specific: they measure recovery of a
@@ -153,7 +154,7 @@ explicit statutory locators may differ from naturally occurring legal requests.
 Run the commands from the repository root.
 
 ```powershell
-git clone https://github.com/niloycste/Retrieval-and-Source-Selection-Failures-in-Indian-Statutory-Question-Answering.git
+# Download the anonymous review snapshot, extract it, and enter its root folder.
 Set-Location Retrieval-and-Source-Selection-Failures-in-Indian-Statutory-Question-Answering
 py -3.12 -m venv .venv
 .\.venv\Scripts\Activate.ps1
@@ -357,24 +358,24 @@ notes, dates, and the private passage-order decoding key.
 
 ## ✍️ Citation
 
-If you use this repository, its experiments, or the retrieval-diagnostic
-framework, please cite the accompanying paper:
+Author names, affiliations, the permanent repository URL, and final citation
+metadata are intentionally withheld in this double-anonymous review snapshot.
+They will be restored in the de-anonymized archival release. During review,
+refer to the accompanying submission as **Anonymous (2026)**, consistently
+with the manuscript:
 
 ```bibtex
-@misc{islam_abulaish_2026_retrieval_source_selection,
-  author = {Islam, M. Mohaiminul and Abulaish, Muhammad},
+@unpublished{anonymous2026retrieval,
+  author = {Anonymous},
   title = {Beyond Answer Extraction: Diagnosing Retrieval and Source Selection
            Failures in Indian Statutory Question Answering},
   year = {2026},
-  note = {Manuscript and reproducibility artifacts},
-  url = {https://github.com/niloycste/Retrieval-and-Source-Selection-Failures-in-Indian-Statutory-Question-Answering}
+  note = {Manuscript under double-anonymous review}
 }
 ```
 
-For the benchmark itself, cite the separate IndicIPR-QA dataset/resource paper
-once its proceedings record is available. The anonymous citation in the
-double-anonymous manuscript should be replaced only in the de-anonymized final
-version.
+The anonymous citation and withheld links should be replaced only in the
+de-anonymized final version.
 
 ---
 
