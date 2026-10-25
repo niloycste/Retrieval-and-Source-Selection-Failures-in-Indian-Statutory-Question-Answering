@@ -10,7 +10,7 @@
 [![Evaluation: Reproducible](https://img.shields.io/badge/Evaluation-Reproducible-059669)](#reproduce-the-complete-paper)
 [![Status: Research artifacts](https://img.shields.io/badge/Status-Research%20artifacts-EA580C)](#repository-guide)
 [![Paper](https://img.shields.io/badge/Read-the%20paper-DC2626?logo=readthedocs&logoColor=white)](papers/retrieval_reference/retrieval-reference.pdf)
-[![Anonymous review snapshot](https://img.shields.io/badge/Review-Anonymous%20snapshot-6B7280)](https://anonymous.4open.science/r/Retrieval-and-Source-Selection-Failures-in-Indian-Statutory-Question-Answering-9506/)
+[![Anonymous review snapshot](https://img.shields.io/badge/Review-Anonymous%20snapshot-6B7280)](https://anonymous.4open.science/r/Retrieval-and-Source-Selection-Failures-in-Indian-Statutory-Question-Answering-5B24/)
 
 **Anonymous authors** · Double-anonymous review version
 

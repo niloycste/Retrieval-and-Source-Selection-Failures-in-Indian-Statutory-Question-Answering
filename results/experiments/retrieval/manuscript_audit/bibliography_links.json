@@ -5,8 +5,8 @@
   "doi_fields": 37,
   "url_fields": 25,
   "pdf_pages": 47,
-  "pdf_uri_annotations": 96,
-  "unique_pdf_uri_targets": 65,
+  "pdf_uri_annotations": 99,
+  "unique_pdf_uri_targets": 66,
   "problems": [],
   "bibliography_targets": [
     "https://aclanthology.org/2020.emnlp-main.550/",
@@ -78,7 +78,7 @@
       "uri": "https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2"
     },
     {
-      "page": 14,
+      "page": 15,
       "uri": "https://huggingface.co/BAAI/bge-reranker-v2-m3"
     },
     {
@@ -87,7 +87,19 @@
     },
     {
       "page": 43,
+      "uri": "https://anonymous.4open.science/r/Retrieval-and-Source-Selection-Failures-in-Indian-Statutory-Question-Answering-5B24/"
+    },
+    {
+      "page": 43,
+      "uri": "https://anonymous.4open.science/r/Retrieval-and-Source-Selection-Failures-in-Indian-Statutory-Question-Answering-5B24/"
+    },
+    {
+      "page": 43,
       "uri": "https://doi.org/10.1145/3788646.3789533"
+    },
+    {
+      "page": 43,
+      "uri": "https://doi.org/10.18653/v1/2025.emnlp-main.1739"
     },
     {
       "page": 43,
