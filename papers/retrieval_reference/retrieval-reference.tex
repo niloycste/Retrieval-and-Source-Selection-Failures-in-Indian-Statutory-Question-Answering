@@ -375,7 +375,7 @@ Table~\ref{tab:positioning} summarises the closest comparisons.
     \centering
     \scriptsize
     \setlength{\tabcolsep}{3.5pt}
-    \renewcommand{\arraystretch}{1.14}
+    \renewcommand{\arraystretch}{1.22}
     \begin{tabular}{@{}
         >{\raggedright\arraybackslash}p{2.8cm}
         >{\raggedright\arraybackslash}p{1.8cm}
@@ -388,25 +388,30 @@ Table~\ref{tab:positioning} summarises the closest comparisons.
         & Belgian statutes & Not modelled
         & Statutory article retrieval from natural language questions; no
         intervention on citations in the query. \\
+        \addlinespace[2pt]
 
         Finding the Law~\citep{louisFindingLaw2023}
         & Belgian statutes & Document topology
         & Models dependencies among statutory articles rather than
         references in the query. \\
+        \addlinespace[2pt]
 
         \citet{alshehri2026neural}
         & UK legislation & Provision level relevance
         & Studies candidate reranking and distillation; no diagnosis of
         zero-residual reference patterns. \\
+        \addlinespace[2pt]
 
         Juri\-FindIT~\citep{noceJuriFindITItalian2026}
         & Italian statutes & Cross article graph
         & Encodes legislative cross-references on the document side. \\
+        \addlinespace[2pt]
 
         Search\-Fire\-Safety~\citep{chaeStructureAwareStatuteQA2026}
         & Regulatory QA & Document hierarchy
         & Tests graph guided retrieval and safety when linked statutory
         evidence is missing. \\
+        \addlinespace[2pt]
 
         This work
         & Indian IPR statutes & Query section reference
@@ -547,18 +552,20 @@ The full pipeline evaluation consists of three stages: candidate retrieval,
 source selection, and answer extraction. Figure~\ref{fig:qa_pipeline}
 illustrates these stages and the corresponding failure points.
 
-\begin{figure}[!htbp]
+\begin{sidewaysfigure}[p]
     \centering
-    \includegraphics[width=1.0\textwidth]{plots/pipeline.pdf}
-    \caption{Statutory QA pipeline and failures relative to the annotations.
-    The left column shows the pipeline during inference: candidate
-    retrieval, source selection, answer extraction, and answer with
-    selected source output. The right column shows offline checks against the
-    retained benchmark annotation. Dashed arrows denote diagnostic
-    associations, not gates during inference; the checks do not establish legal
-    correctness.}
+    \includegraphics[width=0.94\textheight]{plots/pipeline1.png}
+    \caption{Statutory QA inference pipeline and annotation-relative offline
+    diagnostics. The left column shows top-$k$ retrieval, reader-based source
+    selection, answer extraction, and system output. The centre column gives
+    an illustrative candidate list, selected source, and extracted span. The
+    right column compares each stage with the retained benchmark annotation
+    and assigns one of four outcomes: retrieval miss, source-selection error,
+    non-exact extraction, or source-correct exact match. Solid arrows show
+    inference; dashed arrows show offline evaluation. These checks do not alter
+    inference or establish the legally controlling source.}
     \label{fig:qa_pipeline}
-\end{figure}
+\end{sidewaysfigure}
 
 \fixedreader{} predicts one continuous answer span by scoring possible start
 and end positions. Long contexts are split into overlapping 384-token windows
@@ -1371,6 +1378,7 @@ Retrieval and source selection do not use the annotated passage identity.
 	\centering
 	\scriptsize
 	\setlength{\tabcolsep}{3pt}
+	\renewcommand{\arraystretch}{1.13}
 	\begin{tabular}{@{}>{\raggedright\arraybackslash}p{4.4cm}rrrrr@{}}
 		\toprule
 		Setting & \shortstack{Candidate-pool\\R@5} & Selected source & EM & F1 & \shortstack{Annotation-\\grounded F1} \\
@@ -1408,13 +1416,17 @@ $[6.62,19.44]$ (75 Act--section clusters, 10,000 resamples, seed 42).
 Against BM25 on paragraph text only, filter and boost gain 26.03 and 23.26 points,
 with bootstrap intervals over source clusters of $[19.01,33.00]$ and $[16.31,30.13]$.
 
+\noindent\begin{minipage}{\linewidth}
+\setlength{\parindent}{1.5em}
 The strongest title-aware neural retriever closes much of the retrieval gap:
 its annotated paragraph recall@5 is 83.72, compared with 86.34 for section
 filtering. When raw reader logits select among its top five passages, it reaches
 37.79 annotated-source selection, 53.12 F1, and 35.41 F1 grounded in the
 annotation. Using the BGE rank-one passage as the source raises these values to
 51.74, 54.62, and 44.38.
-\begin{minipage}{\textwidth}
+\end{minipage}
+
+\noindent\begin{minipage}{\linewidth}
 \setlength{\parindent}{1.5em}
 The corresponding section-filter values are 50.87, 57.99, and 47.29 with
 reader-based source selection, and 56.40, 58.47, and 48.62 with the independent
@@ -1932,7 +1944,7 @@ transfer to other jurisdictions or legal fields, to case law or contracts, or
 to multilingual systems. The benchmark also excludes unanswerable, multiple
 section, and interactive settings. Future work should test the diagnostic
 framework with LLM and RAG pipelines, independently written questions, and
-other legal documents and languages. Generator style may remain. We have not
+other legal documents and languages. We have not
 verified that the archived statutes are currently consolidated or in force.
 The findings are not legal advice.
 
@@ -1983,7 +1995,7 @@ model architecture.
     \centering
     \scriptsize
     \setlength{\tabcolsep}{3.5pt}
-    \renewcommand{\arraystretch}{1.12}
+    \renewcommand{\arraystretch}{1.20}
     \begin{tabular}{@{}
         >{\raggedright\arraybackslash}p{4.0cm}
         >{\raggedright\arraybackslash}p{2.0cm}
@@ -1994,49 +2006,60 @@ model architecture.
         Dataset construction, annotation, splits
         & Inherited
         & Dataset description; released split and corpus files \\
+        \addlinespace[2pt]
 
         \fixedreader{} training and reader comparison
         & Fixed input
         & Archived training outputs and fixed checkpoint \\
+        \addlinespace[2pt]
 
         Retrieval and reading gap with paragraph text alone
         & New analysis
         & Canonical retrieval QA report and predictions for each question \\
+        \addlinespace[2pt]
 
         Dense, RRF, and cross-encoder retrieval
         & New analysis
         & Dense and reranking reports; depth-10 and depth-50 settings \\
+        \addlinespace[2pt]
 
         BGE-M3 retrieval and BGE reranking
         & New analysis
         & Pinned model manifest, cached rankings, per query metrics, and
         independent validation report \\
+        \addlinespace[2pt]
 
         Title-aware neural retrieval, reader, and selector controls
         & Additional control
         & Pinned BGE rankings, fixed-reader predictions, per query metrics,
         selector predictions, and versioned summaries \\
+        \addlinespace[2pt]
 
         Operational partition and citation intervention
         & New analysis
         & Item audit, robustness JSON, transformed queries, six system ablation \\
+        \addlinespace[2pt]
 
         UK external retrieval comparison
         & New analysis
         & Run manifest, per query file, cached rankings, bootstrap summary \\
+        \addlinespace[2pt]
 
         Metadata, random order, stage, and cluster controls
         & Robustness analysis
         & Diagnostic control script and JSON outputs \\
+        \addlinespace[2pt]
 
         Section pool, wrong locator, and predicted Act controls
         & Robustness analysis
         & Fixed protocol, train-only Act classifier, saved rankings, and
         independent metric checks \\
+        \addlinespace[2pt]
 
         Collision, oracle, tie, and UK reference controls
         & Robustness analysis
         & Follow up protocol, item traces, and summary JSON files \\
+        \addlinespace[2pt]
 
         Metadata matched full pipeline reader control
         & Additional control

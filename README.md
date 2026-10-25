@@ -15,7 +15,7 @@
 **M. Mohaiminul Islam** · **Muhammad Abulaish**<br>
 Department of Computer Science and Engineering, South Asian University, New Delhi, India
 
-[Quick start](#quick-start) · [Results](#research-at-a-glance) · [Reproduce](#reproduce-the-reported-results) · [Paper](papers/retrieval_reference/retrieval-reference.pdf) · [Citation](#citation)
+[Pipeline](#diagnostic-pipeline) · [Results](#research-at-a-glance) · [Visual summary](#visual-summary) · [Reproduce](#reproduce-the-reported-results) · [Paper](papers/retrieval_reference/retrieval-reference.pdf) · [Citation](#citation)
 
 </div>
 
@@ -48,6 +48,19 @@ query-side statutory locators help recover the annotated source, and which
 errors remain after source recovery improves. Section filtering is a controlled
 diagnostic, not a proposed universal retrieval architecture.
 
+## Diagnostic pipeline
+
+The paper keeps the answer reader fixed and follows each question through
+candidate retrieval, source selection, and answer extraction. Offline checks
+then assign one of four annotation-relative outcomes: retrieval miss,
+source-selection error, non-exact extraction, or source-correct exact match.
+
+<p align="center">
+  <img src="papers/retrieval_reference/plots/pipeline1.png" width="1000" alt="Statutory QA inference pipeline and stage-wise offline diagnostics" />
+</p>
+
+<p align="center"><em>The model pipeline is shown on the left and the corresponding annotation-relative diagnostics on the right. These checks do not determine the legally controlling source.</em></p>
+
 ## 📊 Research at a glance
 
 | Diagnostic result | Value |
@@ -78,6 +91,43 @@ comparison.
 </p>
 
 <p align="center"><em>Operational overview of the retrieval diagnostic. See the paper for the complete protocol and limitations.</em></p>
+
+## Visual summary
+
+### Candidate access and question type
+
+Section identifiers sharply reduce the candidate space in this
+reference-heavy benchmark. Ranking the matched section pool with BM25 improves
+recall beyond random ordering of the same pool.
+
+<p align="center">
+  <img src="papers/retrieval_reference/plots/21_retrieval_progression.png" width="760" alt="Retrieval progression and results by operational question type" />
+</p>
+
+### Stage-wise outcomes
+
+Improved retrieval does not eliminate later failures. Even when the annotated
+paragraph is available, the active source selector may choose another passage;
+after the annotated source is selected, the reader may still predict a
+non-exact span.
+
+<p align="center">
+  <img src="papers/retrieval_reference/plots/22_stagewise_outcomes.png" width="940" alt="Stage-wise outcomes for seven statutory QA pipelines" />
+</p>
+
+### Query-reference intervention
+
+Removing, isolating, or replacing a section reference shows how statutory
+locators guide retrieval. The corrupted-reference condition is a controlled
+redirection stress test, not a model of ordinary user error.
+
+<p align="center">
+  <img src="papers/retrieval_reference/plots/23_citation_intervention.png" width="940" alt="Effect of removing, isolating, and corrupting a statutory reference" />
+</p>
+
+All figures report benchmark-annotation-relative measurements. The human audit
+in the paper separately examines whether selected sources and answers are
+legally adequate under the supplied material.
 
 ## 🗂️ Dataset and scope
 
@@ -135,14 +185,17 @@ python scripts/04_retrieval/audit_retrieval_manuscript.py
 These results-only checks do not download models. They verify the saved
 item-level evidence and the principal manuscript values.
 
-### 2. Regenerate the manuscript figures
+### 2. Regenerate the analysis figures
 
 ```powershell
 python scripts/08_figures/make_retrieval_paper_analysis_figures.py
 python scripts/08_figures/make_retrieval_decoder_diagram.py
 ```
 
-Generated files are written to `papers/retrieval_reference/plots/`.
+Generated files are written to `papers/retrieval_reference/plots/`. The first
+command regenerates the quantitative analysis figures. The second regenerates
+an archived alternative inference/evaluation diagram. The manuscript's current
+Figure 2 is the curated `plots/pipeline1.png` diagram shown above.
 
 ### 3. Re-run retrieval or source-selection controls
 

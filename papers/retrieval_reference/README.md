@@ -23,7 +23,8 @@ pdflatex -interaction=nonstopmode -halt-on-error retrieval-reference.tex
 pdflatex -interaction=nonstopmode -halt-on-error retrieval-reference.tex
 ```
 
-Regenerate the six manuscript figures from the repository root with:
+Regenerate the quantitative analysis figures and the archived alternative
+pipeline diagram from the repository root with:
 
 ```powershell
 python scripts/08_figures/make_retrieval_paper_analysis_figures.py
@@ -31,12 +32,13 @@ python scripts/08_figures/make_retrieval_decoder_diagram.py
 ```
 
 The generators read the canonical retrieval reports, assert the displayed
-headline values, and write both PDF and PNG versions under `plots/`. The LaTeX
-source uses the vector PDF versions. The first command uses the current mechanism
-generator for files `01` and `23`, preserving their two-panel layouts, and
-generates files `20`, `21`, and `22`. The second generates file `24`, the
-inference/evaluation diagram used as Figure 2. The old `pipeline.png` is retained
-but is no longer included in the manuscript.
+headline values, and write both PDF and PNG versions under `plots/`. The first
+command generates files `01`, `20`, `21`, `22`, and `23`; files `01`, `21`,
+`22`, and `23` are used in the current manuscript. The second command generates
+file `24`, which is retained as an archived alternative diagram. The current
+Figure 2 is the curated `pipeline1.png` inference and offline-diagnostics
+diagram. The older `pipeline.png`, `pipeline.pdf`, and file `24` are not
+included in the current manuscript.
 
 Canonical result sources are documented in
 `docs/RESULT_PROVENANCE.md` at the repository root.
