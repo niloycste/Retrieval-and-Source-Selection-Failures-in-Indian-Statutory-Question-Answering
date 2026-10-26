@@ -1,4 +1,4 @@
-\begin{thebibliography}{41}
+\begin{thebibliography}{45}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{#1}}
 \providecommand{\urlprefix}{URL }
@@ -186,6 +186,12 @@ Lewis P, Perez E, Piktus A, et~al (2020) Retrieval-{Augmented} {Generation} for
   Processing Systems, vol~33. Curran Associates, Inc., pp 9459--9474,
   \urlprefix\url{https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html}
 
+\bibitem[{Li et~al.(2026)Li, Xie, Kang, Gong, Wu, and Yang}]{li2026legalmalr}
+Li Y, Xie M, Kang G, et~al (2026) {LegalMALR}: Multi-agent query understanding
+  and {LLM}-based reranking for {Chinese} statute retrieval. Artificial
+  Intelligence and Law \doi{10.1007/s10506-026-09541-6},
+  \urlprefix\url{https://doi.org/10.1007/s10506-026-09541-6}
+
 \bibitem[{Louis and Spanakis(2022)}]{louisSpanakisBSARD2022}
 Louis A, Spanakis G (2022) A statutory article retrieval dataset in {French}.
   In: Proceedings of the 60th Annual Meeting of the Association for
@@ -213,6 +219,13 @@ Malik V, Sanjay R, Nigam SK, et~al (2021) {ILDC} for {CJPE}: {Indian} {Legal}
   ({Volume} 1: {Long} {Papers}). Association for Computational Linguistics, pp
   4046--4062, \doi{10.18653/v1/2021.acl-long.313},
   \urlprefix\url{https://aclanthology.org/2021.acl-long.313/}
+
+\bibitem[{Nguyen et~al.(2025)Nguyen, Nguyen, and
+  Nguyen}]{nguyen2025retrievereviserefine}
+Nguyen C, Nguyen P, Nguyen LM (2025) Retrieve--revise--refine: A novel
+  framework for retrieval of concise entailing legal article set. Information
+  Processing \& Management 62(1):103949. \doi{10.1016/j.ipm.2024.103949},
+  \urlprefix\url{https://doi.org/10.1016/j.ipm.2024.103949}
 
 \bibitem[{Nigam et~al.(2025)Nigam, Balaramamahanthi, Mishra
   et~al.}]{nigamNyayaAnumanaINLegalLlamaLargest2025}
@@ -250,6 +263,13 @@ Paul S, Mandal A, Goyal P, et~al (2023) Pre-trained language models for the
   International Conference on Artificial Intelligence and Law. Association for
   Computing Machinery, New York, NY, USA, ICAIL '23, pp 187--196,
   \doi{10.1145/3594536.3595165}
+
+\bibitem[{Pipitone and Houir~Alami(2024)}]{pipitone2024legalbenchrag}
+Pipitone N, Houir~Alami G (2024) {LegalBench-RAG}: A benchmark for
+  retrieval-augmented generation in the legal domain.
+  \doi{10.48550/arXiv.2408.10343},
+  \urlprefix\url{https://arxiv.org/abs/2408.10343},
+  {\href{https://arxiv.org/abs/2408.10343}{{arXiv:2408.10343}}}
 
 \bibitem[{Rajpurkar et~al.(2016)Rajpurkar, Zhang, Lopyrev, and
   Liang}]{rajpurkarSQuAD100000Questions2016}
@@ -304,6 +324,14 @@ Yang Z, Qi P, Zhang S, et~al (2018) {HotpotQA}: {A} {Dataset} for {Diverse},
   {Empirical} {Methods} in {Natural} {Language} {Processing}. Association for
   Computational Linguistics, pp 2369--2380, \doi{10.18653/v1/D18-1259},
   \urlprefix\url{https://aclanthology.org/D18-1259/}
+
+\bibitem[{Zhao et~al.(2026)Zhao, Taranukhin, Cui, Aikenhead, and
+  Shwartz}]{zhao2026canlegalragbench}
+Zhao E, Taranukhin M, Cui W, et~al (2026) {CanLegalRAGBench}: Evaluating
+  retrieval-augmented generation on {Canadian} case law.
+  \doi{10.48550/arXiv.2605.30497},
+  \urlprefix\url{https://arxiv.org/abs/2605.30497},
+  {\href{https://arxiv.org/abs/2605.30497}{{arXiv:2605.30497}}}
 
 \bibitem[{Zheng et~al.(2025)Zheng, Guha, Arifov
   et~al.}]{zhengReasoningFocusedLegalRetrieval2025}

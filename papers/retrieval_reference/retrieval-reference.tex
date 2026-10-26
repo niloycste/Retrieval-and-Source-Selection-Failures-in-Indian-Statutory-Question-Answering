@@ -201,12 +201,16 @@ With the reader fixed, the experiments compare paragraph-only and title-aware
 retrieval, section matching, and changes to query references. Section filtering
 keeps passages whose section identifier matches the question and ranks them
 with BM25; controls separate title information, candidate-pool reduction, and
-ranking. The main methodological contribution is a stage-wise diagnostic
-framework for statutory QA. It separates candidate access, source selection,
-answer extraction, and assessed legal adequacy while keeping the answer reader
-fixed. The framework is used to examine how statutory structure affects
-annotated-source recovery and which errors remain. Section filtering is one
-diagnostic intervention within the framework, not a proposed optimal method.
+ranking. Candidate retrieval, source selection, and answer extraction are not
+individually new stages. The methodological contribution is their joint,
+annotation-relative diagnosis in statutory QA, together with a separate human
+assessment of legal adequacy. Holding the extractive reader fixed makes it
+possible to distinguish failure to access the annotated paragraph from failure
+to select it, and to examine how recurring section identifiers create ambiguity
+across Acts. The framework is used to trace how structural changes to the
+candidate pool propagate through source selection and extraction. Section
+filtering is one diagnostic intervention within the framework, not a proposed
+optimal method.
 
 The study addresses three research questions:
 
@@ -224,10 +228,14 @@ The study addresses three research questions:
 
 The paper makes three contributions:
 \begin{enumerate}
-    \item A stage-wise diagnostic framework separates annotated-source
-    retrieval, source selection, answer extraction, and human assessment of
-    legal adequacy. Holding the reader fixed makes it possible to trace how
-    candidate changes propagate through the same QA pipeline.
+    \item \emph{Stage-wise diagnosis of statutory question answering.} We
+    provide an annotation-relative diagnosis of candidate access, source
+    selection, and answer extraction under a fixed extractive reader,
+    supplemented by a separate human assessment of legal adequacy. Unlike
+    evaluations focused primarily on retrieval rankings or generated answers,
+    the analysis traces how retrieved statutory candidates affect subsequent
+    source selection and span extraction, and examines whether benchmark
+    agreement corresponds to assessed legal adequacy.
 
     \item Several controlled tests examine the link between statutory
     references in the query, retrieval, and source selection. The comparison
@@ -323,10 +331,27 @@ graph augmented dense retriever to model relationships among statutory
 articles. Their approach uses connections between provisions instead of
 treating each article as an independent document.
 
+Recent systems also combine stronger query interpretation with multi-stage
+ranking. LegalMALR uses multi-agent query reformulation, iterative dense
+retrieval, and an LLM reranker for Chinese statute retrieval
+\citep{li2026legalmalr}. The Retrieve--Revise--Refine framework instead seeks
+concise sets of jointly entailing articles: small language models first retrieve
+candidates, large language models revise candidate combinations, and small
+models refine the resulting sets on COLIEE data
+\citep{nguyen2025retrievereviserefine}. These studies aim to improve statutory
+retrieval or article-set construction. The present study asks a complementary
+diagnostic question: with the answer reader fixed, at which stage does a
+single-source extractive pipeline fail?
+
 Legal RAG benchmarks also evaluate retrieval together with downstream legal
 answering. \citet{zhengReasoningFocusedLegalRetrieval2025} study bar exam and
 housing statute questions, while \citet{afaneBenchmarkingLegalRAG2026} examine
-statutory surveys. A closely related study by \citet{alshehri2026neural}
+statutory surveys. LegalBench-RAG evaluates precise snippet retrieval over
+expert-annotated legal tasks \citep{pipitone2024legalbenchrag}, while
+CanLegalRAGBench evaluates retrieval and grounded generation for realistic-style
+Canadian case-law questions and shows that automatic retrieval measures may
+penalise alternative relevant sources \citep{zhao2026canlegalragbench}.
+A closely related study by \citet{alshehri2026neural}
 evaluates UK statutory retrieval using BM25 and dense candidate generation
 followed by ten neural rerankers. It also distils a proprietary reranker into
 an open ModernBERT cross-encoder. Its main focus is ranking relevant
@@ -400,6 +425,18 @@ Table~\ref{tab:positioning} summarises the closest comparisons.
         & UK legislation & Provision level relevance
         & Studies candidate reranking and distillation; no diagnosis of
         zero-residual reference patterns. \\
+        \addlinespace[2pt]
+
+        LegalMALR~\citep{li2026legalmalr}
+        & Chinese statutes & Query reformulation
+        & Uses multi-agent query understanding and LLM reranking to improve
+        multi-label statute retrieval. \\
+        \addlinespace[2pt]
+
+        Retrieve--Revise--\newline Refine~\citep{nguyen2025retrievereviserefine}
+        & COLIEE statutes & Entailing article sets
+        & Optimises concise multi-article sets rather than attributing errors
+        across retrieval, selection, and extraction. \\
         \addlinespace[2pt]
 
         Juri\-FindIT~\citep{noceJuriFindITItalian2026}
@@ -1796,8 +1833,11 @@ The analysis reports retrieval, annotated source selection, and answer
 extraction separately. Section filtering achieves higher retrieval scores on
 this reference heavy benchmark. The title-aware BGE reranker nearly closes the
 retrieval difference. This shows that the tested neural pipeline can use
-section titles when they are supplied. Many selection errors remain under
-both the fixed reader decoder and the independent BGE selector. Other source
+section titles when they are supplied. The central result is not retrieval
+improvement alone: section filtering places the annotated source in the top
+five for 86.34\% of questions, but the fixed reader decoder selects it in only
+50.87\%. The independent BGE selector raises selection to 56.40\%, showing that
+the selection gap is not confined to the raw-logit decoder. Other source
 selection methods may give different results.
 
 \subsection{What Does the Benchmark Measure?}

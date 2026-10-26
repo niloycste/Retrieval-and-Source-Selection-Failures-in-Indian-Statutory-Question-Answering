@@ -1,12 +1,12 @@
 {
   "scope": "Local structural and PDF-link integrity only; not metadata verification",
-  "bibliography_entries": 41,
-  "cited_keys": 41,
-  "doi_fields": 37,
-  "url_fields": 25,
+  "bibliography_entries": 45,
+  "cited_keys": 45,
+  "doi_fields": 41,
+  "url_fields": 29,
   "pdf_pages": 48,
-  "pdf_uri_annotations": 99,
-  "unique_pdf_uri_targets": 66,
+  "pdf_uri_annotations": 111,
+  "unique_pdf_uri_targets": 72,
   "problems": [],
   "bibliography_targets": [
     "https://aclanthology.org/2020.emnlp-main.550/",
@@ -29,6 +29,8 @@
     "https://aclanthology.org/P17-1147/",
     "https://aclanthology.org/P18-2124/",
     "https://aclanthology.org/Q19-1026/",
+    "https://arxiv.org/abs/2408.10343",
+    "https://arxiv.org/abs/2605.30497",
     "https://dl.acm.org/doi/10.1145/3709025.3712219",
     "https://doi.org/10.1007/978-3-030-72240-1_26",
     "https://doi.org/10.1007/s10506-017-9195-8",
@@ -37,6 +39,8 @@
     "https://doi.org/10.1007/s10506-025-09501-6",
     "https://doi.org/10.1007/s10506-026-09506-9",
     "https://doi.org/10.1007/s10506-026-09537-2",
+    "https://doi.org/10.1007/s10506-026-09541-6",
+    "https://doi.org/10.1016/j.ipm.2024.103949",
     "https://doi.org/10.1037/h0026256",
     "https://doi.org/10.1145/1571941.1572114",
     "https://doi.org/10.1145/3594536.3595159",
@@ -66,6 +70,8 @@
     "https://doi.org/10.18653/v1/D18-1259",
     "https://doi.org/10.18653/v1/P17-1147",
     "https://doi.org/10.18653/v1/P18-2124",
+    "https://doi.org/10.48550/arXiv.2408.10343",
+    "https://doi.org/10.48550/arXiv.2605.30497",
     "https://doi.org/10.52202/075280-1915",
     "https://ojs.aaai.org/index.php/AAAI/article/view/6519",
     "https://openreview.net/forum?id=7l1Ygs3Bamw",
@@ -78,7 +84,7 @@
       "uri": "https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2"
     },
     {
-      "page": 15,
+      "page": 14,
       "uri": "https://huggingface.co/BAAI/bge-reranker-v2-m3"
     },
     {
@@ -96,10 +102,6 @@
     {
       "page": 43,
       "uri": "https://doi.org/10.1145/3788646.3789533"
-    },
-    {
-      "page": 44,
-      "uri": "https://doi.org/10.18653/v1/2025.emnlp-main.1739"
     },
     {
       "page": 44,
@@ -311,6 +313,18 @@
     },
     {
       "page": 46,
+      "uri": "https://doi.org/10.1007/s10506-026-09541-6"
+    },
+    {
+      "page": 46,
+      "uri": "https://doi.org/10.1007/s10506-026-09541-6"
+    },
+    {
+      "page": 46,
+      "uri": "https://doi.org/10.1007/s10506-026-09541-6"
+    },
+    {
+      "page": 46,
       "uri": "https://doi.org/10.18653/v1/2022.acl-long.468"
     },
     {
@@ -343,6 +357,14 @@
     },
     {
       "page": 46,
+      "uri": "https://doi.org/10.1016/j.ipm.2024.103949"
+    },
+    {
+      "page": 46,
+      "uri": "https://doi.org/10.1016/j.ipm.2024.103949"
+    },
+    {
+      "page": 47,
       "uri": "https://aclanthology.org/2025.coling-main.738/"
     },
     {
@@ -376,6 +398,22 @@
     {
       "page": 47,
       "uri": "https://doi.org/10.1145/3594536.3595165"
+    },
+    {
+      "page": 47,
+      "uri": "https://doi.org/10.48550/arXiv.2408.10343"
+    },
+    {
+      "page": 47,
+      "uri": "https://doi.org/10.48550/arXiv.2408.10343"
+    },
+    {
+      "page": 47,
+      "uri": "https://arxiv.org/abs/2408.10343"
+    },
+    {
+      "page": 47,
+      "uri": "https://arxiv.org/abs/2408.10343"
     },
     {
       "page": 47,
@@ -418,19 +456,19 @@
       "uri": "https://doi.org/10.1007/s10506-021-09293-5"
     },
     {
-      "page": 47,
+      "page": 48,
       "uri": "https://doi.org/10.1007/s10506-023-09387-2"
     },
     {
-      "page": 47,
+      "page": 48,
       "uri": "https://doi.org/10.18653/v1/2026.findings-acl.1000"
     },
     {
-      "page": 47,
+      "page": 48,
       "uri": "https://doi.org/10.18653/v1/2026.findings-acl.1000"
     },
     {
-      "page": 47,
+      "page": 48,
       "uri": "https://aclanthology.org/2026.findings-acl.1000/"
     },
     {
@@ -444,6 +482,22 @@
     {
       "page": 48,
       "uri": "https://aclanthology.org/D18-1259/"
+    },
+    {
+      "page": 48,
+      "uri": "https://doi.org/10.48550/arXiv.2605.30497"
+    },
+    {
+      "page": 48,
+      "uri": "https://doi.org/10.48550/arXiv.2605.30497"
+    },
+    {
+      "page": 48,
+      "uri": "https://arxiv.org/abs/2605.30497"
+    },
+    {
+      "page": 48,
+      "uri": "https://arxiv.org/abs/2605.30497"
     },
     {
       "page": 48,
