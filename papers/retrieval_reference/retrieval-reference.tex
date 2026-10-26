@@ -2076,8 +2076,11 @@ by ascending corpus index. Before generating new values, the metadata and stage
 audit reproduces the canonical 22.67 recall@5. The BGE extension uses the same
 package versions. It records the exact model revisions and command, and stores
 complete per query rankings and metrics for both datasets. An independent
-validation script recomputes every total from the per query files. It also
-checks query counts, ranking depths, embedding shapes, and candidate ceilings.
+validation script recomputes every total from the per query files and checks
+query counts, ranking depths, and candidate ceilings. When locally regenerated
+embedding caches are present, its strict mode also checks their shapes,
+finiteness, and normalisation; the archived full-run validation report records
+these checks for the reported run.
 
 The plan for these supplementary checks was saved before they were run. However,
 it was not formally registered or stored in an external repository. The reader
@@ -2558,6 +2561,10 @@ script checks source-role mappings, reconstructs the seeded sample, recomputes
 both agreement sheets, and summarises the final labels by sampling group without
 changing the workbooks. This checks the calculations and their source records,
 not how the review was conducted or whether its legal conclusions are correct.
+The anonymous release also provides de-identified item-level categorical labels
+and a workbook-independent validator that reconstructs the seeded sample,
+recomputes all reported agreement statistics and consensus counts, and checks
+Tables~\ref{tab:human_consensus} and~\ref{tab:human_agreement}.
 
 \FloatBarrier
 

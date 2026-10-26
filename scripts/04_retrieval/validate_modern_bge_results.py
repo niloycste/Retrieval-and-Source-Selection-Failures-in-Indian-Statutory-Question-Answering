@@ -11,6 +11,7 @@ from pathlib import Path
 import numpy as np
 
 
+ROOT = Path(__file__).resolve().parents[2]
 SYSTEMS = (
     "bm25",
     "bge_m3",
@@ -98,6 +99,10 @@ def check_per_query(
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("run_dir", type=Path)
+    parser.add_argument(
+        "--require-embeddings", action="store_true",
+        help="Fail unless the optional corpus embedding caches are present and valid.",
+    )
     args = parser.parse_args()
     run_dir = args.run_dir.resolve()
 
@@ -171,30 +176,67 @@ def main() -> int:
     }:
         raise AssertionError("UK candidate-ceiling report mismatch")
 
-    indic_embeddings = np.load(run_dir / "indic" / "bge_m3_corpus_embeddings.npy", mmap_mode="r")
-    uk_embeddings = np.load(run_dir / "uk" / "bge_m3_corpus_embeddings.npy", mmap_mode="r")
-    if indic_embeddings.shape != (1116, 1024) or uk_embeddings.shape != (124796, 1024):
-        raise AssertionError(
-            f"embedding shapes mismatch: {indic_embeddings.shape}, {uk_embeddings.shape}"
-        )
-    for name, vectors in (("indic", indic_embeddings), ("uk", uk_embeddings)):
-        sample = np.asarray(vectors[[0, len(vectors) // 2, len(vectors) - 1]])
-        if not np.isfinite(sample).all():
-            raise AssertionError(f"{name} embeddings contain non-finite sampled values")
-        norms = np.linalg.norm(sample, axis=1)
-        if not np.allclose(norms, 1.0, atol=1e-4):
-            raise AssertionError(f"{name} sampled embeddings are not L2 normalised: {norms}")
+    embedding_paths = {
+        "indic": run_dir / "indic" / "bge_m3_corpus_embeddings.npy",
+        "uk": run_dir / "uk" / "bge_m3_corpus_embeddings.npy",
+    }
+    existing = {name: path.is_file() for name, path in embedding_paths.items()}
+    if any(existing.values()) and not all(existing.values()):
+        raise AssertionError(f"partial embedding cache present: {existing}")
+    if all(existing.values()):
+        embeddings = {
+            name: np.load(path, mmap_mode="r")
+            for name, path in embedding_paths.items()
+        }
+        expected_shapes = {"indic": (1116, 1024), "uk": (124796, 1024)}
+        for name, vectors in embeddings.items():
+            if vectors.shape != expected_shapes[name]:
+                raise AssertionError(
+                    f"{name} embedding shape mismatch: {vectors.shape} != {expected_shapes[name]}"
+                )
+            sample = np.asarray(vectors[[0, len(vectors) // 2, len(vectors) - 1]])
+            if not np.isfinite(sample).all():
+                raise AssertionError(f"{name} embeddings contain non-finite sampled values")
+            norms = np.linalg.norm(sample, axis=1)
+            if not np.allclose(norms, 1.0, atol=1e-4):
+                raise AssertionError(f"{name} sampled embeddings are not L2 normalised: {norms}")
+        embedding_check = {
+            "status": "PASS",
+            "shapes": {name: list(vectors.shape) for name, vectors in embeddings.items()},
+        }
+    else:
+        if args.require_embeddings:
+            raise FileNotFoundError(
+                "optional embedding caches are absent; regenerate them with "
+                "modern_retrieval_extension.py before using --require-embeddings"
+            )
+        embedding_check = {
+            "status": "SKIPPED_NOT_RELEASED",
+            "reason": (
+                "Large derived embedding caches are not part of the anonymous release. "
+                "All released per-query metrics and rankings were validated."
+            ),
+            "regeneration_commands": [
+                "python scripts/04_retrieval/modern_retrieval_extension.py --dataset indic --device auto",
+                "python scripts/04_retrieval/modern_retrieval_extension.py --dataset uk --device auto",
+            ],
+        }
+
+    try:
+        public_run_dir = run_dir.relative_to(ROOT).as_posix()
+    except ValueError:
+        public_run_dir = run_dir.name
 
     report = {
         "status": "PASS",
-        "run_dir": str(run_dir),
+        "run_dir": public_run_dir,
         "datasets": ["indic", "uk"],
         "systems": list(SYSTEMS),
         "per_query_rows": {"indic": 344 * 5, "uk": 100 * 5},
         "ranking_rows": {"indic": 344 * 5, "uk": 100 * 5},
-        "embedding_shapes": {"indic": [1116, 1024], "uk": [124796, 1024]},
+        "embedding_check": embedding_check,
     }
-    (run_dir / "VALIDATION_REPORT.json").write_text(
+    (run_dir / "PUBLIC_VALIDATION_REPORT.json").write_text(
         json.dumps(report, indent=2), encoding="utf-8"
     )
     print(json.dumps(report, indent=2))

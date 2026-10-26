@@ -16,6 +16,8 @@ text explicitly states otherwise.
 | Operational classifier thresholds and continuous residual-token analysis | `results/experiments/retrieval/citation_template_classifier_robustness.json` |
 | Cross-Act and within-Act retrieval failure counts | `results/experiments/retrieval/wrong_act_severity.json` |
 | UK-StatuteCorpus external retrieval validation | `results/experiments/retrieval/runs/uk_statutecorpus_external_v1/summary.json` (canonical completed run; protocol and generator: `docs/RETRIEVAL_EXTERNAL_VALIDATION_PROTOCOL.md`, `scripts/04_retrieval/uk_statutecorpus_external_validation.py`) |
+| Modern BGE ranking and per-query validation | `results/experiments/retrieval/runs/modern_bge_extension_v1/PUBLIC_VALIDATION_REPORT.json` (validator: `scripts/04_retrieval/validate_modern_bge_results.py`; optional strict embedding-cache checks use `--require-embeddings`) |
+| Human-audit agreement, consensus counts, and manuscript tables | `outputs/human_validation_report/anonymized_item_labels.jsonl` and `outputs/human_validation_report/manuscript_summary.json` (public validator: `scripts/04_retrieval/validate_public_human_audit.py`) |
 | Figures 1 and 4 (files `01` and `23`) | `scripts/08_figures/make_retrieval_mechanism_figures.py` (current two-panel overview and citation intervention) |
 | Figures 2, 3, and 5 (files `21`, `22`, and `20`) | `scripts/08_figures/make_retrieval_paper_analysis_figures.py` (retrieval progression, stage-wise outcomes, and exploratory per-Act correlations; its main command also delegates Figures 1 and 4 to the current mechanism generator) |
 

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import json
 from pathlib import Path
 
@@ -25,6 +26,10 @@ required = [
     "results/experiments/retrieval/runs/title_neural_end_to_end_v1/summary.json",
     "results/experiments/retrieval/runs/title_neural_end_to_end_v1/title_neural_top5_reader_selector_predictions.jsonl",
     "results/experiments/retrieval/runs/title_neural_end_to_end_v1/title_neural_rank1_selector_predictions.jsonl",
+    "results/experiments/retrieval/runs/modern_bge_extension_v1/PUBLIC_VALIDATION_REPORT.json",
+    "outputs/human_validation_report/anonymized_item_labels.jsonl",
+    "outputs/human_validation_report/manuscript_summary.json",
+    "scripts/04_retrieval/validate_public_human_audit.py",
 ]
 missing = [path for path in required if not (ROOT / path).is_file()]
 if missing:
@@ -59,4 +64,25 @@ assert round(title_neural["reader_selector_over_top5"]["f1_pct"], 2) == 53.12
 assert round(title_neural["reranker_rank1_selector"]["selected_annotated_source_pct"], 2) == 51.74
 assert round(title_neural["reranker_rank1_selector"]["f1_pct"], 2) == 54.62
 
-print("Retrieval release verified: 344 test questions and headline artifacts, including section-pool, BGE-selector, and title-aware neural end-to-end controls, are present.")
+public_bge = load(
+    "results/experiments/retrieval/runs/modern_bge_extension_v1/PUBLIC_VALIDATION_REPORT.json"
+)
+assert public_bge["status"] == "PASS"
+assert public_bge["per_query_rows"] == {"indic": 1720, "uk": 500}
+assert public_bge["ranking_rows"] == {"indic": 1720, "uk": 500}
+
+human_labels = ROOT / "outputs/human_validation_report/anonymized_item_labels.jsonl"
+with human_labels.open(encoding="utf-8") as handle:
+    public_human_count = sum(1 for line in handle if line.strip())
+assert public_human_count == 80
+human_summary = load("outputs/human_validation_report/manuscript_summary.json")
+prediction_path = (
+    ROOT / "results/experiments/retrieval/runs/citation_aware_v1"
+    / "bm25_section_filter_top5_e2_predictions.jsonl"
+)
+assert hashlib.sha256(prediction_path.read_bytes()).hexdigest() == human_summary["predictions_sha256"]
+
+print(
+    "Retrieval release verified: 344 test questions, public BGE validation, "
+    "80 de-identified human-audit records, and headline control artifacts are present."
+)

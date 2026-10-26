@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "run_dir": "results/experiments/retrieval/runs/modern_bge_extension_v1",
+  "datasets": [
+    "indic",
+    "uk"
+  ],
+  "systems": [
+    "bm25",
+    "bge_m3",
+    "rrf_bm25_bge_m3",
+    "bm25_bge_reranker_v2_m3",
+    "rrf_bm25_bge_m3_bge_reranker_v2_m3"
+  ],
+  "per_query_rows": {
+    "indic": 1720,
+    "uk": 500
+  },
+  "ranking_rows": {
+    "indic": 1720,
+    "uk": 500
+  },
+  "embedding_check": {
+    "status": "SKIPPED_NOT_RELEASED",
+    "reason": "Large derived embedding caches are not part of the anonymous release. All released per-query metrics and rankings were validated.",
+    "regeneration_commands": [
+      "python scripts/04_retrieval/modern_retrieval_extension.py --dataset indic --device auto",
+      "python scripts/04_retrieval/modern_retrieval_extension.py --dataset uk --device auto"
+    ]
+  }
+}

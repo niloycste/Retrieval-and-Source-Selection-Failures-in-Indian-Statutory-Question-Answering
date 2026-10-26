@@ -180,12 +180,13 @@ instructions below make that boundary explicit.
 | Reproduction target | Included in this release? | Extra input or compute |
 |---|:---:|---|
 | Recompute manuscript tables, counts, and intervals | Yes | None |
+| Recompute published human-audit statistics and tables | Yes | None |
 | Regenerate quantitative paper figures | Yes | None |
 | Rebuild the manuscript PDF | Yes | A LaTeX distribution with `pdflatex` and `bibtex` |
 | Rerun public dense retrievers and rerankers | Code only | Hugging Face downloads; GPU recommended |
 | Rerun fixed-reader QA inference | Code and cached outputs | Original reader checkpoint for uncached pairs |
 | Rerun the UK external comparison | Code and saved outputs | Separately obtained UK-StatuteCorpus archive |
-| Recreate the human audit from original forms | Aggregate and de-identified labels only | Restricted source workbooks and decoding key |
+| Inspect private reviewer notes or passage-order keys | No | Restricted records; not needed for published statistics |
 
 ### A. Complete public results-to-PDF workflow
 
@@ -198,13 +199,20 @@ Run these commands from the repository root after completing the
 python verify_release.py
 python scripts/04_retrieval/audit_retrieval_manuscript.py
 python scripts/04_retrieval/audit_retrieval_bibliography.py
+python scripts/04_retrieval/validate_public_human_audit.py
+python scripts/04_retrieval/validate_modern_bge_results.py results/experiments/retrieval/runs/modern_bge_extension_v1
 ```
 
 The first command checks the expected files, test-set size, and headline
 invariants. The manuscript audit recomputes retrieval metrics, reader scores,
 stage counts, citation analyses, UK per-query means, and bootstrap intervals
 from the released evidence. The bibliography audit checks cited identifiers
-and bibliography consistency. These are artifact audits, not model reruns or
+and bibliography consistency. The public human-audit validator independently
+recomputes the agreement coefficients, consensus counts, seeded sample, and
+both manuscript tables from the 80 de-identified item records. The BGE
+validator checks every released ranking and per-query metric; after regenerating
+the optional embedding caches, add `--require-embeddings` for the deeper array
+shape, finiteness, and normalisation checks. These are artifact audits, not
 independent legal validation.
 
 #### 2. Regenerate the analysis figures
@@ -304,16 +312,22 @@ claim-to-artifact mappings are recorded in
 [`ARTIFACT_MANIFEST.md`](ARTIFACT_MANIFEST.md), and the run manifests under
 `results/experiments/retrieval/runs/`.
 
-### C. Human-audit reproducibility boundary
+### C. Public human-audit reproduction
 
 The public release contains the seeded sampling manifest, codebook, verified
-aggregate summary, and de-identified categorical labels. These are sufficient
-to inspect the reported sample composition and released labels. Exact
-re-execution of `summarize_human_validation.py` requires the restricted master
-workbook, free-text records, and private passage-order decoding key, so it is
-not presented as a public from-scratch command. See
+aggregate summary, and de-identified categorical labels. Recompute all
+published agreement statistics, consensus counts, sampling checks, and the two
+human-audit manuscript tables with:
+
+```powershell
+python scripts/04_retrieval/validate_public_human_audit.py
+```
+
+The restricted master workbook, free-text records, reviewer identities, and
+private passage-order decoding key are not needed for these calculations and
+remain excluded from the anonymous release. See
 [Human legal-adequacy assessment](#human-legal-adequacy-assessment) for the
-released and withheld artifacts.
+artifact boundary.
 
 ## 🧭 Repository guide
 
@@ -349,7 +363,11 @@ Publicly available:
 - `outputs/human_validation_report/manuscript_summary.json`: verified aggregate
   results, agreement coefficients, hashes, and calculation checks.
 - `outputs/human_validation_report/anonymized_item_labels.jsonl`: de-identified
-  original categorical ratings and consensus labels for reanalysis.
+  original categorical ratings and consensus labels for full numerical
+  reproduction of the published human-audit results.
+- `scripts/04_retrieval/validate_public_human_audit.py`: workbook-independent
+  validator for the released labels, seeded sample, agreement statistics,
+  consensus counts, and manuscript tables.
 - `outputs/retrieval_legal_expert_audit/`: the public codebook and sampling
   manifest.
 
